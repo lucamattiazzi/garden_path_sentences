@@ -1,0 +1,31 @@
+=== 08_novel_lexical_baseline ===
+device = cuda
+model  = google/gemma-3-27b-pt (dtype=bfloat16)
+
+  loading google/gemma-3-27b-pt (dtype=bfloat16) ...
+  loaded in 12.8s
+Novel-pair lexical baseline probe — separating memorisation from parsing.
+
+  NOVEL NV pairs (n=10):
+    s_full     = 8.179
+    s_stripped = 9.146
+    s_anchor   = 13.754
+    full − stripped = -0.967   95% CI [-1.931, -0.047]
+
+     id  v_amb       vc             s_full  s_strip   s_anch  full-strip
+    --------------------------------------------------------------------
+     51  butter      toast           4.365    3.150   15.585      +1.215
+     52  shoulder    burden          1.555    1.505   14.960      +0.051
+     53  head        rebellion       8.860   10.938   17.710      -2.077
+     54  witness     robbery        10.985   10.403   15.773      +0.582
+     55  fashion     crown          10.800   10.196   10.585      +0.603
+     56  mother      child           3.077    3.964    4.585      -0.887
+     57  father      newborn        10.869   12.190   11.710      -1.321
+     58  stomach     criticism      10.174   11.948   16.085      -1.774
+     59  crew        expedition      8.571   12.588   16.773      -4.017
+     60  partner     newcomer       12.530   14.576   13.773      -2.046
+
+
+Saved → /app/gemma3_27b/logs/08_novel_lexical_baseline.json
+
+Elapsed: 4.0s

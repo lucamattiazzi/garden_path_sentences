@@ -1,0 +1,48 @@
+=== 09_novel_predict ===
+device = cuda
+model  = google/gemma-3-27b-pt (dtype=bfloat16)
+
+  loading google/gemma-3-27b-pt (dtype=bfloat16) ...
+  loaded in 12.7s
+Verb-continuation baseline: residual comprehension cost, canonical vs novel.
+
+  CANONICAL NV pairs (n=10):
+    s_vc_gps    =  5.826   95% CI [4.165, 8.237]
+    s_vc_normal =  4.350   95% CI [3.345, 5.625]
+    vc_delta    = +1.477   95% CI [-0.156, +3.811]
+
+     id  vc             s_vc_gps  s_vc_norm   vc_delta
+    --------------------------------------------------
+     16  boat              5.968      4.552     +1.417
+     17  ship              3.524      2.685     +0.839
+     18  gate              4.018      3.599     +0.418
+     19  savings           4.165      4.149     +0.016
+     20  children          5.421      2.768     +2.653
+     21  storm             6.875      8.984     -2.109
+     22  kids              2.677      2.482     +0.195
+     23  trails           15.703      4.871    +10.832
+     24  seas              4.877      3.478     +1.398
+     25  survival          5.037      5.930     -0.893
+
+  NOVEL NV pairs (n=10):
+    s_vc_gps    =  8.179   95% CI [5.828, 10.288]
+    s_vc_normal =  6.421   95% CI [4.373, 8.636]
+    vc_delta    = +1.758   95% CI [+0.232, +3.484]
+
+     id  vc             s_vc_gps  s_vc_norm   vc_delta
+    --------------------------------------------------
+     51  toast             4.365      2.402     +1.963
+     52  burden            1.555      2.546     -0.991
+     53  rebellion         8.860      5.048     +3.812
+     54  robbery          10.985      4.980     +6.005
+     55  crown            10.800      4.294     +6.505
+     56  child             3.077      3.829     -0.752
+     57  newborn          10.869      9.403     +1.467
+     58  criticism        10.174     10.520     -0.346
+     59  expedition        8.571      8.192     +0.378
+     60  newcomer         12.530     12.993     -0.462
+
+
+Saved → /app/gemma3_27b/logs/09_novel_predict.json
+
+Elapsed: 6.8s

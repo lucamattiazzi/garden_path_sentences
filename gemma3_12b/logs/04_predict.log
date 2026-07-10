@@ -1,0 +1,31 @@
+=== 04_predict ===
+device = mps
+model  = google/gemma-3-12b-pt (dtype=bfloat16)
+
+  loading google/gemma-3-12b-pt (dtype=bfloat16) ...
+  loaded in 5.9s
+  computing baseline ...
+  baseline        vc_gps= 5.865            vc_norm= 4.346            Δ=+1.519            ctrl= 1.370          
+  L26.H9          vc_gps= 5.886  (+0.021)  vc_norm= 4.336  (-0.010)  Δ=+1.550  (+0.030)  ctrl= 1.382  (+0.012)
+  L26.H7          vc_gps= 5.872  (+0.007)  vc_norm= 4.332  (-0.014)  Δ=+1.540  (+0.021)  ctrl= 1.361  (-0.009)
+  L2.H15          vc_gps= 5.841  (-0.024)  vc_norm= 4.314  (-0.032)  Δ=+1.528  (+0.008)  ctrl= 1.356  (-0.014)
+  L2.H8           vc_gps= 5.914  (+0.049)  vc_norm= 4.338  (-0.008)  Δ=+1.576  (+0.057)  ctrl= 1.413  (+0.043)
+  L26.H9+L26.H7+L2.H15+L2.H8  vc_gps= 5.896  (+0.031)  vc_norm= 4.310  (-0.036)  Δ=+1.586  (+0.067)  ctrl= 1.431  (+0.061)
+
+  Per-pair s_vc_gps (higher = model less able to predict verb-object):
+     id  vc                  baseline            L26.H9            L26.H7            L2.H15             L2.H8  L26.H9+L26.H7+L2.H15+L2.H8
+    -------------------------------------------------------------------------------------------------------------------------------------
+     16  boat                   7.090             7.123             7.151             7.003             7.234             7.270
+     17  ship                   5.166             5.073             5.075             5.095             5.046             4.876
+     18  gate                   3.070             3.083             3.154             2.982             3.068             3.074
+     19  savings                3.937             3.995             4.044             4.070             3.898             4.028
+     20  children               5.697             5.655             5.632             5.701             5.656             5.571
+     21  storm                  7.204             7.335             7.265             7.379             7.793             7.911
+     22  kids                   2.311             2.274             2.312             2.252             2.420             2.365
+     23  trails                13.678            13.759            13.565            13.684            13.647            13.622
+     24  seas                   4.563             4.604             4.572             4.404             4.433             4.389
+     25  survival               5.935             5.956             5.950             5.843             5.944             5.852
+
+Saved → /Users/lucamattiazzi/Developer/garden_path_sentences/gemma3_12b/logs/04_predict.json
+
+Elapsed: 43.5s

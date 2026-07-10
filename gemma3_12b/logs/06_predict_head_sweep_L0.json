@@ -1,0 +1,224 @@
+{
+  "step": "06_predict_head_sweep_L0",
+  "results": {
+    "layer": 0,
+    "n_heads": 16,
+    "head_dim": 256,
+    "baseline_summary": {
+      "mean_s_vc_gps": 5.869611167907715,
+      "mean_s_vc_normal": 4.333445346355438,
+      "mean_vc_delta": 1.5361658215522767,
+      "mean_s_control": 1.372587801888585
+    },
+    "per_head": [
+      {
+        "head": 0,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.870362567901611,
+          "mean_s_vc_normal": 4.341787934303284,
+          "mean_vc_delta": 1.5285746335983277,
+          "mean_s_control": 1.3723345845937729
+        },
+        "vc_gps_inflation": 0.0007513999938959515,
+        "vc_normal_inflation": 0.008342587947845814,
+        "vc_delta_inflation": -0.007591187953948975,
+        "control_inflation": -0.00025321729481220245
+      },
+      {
+        "head": 1,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.903928589820862,
+          "mean_s_vc_normal": 4.333725500106811,
+          "mean_vc_delta": 1.5702030897140502,
+          "mean_s_control": 1.3672466538846493
+        },
+        "vc_gps_inflation": 0.034317421913146795,
+        "vc_normal_inflation": 0.00028015375137346865,
+        "vc_delta_inflation": 0.03403726816177355,
+        "control_inflation": -0.005341148003935814
+      },
+      {
+        "head": 2,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.916210651397705,
+          "mean_s_vc_normal": 4.334756207466126,
+          "mean_vc_delta": 1.5814544439315796,
+          "mean_s_control": 1.3858344033360481
+        },
+        "vc_gps_inflation": 0.04659948348998988,
+        "vc_normal_inflation": 0.0013108611106877888,
+        "vc_delta_inflation": 0.04528862237930298,
+        "control_inflation": 0.013246601447463036
+      },
+      {
+        "head": 3,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.871989393234253,
+          "mean_s_vc_normal": 4.34968888759613,
+          "mean_vc_delta": 1.5223005056381225,
+          "mean_s_control": 1.3734068274497986
+        },
+        "vc_gps_inflation": 0.002378225326538086,
+        "vc_normal_inflation": 0.016243541240692494,
+        "vc_delta_inflation": -0.013865315914154186,
+        "control_inflation": 0.0008190255612134933
+      },
+      {
+        "head": 4,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.802583026885986,
+          "mean_s_vc_normal": 4.359229707717896,
+          "mean_vc_delta": 1.4433533191680907,
+          "mean_s_control": 1.3941969815641642
+        },
+        "vc_gps_inflation": -0.06702814102172905,
+        "vc_normal_inflation": 0.025784361362457986,
+        "vc_delta_inflation": -0.09281250238418592,
+        "control_inflation": 0.02160917967557907
+      },
+      {
+        "head": 5,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.858916139602661,
+          "mean_s_vc_normal": 4.32694376707077,
+          "mean_vc_delta": 1.5319723725318908,
+          "mean_s_control": 1.3693050742149353
+        },
+        "vc_gps_inflation": -0.010695028305054421,
+        "vc_normal_inflation": -0.006501579284667436,
+        "vc_delta_inflation": -0.004193449020385875,
+        "control_inflation": -0.003282727673649788
+      },
+      {
+        "head": 6,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.820915055274964,
+          "mean_s_vc_normal": 4.338190078735352,
+          "mean_vc_delta": 1.4827249765396118,
+          "mean_s_control": 1.375237874686718
+        },
+        "vc_gps_inflation": -0.04869611263275164,
+        "vc_normal_inflation": 0.004744732379913685,
+        "vc_delta_inflation": -0.053440845012664884,
+        "control_inflation": 0.0026500727981328964
+      },
+      {
+        "head": 7,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.856192946434021,
+          "mean_s_vc_normal": 4.3149011611938475,
+          "mean_vc_delta": 1.5412917852401733,
+          "mean_s_control": 1.379962619394064
+        },
+        "vc_gps_inflation": -0.013418221473694203,
+        "vc_normal_inflation": -0.0185441851615904,
+        "vc_delta_inflation": 0.00512596368789664,
+        "control_inflation": 0.007374817505478859
+      },
+      {
+        "head": 8,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.840754175186158,
+          "mean_s_vc_normal": 4.336367571353913,
+          "mean_vc_delta": 1.5043866038322449,
+          "mean_s_control": 1.3717124480754137
+        },
+        "vc_gps_inflation": -0.028856992721557617,
+        "vc_normal_inflation": 0.0029222249984748316,
+        "vc_delta_inflation": -0.03177921772003178,
+        "control_inflation": -0.0008753538131713867
+      },
+      {
+        "head": 9,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.835262203216553,
+          "mean_s_vc_normal": 4.325211215019226,
+          "mean_vc_delta": 1.5100509881973267,
+          "mean_s_control": 1.3846855759620667
+        },
+        "vc_gps_inflation": -0.03434896469116211,
+        "vc_normal_inflation": -0.00823413133621198,
+        "vc_delta_inflation": -0.026114833354949907,
+        "control_inflation": 0.01209777407348156
+      },
+      {
+        "head": 10,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.8735963821411135,
+          "mean_s_vc_normal": 4.371035313606262,
+          "mean_vc_delta": 1.5025610685348512,
+          "mean_s_control": 1.326549669727683
+        },
+        "vc_gps_inflation": 0.00398521423339826,
+        "vc_normal_inflation": 0.037589967250823975,
+        "vc_delta_inflation": -0.03360475301742549,
+        "control_inflation": -0.04603813216090202
+      },
+      {
+        "head": 11,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.862961077690125,
+          "mean_s_vc_normal": 4.326134371757507,
+          "mean_vc_delta": 1.5368267059326173,
+          "mean_s_control": 1.381343200802803
+        },
+        "vc_gps_inflation": -0.006650090217590332,
+        "vc_normal_inflation": -0.007310974597930731,
+        "vc_delta_inflation": 0.0006608843803406206,
+        "control_inflation": 0.008755398914217949
+      },
+      {
+        "head": 12,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.936979913711548,
+          "mean_s_vc_normal": 4.338375234603882,
+          "mean_vc_delta": 1.598604679107666,
+          "mean_s_control": 1.3513552527874708
+        },
+        "vc_gps_inflation": 0.06736874580383301,
+        "vc_normal_inflation": 0.004929888248444314,
+        "vc_delta_inflation": 0.06243885755538936,
+        "control_inflation": -0.021232549101114273
+      },
+      {
+        "head": 13,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.907025957107544,
+          "mean_s_vc_normal": 4.336376953125,
+          "mean_vc_delta": 1.570649003982544,
+          "mean_s_control": 1.365755245089531
+        },
+        "vc_gps_inflation": 0.0374147891998291,
+        "vc_normal_inflation": 0.002931606769561945,
+        "vc_delta_inflation": 0.03448318243026738,
+        "control_inflation": -0.006832556799054146
+      },
+      {
+        "head": 14,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.900747609138489,
+          "mean_s_vc_normal": 4.348531723022461,
+          "mean_vc_delta": 1.5522158861160278,
+          "mean_s_control": 1.370240032672882
+        },
+        "vc_gps_inflation": 0.031136441230773748,
+        "vc_normal_inflation": 0.01508637666702306,
+        "vc_delta_inflation": 0.016050064563751132,
+        "control_inflation": -0.0023477692157030106
+      },
+      {
+        "head": 15,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.857727003097534,
+          "mean_s_vc_normal": 4.315102529525757,
+          "mean_vc_delta": 1.5426244735717773,
+          "mean_s_control": 1.3715049158781767
+        },
+        "vc_gps_inflation": -0.011884164810180842,
+        "vc_normal_inflation": -0.018342816829680864,
+        "vc_delta_inflation": 0.006458652019500688,
+        "control_inflation": -0.0010828860104084015
+      }
+    ]
+  }
+}

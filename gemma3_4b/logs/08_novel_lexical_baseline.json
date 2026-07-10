@@ -1,0 +1,127 @@
+{
+  "step": "08_novel_lexical_baseline",
+  "results": {
+    "label": "NOVEL NV pairs",
+    "summary": {
+      "mean_s_full": 8.236123931407928,
+      "mean_s_stripped": 8.905724954605102,
+      "mean_s_anchor": 12.452608108520508
+    },
+    "ci95_full_minus_stripped": [
+      -2.222874811589718,
+      0.7337822109460824
+    ],
+    "pair_results": [
+      {
+        "id": 51,
+        "v_amb_word": "butter",
+        "verb_continuation": "toast",
+        "full_prefix": "The poor butter the",
+        "stripped_prefix": "butter the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 7.423223972320557,
+        "s_stripped": 3.9284768104553223,
+        "s_anchor": 14.452608108520508
+      },
+      {
+        "id": 52,
+        "v_amb_word": "shoulder",
+        "verb_continuation": "burden",
+        "full_prefix": "The weary shoulder the",
+        "stripped_prefix": "shoulder the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 1.7511190176010132,
+        "s_stripped": 1.588181972503662,
+        "s_anchor": 14.515108108520508
+      },
+      {
+        "id": 53,
+        "v_amb_word": "head",
+        "verb_continuation": "rebellion",
+        "full_prefix": "The bold head the",
+        "stripped_prefix": "head the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 12.854707717895508,
+        "s_stripped": 11.743134498596191,
+        "s_anchor": 16.233858108520508
+      },
+      {
+        "id": 54,
+        "v_amb_word": "witness",
+        "verb_continuation": "robbery",
+        "full_prefix": "The elderly witness the",
+        "stripped_prefix": "witness the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 10.098600387573242,
+        "s_stripped": 11.864477157592773,
+        "s_anchor": 14.390108108520508
+      },
+      {
+        "id": 55,
+        "v_amb_word": "fashion",
+        "verb_continuation": "crown",
+        "full_prefix": "The elite fashion the",
+        "stripped_prefix": "fashion the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 8.53019905090332,
+        "s_stripped": 8.830716133117676,
+        "s_anchor": 9.265108108520508
+      },
+      {
+        "id": 56,
+        "v_amb_word": "mother",
+        "verb_continuation": "child",
+        "full_prefix": "The strong mother the",
+        "stripped_prefix": "mother the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 3.8557653427124023,
+        "s_stripped": 3.6202874183654785,
+        "s_anchor": 4.640108108520508
+      },
+      {
+        "id": 57,
+        "v_amb_word": "father",
+        "verb_continuation": "newborn",
+        "full_prefix": "The wealthy father the",
+        "stripped_prefix": "father the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 10.291027069091797,
+        "s_stripped": 10.14138412475586,
+        "s_anchor": 9.452608108520508
+      },
+      {
+        "id": 58,
+        "v_amb_word": "stomach",
+        "verb_continuation": "criticism",
+        "full_prefix": "The homeless stomach the",
+        "stripped_prefix": "stomach the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 8.147831916809082,
+        "s_stripped": 14.285148620605469,
+        "s_anchor": 15.077608108520508
+      },
+      {
+        "id": 59,
+        "v_amb_word": "crew",
+        "verb_continuation": "expedition",
+        "full_prefix": "The brave crew the",
+        "stripped_prefix": "crew the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 8.827816009521484,
+        "s_stripped": 10.305428504943848,
+        "s_anchor": 15.546358108520508
+      },
+      {
+        "id": 60,
+        "v_amb_word": "partner",
+        "verb_continuation": "newcomer",
+        "full_prefix": "The rich partner the",
+        "stripped_prefix": "partner the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 10.580948829650879,
+        "s_stripped": 12.750014305114746,
+        "s_anchor": 10.952608108520508
+      }
+    ]
+  }
+}

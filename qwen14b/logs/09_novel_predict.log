@@ -1,0 +1,48 @@
+=== 09_novel_predict ===
+device = mps
+model  = Qwen/Qwen3-14B-Base (dtype=float16)
+
+  loading Qwen/Qwen3-14B-Base (dtype=float16) ...
+  loaded in 20.9s
+Verb-continuation baseline: residual comprehension cost, canonical vs novel.
+
+  CANONICAL NV pairs (n=10):
+    s_vc_gps    =  5.757   95% CI [4.498, 7.102]
+    s_vc_normal =  4.476   95% CI [3.391, 5.645]
+    vc_delta    = +1.280   95% CI [+0.186, +2.404]
+
+     id  vc             s_vc_gps  s_vc_norm   vc_delta
+    --------------------------------------------------
+     16  boat              4.982      5.117     -0.135
+     17  ship              5.112      1.432     +3.680
+     18  gate              2.381      4.218     -1.837
+     19  savings           3.614      3.582     +0.032
+     20  children          5.048      3.630     +1.419
+     21  storm             9.646      8.448     +1.198
+     22  kids              6.241      2.613     +3.628
+     23  trails            9.060      5.228     +3.832
+     24  seas              6.297      5.314     +0.982
+     25  survival          5.185      5.183     +0.002
+
+  NOVEL NV pairs (n=10):
+    s_vc_gps    =  7.364   95% CI [5.422, 9.138]
+    s_vc_normal =  6.365   95% CI [5.058, 7.559]
+    vc_delta    = +0.999   95% CI [-0.429, +2.393]
+
+     id  vc             s_vc_gps  s_vc_norm   vc_delta
+    --------------------------------------------------
+     51  toast             5.044      2.323     +2.721
+     52  burden            1.752      4.054     -2.302
+     53  rebellion         9.318      6.914     +2.404
+     54  robbery          11.066      7.018     +4.047
+     55  crown             9.780      5.564     +4.216
+     56  child             3.256      5.251     -1.996
+     57  newborn           8.664      7.062     +1.602
+     58  criticism         7.641      7.745     -0.104
+     59  expedition        6.423      7.924     -1.501
+     60  newcomer         10.698      9.795     +0.903
+
+
+Saved → /Users/lucamattiazzi/Developer/garden_path_sentences/qwen14b/logs/09_novel_predict.json
+
+Elapsed: 10.9s

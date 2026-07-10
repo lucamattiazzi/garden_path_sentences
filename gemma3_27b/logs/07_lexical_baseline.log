@@ -1,0 +1,31 @@
+=== 07_lexical_baseline ===
+device = cuda
+model  = google/gemma-3-27b-pt (dtype=bfloat16)
+
+  loading google/gemma-3-27b-pt (dtype=bfloat16) ...
+  loaded in 13.0s
+Lexical baseline probe on the CANONICAL NV pairs.
+
+  CANONICAL NV pairs (n=10):
+    s_full     = 5.826
+    s_stripped = 6.108
+    s_anchor   = 10.384
+    full − stripped = -0.281   95% CI [-1.031, +0.419]
+
+     id  v_amb       vc             s_full  s_strip   s_anch  full-strip
+    --------------------------------------------------------------------
+     16  man         boat            5.968    6.698    7.585      -0.730
+     17  captain     ship            3.524    3.039    7.710      +0.484
+     18  guard       gate            4.018    3.139    8.335      +0.879
+     19  bank        savings         4.165    3.711    8.074      +0.454
+     20  nurse       children        5.421    4.713    5.085      +0.708
+     21  bear        storm           6.875    8.472   12.398      -1.597
+     22  school      kids            2.677    2.897   12.699      -0.220
+     23  dog         trails         15.703   14.447   14.585      +1.256
+     24  rule        seas            4.877    6.549   14.773      -1.672
+     25  fish        survival        5.037    7.413   12.592      -2.376
+
+
+Saved → /app/gemma3_27b/logs/07_lexical_baseline.json
+
+Elapsed: 4.0s

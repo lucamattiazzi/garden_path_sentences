@@ -1,0 +1,23 @@
+=== 12_mean_ablation ===
+device = cuda
+model  = google/gemma-3-27b-pt (dtype=bfloat16)
+
+  loading google/gemma-3-27b-pt (dtype=bfloat16) ...
+  loaded in 12.8s
+  computing per-head means over the pair+control distribution ...
+  baselines (no ablation) ...
+
+  Head sets (zero vs mean ablation):
+    L31.H9            Δ-drop  zero= -0.116  mean= -0.119   +vc_gps  zero= +0.078  mean= +0.095   +ctrl  zero= -0.019  mean= -0.018
+    L54.H26           Δ-drop  zero= -0.104  mean= -0.120   +vc_gps  zero= +0.026  mean= -0.028   +ctrl  zero= -0.011  mean= -0.010
+    L54.H10           Δ-drop  zero= -0.068  mean= -0.076   +vc_gps  zero= -0.000  mean= -0.028   +ctrl  zero= -0.023  mean= -0.009
+    L31.H11           Δ-drop  zero= -0.067  mean= -0.065   +vc_gps  zero= -0.009  mean= +0.023   +ctrl  zero= -0.034  mean= -0.027
+    L31.H9+L54.H26+L54.H10+L31.H11  Δ-drop  zero= -0.312  mean= -0.344   +vc_gps  zero= +0.077  mean= +0.061   +ctrl  zero= -0.042  mean= -0.030
+
+  Full layers (zero vs mean ablation):
+    L6 (all heads)    Δ-drop  zero= +0.039  mean= +0.039   +vc_gps  zero= +0.643  mean= +0.598   +ctrl  zero= -0.005  mean= +0.018
+    L4 (all heads)    Δ-drop  zero= -0.031  mean= +0.011   +vc_gps  zero= +0.505  mean= -0.016   +ctrl  zero= -0.122  mean= +0.021
+
+Saved → /app/gemma3_27b/logs/12_mean_ablation.json
+
+Elapsed: 215.1s

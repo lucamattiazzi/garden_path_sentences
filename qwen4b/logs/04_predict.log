@@ -1,0 +1,29 @@
+=== 04_predict ===
+device = mps
+model  = Qwen/Qwen3-4B-Base (dtype=float16)
+
+  loading Qwen/Qwen3-4B-Base (dtype=float16) ...
+  loaded in 10.7s
+  computing baseline ...
+  baseline        vc_gps= 6.120            vc_norm= 4.372            Δ=+1.748            ctrl= 1.092          
+  L25.H7          vc_gps= 6.136  (+0.016)  vc_norm= 4.382  (+0.010)  Δ=+1.754  (+0.006)  ctrl= 1.093  (+0.001)
+  L35.H0          vc_gps= 6.144  (+0.024)  vc_norm= 4.459  (+0.087)  Δ=+1.685  (-0.063)  ctrl= 1.173  (+0.081)
+  L25.H7+L35.H0   vc_gps= 6.161  (+0.041)  vc_norm= 4.469  (+0.096)  Δ=+1.692  (-0.056)  ctrl= 1.175  (+0.083)
+
+  Per-pair s_vc_gps (higher = model less able to predict verb-object):
+     id  vc                  baseline            L25.H7            L35.H0     L25.H7+L35.H0
+    ---------------------------------------------------------------------------------------
+     16  boat                   4.807             4.825             4.846             4.882
+     17  ship                   4.640             4.668             4.905             4.920
+     18  gate                   3.638             3.646             3.854             3.854
+     19  savings                3.375             3.313             3.257             3.204
+     20  children               6.686             6.706             6.694             6.707
+     21  storm                 10.437            10.466            10.477            10.503
+     22  kids                   4.131             4.194             4.282             4.359
+     23  trails                11.587            11.726            11.176            11.321
+     24  seas                   4.765             4.763             4.537             4.539
+     25  survival               7.135             7.053             7.410             7.316
+
+Saved → /Users/lucamattiazzi/Developer/garden_path_sentences/qwen4b/logs/04_predict.json
+
+Elapsed: 6.7s

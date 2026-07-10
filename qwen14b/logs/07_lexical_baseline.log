@@ -1,0 +1,31 @@
+=== 07_lexical_baseline ===
+device = mps
+model  = Qwen/Qwen3-14B-Base (dtype=float16)
+
+  loading Qwen/Qwen3-14B-Base (dtype=float16) ...
+  loaded in 26.2s
+Lexical baseline probe on the CANONICAL NV pairs.
+
+  CANONICAL NV pairs (n=10):
+    s_full     = 5.757
+    s_stripped = 5.898
+    s_anchor   = 9.490
+    full − stripped = -0.141   95% CI [-1.148, +1.042]
+
+     id  v_amb       vc             s_full  s_strip   s_anch  full-strip
+    --------------------------------------------------------------------
+     16  man         boat            4.982    6.449    7.695      -1.467
+     17  captain     ship            5.112    2.576    7.310      +2.536
+     18  guard       gate            2.381    4.264    8.727      -1.883
+     19  bank        savings         3.614    4.744    7.726      -1.130
+     20  nurse       children        5.048    5.020    7.365      +0.028
+     21  bear        storm           9.646    9.465    9.323      +0.181
+     22  school      kids            6.241    2.654    9.630      +3.587
+     23  dog         trails          9.060   11.034   12.040      -1.974
+     24  rule        seas            6.297    6.275   11.307      +0.021
+     25  fish        survival        5.185    6.498   13.782      -1.313
+
+
+Saved → /Users/lucamattiazzi/Developer/garden_path_sentences/qwen14b/logs/07_lexical_baseline.json
+
+Elapsed: 9.4s

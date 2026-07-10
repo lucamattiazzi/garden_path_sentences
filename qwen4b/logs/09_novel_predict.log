@@ -1,0 +1,48 @@
+=== 09_novel_predict ===
+device = mps
+model  = Qwen/Qwen3-4B-Base (dtype=float16)
+
+  loading Qwen/Qwen3-4B-Base (dtype=float16) ...
+  loaded in 3.9s
+Verb-continuation baseline: residual comprehension cost, canonical vs novel.
+
+  CANONICAL NV pairs (n=10):
+    s_vc_gps    =  6.120   95% CI [4.568, 7.872]
+    s_vc_normal =  4.372   95% CI [3.196, 5.804]
+    vc_delta    = +1.748   95% CI [+0.727, +2.848]
+
+     id  vc             s_vc_gps  s_vc_norm   vc_delta
+    --------------------------------------------------
+     16  boat              4.807      4.345     +0.462
+     17  ship              4.640      1.711     +2.929
+     18  gate              3.638      3.961     -0.322
+     19  savings           3.375      2.505     +0.870
+     20  children          6.686      3.616     +3.070
+     21  storm            10.437      9.346     +1.090
+     22  kids              4.131      2.402     +1.729
+     23  trails           11.587      6.181     +5.406
+     24  seas              4.765      5.285     -0.519
+     25  survival          7.135      4.370     +2.764
+
+  NOVEL NV pairs (n=10):
+    s_vc_gps    =  7.810   95% CI [5.993, 9.409]
+    s_vc_normal =  6.713   95% CI [5.771, 7.693]
+    vc_delta    = +1.097   95% CI [-0.190, +2.370]
+
+     id  vc             s_vc_gps  s_vc_norm   vc_delta
+    --------------------------------------------------
+     51  toast             6.386      5.178     +1.208
+     52  burden            2.482      5.212     -2.730
+     53  rebellion        11.182      6.766     +4.416
+     54  robbery          10.915      7.133     +3.782
+     55  crown             7.867      5.321     +2.547
+     56  child             3.614      4.492     -0.878
+     57  newborn           9.158      7.098     +2.060
+     58  criticism         8.039      8.175     -0.136
+     59  expedition        8.378      8.074     +0.304
+     60  newcomer         10.077      9.684     +0.393
+
+
+Saved → /Users/lucamattiazzi/Developer/garden_path_sentences/qwen4b/logs/09_novel_predict.json
+
+Elapsed: 3.5s

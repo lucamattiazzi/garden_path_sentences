@@ -1,0 +1,69 @@
+=== 10_attention_patterns ===
+device = mps
+model  = google/gemma-3-12b-pt (dtype=bfloat16, attn=eager)
+
+  loading google/gemma-3-12b-pt (dtype=bfloat16, attn=eager) ...
+Attention disambiguator → V-amb word over 20 NV pairs (canonical + novel):
+
+    pair  16 (man) done
+    pair  17 (captain) done
+    pair  18 (guard) done
+    pair  19 (bank) done
+    pair  20 (nurse) done
+    pair  21 (bear) done
+    pair  22 (school) done
+    pair  23 (dog) done
+    pair  24 (rule) done
+    pair  25 (fish) done
+    pair  51 (butter) done
+    pair  52 (shoulder) done
+    pair  53 (head) done
+    pair  54 (witness) done
+    pair  55 (fashion) done
+    pair  56 (mother) done
+    pair  57 (father) done
+    pair  58 (stomach) done
+    pair  59 (crew) done
+    pair  60 (partner) done
+
+  Top 15 heads by |attn_gps| (attention disambiguator → V-amb word):
+        head   attn_gps  attn_norm   gps-norm  spearman(attn_gps, vc_delta)
+    ------------------------------------------------------------------------
+    L 0.H10       0.994      0.996     -0.002          -0.329 (p=0.157)
+    L 0.H3        0.900      0.908     -0.007           0.108 (p=0.651)
+    L 2.H5        0.895      0.887     +0.007          -0.239 (p=0.309)
+    L 4.H1        0.860      0.620     +0.241           0.344 (p=0.138)
+    L16.H1        0.811      0.656     +0.156          -0.031 (p=0.897)
+    L 2.H8        0.747      0.817     -0.070           0.129 (p=0.586)
+    L24.H11       0.684      0.578     +0.105           0.191 (p=0.420)
+    L 6.H1        0.625      0.057     +0.567           0.442 (p=0.051)
+    L 7.H0        0.602      0.593     +0.009          -0.439 (p=0.053)
+    L 6.H14       0.601      0.749     -0.148          -0.128 (p=0.591)
+    L 8.H7        0.589      0.842     -0.253          -0.478 (p=0.033)
+    L 3.H3        0.555      0.923     -0.369          -0.497 (p=0.026)
+    L 2.H15       0.537      0.613     -0.076          -0.356 (p=0.124)
+    L 8.H11       0.531      0.062     +0.469           0.362 (p=0.116)
+    L14.H11       0.521      0.091     +0.430           0.588 (p=0.006)
+
+  Top 15 heads by |attn_gps − attn_norm| (attention disambiguator → V-amb word):
+        head   attn_gps  attn_norm   gps-norm  spearman(attn_gps, vc_delta)
+    ------------------------------------------------------------------------
+    L 6.H1        0.625      0.057     +0.567           0.442 (p=0.051)
+    L 6.H15       0.433      0.976     -0.543          -0.439 (p=0.053)
+    L 4.H2        0.029      0.541     -0.512          -0.059 (p=0.806)
+    L 8.H11       0.531      0.062     +0.469           0.362 (p=0.116)
+    L 4.H3        0.509      0.967     -0.458          -0.412 (p=0.071)
+    L 3.H9        0.391      0.838     -0.447          -0.352 (p=0.128)
+    L14.H11       0.521      0.091     +0.430           0.588 (p=0.006)
+    L 9.H2        0.511      0.113     +0.398           0.238 (p=0.313)
+    L 3.H3        0.555      0.923     -0.369          -0.497 (p=0.026)
+    L 7.H12       0.268      0.582     -0.314          -0.149 (p=0.531)
+    L12.H1        0.350      0.061     +0.288           0.532 (p=0.016)
+    L29.H6        0.173      0.450     -0.277           0.227 (p=0.336)
+    L27.H12       0.289      0.016     +0.273           0.323 (p=0.164)
+    L21.H4        0.306      0.039     +0.267           0.498 (p=0.026)
+    L13.H11       0.298      0.040     +0.258           0.466 (p=0.038)
+
+Saved → /Users/lucamattiazzi/Developer/garden_path_sentences/gemma3_12b/logs/10_attention_patterns.json
+
+Elapsed: 21.3s

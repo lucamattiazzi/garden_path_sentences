@@ -1,0 +1,195 @@
+{
+  "step": "09_novel_predict",
+  "results": {
+    "canonical": {
+      "label": "CANONICAL NV pairs",
+      "summary": {
+        "mean_s_vc_gps": 5.826460552215576,
+        "mean_s_vc_normal": 4.349777793884277,
+        "mean_vc_delta": 1.476682758331299,
+        "mean_s_control": 1.3937876978889108
+      },
+      "ci95": {
+        "s_vc_gps": [
+          4.164738560914993,
+          8.236579596996307
+        ],
+        "s_vc_normal": [
+          3.3449122834205625,
+          5.625158426165581
+        ],
+        "vc_delta": [
+          -0.1563919425010681,
+          3.810941861271858
+        ]
+      },
+      "pair_results": [
+        {
+          "id": 16,
+          "verb_continuation": "boat",
+          "s_vc_gps": 5.96823263168335,
+          "s_vc_normal": 4.551730155944824,
+          "vc_delta": 1.4165024757385254
+        },
+        {
+          "id": 17,
+          "verb_continuation": "ship",
+          "s_vc_gps": 3.523850202560425,
+          "s_vc_normal": 2.6845431327819824,
+          "vc_delta": 0.8393070697784424
+        },
+        {
+          "id": 18,
+          "verb_continuation": "gate",
+          "s_vc_gps": 4.017663955688477,
+          "s_vc_normal": 3.5993492603302,
+          "vc_delta": 0.41831469535827637
+        },
+        {
+          "id": 19,
+          "verb_continuation": "savings",
+          "s_vc_gps": 4.1649169921875,
+          "s_vc_normal": 4.148876190185547,
+          "vc_delta": 0.016040802001953125
+        },
+        {
+          "id": 20,
+          "verb_continuation": "children",
+          "s_vc_gps": 5.420822620391846,
+          "s_vc_normal": 2.768125534057617,
+          "vc_delta": 2.6526970863342285
+        },
+        {
+          "id": 21,
+          "verb_continuation": "storm",
+          "s_vc_gps": 6.875175952911377,
+          "s_vc_normal": 8.983830451965332,
+          "vc_delta": -2.108654499053955
+        },
+        {
+          "id": 22,
+          "verb_continuation": "kids",
+          "s_vc_gps": 2.6767799854278564,
+          "s_vc_normal": 2.4816248416900635,
+          "vc_delta": 0.19515514373779297
+        },
+        {
+          "id": 23,
+          "verb_continuation": "trails",
+          "s_vc_gps": 15.703211784362793,
+          "s_vc_normal": 4.870796203613281,
+          "vc_delta": 10.832415580749512
+        },
+        {
+          "id": 24,
+          "verb_continuation": "seas",
+          "s_vc_gps": 4.876583576202393,
+          "s_vc_normal": 3.4784111976623535,
+          "vc_delta": 1.398172378540039
+        },
+        {
+          "id": 25,
+          "verb_continuation": "survival",
+          "s_vc_gps": 5.037367820739746,
+          "s_vc_normal": 5.930490970611572,
+          "vc_delta": -0.8931231498718262
+        }
+      ]
+    },
+    "novel": {
+      "label": "NOVEL NV pairs",
+      "summary": {
+        "mean_s_vc_gps": 8.178636574745179,
+        "mean_s_vc_normal": 6.420758056640625,
+        "mean_vc_delta": 1.7578785181045533,
+        "mean_s_control": 1.3937876978889108
+      },
+      "ci95": {
+        "s_vc_gps": [
+          5.828099958300591,
+          10.287836496233938
+        ],
+        "s_vc_normal": [
+          4.373018535971641,
+          8.63625451683998
+        ],
+        "vc_delta": [
+          0.23167685568332674,
+          3.483842801451682
+        ]
+      },
+      "pair_results": [
+        {
+          "id": 51,
+          "verb_continuation": "toast",
+          "s_vc_gps": 4.364725589752197,
+          "s_vc_normal": 2.4018914699554443,
+          "vc_delta": 1.962834119796753
+        },
+        {
+          "id": 52,
+          "verb_continuation": "burden",
+          "s_vc_gps": 1.5552520751953125,
+          "s_vc_normal": 2.5464162826538086,
+          "vc_delta": -0.9911642074584961
+        },
+        {
+          "id": 53,
+          "verb_continuation": "rebellion",
+          "s_vc_gps": 8.860475540161133,
+          "s_vc_normal": 5.048134803771973,
+          "vc_delta": 3.81234073638916
+        },
+        {
+          "id": 54,
+          "verb_continuation": "robbery",
+          "s_vc_gps": 10.984601974487305,
+          "s_vc_normal": 4.980062007904053,
+          "vc_delta": 6.004539966583252
+        },
+        {
+          "id": 55,
+          "verb_continuation": "crown",
+          "s_vc_gps": 10.799595832824707,
+          "s_vc_normal": 4.29411506652832,
+          "vc_delta": 6.505480766296387
+        },
+        {
+          "id": 56,
+          "verb_continuation": "child",
+          "s_vc_gps": 3.0769689083099365,
+          "s_vc_normal": 3.8290374279022217,
+          "vc_delta": -0.7520685195922852
+        },
+        {
+          "id": 57,
+          "verb_continuation": "newborn",
+          "s_vc_gps": 10.869375228881836,
+          "s_vc_normal": 9.402828216552734,
+          "vc_delta": 1.4665470123291016
+        },
+        {
+          "id": 58,
+          "verb_continuation": "criticism",
+          "s_vc_gps": 10.17435359954834,
+          "s_vc_normal": 10.520177841186523,
+          "vc_delta": -0.3458242416381836
+        },
+        {
+          "id": 59,
+          "verb_continuation": "expedition",
+          "s_vc_gps": 8.570758819580078,
+          "s_vc_normal": 8.192270278930664,
+          "vc_delta": 0.37848854064941406
+        },
+        {
+          "id": 60,
+          "verb_continuation": "newcomer",
+          "s_vc_gps": 12.530258178710938,
+          "s_vc_normal": 12.992647171020508,
+          "vc_delta": -0.4623889923095703
+        }
+      ]
+    }
+  }
+}

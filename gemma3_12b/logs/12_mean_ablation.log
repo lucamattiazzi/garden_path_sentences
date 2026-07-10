@@ -1,0 +1,23 @@
+=== 12_mean_ablation ===
+device = mps
+model  = google/gemma-3-12b-pt (dtype=bfloat16)
+
+  loading google/gemma-3-12b-pt (dtype=bfloat16) ...
+  loaded in 6.1s
+  computing per-head means over the pair+control distribution ...
+  baselines (no ablation) ...
+
+  Head sets (zero vs mean ablation):
+    L26.H9            Δ-drop  zero= -0.214  mean= -0.264   +vc_gps  zero= +0.021  mean= -0.017   +ctrl  zero= +0.012  mean= +0.001
+    L26.H7            Δ-drop  zero= -0.094  mean= -0.126   +vc_gps  zero= +0.007  mean= +0.015   +ctrl  zero= -0.009  mean= -0.004
+    L2.H15            Δ-drop  zero= -0.090  mean= -0.076   +vc_gps  zero= -0.024  mean= -0.005   +ctrl  zero= -0.014  mean= +0.009
+    L2.H8             Δ-drop  zero= -0.085  mean= -0.065   +vc_gps  zero= +0.049  mean= +0.012   +ctrl  zero= +0.043  mean= +0.040
+    L26.H9+L26.H7+L2.H15+L2.H8  Δ-drop  zero= -0.412  mean= -0.458   +vc_gps  zero= +0.031  mean= -0.010   +ctrl  zero= +0.061  mean= +0.040
+
+  Full layers (zero vs mean ablation):
+    L0 (all heads)    Δ-drop  zero= -2.341  mean= -0.019   +vc_gps  zero= +1.738  mean= -0.158   +ctrl  zero= -0.073  mean= -0.043
+    L33 (all heads)   Δ-drop  zero= -0.239  mean= -0.084   +vc_gps  zero= +0.379  mean= +0.162   +ctrl  zero= +0.154  mean= -0.055
+
+Saved → /Users/lucamattiazzi/Developer/garden_path_sentences/gemma3_12b/logs/12_mean_ablation.json
+
+Elapsed: 602.9s

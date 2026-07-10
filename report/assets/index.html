@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Garden-Path Sentences in Gemma 3 — Results Report</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
+<script src="data.js"></script>
+</head>
+<body>
+
+<nav id="toc">
+  <strong>Sections</strong>
+  <a href="#overview">Overview</a>
+  <a href="#s01">01 · Baseline effect</a>
+  <a href="#s02">02 · Layer sweep (Δ)</a>
+  <a href="#s03">03 · Head sweeps</a>
+  <a href="#s04">04 · Heads → comprehension</a>
+  <a href="#s05">05 · Layer sweep (vc)</a>
+  <a href="#s06">06 · Head sweeps (vc)</a>
+  <a href="#s0708">07/08 · Lexical floor</a>
+  <a href="#s09">09 · Canonical vs novel</a>
+  <a href="#s10">10 · Attention patterns</a>
+  <a href="#s11">11 · Activation patching</a>
+  <a href="#s12">12 · Zero vs mean ablation</a>
+  <a href="#s13">13 · Null distribution</a>
+  <a href="#s14">14 · Null (comprehension)</a>
+</nav>
+
+<main>
+
+<header>
+  <h1>Garden-Path Sentences in Gemma 3</h1>
+  <p class="subtitle">Mechanistic-interpretability pipeline (steps 01–13) run on the Gemma 3
+  base-model family: 1B, 4B, 12B and 27B. All models are pre-trained checkpoints
+  (<code>-pt</code>), evaluated in the same harness used for the Qwen3 investigation.</p>
+</header>
+
+<section id="overview">
+  <h2>Overview</h2>
+  <p>A <em>garden-path sentence</em> (GPS) such as <em>“The old man the boat”</em> leads the
+  reader to commit to a wrong parse (“man” as noun) that must be revised at a
+  <em>disambiguator</em> (“the boat” forces “man” to be a verb). This pipeline asks two
+  questions of each model: does it <strong>notice</strong> the garden path (a surprisal spike
+  at the disambiguating word), and does it <strong>recover</strong> from it (does comprehension
+  after the disambiguator stay intact)? Two metrics carry the whole report:</p>
+  <ul>
+    <li><strong>Δ-surprisal</strong> — surprisal of the critical (disambiguating) word in the GPS
+    version minus the same word in an unambiguous paraphrase. Large positive Δ = the model is
+    surprised, i.e. it perceived the garden path.</li>
+    <li><strong>vc_delta</strong> — surprisal of a verb-compatible continuation after the
+    disambiguator, GPS minus normal. This is the <em>comprehension cost</em>: how much residual
+    damage the garden path leaves after the model has had a chance to reanalyse.</li>
+  </ul>
+  <p>Ablation steps measure how these metrics move when attention heads or whole layers are
+  knocked out; patching and calibration steps (11–13) test whether any localisation claim
+  survives scrutiny.</p>
+  <div id="model-table"></div>
+  <div id="missing-banner"></div>
+</section>
+
+<section id="s01">
+  <h2>01 · Baseline garden-path effect</h2>
+  <p>Mean Δ-surprisal at the critical word, with no intervention, across 50 GPS/normal sentence
+  pairs spanning five syntactic templates: <strong>RR</strong> (reduced relative, “The horse raced
+  past the barn fell”), <strong>NV</strong> (noun/verb ambiguity, “The old man the boat”),
+  <strong>NP_S</strong>/<strong>NP_Z</strong> (subordinate-clause object/subject ambiguities) and
+  <strong>COORD</strong> (coordination ambiguities). A positive bar means the model is more
+  surprised by the critical word in the garden-path version — it took the wrong parse and
+  noticed.</p>
+  <div class="plot" id="plot-s01-template"></div>
+  <p>The per-pair distribution below shows the effect is heterogeneous: some pairs produce large
+  spikes, others none (or even negative deltas, where the “normal” paraphrase happens to be the
+  more awkward string).</p>
+  <div class="plot" id="plot-s01-pairs"></div>
+</section>
+
+<section id="s02">
+  <h2>02 · Layer sweep — where does the surprise signal live?</h2>
+  <p>Each attention layer is zero-ablated in turn (all its heads) and the Δ-surprisal effect is
+  re-measured. <strong>effect_drop</strong> = baseline Δ − Δ under ablation: positive means the
+  ablated layer was <em>contributing</em> to the surprise signal. The dashed traces show
+  <strong>control inflation</strong> — how much the same ablation inflates surprisal on simple
+  unambiguous control sentences. A layer is interesting only if its effect_drop is large
+  <em>and</em> its control inflation is small (i.e. it is GPS-specific, not just generally
+  load-bearing). The x-axis is normalised depth (layer / n_layers) so the three sizes overlay.</p>
+  <div class="plot" id="plot-s02"></div>
+</section>
+
+<section id="s03">
+  <h2>03 · Head sweeps within candidate layers</h2>
+  <p>For the layers flagged by step 02, each individual head is zero-ablated. Same reading as
+  above: bars are effect_drop (Δ-surprisal lost when the head is removed). This is the step that
+  would reveal a compact “garden-path circuit” — a few heads carrying most of the effect —
+  if one existed.</p>
+  <div id="plots-s03"></div>
+</section>
+
+<section id="s04">
+  <h2>04 · Do the surprise heads matter for comprehension?</h2>
+  <p>The top candidate heads from steps 02–03 are ablated (individually, then all together)
+  while measuring <strong>vc_delta</strong> — the post-disambiguator comprehension cost —
+  instead of Δ-surprisal. If these heads implemented reanalysis, removing them should make
+  comprehension <em>worse</em> (higher vc_delta than baseline). In the Qwen study they did not:
+  Δ-surprisal-guided search finds <em>prior</em> heads, not comprehension heads. Bars are
+  compared against the unablated baseline (first bar).</p>
+  <div class="plot" id="plot-s04"></div>
+</section>
+
+<section id="s05">
+  <h2>05 · Layer sweep on the comprehension metric</h2>
+  <p>The same per-layer ablation sweep as step 02, but scored with
+  <strong>vc_delta inflation</strong>: how much ablating the layer worsens the comprehension gap
+  between GPS and normal continuations. Solid traces = vc_delta inflation; dashed = control
+  inflation on unambiguous sentences. This asks where reanalysis-relevant computation lives,
+  rather than where the surprise signal lives.</p>
+  <div class="plot" id="plot-s05"></div>
+</section>
+
+<section id="s06">
+  <h2>06 · Head sweeps on the comprehension metric</h2>
+  <p>The direct hunt for a “reanalysis head”, with no detour through Δ-surprisal: inside the
+  layers flagged by step 05, each head is zero-ablated individually while measuring
+  <strong>vc_gps inflation</strong> — how much the ablation worsens the model's prediction of the
+  verb-compatible continuation. A genuine reanalysis head should inflate vc_gps strongly and
+  GPS-specifically (vc_delta up, controls flat). The dashed line, when present, is the
+  selection-corrected null threshold from step 14: the 95th percentile of the <em>best</em> of
+  K random heads, where K is the number of heads swept here — the fair bar for a
+  “this head is special” claim. Note the scale against step 05: the whole-layer effect is not
+  the sum of its heads — comprehension damage only appears when the layer's heads are removed
+  <em>together</em>.</p>
+  <div id="plots-s06"></div>
+</section>
+
+<section id="s0708">
+  <h2>07/08 · Lexical floor — canonical vs novel NV pairs</h2>
+  <p>A diagnostic for memorisation. For each NV pair, the verb-compatible continuation is scored
+  after three prefixes: the <strong>full</strong> garden-path prefix (“The old man the”), a
+  <strong>stripped</strong> prefix keeping only the ambiguous bigram (“man the”), and a neutral
+  <strong>anchor</strong> prefix. Step 07 uses canonical (famous, plausibly memorised) pairs;
+  step 08 uses novel pairs constructed to be absent from training data. If a model only
+  “solved” canonical garden paths by n-gram memory, full should beat stripped on canonical
+  pairs but not on novel ones. The error bar shows the bootstrap 95% CI on
+  full − stripped. <em>Note: this diagnostic was retired in the Qwen write-up — a flat
+  full − stripped is compatible with both pure n-gram behaviour and successful reanalysis —
+  so read it as descriptive, not as evidence.</em></p>
+  <div class="plot" id="plot-s0708"></div>
+</section>
+
+<section id="s09">
+  <h2>09 · Comprehension cost with confidence intervals</h2>
+  <p>The clean headline comparison: mean <strong>vc_delta</strong> (residual comprehension cost
+  after the disambiguator) with bootstrap 95% CIs, for canonical vs novel NV pairs. A positive
+  value means that even after seeing the disambiguator, the model is still worse at predicting a
+  verb-compatible continuation in the GPS version — reanalysis is incomplete. Comparing across
+  model sizes shows whether scale buys recovery.</p>
+  <div class="plot" id="plot-s09"></div>
+</section>
+
+<section id="s10">
+  <h2>10 · Attention patterns — does anything look back at the ambiguous word?</h2>
+  <p>Tests the “retrospective read” hypothesis: at the disambiguator position, does some head
+  attend back to the ambiguous word more in the GPS version than in the normal version? The
+  heatmaps show, per (layer, head), the mean attention difference (GPS − normal) from the
+  disambiguator to the ambiguous word; red = reads back more under GPS. The tables list the
+  heads with the largest |difference| and the Spearman correlation between their per-pair
+  attention difference and per-pair vc_delta (does reading back predict better comprehension?).</p>
+  <div id="plots-s10"></div>
+</section>
+
+<section id="s11">
+  <h2>11 · Activation patching (NORMAL → GPS)</h2>
+  <p>The denoising interchange: run the GPS sentence, but at one layer overwrite the residual
+  stream at selected positions with the activation from the normal (unambiguous) run, and
+  measure how much of the comprehension gap is recovered. <strong>recovery = 1</strong> means
+  patching that layer/position fully restores normal-sentence comprehension. Three position
+  sets are patched: the ambiguous word (<em>v_amb</em>), the critical/disambiguating word, and
+  both. Where the recovery curve peaks tells you at which depth, and at which token position,
+  the verb-vs-noun information is carried. X-axis is normalised depth.</p>
+  <div class="plot" id="plot-s11"></div>
+  <p class="note" id="note-s11"></p>
+</section>
+
+<section id="s12">
+  <h2>12 · Zero vs mean ablation</h2>
+  <p>Calibration for the ablation results: zero-ablating a head sends the model off-distribution,
+  which can manufacture effects. Here each finding is replicated with <strong>mean
+  ablation</strong> (replacing the head's output with its dataset-mean output). Effects that
+  shrink drastically under mean ablation were off-distribution artifacts; effects that survive
+  are (more) real. Paired bars: zero vs mean, for each candidate head/head-set and layer.</p>
+  <div class="plot" id="plot-s12-effect"></div>
+  <div class="plot" id="plot-s12-vc"></div>
+</section>
+
+<section id="s13">
+  <h2>13 · Empirical null distribution</h2>
+  <p>Zero-ablation of 60 <em>random</em> single heads, giving an empirical null for “how big an
+  effect does an arbitrary head produce?”. Any candidate head must beat this distribution before
+  it can be called special. Histograms show the null over effect_drop (Δ-surprisal metric); the
+  vertical lines mark the 5th/95th percentiles and the absolute maximum. In the Qwen 14B study
+  no head exceeded the null — the test that dissolved the circuit claim.</p>
+  <div id="plots-s13"></div>
+</section>
+
+<section id="s14">
+  <h2>14 · Empirical null for the comprehension metric</h2>
+  <p>The calibration behind step 06. Many random single heads are zero-ablated while measuring
+  <strong>vc_gps inflation</strong> (the cheap comprehension-only probe, so the sample count is
+  much higher than step 13's). The histogram is the single-head null; because step 06 reports a
+  <em>selected maximum</em> over the K heads it sweeps, the fair threshold is the bootstrap
+  distribution of max-over-K draws from this null — marked as the dashed “max-of-K p95” line.
+  The coloured line is the best head step 06 actually found: only if it clears the dashed line
+  does the model have a comprehension head that beats selection-corrected noise.</p>
+  <div id="plots-s14"></div>
+</section>
+
+<footer>
+  <p>Generated by <code>report/build_report.py</code> from <code>gemma3_*/logs/*.json</code>.
+  Methodology and metric definitions follow <code>summary.md</code> §4 of the Qwen3
+  investigation in this repository.</p>
+</footer>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

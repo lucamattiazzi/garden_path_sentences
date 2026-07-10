@@ -1,0 +1,123 @@
+{
+  "step": "08_novel_lexical_baseline",
+  "model": "Qwen/Qwen3-32B-MLX-8bit",
+  "results": {
+    "summary": {
+      "mean_s_full": 8.215625,
+      "mean_s_stripped": 8.11875,
+      "mean_s_anchor": 10.60625
+    },
+    "pair_results": [
+      {
+        "id": 51,
+        "v_amb_word": "butter",
+        "verb_continuation": "toast",
+        "full_prefix": "The poor butter the",
+        "stripped_prefix": "butter the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 5.9375,
+        "s_stripped": 6.21875,
+        "s_anchor": 10.875
+      },
+      {
+        "id": 52,
+        "v_amb_word": "shoulder",
+        "verb_continuation": "burden",
+        "full_prefix": "The weary shoulder the",
+        "stripped_prefix": "shoulder the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 2.1875,
+        "s_stripped": 1.75,
+        "s_anchor": 10.5625
+      },
+      {
+        "id": 53,
+        "v_amb_word": "head",
+        "verb_continuation": "rebellion",
+        "full_prefix": "The bold head the",
+        "stripped_prefix": "head the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 9.5,
+        "s_stripped": 9.25,
+        "s_anchor": 13.25
+      },
+      {
+        "id": 54,
+        "v_amb_word": "witness",
+        "verb_continuation": "robbery",
+        "full_prefix": "The elderly witness the",
+        "stripped_prefix": "witness the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 12.125,
+        "s_stripped": 10.0625,
+        "s_anchor": 11.5625
+      },
+      {
+        "id": 55,
+        "v_amb_word": "fashion",
+        "verb_continuation": "crown",
+        "full_prefix": "The elite fashion the",
+        "stripped_prefix": "fashion the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 9.5,
+        "s_stripped": 8.4375,
+        "s_anchor": 8.375
+      },
+      {
+        "id": 56,
+        "v_amb_word": "mother",
+        "verb_continuation": "child",
+        "full_prefix": "The strong mother the",
+        "stripped_prefix": "mother the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 3.4375,
+        "s_stripped": 3.59375,
+        "s_anchor": 6.875
+      },
+      {
+        "id": 57,
+        "v_amb_word": "father",
+        "verb_continuation": "newborn",
+        "full_prefix": "The wealthy father the",
+        "stripped_prefix": "father the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 11.125,
+        "s_stripped": 9.875,
+        "s_anchor": 7.875
+      },
+      {
+        "id": 58,
+        "v_amb_word": "stomach",
+        "verb_continuation": "criticism",
+        "full_prefix": "The homeless stomach the",
+        "stripped_prefix": "stomach the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 8.0,
+        "s_stripped": 8.9375,
+        "s_anchor": 12.6875
+      },
+      {
+        "id": 59,
+        "v_amb_word": "crew",
+        "verb_continuation": "expedition",
+        "full_prefix": "The brave crew the",
+        "stripped_prefix": "crew the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 6.84375,
+        "s_stripped": 11.3125,
+        "s_anchor": 13.3125
+      },
+      {
+        "id": 60,
+        "v_amb_word": "partner",
+        "verb_continuation": "newcomer",
+        "full_prefix": "The rich partner the",
+        "stripped_prefix": "partner the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 13.5,
+        "s_stripped": 11.75,
+        "s_anchor": 10.6875
+      }
+    ]
+  }
+}

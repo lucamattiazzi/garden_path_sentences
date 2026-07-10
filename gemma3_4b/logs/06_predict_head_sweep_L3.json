@@ -1,0 +1,120 @@
+{
+  "step": "06_predict_head_sweep_L3",
+  "results": {
+    "layer": 3,
+    "n_heads": 8,
+    "head_dim": 256,
+    "baseline_summary": {
+      "mean_s_vc_gps": 6.248366355895996,
+      "mean_s_vc_normal": 4.3287475347518924,
+      "mean_vc_delta": 1.919618821144104,
+      "mean_s_control": 1.2513302061706781
+    },
+    "per_head": [
+      {
+        "head": 0,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 6.370703411102295,
+          "mean_s_vc_normal": 4.307048487663269,
+          "mean_vc_delta": 2.063654923439026,
+          "mean_s_control": 1.2674073223024607
+        },
+        "vc_gps_inflation": 0.122337055206299,
+        "vc_normal_inflation": -0.02169904708862358,
+        "vc_delta_inflation": 0.1440361022949217,
+        "control_inflation": 0.016077116131782532
+      },
+      {
+        "head": 1,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 6.355018997192383,
+          "mean_s_vc_normal": 4.332856857776642,
+          "mean_vc_delta": 2.022162139415741,
+          "mean_s_control": 1.2237116638571024
+        },
+        "vc_gps_inflation": 0.10665264129638707,
+        "vc_normal_inflation": 0.004109323024749756,
+        "vc_delta_inflation": 0.10254331827163687,
+        "control_inflation": -0.027618542313575745
+      },
+      {
+        "head": 2,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 6.1957615375518795,
+          "mean_s_vc_normal": 4.382662630081176,
+          "mean_vc_delta": 1.8130989074707031,
+          "mean_s_control": 1.3234268873929977
+        },
+        "vc_gps_inflation": -0.052604818344116566,
+        "vc_normal_inflation": 0.05391509532928396,
+        "vc_delta_inflation": -0.10651991367340097,
+        "control_inflation": 0.0720966812223196
+      },
+      {
+        "head": 3,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 6.206759119033814,
+          "mean_s_vc_normal": 4.3268210887908936,
+          "mean_vc_delta": 1.8799380302429198,
+          "mean_s_control": 1.1992015093564987
+        },
+        "vc_gps_inflation": -0.04160723686218226,
+        "vc_normal_inflation": -0.0019264459609988904,
+        "vc_delta_inflation": -0.03968079090118426,
+        "control_inflation": -0.05212869681417942
+      },
+      {
+        "head": 4,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 6.191302037239074,
+          "mean_s_vc_normal": 4.326589000225067,
+          "mean_vc_delta": 1.8647130370140075,
+          "mean_s_control": 1.3090772684663534
+        },
+        "vc_gps_inflation": -0.05706431865692174,
+        "vc_normal_inflation": -0.002158534526825129,
+        "vc_delta_inflation": -0.05490578413009661,
+        "control_inflation": 0.05774706229567528
+      },
+      {
+        "head": 5,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 6.229758763313294,
+          "mean_s_vc_normal": 4.332304751873016,
+          "mean_vc_delta": 1.8974540114402771,
+          "mean_s_control": 1.3195920139551163
+        },
+        "vc_gps_inflation": -0.01860759258270228,
+        "vc_normal_inflation": 0.003557217121123557,
+        "vc_delta_inflation": -0.02216480970382695,
+        "control_inflation": 0.06826180778443813
+      },
+      {
+        "head": 6,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 6.271836233139038,
+          "mean_s_vc_normal": 4.360413265228272,
+          "mean_vc_delta": 1.9114229679107666,
+          "mean_s_control": 1.2605831492692232
+        },
+        "vc_gps_inflation": 0.02346987724304217,
+        "vc_normal_inflation": 0.03166573047637922,
+        "vc_delta_inflation": -0.008195853233337491,
+        "control_inflation": 0.009252943098545074
+      },
+      {
+        "head": 7,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 6.237752223014832,
+          "mean_s_vc_normal": 4.347932279109955,
+          "mean_vc_delta": 1.8898199439048766,
+          "mean_s_control": 1.2103399243205786
+        },
+        "vc_gps_inflation": -0.010614132881164196,
+        "vc_normal_inflation": 0.01918474435806239,
+        "vc_delta_inflation": -0.029798877239227473,
+        "control_inflation": -0.040990281850099564
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+=== 12_mean_ablation ===
+device = mps
+model  = Qwen/Qwen3-14B-Base (dtype=float16)
+
+  loading Qwen/Qwen3-14B-Base (dtype=float16) ...
+  loaded in 41.5s
+  computing per-head means over the pair+control distribution ...
+  baselines (no ablation) ...
+
+  Head sets (zero vs mean ablation):
+    L21.H25           Δ-drop  zero= -0.086  mean= -0.025   +vc_gps  zero= -0.010  mean= -0.016   +ctrl  zero= -0.032  mean= -0.030
+    L21.H26           Δ-drop  zero= -0.075  mean= +0.008   +vc_gps  zero= +0.017  mean= -0.005   +ctrl  zero= -0.018  mean= -0.019
+    L21.H25+L21.H26   Δ-drop  zero= -0.139  mean= -0.032   +vc_gps  zero= -0.002  mean= -0.024   +ctrl  zero= -0.042  mean= -0.048
+
+  Full layers (zero vs mean ablation):
+    L3 (all heads)    Δ-drop  zero= -0.316  mean= -0.089   +vc_gps  zero= -0.150  mean= -0.101   +ctrl  zero= +0.050  mean= +0.044
+    L8 (all heads)    Δ-drop  zero= -0.165  mean= +0.020   +vc_gps  zero= +0.397  mean= +0.253   +ctrl  zero= -0.032  mean= -0.013
+
+Saved → /Users/lucamattiazzi/Developer/garden_path_sentences/qwen14b/logs/12_mean_ablation.json
+
+Elapsed: 452.2s

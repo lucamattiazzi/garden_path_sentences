@@ -1,0 +1,27 @@
+=== 03_head_sweep_L16 ===
+device = mps
+model  = google/gemma-3-1b-pt (dtype=bfloat16)
+
+  loading google/gemma-3-1b-pt (dtype=bfloat16) ...
+  loaded in 2.4s
+  layer 16: ablating each of 4 heads individually
+  baseline (no ablation) ...
+  layer        Δ     drop    s_gps   s_norm   s_ctrl  bar
+   base   +3.837   +0.000   10.157    6.320    1.314  
+      0   +4.109   +0.272   10.526    6.417    1.379  
+      1   +3.040   -0.797    9.499    6.459    1.429  ██████
+      2   +3.807   -0.030   10.101    6.294    1.298  
+      3   +3.813   -0.024   10.172    6.359    1.392  
+
+  Top 5 head by |effect_drop|, per-template drop:
+     head   overall       RR       NV     NP_S     NP_Z    COORD
+    ------------------------------------------------------------
+     base    +0.000   +0.000   +0.000   +0.000   +0.000   +0.000      (baseline per-template: RR=+1.45, NV=+5.41, NP_S=+2.04, NP_Z=+7.08, COORD=+4.96)
+        1    -0.797   -0.279   -0.474   +0.179   -1.328   -3.890
+        0    +0.272   +0.117   +0.305   +0.187   +0.373   +0.640
+        2    -0.030   -0.004   -0.147   -0.115   -0.067   +0.372
+        3    -0.024   -0.053   +0.030   -0.166   -0.087   +0.360
+
+Saved → /Users/lucamattiazzi/Developer/garden_path_sentences/gemma3_1b/logs/03_head_sweep_L16.json
+
+Elapsed: 36.8s

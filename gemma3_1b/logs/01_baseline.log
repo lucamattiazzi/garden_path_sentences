@@ -1,0 +1,22 @@
+=== 01_baseline ===
+device = mps
+model  = google/gemma-3-1b-pt (dtype=bfloat16)
+
+  loading google/gemma-3-1b-pt (dtype=bfloat16) ...
+  loaded in 2.4s
+Baseline (no ablation) over 50 pairs:
+  mean Δ          = +3.8371
+  mean s_gps      = 10.1568
+  mean s_normal   = 6.3197
+  mean s_control  = 1.3136
+
+  Per-template mean Δ:
+    RR      Δ̄ = +1.446
+    NV      Δ̄ = +5.406
+    NP_S    Δ̄ = +2.043
+    NP_Z    Δ̄ = +7.085
+    COORD   Δ̄ = +4.964
+
+Saved → /Users/lucamattiazzi/Developer/garden_path_sentences/gemma3_1b/logs/01_baseline.json
+
+Elapsed: 7.6s

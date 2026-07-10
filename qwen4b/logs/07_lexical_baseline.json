@@ -1,0 +1,122 @@
+{
+  "step": "07_lexical_baseline",
+  "results": {
+    "summary": {
+      "mean_s_full": 6.1201104640960695,
+      "mean_s_stripped": 6.020652961730957,
+      "mean_s_anchor": 8.536647653579712
+    },
+    "pair_results": [
+      {
+        "id": 16,
+        "v_amb_word": "man",
+        "verb_continuation": "boat",
+        "full_prefix": "The old man the",
+        "stripped_prefix": "man the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 4.807431221008301,
+        "s_stripped": 7.0983123779296875,
+        "s_anchor": 7.570005893707275
+      },
+      {
+        "id": 17,
+        "v_amb_word": "captain",
+        "verb_continuation": "ship",
+        "full_prefix": "The young captain the",
+        "stripped_prefix": "captain the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 4.640333652496338,
+        "s_stripped": 3.0604934692382812,
+        "s_anchor": 6.804380893707275
+      },
+      {
+        "id": 18,
+        "v_amb_word": "guard",
+        "verb_continuation": "gate",
+        "full_prefix": "The brave guard the",
+        "stripped_prefix": "guard the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 3.6383533477783203,
+        "s_stripped": 4.564111232757568,
+        "s_anchor": 8.085630416870117
+      },
+      {
+        "id": 19,
+        "v_amb_word": "bank",
+        "verb_continuation": "savings",
+        "full_prefix": "The wealthy bank their",
+        "stripped_prefix": "bank their",
+        "anchor_prefix": "They wrote down all their",
+        "s_full": 3.374960422515869,
+        "s_stripped": 3.3122026920318604,
+        "s_anchor": 6.318704605102539
+      },
+      {
+        "id": 20,
+        "v_amb_word": "nurse",
+        "verb_continuation": "children",
+        "full_prefix": "The sick nurse the",
+        "stripped_prefix": "nurse the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 6.6858110427856445,
+        "s_stripped": 6.0165557861328125,
+        "s_anchor": 7.413755893707275
+      },
+      {
+        "id": 21,
+        "v_amb_word": "bear",
+        "verb_continuation": "storm",
+        "full_prefix": "The hungry bear the",
+        "stripped_prefix": "bear the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 10.436673164367676,
+        "s_stripped": 8.858884811401367,
+        "s_anchor": 9.132505416870117
+      },
+      {
+        "id": 22,
+        "v_amb_word": "school",
+        "verb_continuation": "kids",
+        "full_prefix": "The poor school their",
+        "stripped_prefix": "school their",
+        "anchor_prefix": "They wrote down all their",
+        "s_full": 4.130727767944336,
+        "s_stripped": 3.7862212657928467,
+        "s_anchor": 8.240579605102539
+      },
+      {
+        "id": 23,
+        "v_amb_word": "dog",
+        "verb_continuation": "trails",
+        "full_prefix": "The exhausted dog the",
+        "stripped_prefix": "dog the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 11.586652755737305,
+        "s_stripped": 11.860227584838867,
+        "s_anchor": 10.929380416870117
+      },
+      {
+        "id": 24,
+        "v_amb_word": "rule",
+        "verb_continuation": "seas",
+        "full_prefix": "The mighty rule the",
+        "stripped_prefix": "rule the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 4.765392780303955,
+        "s_stripped": 5.258963108062744,
+        "s_anchor": 11.038755416870117
+      },
+      {
+        "id": 25,
+        "v_amb_word": "fish",
+        "verb_continuation": "survival",
+        "full_prefix": "The wounded fish for",
+        "stripped_prefix": "fish for",
+        "anchor_prefix": "She had been searching for",
+        "s_full": 7.134768486022949,
+        "s_stripped": 6.390557289123535,
+        "s_anchor": 9.832777976989746
+      }
+    ]
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "step": "07_lexical_baseline",
+  "results": {
+    "label": "CANONICAL NV pairs",
+    "summary": {
+      "mean_s_full": 5.826460552215576,
+      "mean_s_stripped": 6.107832741737366,
+      "mean_s_anchor": 10.383585929870605
+    },
+    "ci95_full_minus_stripped": [
+      -1.0307080310583114,
+      0.41895673274993894
+    ],
+    "pair_results": [
+      {
+        "id": 16,
+        "v_amb_word": "man",
+        "verb_continuation": "boat",
+        "full_prefix": "The old man the",
+        "stripped_prefix": "man the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 5.96823263168335,
+        "s_stripped": 6.6983537673950195,
+        "s_anchor": 7.585171699523926
+      },
+      {
+        "id": 17,
+        "v_amb_word": "captain",
+        "verb_continuation": "ship",
+        "full_prefix": "The young captain the",
+        "stripped_prefix": "captain the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 3.523850202560425,
+        "s_stripped": 3.0393996238708496,
+        "s_anchor": 7.710171699523926
+      },
+      {
+        "id": 18,
+        "v_amb_word": "guard",
+        "verb_continuation": "gate",
+        "full_prefix": "The brave guard the",
+        "stripped_prefix": "guard the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 4.017663955688477,
+        "s_stripped": 3.13887882232666,
+        "s_anchor": 8.335171699523926
+      },
+      {
+        "id": 19,
+        "v_amb_word": "bank",
+        "verb_continuation": "savings",
+        "full_prefix": "The wealthy bank their",
+        "stripped_prefix": "bank their",
+        "anchor_prefix": "They wrote down all their",
+        "s_full": 4.1649169921875,
+        "s_stripped": 3.7108113765716553,
+        "s_anchor": 8.07393741607666
+      },
+      {
+        "id": 20,
+        "v_amb_word": "nurse",
+        "verb_continuation": "children",
+        "full_prefix": "The sick nurse the",
+        "stripped_prefix": "nurse the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 5.420822620391846,
+        "s_stripped": 4.713066101074219,
+        "s_anchor": 5.085171699523926
+      },
+      {
+        "id": 21,
+        "v_amb_word": "bear",
+        "verb_continuation": "storm",
+        "full_prefix": "The hungry bear the",
+        "stripped_prefix": "bear the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 6.875175952911377,
+        "s_stripped": 8.47186279296875,
+        "s_anchor": 12.397671699523926
+      },
+      {
+        "id": 22,
+        "v_amb_word": "school",
+        "verb_continuation": "kids",
+        "full_prefix": "The poor school their",
+        "stripped_prefix": "school their",
+        "anchor_prefix": "They wrote down all their",
+        "s_full": 2.6767799854278564,
+        "s_stripped": 2.896556854248047,
+        "s_anchor": 12.69893741607666
+      },
+      {
+        "id": 23,
+        "v_amb_word": "dog",
+        "verb_continuation": "trails",
+        "full_prefix": "The exhausted dog the",
+        "stripped_prefix": "dog the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 15.703211784362793,
+        "s_stripped": 14.4472074508667,
+        "s_anchor": 14.585171699523926
+      },
+      {
+        "id": 24,
+        "v_amb_word": "rule",
+        "verb_continuation": "seas",
+        "full_prefix": "The mighty rule the",
+        "stripped_prefix": "rule the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 4.876583576202393,
+        "s_stripped": 6.548740863800049,
+        "s_anchor": 14.772671699523926
+      },
+      {
+        "id": 25,
+        "v_amb_word": "fish",
+        "verb_continuation": "survival",
+        "full_prefix": "The wounded fish for",
+        "stripped_prefix": "fish for",
+        "anchor_prefix": "She had been searching for",
+        "s_full": 5.037367820739746,
+        "s_stripped": 7.413449764251709,
+        "s_anchor": 12.591782569885254
+      }
+    ]
+  }
+}

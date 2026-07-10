@@ -1,0 +1,31 @@
+=== 08_novel_lexical_baseline ===
+device = mps
+model  = google/gemma-3-12b-pt (dtype=bfloat16)
+
+  loading google/gemma-3-12b-pt (dtype=bfloat16) ...
+  loaded in 6.2s
+Novel-pair lexical baseline probe — separating memorisation from parsing.
+
+  NOVEL NV pairs (n=10):
+    s_full     = 8.488
+    s_stripped = 8.923
+    s_anchor   = 12.563
+    full − stripped = -0.436   95% CI [-2.078, +0.814]
+
+     id  v_amb       vc             s_full  s_strip   s_anch  full-strip
+    --------------------------------------------------------------------
+     51  butter      toast           6.181    3.645   13.878      +2.536
+     52  shoulder    burden          2.075    1.467   14.566      +0.608
+     53  head        rebellion      11.619   10.255   16.159      +1.364
+     54  witness     robbery        10.588   10.078   15.066      +0.510
+     55  fashion     crown           9.624    9.510    8.566      +0.114
+     56  mother      child           4.452    4.500    4.378      -0.048
+     57  father      newborn        11.356   12.152   10.753      -0.796
+     58  stomach     criticism       8.241   14.993   16.003      -6.752
+     59  crew        expedition      9.122    8.999   15.316      +0.123
+     60  partner     newcomer       11.619   13.634   10.941      -2.015
+
+
+Saved → /Users/lucamattiazzi/Developer/garden_path_sentences/gemma3_12b/logs/08_novel_lexical_baseline.json
+
+Elapsed: 8.2s

@@ -1,0 +1,31 @@
+=== 07_lexical_baseline ===
+device = mps
+model  = google/gemma-3-4b-pt (dtype=bfloat16)
+
+  loading google/gemma-3-4b-pt (dtype=bfloat16) ...
+  loaded in 3.4s
+Lexical baseline probe on the CANONICAL NV pairs.
+
+  CANONICAL NV pairs (n=10):
+    s_full     = 6.266
+    s_stripped = 6.426
+    s_anchor   = 9.726
+    full − stripped = -0.160   95% CI [-0.885, +0.604]
+
+     id  v_amb       vc             s_full  s_strip   s_anch  full-strip
+    --------------------------------------------------------------------
+     16  man         boat            7.469    7.740    7.828      -0.271
+     17  captain     ship            5.283    2.889    8.015      +2.394
+     18  guard       gate            4.012    3.085    8.953      +0.927
+     19  bank        savings         3.406    3.110    7.309      +0.296
+     20  nurse       children        4.881    5.060    5.140      -0.179
+     21  bear        storm           8.628    9.038   10.890      -0.410
+     22  school      kids            3.109    3.910   10.059      -0.800
+     23  dog         trails         13.967   16.513   13.015      -2.546
+     24  rule        seas            4.947    5.245   14.390      -0.298
+     25  fish        survival        6.961    7.671   11.664      -0.711
+
+
+Saved → /Users/lucamattiazzi/Developer/garden_path_sentences/gemma3_4b/logs/07_lexical_baseline.json
+
+Elapsed: 3.9s

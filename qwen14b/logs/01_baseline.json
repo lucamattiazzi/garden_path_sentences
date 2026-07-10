@@ -1,0 +1,420 @@
+{
+  "step": "01_baseline",
+  "results": {
+    "summary": {
+      "mean_delta": 3.899269425710663,
+      "mean_s_gps": 9.110528742671013,
+      "mean_s_normal": 5.21125931696035,
+      "mean_s_control": 1.17188091436401
+    },
+    "per_template": {
+      "RR": 2.6332700831194717,
+      "NV": 5.523290166258812,
+      "NP_S": 2.2970208149403333,
+      "NP_Z": 4.86425783704035,
+      "COORD": 5.723746371269226
+    },
+    "pair_results": [
+      {
+        "id": 1,
+        "template": "RR",
+        "critical_word": "fell",
+        "surprisal_gps": 0.028576377779245377,
+        "surprisal_normal": 1.818428874015808,
+        "delta": -1.7898524962365627
+      },
+      {
+        "id": 2,
+        "template": "RR",
+        "critical_word": "sank",
+        "surprisal_gps": 13.32746410369873,
+        "surprisal_normal": 6.876145839691162,
+        "delta": 6.451318264007568
+      },
+      {
+        "id": 3,
+        "template": "RR",
+        "critical_word": "bit",
+        "surprisal_gps": 11.820199012756348,
+        "surprisal_normal": 6.068136215209961,
+        "delta": 5.752062797546387
+      },
+      {
+        "id": 4,
+        "template": "RR",
+        "critical_word": "surrendered",
+        "surprisal_gps": 17.831138610839844,
+        "surprisal_normal": 15.028752326965332,
+        "delta": 2.8023862838745117
+      },
+      {
+        "id": 5,
+        "template": "RR",
+        "critical_word": "arrived",
+        "surprisal_gps": 5.214162349700928,
+        "surprisal_normal": 3.584259033203125,
+        "delta": 1.6299033164978027
+      },
+      {
+        "id": 6,
+        "template": "RR",
+        "critical_word": "collapsed",
+        "surprisal_gps": 14.985150337219238,
+        "surprisal_normal": 9.732973098754883,
+        "delta": 5.2521772384643555
+      },
+      {
+        "id": 7,
+        "template": "RR",
+        "critical_word": "fell",
+        "surprisal_gps": 13.635342597961426,
+        "surprisal_normal": 4.5830888748168945,
+        "delta": 9.052253723144531
+      },
+      {
+        "id": 8,
+        "template": "RR",
+        "critical_word": "yowled",
+        "surprisal_gps": 4.163728713989258,
+        "surprisal_normal": 0.5747565925121307,
+        "delta": 3.588972121477127
+      },
+      {
+        "id": 9,
+        "template": "RR",
+        "critical_word": "resigned",
+        "surprisal_gps": 12.688196182250977,
+        "surprisal_normal": 12.291692733764648,
+        "delta": 0.3965034484863281
+      },
+      {
+        "id": 10,
+        "template": "RR",
+        "critical_word": "lied",
+        "surprisal_gps": 6.656231880187988,
+        "surprisal_normal": 6.253365516662598,
+        "delta": 0.4028663635253906
+      },
+      {
+        "id": 11,
+        "template": "RR",
+        "critical_word": "escaped",
+        "surprisal_gps": 8.098909378051758,
+        "surprisal_normal": 5.848048686981201,
+        "delta": 2.2508606910705566
+      },
+      {
+        "id": 12,
+        "template": "RR",
+        "critical_word": "recovered",
+        "surprisal_gps": 9.906723022460938,
+        "surprisal_normal": 11.277233123779297,
+        "delta": -1.3705101013183594
+      },
+      {
+        "id": 13,
+        "template": "RR",
+        "critical_word": "disappeared",
+        "surprisal_gps": 11.434239387512207,
+        "surprisal_normal": 9.991862297058105,
+        "delta": 1.4423770904541016
+      },
+      {
+        "id": 14,
+        "template": "RR",
+        "critical_word": "spoiled",
+        "surprisal_gps": 13.426663398742676,
+        "surprisal_normal": 9.871821403503418,
+        "delta": 3.554841995239258
+      },
+      {
+        "id": 15,
+        "template": "RR",
+        "critical_word": "vanished",
+        "surprisal_gps": 9.905807495117188,
+        "surprisal_normal": 9.822916984558105,
+        "delta": 0.08289051055908203
+      },
+      {
+        "id": 16,
+        "template": "NV",
+        "critical_word": "the",
+        "surprisal_gps": 7.946933269500732,
+        "surprisal_normal": 3.444908618927002,
+        "delta": 4.5020246505737305
+      },
+      {
+        "id": 17,
+        "template": "NV",
+        "critical_word": "the",
+        "surprisal_gps": 8.522689819335938,
+        "surprisal_normal": 3.5678939819335938,
+        "delta": 4.954795837402344
+      },
+      {
+        "id": 18,
+        "template": "NV",
+        "critical_word": "the",
+        "surprisal_gps": 6.293381690979004,
+        "surprisal_normal": 0.46180322766304016,
+        "delta": 5.831578463315964
+      },
+      {
+        "id": 19,
+        "template": "NV",
+        "critical_word": "their",
+        "surprisal_gps": 8.039106369018555,
+        "surprisal_normal": 4.109569549560547,
+        "delta": 3.929536819458008
+      },
+      {
+        "id": 20,
+        "template": "NV",
+        "critical_word": "the",
+        "surprisal_gps": 7.921725273132324,
+        "surprisal_normal": 2.8892762660980225,
+        "delta": 5.032449007034302
+      },
+      {
+        "id": 21,
+        "template": "NV",
+        "critical_word": "the",
+        "surprisal_gps": 9.819311141967773,
+        "surprisal_normal": 1.9918408393859863,
+        "delta": 7.827470302581787
+      },
+      {
+        "id": 22,
+        "template": "NV",
+        "critical_word": "their",
+        "surprisal_gps": 11.328871726989746,
+        "surprisal_normal": 1.399016261100769,
+        "delta": 9.929855465888977
+      },
+      {
+        "id": 23,
+        "template": "NV",
+        "critical_word": "the",
+        "surprisal_gps": 9.033720016479492,
+        "surprisal_normal": 8.460387229919434,
+        "delta": 0.5733327865600586
+      },
+      {
+        "id": 24,
+        "template": "NV",
+        "critical_word": "the",
+        "surprisal_gps": 6.76457405090332,
+        "surprisal_normal": 1.4368964433670044,
+        "delta": 5.327677607536316
+      },
+      {
+        "id": 25,
+        "template": "NV",
+        "critical_word": "for",
+        "surprisal_gps": 8.837389945983887,
+        "surprisal_normal": 1.5132092237472534,
+        "delta": 7.324180722236633
+      },
+      {
+        "id": 26,
+        "template": "NP_S",
+        "critical_word": "was",
+        "surprisal_gps": 9.080106735229492,
+        "surprisal_normal": 0.03351147845387459,
+        "delta": 9.046595256775618
+      },
+      {
+        "id": 27,
+        "template": "NP_S",
+        "critical_word": "was",
+        "surprisal_gps": 1.5090446472167969,
+        "surprisal_normal": 1.597157597541809,
+        "delta": -0.08811295032501221
+      },
+      {
+        "id": 28,
+        "template": "NP_S",
+        "critical_word": "was",
+        "surprisal_gps": 8.108386993408203,
+        "surprisal_normal": 2.3591952323913574,
+        "delta": 5.749191761016846
+      },
+      {
+        "id": 29,
+        "template": "NP_S",
+        "critical_word": "had",
+        "surprisal_gps": 2.39019513130188,
+        "surprisal_normal": 1.1627469062805176,
+        "delta": 1.2274482250213623
+      },
+      {
+        "id": 30,
+        "template": "NP_S",
+        "critical_word": "were",
+        "surprisal_gps": 5.617598533630371,
+        "surprisal_normal": 0.9828884601593018,
+        "delta": 4.634710073471069
+      },
+      {
+        "id": 31,
+        "template": "NP_S",
+        "critical_word": "was",
+        "surprisal_gps": 0.6409258246421814,
+        "surprisal_normal": 0.9235185980796814,
+        "delta": -0.2825927734375
+      },
+      {
+        "id": 32,
+        "template": "NP_S",
+        "critical_word": "was",
+        "surprisal_gps": 1.3427611589431763,
+        "surprisal_normal": 0.7427853941917419,
+        "delta": 0.5999757647514343
+      },
+      {
+        "id": 33,
+        "template": "NP_S",
+        "critical_word": "was",
+        "surprisal_gps": 3.370929718017578,
+        "surprisal_normal": 1.2907099723815918,
+        "delta": 2.0802197456359863
+      },
+      {
+        "id": 34,
+        "template": "NP_S",
+        "critical_word": "had",
+        "surprisal_gps": 2.2585370540618896,
+        "surprisal_normal": 2.180628776550293,
+        "delta": 0.07790827751159668
+      },
+      {
+        "id": 35,
+        "template": "NP_S",
+        "critical_word": "had",
+        "surprisal_gps": 4.076895713806152,
+        "surprisal_normal": 4.152030944824219,
+        "delta": -0.0751352310180664
+      },
+      {
+        "id": 36,
+        "template": "NP_Z",
+        "critical_word": "ran",
+        "surprisal_gps": 3.4585115909576416,
+        "surprisal_normal": 3.3605189323425293,
+        "delta": 0.0979926586151123
+      },
+      {
+        "id": 37,
+        "template": "NP_Z",
+        "critical_word": "escaped",
+        "surprisal_gps": 16.139493942260742,
+        "surprisal_normal": 9.000042915344238,
+        "delta": 7.139451026916504
+      },
+      {
+        "id": 38,
+        "template": "NP_Z",
+        "critical_word": "seemed",
+        "surprisal_gps": 16.874248504638672,
+        "surprisal_normal": 6.47193717956543,
+        "delta": 10.402311325073242
+      },
+      {
+        "id": 39,
+        "template": "NP_Z",
+        "critical_word": "boiled",
+        "surprisal_gps": 9.061614036560059,
+        "surprisal_normal": 2.7787771224975586,
+        "delta": 6.2828369140625
+      },
+      {
+        "id": 40,
+        "template": "NP_Z",
+        "critical_word": "raged",
+        "surprisal_gps": 0.03145125135779381,
+        "surprisal_normal": 0.007214565295726061,
+        "delta": 0.024236686062067747
+      },
+      {
+        "id": 41,
+        "template": "NP_Z",
+        "critical_word": "fell",
+        "surprisal_gps": 11.65676498413086,
+        "surprisal_normal": 7.954243183135986,
+        "delta": 3.702521800994873
+      },
+      {
+        "id": 42,
+        "template": "NP_Z",
+        "critical_word": "gathered",
+        "surprisal_gps": 14.121461868286133,
+        "surprisal_normal": 12.202726364135742,
+        "delta": 1.9187355041503906
+      },
+      {
+        "id": 43,
+        "template": "NP_Z",
+        "critical_word": "echoed",
+        "surprisal_gps": 12.813311576843262,
+        "surprisal_normal": 5.653207778930664,
+        "delta": 7.160103797912598
+      },
+      {
+        "id": 44,
+        "template": "NP_Z",
+        "critical_word": "broke",
+        "surprisal_gps": 13.5239839553833,
+        "surprisal_normal": 7.521699905395508,
+        "delta": 6.002284049987793
+      },
+      {
+        "id": 45,
+        "template": "NP_Z",
+        "critical_word": "dried",
+        "surprisal_gps": 14.083964347839355,
+        "surprisal_normal": 8.171859741210938,
+        "delta": 5.912104606628418
+      },
+      {
+        "id": 46,
+        "template": "COORD",
+        "critical_word": "laughed",
+        "surprisal_gps": 7.763156890869141,
+        "surprisal_normal": 5.784348964691162,
+        "delta": 1.9788079261779785
+      },
+      {
+        "id": 47,
+        "template": "COORD",
+        "critical_word": "answered",
+        "surprisal_gps": 13.24997615814209,
+        "surprisal_normal": 1.2892166376113892,
+        "delta": 11.9607595205307
+      },
+      {
+        "id": 48,
+        "template": "COORD",
+        "critical_word": "declined",
+        "surprisal_gps": 15.273030281066895,
+        "surprisal_normal": 8.951454162597656,
+        "delta": 6.321576118469238
+      },
+      {
+        "id": 49,
+        "template": "COORD",
+        "critical_word": "complained",
+        "surprisal_gps": 18.87912368774414,
+        "surprisal_normal": 16.362581253051758,
+        "delta": 2.516542434692383
+      },
+      {
+        "id": 50,
+        "template": "COORD",
+        "critical_word": "smiled",
+        "surprisal_gps": 12.57072639465332,
+        "surprisal_normal": 6.72968053817749,
+        "delta": 5.84104585647583
+      }
+    ]
+  }
+}

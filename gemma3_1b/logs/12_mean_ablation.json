@@ -1,0 +1,190 @@
+{
+  "step": "12_mean_ablation",
+  "results": {
+    "baseline_effect": {
+      "mean_delta": 3.8370977792143823,
+      "mean_s_gps": 10.156803838908672,
+      "mean_s_normal": 6.3197060596942904,
+      "mean_s_control": 1.3135772850364447
+    },
+    "baseline_vc": {
+      "mean_s_vc_gps": 6.266178703308105,
+      "mean_s_vc_normal": 4.5684568881988525,
+      "mean_vc_delta": 1.697721815109253,
+      "mean_s_control": 1.3135772850364447
+    },
+    "head_sets": [
+      {
+        "label": "L16.H1",
+        "targets": [
+          [
+            16,
+            1
+          ]
+        ],
+        "zero": {
+          "effect_drop": -0.7973753425478938,
+          "vc_gps_inflation": 0.055174803733826217,
+          "control_inflation": 0.1154547855257988
+        },
+        "mean": {
+          "effect_drop": -0.7706354534626008,
+          "vc_gps_inflation": 0.021237516403198597,
+          "control_inflation": 0.0655532032251358
+        }
+      },
+      {
+        "label": "L2.H3",
+        "targets": [
+          [
+            2,
+            3
+          ]
+        ],
+        "zero": {
+          "effect_drop": -0.4291330710053445,
+          "vc_gps_inflation": 0.17170732021331858,
+          "control_inflation": 0.07150281220674515
+        },
+        "mean": {
+          "effect_drop": -0.37050988823175457,
+          "vc_gps_inflation": 0.08108372688293475,
+          "control_inflation": 0.12594264559447765
+        }
+      },
+      {
+        "label": "L10.H0",
+        "targets": [
+          [
+            10,
+            0
+          ]
+        ],
+        "zero": {
+          "effect_drop": -0.27306773662567174,
+          "vc_gps_inflation": 0.16302318572998065,
+          "control_inflation": -0.07206070236861706
+        },
+        "mean": {
+          "effect_drop": -0.17084216684103026,
+          "vc_gps_inflation": -0.016323351860045854,
+          "control_inflation": -0.028011903166770935
+        }
+      },
+      {
+        "label": "L10.H1",
+        "targets": [
+          [
+            10,
+            1
+          ]
+        ],
+        "zero": {
+          "effect_drop": -0.20687707692384727,
+          "vc_gps_inflation": -0.05646905899047816,
+          "control_inflation": 0.08799795806407928
+        },
+        "mean": {
+          "effect_drop": 0.004022947251796527,
+          "vc_gps_inflation": 0.014943265914917347,
+          "control_inflation": 0.019624553620815277
+        }
+      },
+      {
+        "label": "L16.H1+L2.H3+L10.H0+L10.H1",
+        "targets": [
+          [
+            16,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            10,
+            0
+          ],
+          [
+            10,
+            1
+          ]
+        ],
+        "zero": {
+          "effect_drop": -1.4971101257205013,
+          "vc_gps_inflation": 0.19034829139709508,
+          "control_inflation": 0.18195539712905884
+        },
+        "mean": {
+          "effect_drop": -1.182496107518673,
+          "vc_gps_inflation": 0.029487681388855158,
+          "control_inflation": 0.2978522013872862
+        }
+      }
+    ],
+    "layers": [
+      {
+        "label": "L3 (all heads)",
+        "targets": [
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "zero": {
+          "effect_drop": -0.21738009095191968,
+          "vc_gps_inflation": 0.6361162900924686,
+          "control_inflation": 0.1569642759859562
+        },
+        "mean": {
+          "effect_drop": -0.05150986105203659,
+          "vc_gps_inflation": 0.2707361936569219,
+          "control_inflation": 0.09508450329303741
+        }
+      },
+      {
+        "label": "L5 (all heads)",
+        "targets": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        "zero": {
+          "effect_drop": -0.6953756850957871,
+          "vc_gps_inflation": 0.476575112342835,
+          "control_inflation": 0.2320810630917549
+        },
+        "mean": {
+          "effect_drop": -0.012801008224487376,
+          "vc_gps_inflation": -0.11203575134277344,
+          "control_inflation": 0.04905264638364315
+        }
+      }
+    ]
+  }
+}

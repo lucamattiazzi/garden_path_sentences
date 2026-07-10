@@ -1,0 +1,224 @@
+{
+  "step": "06_predict_head_sweep_L33",
+  "results": {
+    "layer": 33,
+    "n_heads": 16,
+    "head_dim": 256,
+    "baseline_summary": {
+      "mean_s_vc_gps": 5.869611167907715,
+      "mean_s_vc_normal": 4.333445346355438,
+      "mean_vc_delta": 1.5361658215522767,
+      "mean_s_control": 1.372587801888585
+    },
+    "per_head": [
+      {
+        "head": 0,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.864220523834229,
+          "mean_s_vc_normal": 4.374415802955627,
+          "mean_vc_delta": 1.4898047208786012,
+          "mean_s_control": 1.369539575651288
+        },
+        "vc_gps_inflation": -0.005390644073486328,
+        "vc_normal_inflation": 0.04097045660018939,
+        "vc_delta_inflation": -0.04636110067367549,
+        "control_inflation": -0.003048226237297058
+      },
+      {
+        "head": 1,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.823152756690979,
+          "mean_s_vc_normal": 4.31988525390625,
+          "mean_vc_delta": 1.503267502784729,
+          "mean_s_control": 1.3782650269567966
+        },
+        "vc_gps_inflation": -0.04645841121673655,
+        "vc_normal_inflation": -0.013560092449187877,
+        "vc_delta_inflation": -0.03289831876754756,
+        "control_inflation": 0.0056772250682115555
+      },
+      {
+        "head": 2,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.916758012771607,
+          "mean_s_vc_normal": 4.363566994667053,
+          "mean_vc_delta": 1.5531910181045532,
+          "mean_s_control": 1.3633321728557348
+        },
+        "vc_gps_inflation": 0.047146844863891424,
+        "vc_normal_inflation": 0.030121648311615346,
+        "vc_delta_inflation": 0.017025196552276523,
+        "control_inflation": -0.009255629032850266
+      },
+      {
+        "head": 3,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.869532203674316,
+          "mean_s_vc_normal": 4.305958271026611,
+          "mean_vc_delta": 1.5635739326477052,
+          "mean_s_control": 1.3802412990480661
+        },
+        "vc_gps_inflation": -7.896423339914804e-05,
+        "vc_normal_inflation": -0.02748707532882655,
+        "vc_delta_inflation": 0.02740811109542851,
+        "control_inflation": 0.007653497159481049
+      },
+      {
+        "head": 4,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.85802640914917,
+          "mean_s_vc_normal": 4.423255467414856,
+          "mean_vc_delta": 1.434770941734314,
+          "mean_s_control": 1.3509437199681997
+        },
+        "vc_gps_inflation": -0.011584758758544922,
+        "vc_normal_inflation": 0.08981012105941844,
+        "vc_delta_inflation": -0.10139487981796269,
+        "control_inflation": -0.02164408192038536
+      },
+      {
+        "head": 5,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.8889521837234495,
+          "mean_s_vc_normal": 4.363606059551239,
+          "mean_vc_delta": 1.5253461241722106,
+          "mean_s_control": 1.375743793323636
+        },
+        "vc_gps_inflation": 0.01934101581573433,
+        "vc_normal_inflation": 0.030160713195801492,
+        "vc_delta_inflation": -0.010819697380066051,
+        "control_inflation": 0.0031559914350509644
+      },
+      {
+        "head": 6,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.886387038230896,
+          "mean_s_vc_normal": 4.29256842136383,
+          "mean_vc_delta": 1.5938186168670654,
+          "mean_s_control": 1.3662655986845493
+        },
+        "vc_gps_inflation": 0.01677587032318062,
+        "vc_normal_inflation": -0.040876924991607666,
+        "vc_delta_inflation": 0.05765279531478873,
+        "control_inflation": -0.006322203204035759
+      },
+      {
+        "head": 7,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.865231943130493,
+          "mean_s_vc_normal": 4.3390048265457155,
+          "mean_vc_delta": 1.5262271165847778,
+          "mean_s_control": 1.3810579273849726
+        },
+        "vc_gps_inflation": -0.004379224777221857,
+        "vc_normal_inflation": 0.0055594801902776325,
+        "vc_delta_inflation": -0.009938704967498824,
+        "control_inflation": 0.008470125496387482
+      },
+      {
+        "head": 8,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.8563391923904415,
+          "mean_s_vc_normal": 4.353222990036011,
+          "mean_vc_delta": 1.503116202354431,
+          "mean_s_control": 1.3637526854872704
+        },
+        "vc_gps_inflation": -0.01327197551727366,
+        "vc_normal_inflation": 0.01977764368057322,
+        "vc_delta_inflation": -0.03304961919784555,
+        "control_inflation": -0.008835116401314735
+      },
+      {
+        "head": 9,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.856551241874695,
+          "mean_s_vc_normal": 4.363786244392395,
+          "mean_vc_delta": 1.4927649974822998,
+          "mean_s_control": 1.3723538033664227
+        },
+        "vc_gps_inflation": -0.013059926033020197,
+        "vc_normal_inflation": 0.030340898036957498,
+        "vc_delta_inflation": -0.04340082406997681,
+        "control_inflation": -0.00023399852216243744
+      },
+      {
+        "head": 10,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.871868062019348,
+          "mean_s_vc_normal": 4.338445115089416,
+          "mean_vc_delta": 1.5334229469299316,
+          "mean_s_control": 1.382626822218299
+        },
+        "vc_gps_inflation": 0.002256894111632768,
+        "vc_normal_inflation": 0.004999768733978449,
+        "vc_delta_inflation": -0.002742874622345015,
+        "control_inflation": 0.010039020329713821
+      },
+      {
+        "head": 11,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.893987560272217,
+          "mean_s_vc_normal": 4.378146409988403,
+          "mean_vc_delta": 1.5158411502838134,
+          "mean_s_control": 1.3748899325728416
+        },
+        "vc_gps_inflation": 0.024376392364501953,
+        "vc_normal_inflation": 0.04470106363296544,
+        "vc_delta_inflation": -0.020324671268463268,
+        "control_inflation": 0.0023021306842565536
+      },
+      {
+        "head": 12,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 6.00612964630127,
+          "mean_s_vc_normal": 4.4106924653053285,
+          "mean_vc_delta": 1.5954371809959411,
+          "mean_s_control": 1.3645319864153862
+        },
+        "vc_gps_inflation": 0.1365184783935547,
+        "vc_normal_inflation": 0.07724711894989067,
+        "vc_delta_inflation": 0.05927135944366446,
+        "control_inflation": -0.00805581547319889
+      },
+      {
+        "head": 13,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.8932908296585085,
+          "mean_s_vc_normal": 4.349015402793884,
+          "mean_vc_delta": 1.544275426864624,
+          "mean_s_control": 1.3915621843189
+        },
+        "vc_gps_inflation": 0.02367966175079328,
+        "vc_normal_inflation": 0.015570056438446223,
+        "vc_delta_inflation": 0.008109605312347279,
+        "control_inflation": 0.018974382430315018
+      },
+      {
+        "head": 14,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.875382590293884,
+          "mean_s_vc_normal": 4.328552341461181,
+          "mean_vc_delta": 1.5468302488327026,
+          "mean_s_control": 1.3688924200832844
+        },
+        "vc_gps_inflation": 0.005771422386168901,
+        "vc_normal_inflation": -0.004893004894256592,
+        "vc_delta_inflation": 0.010664427280425937,
+        "control_inflation": -0.0036953818053007126
+      },
+      {
+        "head": 15,
+        "summary_under_ablation": {
+          "mean_s_vc_gps": 5.867923045158387,
+          "mean_s_vc_normal": 4.370018720626831,
+          "mean_vc_delta": 1.497904324531555,
+          "mean_s_control": 1.3572832886129618
+        },
+        "vc_gps_inflation": -0.0016881227493286133,
+        "vc_normal_inflation": 0.03657337427139318,
+        "vc_delta_inflation": -0.03826149702072157,
+        "control_inflation": -0.015304513275623322
+      }
+    ]
+  }
+}

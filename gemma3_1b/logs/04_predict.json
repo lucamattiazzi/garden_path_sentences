@@ -1,0 +1,536 @@
+{
+  "step": "04_predict",
+  "results": {
+    "conditions": [
+      {
+        "label": "baseline",
+        "targets": [],
+        "summary": {
+          "mean_s_vc_gps": 6.266178703308105,
+          "mean_s_vc_normal": 4.5684568881988525,
+          "mean_vc_delta": 1.697721815109253,
+          "mean_s_control": 1.3135772850364447
+        },
+        "pair_results": [
+          {
+            "id": 16,
+            "verb_continuation": "boat",
+            "s_vc_gps": 7.209479331970215,
+            "s_vc_normal": 6.026826858520508,
+            "vc_delta": 1.182652473449707
+          },
+          {
+            "id": 17,
+            "verb_continuation": "ship",
+            "s_vc_gps": 7.596524715423584,
+            "s_vc_normal": 2.195622205734253,
+            "vc_delta": 5.400902509689331
+          },
+          {
+            "id": 18,
+            "verb_continuation": "gate",
+            "s_vc_gps": 3.077937364578247,
+            "s_vc_normal": 4.480953216552734,
+            "vc_delta": -1.4030158519744873
+          },
+          {
+            "id": 19,
+            "verb_continuation": "savings",
+            "s_vc_gps": 2.517815113067627,
+            "s_vc_normal": 2.262599468231201,
+            "vc_delta": 0.2552156448364258
+          },
+          {
+            "id": 20,
+            "verb_continuation": "children",
+            "s_vc_gps": 5.501530647277832,
+            "s_vc_normal": 2.1040143966674805,
+            "vc_delta": 3.3975162506103516
+          },
+          {
+            "id": 21,
+            "verb_continuation": "storm",
+            "s_vc_gps": 7.689413070678711,
+            "s_vc_normal": 11.126749038696289,
+            "vc_delta": -3.437335968017578
+          },
+          {
+            "id": 22,
+            "verb_continuation": "kids",
+            "s_vc_gps": 2.9951775074005127,
+            "s_vc_normal": 1.5676720142364502,
+            "vc_delta": 1.4275054931640625
+          },
+          {
+            "id": 23,
+            "verb_continuation": "trails",
+            "s_vc_gps": 14.522823333740234,
+            "s_vc_normal": 5.655972957611084,
+            "vc_delta": 8.86685037612915
+          },
+          {
+            "id": 24,
+            "verb_continuation": "seas",
+            "s_vc_gps": 4.233345031738281,
+            "s_vc_normal": 5.29503059387207,
+            "vc_delta": -1.061685562133789
+          },
+          {
+            "id": 25,
+            "verb_continuation": "survival",
+            "s_vc_gps": 7.3177409172058105,
+            "s_vc_normal": 4.969128131866455,
+            "vc_delta": 2.3486127853393555
+          }
+        ]
+      },
+      {
+        "label": "L16.H1",
+        "targets": [
+          [
+            16,
+            1
+          ]
+        ],
+        "summary": {
+          "mean_s_vc_gps": 6.321353507041931,
+          "mean_s_vc_normal": 4.662989151477814,
+          "mean_vc_delta": 1.6583643555641174,
+          "mean_s_control": 1.4290320705622435
+        },
+        "pair_results": [
+          {
+            "id": 16,
+            "verb_continuation": "boat",
+            "s_vc_gps": 7.127209663391113,
+            "s_vc_normal": 6.256303310394287,
+            "vc_delta": 0.8709063529968262
+          },
+          {
+            "id": 17,
+            "verb_continuation": "ship",
+            "s_vc_gps": 7.086697101593018,
+            "s_vc_normal": 1.9565635919570923,
+            "vc_delta": 5.130133509635925
+          },
+          {
+            "id": 18,
+            "verb_continuation": "gate",
+            "s_vc_gps": 3.5005738735198975,
+            "s_vc_normal": 4.21422004699707,
+            "vc_delta": -0.7136461734771729
+          },
+          {
+            "id": 19,
+            "verb_continuation": "savings",
+            "s_vc_gps": 3.0452961921691895,
+            "s_vc_normal": 2.5785741806030273,
+            "vc_delta": 0.4667220115661621
+          },
+          {
+            "id": 20,
+            "verb_continuation": "children",
+            "s_vc_gps": 5.264339447021484,
+            "s_vc_normal": 2.0685651302337646,
+            "vc_delta": 3.1957743167877197
+          },
+          {
+            "id": 21,
+            "verb_continuation": "storm",
+            "s_vc_gps": 7.884776592254639,
+            "s_vc_normal": 11.151975631713867,
+            "vc_delta": -3.2671990394592285
+          },
+          {
+            "id": 22,
+            "verb_continuation": "kids",
+            "s_vc_gps": 3.378326892852783,
+            "s_vc_normal": 1.6232926845550537,
+            "vc_delta": 1.7550342082977295
+          },
+          {
+            "id": 23,
+            "verb_continuation": "trails",
+            "s_vc_gps": 13.849448204040527,
+            "s_vc_normal": 6.056709289550781,
+            "vc_delta": 7.792738914489746
+          },
+          {
+            "id": 24,
+            "verb_continuation": "seas",
+            "s_vc_gps": 4.870450019836426,
+            "s_vc_normal": 5.7874016761779785,
+            "vc_delta": -0.9169516563415527
+          },
+          {
+            "id": 25,
+            "verb_continuation": "survival",
+            "s_vc_gps": 7.206417083740234,
+            "s_vc_normal": 4.936285972595215,
+            "vc_delta": 2.2701311111450195
+          }
+        ]
+      },
+      {
+        "label": "L2.H3",
+        "targets": [
+          [
+            2,
+            3
+          ]
+        ],
+        "summary": {
+          "mean_s_vc_gps": 6.437886023521424,
+          "mean_s_vc_normal": 5.314553427696228,
+          "mean_vc_delta": 1.1233325958251954,
+          "mean_s_control": 1.3850800972431898
+        },
+        "pair_results": [
+          {
+            "id": 16,
+            "verb_continuation": "boat",
+            "s_vc_gps": 7.629611015319824,
+            "s_vc_normal": 7.5314741134643555,
+            "vc_delta": 0.09813690185546875
+          },
+          {
+            "id": 17,
+            "verb_continuation": "ship",
+            "s_vc_gps": 7.572091102600098,
+            "s_vc_normal": 1.993897557258606,
+            "vc_delta": 5.578193545341492
+          },
+          {
+            "id": 18,
+            "verb_continuation": "gate",
+            "s_vc_gps": 3.025578260421753,
+            "s_vc_normal": 4.646752834320068,
+            "vc_delta": -1.6211745738983154
+          },
+          {
+            "id": 19,
+            "verb_continuation": "savings",
+            "s_vc_gps": 4.1826324462890625,
+            "s_vc_normal": 2.374330520629883,
+            "vc_delta": 1.8083019256591797
+          },
+          {
+            "id": 20,
+            "verb_continuation": "children",
+            "s_vc_gps": 6.307746410369873,
+            "s_vc_normal": 4.88155460357666,
+            "vc_delta": 1.426191806793213
+          },
+          {
+            "id": 21,
+            "verb_continuation": "storm",
+            "s_vc_gps": 6.772808074951172,
+            "s_vc_normal": 10.428794860839844,
+            "vc_delta": -3.655986785888672
+          },
+          {
+            "id": 22,
+            "verb_continuation": "kids",
+            "s_vc_gps": 3.437429904937744,
+            "s_vc_normal": 1.5214473009109497,
+            "vc_delta": 1.9159826040267944
+          },
+          {
+            "id": 23,
+            "verb_continuation": "trails",
+            "s_vc_gps": 13.369279861450195,
+            "s_vc_normal": 9.088829040527344,
+            "vc_delta": 4.280450820922852
+          },
+          {
+            "id": 24,
+            "verb_continuation": "seas",
+            "s_vc_gps": 4.713531494140625,
+            "s_vc_normal": 4.904706954956055,
+            "vc_delta": -0.1911754608154297
+          },
+          {
+            "id": 25,
+            "verb_continuation": "survival",
+            "s_vc_gps": 7.368151664733887,
+            "s_vc_normal": 5.773746490478516,
+            "vc_delta": 1.594405174255371
+          }
+        ]
+      },
+      {
+        "label": "L10.H0",
+        "targets": [
+          [
+            10,
+            0
+          ]
+        ],
+        "summary": {
+          "mean_s_vc_gps": 6.429201889038086,
+          "mean_s_vc_normal": 4.711636710166931,
+          "mean_vc_delta": 1.7175651788711548,
+          "mean_s_control": 1.2415165826678276
+        },
+        "pair_results": [
+          {
+            "id": 16,
+            "verb_continuation": "boat",
+            "s_vc_gps": 7.591836452484131,
+            "s_vc_normal": 6.664125919342041,
+            "vc_delta": 0.9277105331420898
+          },
+          {
+            "id": 17,
+            "verb_continuation": "ship",
+            "s_vc_gps": 7.813879013061523,
+            "s_vc_normal": 2.538419246673584,
+            "vc_delta": 5.2754597663879395
+          },
+          {
+            "id": 18,
+            "verb_continuation": "gate",
+            "s_vc_gps": 4.340961456298828,
+            "s_vc_normal": 4.695831298828125,
+            "vc_delta": -0.3548698425292969
+          },
+          {
+            "id": 19,
+            "verb_continuation": "savings",
+            "s_vc_gps": 2.7709860801696777,
+            "s_vc_normal": 2.554879665374756,
+            "vc_delta": 0.21610641479492188
+          },
+          {
+            "id": 20,
+            "verb_continuation": "children",
+            "s_vc_gps": 5.86163330078125,
+            "s_vc_normal": 2.0918023586273193,
+            "vc_delta": 3.7698309421539307
+          },
+          {
+            "id": 21,
+            "verb_continuation": "storm",
+            "s_vc_gps": 8.21638298034668,
+            "s_vc_normal": 11.500077247619629,
+            "vc_delta": -3.283694267272949
+          },
+          {
+            "id": 22,
+            "verb_continuation": "kids",
+            "s_vc_gps": 3.479696273803711,
+            "s_vc_normal": 1.4566144943237305,
+            "vc_delta": 2.0230817794799805
+          },
+          {
+            "id": 23,
+            "verb_continuation": "trails",
+            "s_vc_gps": 13.718218803405762,
+            "s_vc_normal": 5.609195709228516,
+            "vc_delta": 8.109023094177246
+          },
+          {
+            "id": 24,
+            "verb_continuation": "seas",
+            "s_vc_gps": 3.599487781524658,
+            "s_vc_normal": 4.931209087371826,
+            "vc_delta": -1.331721305847168
+          },
+          {
+            "id": 25,
+            "verb_continuation": "survival",
+            "s_vc_gps": 6.898936748504639,
+            "s_vc_normal": 5.074212074279785,
+            "vc_delta": 1.8247246742248535
+          }
+        ]
+      },
+      {
+        "label": "L10.H1",
+        "targets": [
+          [
+            10,
+            1
+          ]
+        ],
+        "summary": {
+          "mean_s_vc_gps": 6.209709644317627,
+          "mean_s_vc_normal": 4.5163757562637326,
+          "mean_vc_delta": 1.693333888053894,
+          "mean_s_control": 1.401575243100524
+        },
+        "pair_results": [
+          {
+            "id": 16,
+            "verb_continuation": "boat",
+            "s_vc_gps": 6.95632266998291,
+            "s_vc_normal": 6.079943656921387,
+            "vc_delta": 0.8763790130615234
+          },
+          {
+            "id": 17,
+            "verb_continuation": "ship",
+            "s_vc_gps": 6.572798728942871,
+            "s_vc_normal": 1.813843011856079,
+            "vc_delta": 4.758955717086792
+          },
+          {
+            "id": 18,
+            "verb_continuation": "gate",
+            "s_vc_gps": 2.809854507446289,
+            "s_vc_normal": 4.312914848327637,
+            "vc_delta": -1.5030603408813477
+          },
+          {
+            "id": 19,
+            "verb_continuation": "savings",
+            "s_vc_gps": 2.893357992172241,
+            "s_vc_normal": 2.1948437690734863,
+            "vc_delta": 0.6985142230987549
+          },
+          {
+            "id": 20,
+            "verb_continuation": "children",
+            "s_vc_gps": 5.2957305908203125,
+            "s_vc_normal": 2.023463726043701,
+            "vc_delta": 3.2722668647766113
+          },
+          {
+            "id": 21,
+            "verb_continuation": "storm",
+            "s_vc_gps": 7.802793502807617,
+            "s_vc_normal": 10.720550537109375,
+            "vc_delta": -2.917757034301758
+          },
+          {
+            "id": 22,
+            "verb_continuation": "kids",
+            "s_vc_gps": 3.1607182025909424,
+            "s_vc_normal": 1.6511869430541992,
+            "vc_delta": 1.5095312595367432
+          },
+          {
+            "id": 23,
+            "verb_continuation": "trails",
+            "s_vc_gps": 14.350387573242188,
+            "s_vc_normal": 5.845691680908203,
+            "vc_delta": 8.504695892333984
+          },
+          {
+            "id": 24,
+            "verb_continuation": "seas",
+            "s_vc_gps": 4.600421905517578,
+            "s_vc_normal": 5.355947494506836,
+            "vc_delta": -0.7555255889892578
+          },
+          {
+            "id": 25,
+            "verb_continuation": "survival",
+            "s_vc_gps": 7.65471076965332,
+            "s_vc_normal": 5.165371894836426,
+            "vc_delta": 2.4893388748168945
+          }
+        ]
+      },
+      {
+        "label": "L16.H1+L2.H3+L10.H0+L10.H1",
+        "targets": [
+          [
+            16,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            10,
+            0
+          ],
+          [
+            10,
+            1
+          ]
+        ],
+        "summary": {
+          "mean_s_vc_gps": 6.4565269947052,
+          "mean_s_vc_normal": 5.299611818790436,
+          "mean_vc_delta": 1.1569151759147644,
+          "mean_s_control": 1.4955326821655035
+        },
+        "pair_results": [
+          {
+            "id": 16,
+            "verb_continuation": "boat",
+            "s_vc_gps": 7.654563903808594,
+            "s_vc_normal": 7.358921051025391,
+            "vc_delta": 0.2956428527832031
+          },
+          {
+            "id": 17,
+            "verb_continuation": "ship",
+            "s_vc_gps": 6.630280494689941,
+            "s_vc_normal": 1.8454385995864868,
+            "vc_delta": 4.784841895103455
+          },
+          {
+            "id": 18,
+            "verb_continuation": "gate",
+            "s_vc_gps": 3.5959830284118652,
+            "s_vc_normal": 5.18352746963501,
+            "vc_delta": -1.5875444412231445
+          },
+          {
+            "id": 19,
+            "verb_continuation": "savings",
+            "s_vc_gps": 4.496710777282715,
+            "s_vc_normal": 3.0861096382141113,
+            "vc_delta": 1.4106011390686035
+          },
+          {
+            "id": 20,
+            "verb_continuation": "children",
+            "s_vc_gps": 5.948318004608154,
+            "s_vc_normal": 4.050563812255859,
+            "vc_delta": 1.897754192352295
+          },
+          {
+            "id": 21,
+            "verb_continuation": "storm",
+            "s_vc_gps": 8.12706470489502,
+            "s_vc_normal": 11.037729263305664,
+            "vc_delta": -2.9106645584106445
+          },
+          {
+            "id": 22,
+            "verb_continuation": "kids",
+            "s_vc_gps": 4.172991752624512,
+            "s_vc_normal": 1.9178986549377441,
+            "vc_delta": 2.2550930976867676
+          },
+          {
+            "id": 23,
+            "verb_continuation": "trails",
+            "s_vc_gps": 12.331493377685547,
+            "s_vc_normal": 7.939159393310547,
+            "vc_delta": 4.392333984375
+          },
+          {
+            "id": 24,
+            "verb_continuation": "seas",
+            "s_vc_gps": 4.256412982940674,
+            "s_vc_normal": 4.953754901885986,
+            "vc_delta": -0.6973419189453125
+          },
+          {
+            "id": 25,
+            "verb_continuation": "survival",
+            "s_vc_gps": 7.3514509201049805,
+            "s_vc_normal": 5.623015403747559,
+            "vc_delta": 1.7284355163574219
+          }
+        ]
+      }
+    ]
+  }
+}

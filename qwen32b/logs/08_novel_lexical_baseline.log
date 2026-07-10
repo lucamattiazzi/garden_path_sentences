@@ -1,0 +1,33 @@
+=== 08_novel_lexical_baseline ===
+model = Qwen/Qwen3-32B-MLX-8bit (MLX-LM, 8-bit quantised)
+
+  loading Qwen/Qwen3-32B-MLX-8bit (MLX-LM) ...
+  loaded in 9.6s
+Novel-pair lexical baseline probe — separating memorisation from parsing.
+Compare aggregate `full - stripped` here to step 07 on canonical pairs.
+
+  Means across 10 NOVEL NV pairs:
+    s_full     = 8.216    (full GPS prefix)
+    s_stripped = 8.119    (V-amb-word + critical_word only)
+    s_anchor   = 10.606    (unrelated NP ending in critical_word)
+
+    full vs stripped  Δ = +0.097
+    full vs anchor    Δ = -2.391
+
+  Per-pair breakdown:
+     id  v_amb       vc             s_full  s_strip   s_anch  full-strip   full-anch
+    --------------------------------------------------------------------------------
+     51  butter      toast           5.938    6.219   10.875      -0.281      -4.938
+     52  shoulder    burden          2.188    1.750   10.562      +0.438      -8.375
+     53  head        rebellion       9.500    9.250   13.250      +0.250      -3.750
+     54  witness     robbery        12.125   10.062   11.562      +2.062      +0.562
+     55  fashion     crown           9.500    8.438    8.375      +1.062      +1.125
+     56  mother      child           3.438    3.594    6.875      -0.156      -3.438
+     57  father      newborn        11.125    9.875    7.875      +1.250      +3.250
+     58  stomach     criticism       8.000    8.938   12.688      -0.938      -4.688
+     59  crew        expedition      6.844   11.312   13.312      -4.469      -6.469
+     60  partner     newcomer       13.500   11.750   10.688      +1.750      +2.812
+
+Saved → /Users/lucamattiazzi/Developer/garden_path_sentences/qwen32b/logs/08_novel_lexical_baseline.json
+
+Elapsed: 15.6s

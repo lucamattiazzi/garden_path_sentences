@@ -1,0 +1,438 @@
+{
+  "step": "11_patching",
+  "results": {
+    "n_pairs": 20,
+    "mean_s_gps": 7.251183098554611,
+    "mean_s_norm": 5.702758991718293,
+    "per_pair_baselines": [
+      {
+        "id": 16,
+        "v_amb": "man",
+        "s_gps": 7.469301223754883,
+        "s_norm": 4.56577205657959
+      },
+      {
+        "id": 17,
+        "v_amb": "captain",
+        "s_gps": 5.283219337463379,
+        "s_norm": 1.989822506904602
+      },
+      {
+        "id": 18,
+        "v_amb": "guard",
+        "s_gps": 4.011587142944336,
+        "s_norm": 3.8325562477111816
+      },
+      {
+        "id": 19,
+        "v_amb": "bank",
+        "s_gps": 3.4058196544647217,
+        "s_norm": 3.975276231765747
+      },
+      {
+        "id": 20,
+        "v_amb": "nurse",
+        "s_gps": 4.880791664123535,
+        "s_norm": 3.8994603157043457
+      },
+      {
+        "id": 21,
+        "v_amb": "bear",
+        "s_gps": 8.627641677856445,
+        "s_norm": 9.763579368591309
+      },
+      {
+        "id": 22,
+        "v_amb": "school",
+        "s_gps": 3.1094930171966553,
+        "s_norm": 1.8305422067642212
+      },
+      {
+        "id": 23,
+        "v_amb": "dog",
+        "s_gps": 13.966732025146484,
+        "s_norm": 3.8776185512542725
+      },
+      {
+        "id": 24,
+        "v_amb": "rule",
+        "s_gps": 4.947295188903809,
+        "s_norm": 4.334947109222412
+      },
+      {
+        "id": 25,
+        "v_amb": "fish",
+        "s_gps": 6.960541725158691,
+        "s_norm": 5.062748908996582
+      },
+      {
+        "id": 51,
+        "v_amb": "butter",
+        "s_gps": 7.423223972320557,
+        "s_norm": 4.627918720245361
+      },
+      {
+        "id": 52,
+        "v_amb": "shoulder",
+        "s_gps": 1.7511190176010132,
+        "s_norm": 3.525658130645752
+      },
+      {
+        "id": 53,
+        "v_amb": "head",
+        "s_gps": 12.854707717895508,
+        "s_norm": 7.048823356628418
+      },
+      {
+        "id": 54,
+        "v_amb": "witness",
+        "s_gps": 10.098600387573242,
+        "s_norm": 6.604935169219971
+      },
+      {
+        "id": 55,
+        "v_amb": "fashion",
+        "s_gps": 8.53019905090332,
+        "s_norm": 5.326864242553711
+      },
+      {
+        "id": 56,
+        "v_amb": "mother",
+        "s_gps": 3.8557653427124023,
+        "s_norm": 5.954563140869141
+      },
+      {
+        "id": 57,
+        "v_amb": "father",
+        "s_gps": 10.291027069091797,
+        "s_norm": 7.9873738288879395
+      },
+      {
+        "id": 58,
+        "v_amb": "stomach",
+        "s_gps": 8.147831916809082,
+        "s_norm": 9.737983703613281
+      },
+      {
+        "id": 59,
+        "v_amb": "crew",
+        "s_gps": 8.827816009521484,
+        "s_norm": 8.808145523071289
+      },
+      {
+        "id": 60,
+        "v_amb": "partner",
+        "s_gps": 10.580948829650879,
+        "s_norm": 11.300590515136719
+      }
+    ],
+    "per_layer": [
+      {
+        "layer": 0,
+        "s_patched_v_amb": 6.835394769906998,
+        "recovery_v_amb": 0.2685235439127438,
+        "s_patched_critical": 7.240811592340469,
+        "recovery_critical": 0.006698104329654565,
+        "s_patched_both": 6.848473209142685,
+        "recovery_both": 0.2600772537923914
+      },
+      {
+        "layer": 1,
+        "s_patched_v_amb": 6.808432400226593,
+        "recovery_v_amb": 0.2859363247919392,
+        "s_patched_critical": 7.217977803945542,
+        "recovery_critical": 0.021444573526379084,
+        "s_patched_both": 6.815354347229004,
+        "recovery_both": 0.28146600753722173
+      },
+      {
+        "layer": 2,
+        "s_patched_v_amb": 6.46900497674942,
+        "recovery_v_amb": 0.505144629531316,
+        "s_patched_critical": 7.107627934217453,
+        "recovery_critical": 0.09271049430408618,
+        "s_patched_both": 6.414131295681,
+        "recovery_both": 0.5405830348274825
+      },
+      {
+        "layer": 3,
+        "s_patched_v_amb": 6.728019416332245,
+        "recovery_v_amb": 0.3378684689243661,
+        "s_patched_critical": 6.788521325588226,
+        "recovery_critical": 0.2987952531375128,
+        "s_patched_both": 6.316600525379181,
+        "recovery_both": 0.603570151775106
+      },
+      {
+        "layer": 4,
+        "s_patched_v_amb": 6.826602506637573,
+        "recovery_v_amb": 0.2742017448853369,
+        "s_patched_critical": 6.2436694502830505,
+        "recovery_critical": 0.6506703453035707,
+        "s_patched_both": 6.139094477891922,
+        "recovery_both": 0.7182067340290037
+      },
+      {
+        "layer": 5,
+        "s_patched_v_amb": 6.934917622804642,
+        "recovery_v_amb": 0.20424990437287266,
+        "s_patched_critical": 6.0694918751716616,
+        "recovery_critical": 0.7631573405281943,
+        "s_patched_both": 6.157281440496445,
+        "recovery_both": 0.7064612680909397
+      },
+      {
+        "layer": 6,
+        "s_patched_v_amb": 6.8423854351043705,
+        "recovery_v_amb": 0.26400884721788553,
+        "s_patched_critical": 5.877878665924072,
+        "recovery_critical": 0.886904580319679,
+        "s_patched_both": 5.966590940952301,
+        "recovery_both": 0.8296126054424069
+      },
+      {
+        "layer": 7,
+        "s_patched_v_amb": 6.754604721069336,
+        "recovery_v_amb": 0.32069920333381063,
+        "s_patched_critical": 5.741560328006744,
+        "recovery_critical": 0.9749414026059507,
+        "s_patched_both": 5.719297456741333,
+        "recovery_both": 0.9893191633028557
+      },
+      {
+        "layer": 8,
+        "s_patched_v_amb": 6.717937636375427,
+        "recovery_v_amb": 0.3443794628518738,
+        "s_patched_critical": 5.5673853814601895,
+        "recovery_critical": 1.0874267002563616,
+        "s_patched_both": 5.5275215148925785,
+        "recovery_both": 1.1131714987205623
+      },
+      {
+        "layer": 9,
+        "s_patched_v_amb": 6.693431282043457,
+        "recovery_v_amb": 0.3602061050642843,
+        "s_patched_critical": 5.550270527601242,
+        "recovery_critical": 1.0984797791792387,
+        "s_patched_both": 5.477309226989746,
+        "recovery_both": 1.1455994928864657
+      },
+      {
+        "layer": 10,
+        "s_patched_v_amb": 6.7882244944572445,
+        "recovery_v_amb": 0.298986951994222,
+        "s_patched_critical": 5.3695343971252445,
+        "recovery_critical": 1.2152024068353469,
+        "s_patched_both": 5.446500995755196,
+        "recovery_both": 1.1654959999858652
+      },
+      {
+        "layer": 11,
+        "s_patched_v_amb": 6.797371953725815,
+        "recovery_v_amb": 0.293079359088516,
+        "s_patched_critical": 5.379492694139481,
+        "recovery_critical": 1.2087711604021054,
+        "s_patched_both": 5.448558437824249,
+        "recovery_both": 1.1641672670760832
+      },
+      {
+        "layer": 12,
+        "s_patched_v_amb": 6.7543840408325195,
+        "recovery_v_amb": 0.3208417225802125,
+        "s_patched_critical": 5.377717423439026,
+        "recovery_critical": 1.209917661992088,
+        "s_patched_both": 5.474734503030777,
+        "recovery_both": 1.1472622956984355
+      },
+      {
+        "layer": 13,
+        "s_patched_v_amb": 6.691279482841492,
+        "recovery_v_amb": 0.3615957754991899,
+        "s_patched_critical": 5.367873978614807,
+        "recovery_critical": 1.2162747348255316,
+        "s_patched_both": 5.473968684673309,
+        "recovery_both": 1.1477568748993705
+      },
+      {
+        "layer": 14,
+        "s_patched_v_amb": 6.644048738479614,
+        "recovery_v_amb": 0.392098235486317,
+        "s_patched_critical": 5.368645089864731,
+        "recovery_critical": 1.2157767373799229,
+        "s_patched_both": 5.478782624006271,
+        "recovery_both": 1.144647946724132
+      },
+      {
+        "layer": 15,
+        "s_patched_v_amb": 6.580547553300858,
+        "recovery_v_amb": 0.433108437341479,
+        "s_patched_critical": 5.291596788167953,
+        "recovery_critical": 1.2655359095321825,
+        "s_patched_both": 5.401100146770477,
+        "recovery_both": 1.1948166807891887
+      },
+      {
+        "layer": 16,
+        "s_patched_v_amb": 6.541816967725754,
+        "recovery_v_amb": 0.4581213426586385,
+        "s_patched_critical": 5.294498407840729,
+        "recovery_critical": 1.263661991617856,
+        "s_patched_both": 5.437428951263428,
+        "recovery_both": 1.1713548886790306
+      },
+      {
+        "layer": 17,
+        "s_patched_v_amb": 6.541198658943176,
+        "recovery_v_amb": 0.4585206575361631,
+        "s_patched_critical": 5.307762336730957,
+        "recovery_critical": 1.2550959089589335,
+        "s_patched_both": 5.44425157904625,
+        "recovery_both": 1.1669487135538181
+      },
+      {
+        "layer": 18,
+        "s_patched_v_amb": 6.564751017093658,
+        "recovery_v_amb": 0.44331012313121676,
+        "s_patched_critical": 5.3733167290687565,
+        "recovery_critical": 1.2127597091746654,
+        "s_patched_both": 5.468237888813019,
+        "recovery_both": 1.151457925428737
+      },
+      {
+        "layer": 19,
+        "s_patched_v_amb": 6.691216933727264,
+        "recovery_v_amb": 0.36163617083658584,
+        "s_patched_critical": 5.38762344121933,
+        "recovery_critical": 1.2035201784237495,
+        "s_patched_both": 5.502308934926987,
+        "recovery_both": 1.1294542340863305
+      },
+      {
+        "layer": 20,
+        "s_patched_v_amb": 6.70694363117218,
+        "recovery_v_amb": 0.3514795881694197,
+        "s_patched_critical": 5.456596750020981,
+        "recovery_critical": 1.1589759811995315,
+        "s_patched_both": 5.542011195421219,
+        "recovery_both": 1.103813803716546
+      },
+      {
+        "layer": 21,
+        "s_patched_v_amb": 6.851528245210647,
+        "recovery_v_amb": 0.25810425682439364,
+        "s_patched_critical": 5.4653406798839566,
+        "recovery_critical": 1.1533289948058354,
+        "s_patched_both": 5.548245358467102,
+        "recovery_both": 1.0997876696500724
+      },
+      {
+        "layer": 22,
+        "s_patched_v_amb": 7.01441468000412,
+        "recovery_v_amb": 0.15290928209213114,
+        "s_patched_critical": 5.566170620918274,
+        "recovery_critical": 1.0882112143546325,
+        "s_patched_both": 5.647062522172928,
+        "recovery_both": 1.0359697768198413
+      },
+      {
+        "layer": 23,
+        "s_patched_v_amb": 7.0104059219360355,
+        "recovery_v_amb": 0.15549820979636012,
+        "s_patched_critical": 5.5844131171703335,
+        "recovery_critical": 1.0764298837931159,
+        "s_patched_both": 5.666001868247986,
+        "recovery_both": 1.0237384081712648
+      },
+      {
+        "layer": 24,
+        "s_patched_v_amb": 7.017032915353775,
+        "recovery_v_amb": 0.1512183788453425,
+        "s_patched_critical": 5.627381670475006,
+        "recovery_critical": 1.0486800230702265,
+        "s_patched_both": 5.6639946639537815,
+        "recovery_both": 1.025034696626955
+      },
+      {
+        "layer": 25,
+        "s_patched_v_amb": 7.081927502155304,
+        "recovery_v_amb": 0.10930829328479211,
+        "s_patched_critical": 5.642458695173263,
+        "recovery_critical": 1.0389430106899022,
+        "s_patched_both": 5.689960414171219,
+        "recovery_both": 1.0082655504332227
+      },
+      {
+        "layer": 26,
+        "s_patched_v_amb": 7.097734761238098,
+        "recovery_v_amb": 0.09909968247009043,
+        "s_patched_critical": 5.644819045066834,
+        "recovery_critical": 1.0374186544859725,
+        "s_patched_both": 5.69811572432518,
+        "recovery_both": 1.0029987051820057
+      },
+      {
+        "layer": 27,
+        "s_patched_v_amb": 7.1870844721794125,
+        "recovery_v_amb": 0.041396040072097726,
+        "s_patched_critical": 5.654232621192932,
+        "recovery_critical": 1.0313391985510403,
+        "s_patched_both": 5.689596557617188,
+        "recovery_both": 1.0085005355076768
+      },
+      {
+        "layer": 28,
+        "s_patched_v_amb": 7.210085189342498,
+        "recovery_v_amb": 0.026541765289409065,
+        "s_patched_critical": 5.681567239761352,
+        "recovery_critical": 1.013686012677908,
+        "s_patched_both": 5.679018241167069,
+        "recovery_both": 1.0153322015889628
+      },
+      {
+        "layer": 29,
+        "s_patched_v_amb": 7.23018953204155,
+        "recovery_v_amb": 0.01355802097136968,
+        "s_patched_critical": 5.675172454118728,
+        "recovery_critical": 1.0178158796919845,
+        "s_patched_both": 5.690706962347031,
+        "recovery_both": 1.0077834162604753
+      },
+      {
+        "layer": 30,
+        "s_patched_v_amb": 7.233138078451157,
+        "recovery_v_amb": 0.011653796930559795,
+        "s_patched_critical": 5.6777525544166565,
+        "recovery_critical": 1.0161496047440959,
+        "s_patched_both": 5.688517528772354,
+        "recovery_both": 1.009197391646812
+      },
+      {
+        "layer": 31,
+        "s_patched_v_amb": 7.227064299583435,
+        "recovery_v_amb": 0.015576352024417,
+        "s_patched_critical": 5.676260834932327,
+        "recovery_critical": 1.017112983884051,
+        "s_patched_both": 5.685881537199021,
+        "recovery_both": 1.010899762180631
+      },
+      {
+        "layer": 32,
+        "s_patched_v_amb": 7.215617960691452,
+        "recovery_v_amb": 0.022968602533465155,
+        "s_patched_critical": 5.693749123811722,
+        "recovery_critical": 1.0058187339416842,
+        "s_patched_both": 5.703466510772705,
+        "recovery_both": 0.999543071532348
+      },
+      {
+        "layer": 33,
+        "s_patched_v_amb": 7.251183098554611,
+        "recovery_v_amb": 0.0,
+        "s_patched_critical": 5.702758991718293,
+        "recovery_critical": 1.0,
+        "s_patched_both": 5.702758991718293,
+        "recovery_both": 1.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+=== 01_baseline ===
+device = mps
+model  = Qwen/Qwen3-4B-Base (dtype=float16)
+
+  loading Qwen/Qwen3-4B-Base (dtype=float16) ...
+  loaded in 17.0s
+Baseline (no ablation) over 50 pairs:
+  mean Δ          = +4.1721
+  mean s_gps      = 9.5823
+  mean s_normal   = 5.4102
+  mean s_control  = 1.0920
+
+  Per-template mean Δ:
+    RR      Δ̄ = +2.191
+    NV      Δ̄ = +5.399
+    NP_S    Δ̄ = +2.179
+    NP_Z    Δ̄ = +6.604
+    COORD   Δ̄ = +6.786
+
+Saved → /Users/lucamattiazzi/Developer/garden_path_sentences/qwen4b/logs/01_baseline.json
+
+Elapsed: 22.8s

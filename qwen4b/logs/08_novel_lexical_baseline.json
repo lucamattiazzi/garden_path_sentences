@@ -1,0 +1,134 @@
+{
+  "step": "08_novel_lexical_baseline",
+  "results": {
+    "novel": {
+      "label": "NOVEL NV pairs",
+      "summary": {
+        "mean_s_full": 7.809766173362732,
+        "mean_s_stripped": 8.456579774618149,
+        "mean_s_anchor": 10.832505464553833
+      },
+      "ci95_full_minus_stripped": [
+        -1.4427988886833192,
+        0.183277931660413
+      ],
+      "pair_results": [
+        {
+          "id": 51,
+          "v_amb_word": "butter",
+          "verb_continuation": "toast",
+          "full_prefix": "The poor butter the",
+          "stripped_prefix": "butter the",
+          "anchor_prefix": "He looked carefully at the",
+          "s_full": 6.386200428009033,
+          "s_stripped": 9.13105583190918,
+          "s_anchor": 11.398130416870117
+        },
+        {
+          "id": 52,
+          "v_amb_word": "shoulder",
+          "verb_continuation": "burden",
+          "full_prefix": "The weary shoulder the",
+          "stripped_prefix": "shoulder the",
+          "anchor_prefix": "He looked carefully at the",
+          "s_full": 2.4817426204681396,
+          "s_stripped": 0.7537402510643005,
+          "s_anchor": 12.484067916870117
+        },
+        {
+          "id": 53,
+          "v_amb_word": "head",
+          "verb_continuation": "rebellion",
+          "full_prefix": "The bold head the",
+          "stripped_prefix": "head the",
+          "anchor_prefix": "He looked carefully at the",
+          "s_full": 11.181585311889648,
+          "s_stripped": 11.292203903198242,
+          "s_anchor": 13.390317916870117
+        },
+        {
+          "id": 54,
+          "v_amb_word": "witness",
+          "verb_continuation": "robbery",
+          "full_prefix": "The elderly witness the",
+          "stripped_prefix": "witness the",
+          "anchor_prefix": "He looked carefully at the",
+          "s_full": 10.914941787719727,
+          "s_stripped": 10.514836311340332,
+          "s_anchor": 12.655942916870117
+        },
+        {
+          "id": 55,
+          "v_amb_word": "fashion",
+          "verb_continuation": "crown",
+          "full_prefix": "The elite fashion the",
+          "stripped_prefix": "fashion the",
+          "anchor_prefix": "He looked carefully at the",
+          "s_full": 7.867140769958496,
+          "s_stripped": 9.539247512817383,
+          "s_anchor": 8.741880416870117
+        },
+        {
+          "id": 56,
+          "v_amb_word": "mother",
+          "verb_continuation": "child",
+          "full_prefix": "The strong mother the",
+          "stripped_prefix": "mother the",
+          "anchor_prefix": "He looked carefully at the",
+          "s_full": 3.6142125129699707,
+          "s_stripped": 5.040351867675781,
+          "s_anchor": 6.320005893707275
+        },
+        {
+          "id": 57,
+          "v_amb_word": "father",
+          "verb_continuation": "newborn",
+          "full_prefix": "The wealthy father the",
+          "stripped_prefix": "father the",
+          "anchor_prefix": "He looked carefully at the",
+          "s_full": 9.157833099365234,
+          "s_stripped": 10.282557487487793,
+          "s_anchor": 9.741880416870117
+        },
+        {
+          "id": 58,
+          "v_amb_word": "stomach",
+          "verb_continuation": "criticism",
+          "full_prefix": "The homeless stomach the",
+          "stripped_prefix": "stomach the",
+          "anchor_prefix": "He looked carefully at the",
+          "s_full": 8.039207458496094,
+          "s_stripped": 7.0544939041137695,
+          "s_anchor": 11.796567916870117
+        },
+        {
+          "id": 59,
+          "v_amb_word": "crew",
+          "verb_continuation": "expedition",
+          "full_prefix": "The brave crew the",
+          "stripped_prefix": "crew the",
+          "anchor_prefix": "He looked carefully at the",
+          "s_full": 8.377988815307617,
+          "s_stripped": 9.062897682189941,
+          "s_anchor": 12.179380416870117
+        },
+        {
+          "id": 60,
+          "v_amb_word": "partner",
+          "verb_continuation": "newcomer",
+          "full_prefix": "The rich partner the",
+          "stripped_prefix": "partner the",
+          "anchor_prefix": "He looked carefully at the",
+          "s_full": 10.07680892944336,
+          "s_stripped": 11.894412994384766,
+          "s_anchor": 9.616880416870117
+        }
+      ]
+    },
+    "canonical_summary": {
+      "mean_s_full": 6.1201104640960695,
+      "mean_s_stripped": 6.020652961730957,
+      "mean_s_anchor": 8.536647653579712
+    }
+  }
+}

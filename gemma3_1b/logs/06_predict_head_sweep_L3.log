@@ -1,0 +1,26 @@
+=== 06_predict_head_sweep_L3 ===
+device = cuda
+model  = google/gemma-3-1b-pt (dtype=bfloat16)
+
+  loading google/gemma-3-1b-pt (dtype=bfloat16) ...
+  loaded in 17.5s
+  layer 3: ablating each of 4 heads individually
+  baseline (no ablation) ...
+   lyr   vc_gps     +gps  vc_norm    +norm     Δ_vc       +Δ     ctrl    +ctrl  bar
+  base    6.270   +0.000    4.574   +0.000   +1.696   +0.000    1.310   +0.000  
+     0    6.249   -0.020    4.554   -0.019   +1.695   -0.001    1.268   -0.042  
+     1    6.263   -0.006    4.414   -0.160   +1.849   +0.153    1.335   +0.025  
+     2    6.268   -0.002    4.525   -0.049   +1.743   +0.047    1.338   +0.028  
+     3    6.445   +0.176    4.918   +0.345   +1.527   -0.169    1.358   +0.048  ██
+
+  Top 10 head by vc_gps_inflation (selectivity = vc_gps - ctrl):
+     head   +vc_gps   +vc_delta     +ctrl   selectivity
+    ----------------------------------------------------
+        3    +0.176      -0.169    +0.048        +0.128
+        2    -0.002      +0.047    +0.028        -0.030
+        1    -0.006      +0.153    +0.025        -0.032
+        0    -0.020      -0.001    -0.042        +0.022
+
+Saved → /app/gemma3_1b/logs/06_predict_head_sweep_L3.json
+
+Elapsed: 7.5s

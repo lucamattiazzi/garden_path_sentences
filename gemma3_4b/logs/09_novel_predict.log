@@ -1,0 +1,48 @@
+=== 09_novel_predict ===
+device = mps
+model  = google/gemma-3-4b-pt (dtype=bfloat16)
+
+  loading google/gemma-3-4b-pt (dtype=bfloat16) ...
+  loaded in 3.5s
+Verb-continuation baseline: residual comprehension cost, canonical vs novel.
+
+  CANONICAL NV pairs (n=10):
+    s_vc_gps    =  6.266   95% CI [4.575, 8.298]
+    s_vc_normal =  4.313   95% CI [3.206, 5.758]
+    vc_delta    = +1.953   95% CI [+0.410, +4.039]
+
+     id  vc             s_vc_gps  s_vc_norm   vc_delta
+    --------------------------------------------------
+     16  boat              7.469      4.566     +2.904
+     17  ship              5.283      1.990     +3.293
+     18  gate              4.012      3.833     +0.179
+     19  savings           3.406      3.975     -0.569
+     20  children          4.881      3.899     +0.981
+     21  storm             8.628      9.764     -1.136
+     22  kids              3.109      1.831     +1.279
+     23  trails           13.967      3.878    +10.089
+     24  seas              4.947      4.335     +0.612
+     25  survival          6.961      5.063     +1.898
+
+  NOVEL NV pairs (n=10):
+    s_vc_gps    =  8.236   95% CI [6.178, 10.031]
+    s_vc_normal =  7.092   95% CI [5.701, 8.510]
+    vc_delta    = +1.144   95% CI [-0.422, +2.769]
+
+     id  vc             s_vc_gps  s_vc_norm   vc_delta
+    --------------------------------------------------
+     51  toast             7.423      4.628     +2.795
+     52  burden            1.751      3.526     -1.775
+     53  rebellion        12.855      7.049     +5.806
+     54  robbery          10.099      6.605     +3.494
+     55  crown             8.530      5.327     +3.203
+     56  child             3.856      5.955     -2.099
+     57  newborn          10.291      7.987     +2.304
+     58  criticism         8.148      9.738     -1.590
+     59  expedition        8.828      8.808     +0.020
+     60  newcomer         10.581     11.301     -0.720
+
+
+Saved → /Users/lucamattiazzi/Developer/garden_path_sentences/gemma3_4b/logs/09_novel_predict.json
+
+Elapsed: 6.3s

@@ -1,0 +1,286 @@
+{
+  "step": "12_mean_ablation",
+  "results": {
+    "baseline_effect": {
+      "mean_delta": 3.9185574859380723,
+      "mean_s_gps": 9.727829200029372,
+      "mean_s_normal": 5.809271714091301,
+      "mean_s_control": 1.3700475301593542
+    },
+    "baseline_vc": {
+      "mean_s_vc_gps": 5.865079998970032,
+      "mean_s_vc_normal": 4.345980954170227,
+      "mean_vc_delta": 1.5190990447998047,
+      "mean_s_control": 1.3700475301593542
+    },
+    "head_sets": [
+      {
+        "label": "L26.H9",
+        "targets": [
+          [
+            26,
+            9
+          ]
+        ],
+        "zero": {
+          "effect_drop": -0.21438586890697486,
+          "vc_gps_inflation": 0.02064123153686559,
+          "control_inflation": 0.011546868830919266
+        },
+        "mean": {
+          "effect_drop": -0.2635488745570185,
+          "vc_gps_inflation": -0.016595888137817205,
+          "control_inflation": 0.001096891239285469
+        }
+      },
+      {
+        "label": "L26.H7",
+        "targets": [
+          [
+            26,
+            7
+          ]
+        ],
+        "zero": {
+          "effect_drop": -0.09368952333927183,
+          "vc_gps_inflation": 0.007001519203186035,
+          "control_inflation": -0.009464489296078682
+        },
+        "mean": {
+          "effect_drop": -0.12561410188674937,
+          "vc_gps_inflation": 0.015228176116943715,
+          "control_inflation": -0.004087969660758972
+        }
+      },
+      {
+        "label": "L2.H15",
+        "targets": [
+          [
+            2,
+            15
+          ]
+        ],
+        "zero": {
+          "effect_drop": -0.09005886822938924,
+          "vc_gps_inflation": -0.02377076148986834,
+          "control_inflation": -0.013940898701548576
+        },
+        "mean": {
+          "effect_drop": -0.07630989372730257,
+          "vc_gps_inflation": -0.004662585258484064,
+          "control_inflation": 0.009270377457141876
+        }
+      },
+      {
+        "label": "L2.H8",
+        "targets": [
+          [
+            2,
+            8
+          ]
+        ],
+        "zero": {
+          "effect_drop": -0.0845677772164346,
+          "vc_gps_inflation": 0.04869837760925311,
+          "control_inflation": 0.0427505224943161
+        },
+        "mean": {
+          "effect_drop": -0.0647293606400492,
+          "vc_gps_inflation": 0.011929988861083984,
+          "control_inflation": 0.0398542545735836
+        }
+      },
+      {
+        "label": "L26.H9+L26.H7+L2.H15+L2.H8",
+        "targets": [
+          [
+            26,
+            9
+          ],
+          [
+            26,
+            7
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            2,
+            8
+          ]
+        ],
+        "zero": {
+          "effect_drop": -0.4118569552898408,
+          "vc_gps_inflation": 0.030642104148864924,
+          "control_inflation": 0.060591135174036026
+        },
+        "mean": {
+          "effect_drop": -0.45818283796310455,
+          "vc_gps_inflation": -0.00993955135345459,
+          "control_inflation": 0.040243782103061676
+        }
+      }
+    ],
+    "layers": [
+      {
+        "label": "L0 (all heads)",
+        "targets": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            0,
+            10
+          ],
+          [
+            0,
+            11
+          ],
+          [
+            0,
+            12
+          ],
+          [
+            0,
+            13
+          ],
+          [
+            0,
+            14
+          ],
+          [
+            0,
+            15
+          ]
+        ],
+        "zero": {
+          "effect_drop": -2.341323179602623,
+          "vc_gps_inflation": 1.7384229660034176,
+          "control_inflation": -0.07283869571983814
+        },
+        "mean": {
+          "effect_drop": -0.019497171640395994,
+          "vc_gps_inflation": -0.1575865507125851,
+          "control_inflation": -0.0433981791138649
+        }
+      },
+      {
+        "label": "L33 (all heads)",
+        "targets": [
+          [
+            33,
+            0
+          ],
+          [
+            33,
+            1
+          ],
+          [
+            33,
+            2
+          ],
+          [
+            33,
+            3
+          ],
+          [
+            33,
+            4
+          ],
+          [
+            33,
+            5
+          ],
+          [
+            33,
+            6
+          ],
+          [
+            33,
+            7
+          ],
+          [
+            33,
+            8
+          ],
+          [
+            33,
+            9
+          ],
+          [
+            33,
+            10
+          ],
+          [
+            33,
+            11
+          ],
+          [
+            33,
+            12
+          ],
+          [
+            33,
+            13
+          ],
+          [
+            33,
+            14
+          ],
+          [
+            33,
+            15
+          ]
+        ],
+        "zero": {
+          "effect_drop": -0.2388590013980867,
+          "vc_gps_inflation": 0.37931094169616664,
+          "control_inflation": 0.1544521041214466
+        },
+        "mean": {
+          "effect_drop": -0.0844086858630182,
+          "vc_gps_inflation": 0.16172301769256592,
+          "control_inflation": -0.05468865856528282
+        }
+      }
+    ]
+  }
+}

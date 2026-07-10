@@ -1,0 +1,33 @@
+=== 07_lexical_baseline ===
+model = Qwen/Qwen3-32B-MLX-8bit (MLX-LM, 8-bit quantised)
+
+  loading Qwen/Qwen3-32B-MLX-8bit (MLX-LM) ...
+  loaded in 9.3s
+Lexical baseline probe — is verb_continuation prediction driven by
+the full GPS context or by local lexical association?
+
+  Means across 10 NV pairs:
+    s_full     = 5.603    (full GPS prefix)
+    s_stripped = 6.162    (V-amb-word + critical_word only)
+    s_anchor   = 9.603    (unrelated NP ending in critical_word)
+
+    full vs stripped  Δ = -0.559
+    full vs anchor    Δ = -4.000
+
+  Per-pair breakdown:
+     id  v_amb       vc           s_full  s_strip   s_anch  full-strip   full-anch
+    ------------------------------------------------------------------------------
+     16  man         boat          1.875    7.094    7.188      -5.219      -5.312
+     17  captain     ship          3.781    3.281    7.000      +0.500      -3.219
+     18  guard       gate          2.125    4.812    8.250      -2.688      -6.125
+     19  bank        savings       3.625    2.188    7.656      +1.438      -4.031
+     20  nurse       children      6.406    5.938    7.688      +0.469      -1.281
+     21  bear        storm         9.375    7.375    7.375      +2.000      +2.000
+     22  school      kids          3.719    3.875   10.125      -0.156      -6.406
+     23  dog         trails       11.562   12.875   12.500      -1.312      -0.938
+     24  rule        seas          7.625    6.938   11.500      +0.688      -3.875
+     25  fish        survival      5.938    7.250   16.750      -1.312     -10.812
+
+Saved → /Users/lucamattiazzi/Developer/garden_path_sentences/qwen32b/logs/07_lexical_baseline.json
+
+Elapsed: 19.5s

@@ -1,0 +1,33 @@
+=== 08_novel_lexical_baseline ===
+device = mps
+model  = Qwen/Qwen3-4B-Base (dtype=float16)
+
+  loading Qwen/Qwen3-4B-Base (dtype=float16) ...
+  loaded in 8.3s
+Novel-pair lexical baseline probe — separating memorisation from parsing.
+
+  NOVEL NV pairs (n=10):
+    s_full     = 7.810
+    s_stripped = 8.457
+    s_anchor   = 10.833
+    full − stripped = -0.647   95% CI [-1.443, +0.183]
+
+     id  v_amb       vc             s_full  s_strip   s_anch  full-strip
+    --------------------------------------------------------------------
+     51  butter      toast           6.386    9.131   11.398      -2.745
+     52  shoulder    burden          2.482    0.754   12.484      +1.728
+     53  head        rebellion      11.182   11.292   13.390      -0.111
+     54  witness     robbery        10.915   10.515   12.656      +0.400
+     55  fashion     crown           7.867    9.539    8.742      -1.672
+     56  mother      child           3.614    5.040    6.320      -1.426
+     57  father      newborn         9.158   10.283    9.742      -1.125
+     58  stomach     criticism       8.039    7.054   11.797      +0.985
+     59  crew        expedition      8.378    9.063   12.179      -0.685
+     60  partner     newcomer       10.077   11.894    9.617      -1.818
+
+  Canonical reference (same probe, step-07 pairs):
+    canonical full − stripped = +0.099
+
+Saved → /Users/lucamattiazzi/Developer/garden_path_sentences/qwen4b/logs/08_novel_lexical_baseline.json
+
+Elapsed: 5.7s

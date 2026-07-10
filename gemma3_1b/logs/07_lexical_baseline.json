@@ -1,0 +1,127 @@
+{
+  "step": "07_lexical_baseline",
+  "results": {
+    "label": "CANONICAL NV pairs",
+    "summary": {
+      "mean_s_full": 6.266178703308105,
+      "mean_s_stripped": 6.140483021736145,
+      "mean_s_anchor": 9.777503108978271
+    },
+    "ci95_full_minus_stripped": [
+      -0.5506643533706665,
+      0.9883578342199321
+    ],
+    "pair_results": [
+      {
+        "id": 16,
+        "v_amb_word": "man",
+        "verb_continuation": "boat",
+        "full_prefix": "The old man the",
+        "stripped_prefix": "man the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 7.209479331970215,
+        "s_stripped": 8.205731391906738,
+        "s_anchor": 9.151101112365723
+      },
+      {
+        "id": 17,
+        "v_amb_word": "captain",
+        "verb_continuation": "ship",
+        "full_prefix": "The young captain the",
+        "stripped_prefix": "captain the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 7.596524715423584,
+        "s_stripped": 4.267371654510498,
+        "s_anchor": 8.588601112365723
+      },
+      {
+        "id": 18,
+        "v_amb_word": "guard",
+        "verb_continuation": "gate",
+        "full_prefix": "The brave guard the",
+        "stripped_prefix": "guard the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 3.077937364578247,
+        "s_stripped": 3.6843528747558594,
+        "s_anchor": 9.776101112365723
+      },
+      {
+        "id": 19,
+        "v_amb_word": "bank",
+        "verb_continuation": "savings",
+        "full_prefix": "The wealthy bank their",
+        "stripped_prefix": "bank their",
+        "anchor_prefix": "They wrote down all their",
+        "s_full": 2.517815113067627,
+        "s_stripped": 3.4711647033691406,
+        "s_anchor": 5.191472053527832
+      },
+      {
+        "id": 20,
+        "v_amb_word": "nurse",
+        "verb_continuation": "children",
+        "full_prefix": "The sick nurse the",
+        "stripped_prefix": "nurse the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 5.501530647277832,
+        "s_stripped": 5.954585075378418,
+        "s_anchor": 6.213601112365723
+      },
+      {
+        "id": 21,
+        "v_amb_word": "bear",
+        "verb_continuation": "storm",
+        "full_prefix": "The hungry bear the",
+        "stripped_prefix": "bear the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 7.689413070678711,
+        "s_stripped": 7.188901901245117,
+        "s_anchor": 11.401101112365723
+      },
+      {
+        "id": 22,
+        "v_amb_word": "school",
+        "verb_continuation": "kids",
+        "full_prefix": "The poor school their",
+        "stripped_prefix": "school their",
+        "anchor_prefix": "They wrote down all their",
+        "s_full": 2.9951775074005127,
+        "s_stripped": 3.544152021408081,
+        "s_anchor": 8.253972053527832
+      },
+      {
+        "id": 23,
+        "v_amb_word": "dog",
+        "verb_continuation": "trails",
+        "full_prefix": "The exhausted dog the",
+        "stripped_prefix": "dog the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 14.522823333740234,
+        "s_stripped": 13.538272857666016,
+        "s_anchor": 13.057351112365723
+      },
+      {
+        "id": 24,
+        "v_amb_word": "rule",
+        "verb_continuation": "seas",
+        "full_prefix": "The mighty rule the",
+        "stripped_prefix": "rule the",
+        "anchor_prefix": "He looked carefully at the",
+        "s_full": 4.233345031738281,
+        "s_stripped": 4.8581743240356445,
+        "s_anchor": 14.682351112365723
+      },
+      {
+        "id": 25,
+        "v_amb_word": "fish",
+        "verb_continuation": "survival",
+        "full_prefix": "The wounded fish for",
+        "stripped_prefix": "fish for",
+        "anchor_prefix": "She had been searching for",
+        "s_full": 7.3177409172058105,
+        "s_stripped": 6.6921234130859375,
+        "s_anchor": 11.459379196166992
+      }
+    ]
+  }
+}
