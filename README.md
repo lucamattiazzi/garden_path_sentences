@@ -9,6 +9,8 @@ model_finder/   # Surprisal sweep across candidate models + the two GPS datasets
 qwen4b/         # Full mech-interp pipeline on Qwen3-4B-Base (steps 01-11)
 qwen14b/        # Full mech-interp pipeline on Qwen3-14B-Base (steps 01-13)
 qwen32b/        # First-round 32B triage (confounded; kept for the record)
+inverse_gps/    # Inverse angle: traps that garden-path LLMs but not humans
+
 ```
 
 ## Quick start
