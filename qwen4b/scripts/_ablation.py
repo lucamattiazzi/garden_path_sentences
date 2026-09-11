@@ -75,22 +75,48 @@ class HeadsAblated:
     ):
         self.model = model
         self.head_dim = head_dim
-        self.targets = list(targets)
+        # Repeating a target used to save an already-zeroed slice on the
+        # second pass and restore that zero slice last, permanently corrupting
+        # the model after leaving the context.
+        self.targets = list(dict.fromkeys(targets))
         self._saved: list[tuple[torch.nn.Linear, int, int, torch.Tensor]] = []
 
     def __enter__(self) -> HeadsAblated:
+        if self.head_dim <= 0:
+            raise ValueError(f"head_dim must be positive, got {self.head_dim}")
+
+        layers = decoder_layers(self.model)
+        resolved: list[tuple[torch.nn.Linear, int, int]] = []
         for layer_idx, head_idx in self.targets:
-            o_proj = decoder_layers(self.model)[layer_idx].self_attn.o_proj
+            if not 0 <= layer_idx < len(layers):
+                raise ValueError(
+                    f"layer index {layer_idx} out of range [0, {len(layers)})"
+                )
+            o_proj = layers[layer_idx].self_attn.o_proj
             start = head_idx * self.head_dim
             end = start + self.head_dim
-            original = o_proj.weight.data[:, start:end].clone()
-            self._saved.append((o_proj, start, end, original))
-            o_proj.weight.data[:, start:end].zero_()
+            width = o_proj.weight.shape[1]
+            if head_idx < 0 or end > width:
+                n_heads = width // self.head_dim
+                raise ValueError(
+                    f"head index {head_idx} out of range [0, {n_heads}) "
+                    f"for layer {layer_idx}"
+                )
+            resolved.append((o_proj, start, end))
+
+        # Validation is deliberately completed before the first mutation so
+        # a bad target can never leave a partially ablated model behind.
+        with torch.no_grad():
+            for o_proj, start, end in resolved:
+                original = o_proj.weight[:, start:end].clone()
+                self._saved.append((o_proj, start, end, original))
+                o_proj.weight[:, start:end].zero_()
         return self
 
     def __exit__(self, *_exc) -> None:
-        for o_proj, start, end, original in self._saved:
-            o_proj.weight.data[:, start:end] = original
+        with torch.no_grad():
+            for o_proj, start, end, original in self._saved:
+                o_proj.weight[:, start:end].copy_(original)
         self._saved.clear()
 
 

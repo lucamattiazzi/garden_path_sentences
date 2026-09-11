@@ -33,7 +33,10 @@ def load_model(model_name: str):
     """
     print(f"  loading {model_name} (MLX-LM) ...", flush=True)
     t0 = time.time()
-    model, tokenizer = mlx_load(model_name)
+    loaded = mlx_load(model_name)
+    # mlx-lm can optionally return a third config value. Indexing the two
+    # stable fields keeps this wrapper compatible with both return shapes.
+    model, tokenizer = loaded[0], loaded[1]
     print(f"  loaded in {time.time() - t0:.1f}s", flush=True)
     return model, tokenizer
 

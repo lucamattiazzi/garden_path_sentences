@@ -1,4 +1,5 @@
 import time
+from typing import Any
 
 import torch
 from dotenv import load_dotenv
@@ -23,7 +24,7 @@ def load_model(
     print(f"  loading {spec.hf_name} (dtype={spec.dtype}) ...", flush=True)
     t0 = time.time()
     tokenizer = AutoTokenizer.from_pretrained(spec.hf_name, trust_remote_code=True)
-    model = AutoModelForCausalLM.from_pretrained(
+    model: Any = AutoModelForCausalLM.from_pretrained(
         spec.hf_name,
         dtype=dtype,
         trust_remote_code=True,
@@ -60,13 +61,22 @@ def critical_token_positions(
         )
         input_ids = enc["input_ids"]
         offsets = enc["offset_mapping"]
-        critical_indices = [
-            i
-            for i, (a, b) in enumerate(offsets)
-            if a >= crit_char_start and b <= crit_char_end and b > a
-        ]
+        critical_indices = []
+        for i, (a, b) in enumerate(offsets):
+            if b <= a or b <= crit_char_start or a >= crit_char_end:
+                continue
+
+            # Some tokenizers include the separator before a word in that
+            # word's offset (for example ``(len(prefix), end)``).  Accept
+            # such whitespace, but reject a token that also consumes actual
+            # characters from the prefix or from the following text: that
+            # token cannot be assigned cleanly to the critical word.
+            before = full_text[a:crit_char_start] if a < crit_char_start else ""
+            after = full_text[crit_char_end:b] if b > crit_char_end else ""
+            if not before.strip() and not after.strip():
+                critical_indices.append(i)
         if critical_indices:
-            return input_ids, critical_indices
+            return list(input_ids), critical_indices
     except (TypeError, NotImplementedError, KeyError):
         pass  # slow tokenizer — fall through
 

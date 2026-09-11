@@ -12,6 +12,7 @@ import json
 import shutil
 import sys
 from pathlib import Path
+from typing import Any
 
 ROOT = Path(__file__).resolve().parent.parent
 REPORT_DIR = Path(__file__).resolve().parent
@@ -35,7 +36,7 @@ def extract_model(model_dir: Path):
     s01 = load_step(logs, "01_baseline")
     s02 = load_step(logs, "02_layer_sweep")
 
-    out = {"meta": None, "steps_present": []}
+    out: dict[str, Any] = {"meta": None, "steps_present": []}
 
     if s02 is not None:
         out["meta"] = {
@@ -58,17 +59,18 @@ def extract_model(model_dir: Path):
         out["s02"] = {
             "per_layer": [
                 {
-                    "layer": l["layer"],
-                    "effect_drop": l["effect_drop"],
-                    "control_inflation": l["control_inflation"],
+                    "layer": layer["layer"],
+                    "effect_drop": layer["effect_drop"],
+                    "control_inflation": layer["control_inflation"],
                 }
-                for l in s02["per_layer"]
+                for layer in s02["per_layer"]
             ]
         }
 
     sweeps = []
     for path in sorted(logs.glob("03_head_sweep_L*.json")):
-        res = json.load(open(path))["results"]
+        with open(path) as fh:
+            res = json.load(fh)["results"]
         sweeps.append(
             {
                 "layer": res["layer"],
@@ -101,7 +103,8 @@ def extract_model(model_dir: Path):
 
     vc_sweeps = []
     for path in sorted(logs.glob("06_predict_head_sweep_L*.json")):
-        res = json.load(open(path))["results"]
+        with open(path) as fh:
+            res = json.load(fh)["results"]
         vc_sweeps.append(
             {
                 "layer": res["layer"],
@@ -125,12 +128,12 @@ def extract_model(model_dir: Path):
             "baseline_summary": s05["baseline_summary"],
             "per_layer": [
                 {
-                    "layer": l["layer"],
-                    "vc_delta_inflation": l["vc_delta_inflation"],
-                    "vc_gps_inflation": l["vc_gps_inflation"],
-                    "control_inflation": l["control_inflation"],
+                    "layer": layer["layer"],
+                    "vc_delta_inflation": layer["vc_delta_inflation"],
+                    "vc_gps_inflation": layer["vc_gps_inflation"],
+                    "control_inflation": layer["control_inflation"],
                 }
-                for l in s05["per_layer"]
+                for layer in s05["per_layer"]
             ],
         }
 
@@ -165,12 +168,12 @@ def extract_model(model_dir: Path):
             "mean_s_norm": s11["mean_s_norm"],
             "per_layer": [
                 {
-                    "layer": l["layer"],
-                    "recovery_v_amb": l["recovery_v_amb"],
-                    "recovery_critical": l["recovery_critical"],
-                    "recovery_both": l["recovery_both"],
+                    "layer": layer["layer"],
+                    "recovery_v_amb": layer["recovery_v_amb"],
+                    "recovery_critical": layer["recovery_critical"],
+                    "recovery_both": layer["recovery_both"],
                 }
-                for l in s11["per_layer"]
+                for layer in s11["per_layer"]
             ],
         }
 

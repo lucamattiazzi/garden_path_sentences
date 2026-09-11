@@ -15,6 +15,8 @@ import it the same way.
 
 from __future__ import annotations
 
+from typing import Any
+
 import numpy as np
 import torch
 from _ablation import (
@@ -144,7 +146,7 @@ def load_model_eager(device: str, spec: ModelSpec):
     which is required for `output_attentions=True`."""
     print(f"  loading {spec.hf_name} (dtype={spec.dtype}, attn=eager) ...", flush=True)
     tokenizer = AutoTokenizer.from_pretrained(spec.hf_name, trust_remote_code=True)
-    model = AutoModelForCausalLM.from_pretrained(
+    model: Any = AutoModelForCausalLM.from_pretrained(
         spec.hf_name,
         dtype=_DTYPES[spec.dtype],
         trust_remote_code=True,
@@ -414,13 +416,18 @@ def run_patching_sweep(model, tokenizer, pairs: list[Pair], device: str) -> dict
         finally:
             cap.remove()
 
+        if any(hidden is None for hidden in captured):
+            raise RuntimeError("failed to capture one or more decoder-layer outputs")
+
         for li in range(n_layers):
             for sc in scopes:
                 positions, vectors = [], []
                 for src_idx, tgt_idx in scope_positions[sc]:
                     for s_i, t_i in zip(src_idx, tgt_idx, strict=True):
                         positions.append(t_i)
-                        vectors.append(captured[li][0, s_i])
+                        hidden = captured[li]
+                        assert hidden is not None  # narrowed by the check above
+                        vectors.append(hidden[0, s_i])
                 patch = _PatchLayerPositions(decoder_layers(model)[li], positions, vectors)
                 try:
                     s_patched = surprisal(
@@ -436,6 +443,9 @@ def run_patching_sweep(model, tokenizer, pairs: list[Pair], device: str) -> dict
             flush=True,
         )
 
+    if not per_pair:
+        raise RuntimeError("activation patching failed: no token-aligned pairs")
+
     mean_gps = float(np.mean([r["s_gps"] for r in per_pair]))
     mean_norm = float(np.mean([r["s_norm"] for r in per_pair]))
     gap = mean_gps - mean_norm
@@ -446,7 +456,7 @@ def run_patching_sweep(model, tokenizer, pairs: list[Pair], device: str) -> dict
     print("    " + "-" * 60)
     per_layer = []
     for li in range(n_layers):
-        row = {"layer": li}
+        row: dict[str, int | float] = {"layer": li}
         for sc in scopes:
             m = float(np.nanmean(acc[sc][li]))
             row[f"s_patched_{sc}"] = m
