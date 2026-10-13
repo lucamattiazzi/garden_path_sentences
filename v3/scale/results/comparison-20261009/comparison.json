@@ -1,0 +1,1920 @@
+{
+  "selected": "12b",
+  "development_only": true,
+  "identical_materials": true,
+  "selection_sequence_checked": true,
+  "models": [
+    {
+      "size": "1b",
+      "run_id": "direct-v3-20261008-01",
+      "metadata": {
+        "complete": true,
+        "model": "google/gemma-3-1b-pt",
+        "revision": "fcf18a2a879aab110ca39f8bffbccd5d49d8eb29",
+        "dtype": "float32",
+        "tf32": false,
+        "attention": "eager",
+        "seed": 0,
+        "gpu": "NVIDIA A10G",
+        "started_at_utc": "2026-10-08T21:30:44Z",
+        "versions": {
+          "torch": "2.10.0",
+          "transformers": "5.9.0",
+          "tokenizers": "0.22.2",
+          "numpy": "2.4.3"
+        },
+        "source_sha256": {
+          "v3/__init__.py": "35574423af3093897d8d1b80bab54edf0f169257d35ded43a2ed16104c825b58",
+          "v3/bridge/__init__.py": "17cea7ffb0866310a12ba7e5f9852a02443d02381d866f907d39dfac844607ad",
+          "v3/bridge/materials.py": "fd9388460a4df98b15aed63c3d686e91beda726e389d97595d9cff9ac8322b20",
+          "v3/direct/__init__.py": "e5648a7671fe0b863c4f04f9c84dd2958e13c97639a3d871cdc411ef37850c52",
+          "v3/direct/experiment.py": "930663d488746dabaecd8f6cfd6bcea588a3f1a4821100ba440d1798eafbe22b",
+          "v3/direct/measure.py": "9b3406a19858d00af3e19dcc7f9772ae0b7aee75bfec0eaad7f7e61a31514ba8",
+          "v3/direct/run.py": "5f630f813010b0ff7916999bf4245202c8d0712551d993f9de80190336f9e5f7",
+          "v3/direct/modal_app.py": "7980fc83a9812cd1404915691967ca7557420f919b32ab1a3e9526027efb1dbd",
+          "v3/direct/PROTOCOL.md": "79c250e21e7b64bf8d4769f0eba43b43fe3a390097871f7b911452e9d6618301",
+          "v2/__init__.py": "7914a0ccbff30cfef3cd66e81affc5587fa394570896c0ed95a7478de280f8aa",
+          "v2/experiment.py": "c32985fcaef0e5ecbe536f904cb4101e6810ba109bfa9b3c9bf1737b5c343cf2",
+          "v2/materials.py": "c9af78f9389d77796cc42363a444ec712f21e6fa71017728bee53c6b907cc70f"
+        },
+        "elapsed_seconds": 15.15824580192566
+      },
+      "result": {
+        "status": "instrument_gate_failed",
+        "gate": {
+          "passed": false,
+          "strata": [
+            {
+              "voice": "active",
+              "role": "agent",
+              "condition": "no_context",
+              "both_reversals": 0.0,
+              "families": 6
+            },
+            {
+              "voice": "active",
+              "role": "agent",
+              "condition": "simple",
+              "both_reversals": 0.5,
+              "families": 6
+            },
+            {
+              "voice": "active",
+              "role": "patient",
+              "condition": "no_context",
+              "both_reversals": 0.0,
+              "families": 6
+            },
+            {
+              "voice": "active",
+              "role": "patient",
+              "condition": "simple",
+              "both_reversals": 0.5,
+              "families": 6
+            },
+            {
+              "voice": "passive",
+              "role": "agent",
+              "condition": "no_context",
+              "both_reversals": 0.0,
+              "families": 6
+            },
+            {
+              "voice": "passive",
+              "role": "agent",
+              "condition": "simple",
+              "both_reversals": 0.0,
+              "families": 6
+            },
+            {
+              "voice": "passive",
+              "role": "patient",
+              "condition": "no_context",
+              "both_reversals": 0.0,
+              "families": 6
+            },
+            {
+              "voice": "passive",
+              "role": "patient",
+              "condition": "simple",
+              "both_reversals": 0.6666666666666666,
+              "families": 6
+            }
+          ],
+          "rule": "At least 75% correct in BOTH participant reversals in EACH voice/role stratum on simple development clauses"
+        },
+        "baselines": 96,
+        "interventions": 0,
+        "test_inference": false
+      },
+      "audit": {
+        "checks": {
+          "passed": true,
+          "sources": 12,
+          "baselines": 96,
+          "independent_gate": true,
+          "no_context_counterfactuals": true,
+          "test_inference": false
+        },
+        "summary": [
+          {
+            "condition": "no_context",
+            "voice": "active",
+            "role": "agent",
+            "families": [
+              {
+                "family": "coached",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "interviewed",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "questioned",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "taught",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "visited",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "watched",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              }
+            ],
+            "margin": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "accuracy": {
+              "mean": 0.5,
+              "ci95": [
+                0.5,
+                0.5
+              ]
+            },
+            "both_reversals": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "condition": "no_context",
+            "voice": "active",
+            "role": "patient",
+            "families": [
+              {
+                "family": "coached",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "interviewed",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "questioned",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "taught",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "visited",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "watched",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              }
+            ],
+            "margin": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "accuracy": {
+              "mean": 0.5,
+              "ci95": [
+                0.5,
+                0.5
+              ]
+            },
+            "both_reversals": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "condition": "no_context",
+            "voice": "passive",
+            "role": "agent",
+            "families": [
+              {
+                "family": "coached",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "interviewed",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "questioned",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "taught",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "visited",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "watched",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              }
+            ],
+            "margin": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "accuracy": {
+              "mean": 0.5,
+              "ci95": [
+                0.5,
+                0.5
+              ]
+            },
+            "both_reversals": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "condition": "no_context",
+            "voice": "passive",
+            "role": "patient",
+            "families": [
+              {
+                "family": "coached",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "interviewed",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "questioned",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "taught",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "visited",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "watched",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              }
+            ],
+            "margin": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "accuracy": {
+              "mean": 0.5,
+              "ci95": [
+                0.5,
+                0.5
+              ]
+            },
+            "both_reversals": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "condition": "simple",
+            "voice": "active",
+            "role": "agent",
+            "families": [
+              {
+                "family": "coached",
+                "margin": 0.6189286299049854,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "interviewed",
+                "margin": -0.029204783961176872,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "questioned",
+                "margin": 0.5562464278191328,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "taught",
+                "margin": 1.8345608990639448,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "visited",
+                "margin": -0.14158684015274048,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "watched",
+                "margin": 1.3924228306859732,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              }
+            ],
+            "margin": {
+              "mean": 0.7052278605600198,
+              "ci95": [
+                0.15154212371756634,
+                1.2819707865516345
+              ]
+            },
+            "accuracy": {
+              "mean": 0.75,
+              "ci95": [
+                0.5833333333333334,
+                0.9166666666666666
+              ]
+            },
+            "both_reversals": {
+              "mean": 0.5,
+              "ci95": [
+                0.16666666666666666,
+                0.8333333333333334
+              ]
+            }
+          },
+          {
+            "condition": "simple",
+            "voice": "active",
+            "role": "patient",
+            "families": [
+              {
+                "family": "coached",
+                "margin": 0.5632412610575557,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "interviewed",
+                "margin": 1.7327261259779334,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "questioned",
+                "margin": 0.6451808987185359,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "taught",
+                "margin": 0.43852855917066336,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "visited",
+                "margin": 0.9087858777493238,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "watched",
+                "margin": 0.37930258829146624,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              }
+            ],
+            "margin": {
+              "mean": 0.7779608851609131,
+              "ci95": [
+                0.4811429198210438,
+                1.1848836529301465
+              ]
+            },
+            "accuracy": {
+              "mean": 0.75,
+              "ci95": [
+                0.5833333333333334,
+                0.9166666666666666
+              ]
+            },
+            "both_reversals": {
+              "mean": 0.5,
+              "ci95": [
+                0.16666666666666666,
+                0.8333333333333334
+              ]
+            }
+          },
+          {
+            "condition": "simple",
+            "voice": "passive",
+            "role": "agent",
+            "families": [
+              {
+                "family": "coached",
+                "margin": 0.36838322319090366,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "interviewed",
+                "margin": 0.3738954281434417,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "questioned",
+                "margin": -0.3690775241702795,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "taught",
+                "margin": 0.07205817103385925,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "visited",
+                "margin": -1.3461317559704185,
+                "accuracy": 0.0,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "watched",
+                "margin": -0.458715639077127,
+                "accuracy": 0.0,
+                "both_reversals": 0.0
+              }
+            ],
+            "margin": {
+              "mean": -0.22659801614160338,
+              "ci95": [
+                -0.7487155005025367,
+                0.19884169241413474
+              ]
+            },
+            "accuracy": {
+              "mean": 0.3333333333333333,
+              "ci95": [
+                0.16666666666666666,
+                0.5
+              ]
+            },
+            "both_reversals": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "condition": "simple",
+            "voice": "passive",
+            "role": "patient",
+            "families": [
+              {
+                "family": "coached",
+                "margin": 0.9078373350203037,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "interviewed",
+                "margin": 0.8086245190352201,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "questioned",
+                "margin": 0.5088848918676376,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "taught",
+                "margin": 0.3057483993470669,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "visited",
+                "margin": 1.584589159116149,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "watched",
+                "margin": 0.6284379214048386,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              }
+            ],
+            "margin": {
+              "mean": 0.7906870376318693,
+              "ci95": [
+                0.5076648015528917,
+                1.1458847197083133
+              ]
+            },
+            "accuracy": {
+              "mean": 0.8333333333333334,
+              "ci95": [
+                0.6666666666666666,
+                1.0
+              ]
+            },
+            "both_reversals": {
+              "mean": 0.6666666666666666,
+              "ci95": [
+                0.3333333333333333,
+                1.0
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "size": "4b",
+      "run_id": "scale-4b-20261009-02",
+      "metadata": {
+        "complete": true,
+        "model": "google/gemma-3-4b-pt",
+        "revision": "cc012e0a6d0787b4adcc0fa2c4da74402494554d",
+        "dtype": "float32",
+        "tf32": false,
+        "attention": "eager",
+        "seed": 0,
+        "gpu": "NVIDIA A10",
+        "started_at_utc": "2026-10-08T23:31:20Z",
+        "versions": {
+          "torch": "2.10.0",
+          "transformers": "5.9.0",
+          "tokenizers": "0.22.2",
+          "numpy": "2.4.3"
+        },
+        "source_sha256": {
+          "v3/__init__.py": "35574423af3093897d8d1b80bab54edf0f169257d35ded43a2ed16104c825b58",
+          "v3/bridge/__init__.py": "17cea7ffb0866310a12ba7e5f9852a02443d02381d866f907d39dfac844607ad",
+          "v3/bridge/materials.py": "fd9388460a4df98b15aed63c3d686e91beda726e389d97595d9cff9ac8322b20",
+          "v3/direct/__init__.py": "e5648a7671fe0b863c4f04f9c84dd2958e13c97639a3d871cdc411ef37850c52",
+          "v3/direct/experiment.py": "930663d488746dabaecd8f6cfd6bcea588a3f1a4821100ba440d1798eafbe22b",
+          "v3/direct/measure.py": "9b3406a19858d00af3e19dcc7f9772ae0b7aee75bfec0eaad7f7e61a31514ba8",
+          "v3/scale/__init__.py": "83eac1c5f718b7513490d02728f96a9175eee34b66fd6ff8cba66cbeb39965fb",
+          "v3/scale/run.py": "203d3a0fd22f713894bcd7317677c722cea4c216e2165a381905e54beabfe4eb",
+          "v3/scale/measure.py": "e54dbeceed2a13deda5f2a63e48de65032ffb03f28bf90faf35b1e6758319144",
+          "v3/scale/modal_app.py": "8567d0c0edf9e8eb40d8609664dbd5cb8a9c9ed2ad806ba46e2d79d646f14f7e",
+          "v3/scale/PROTOCOL.md": "919a79c00d8b6d15400bcdcc575e26c88c242323a9ebc070838c624357a3147d",
+          "v2/__init__.py": "7914a0ccbff30cfef3cd66e81affc5587fa394570896c0ed95a7478de280f8aa",
+          "v2/experiment.py": "c32985fcaef0e5ecbe536f904cb4101e6810ba109bfa9b3c9bf1737b5c343cf2",
+          "v2/materials.py": "c9af78f9389d77796cc42363a444ec712f21e6fa71017728bee53c6b907cc70f"
+        },
+        "loading_info": {
+          "missing_keys": [],
+          "unexpected_keys": [],
+          "mismatched_keys": [],
+          "error_msgs": []
+        },
+        "layers": 34,
+        "parameter_count": 4300079472,
+        "peak_gpu_bytes": 17454438400,
+        "elapsed_seconds": 29.92709755897522
+      },
+      "result": {
+        "status": "instrument_gate_failed",
+        "gate": {
+          "passed": false,
+          "strata": [
+            {
+              "voice": "active",
+              "role": "agent",
+              "condition": "no_context",
+              "both_reversals": 0.0,
+              "families": 6
+            },
+            {
+              "voice": "active",
+              "role": "agent",
+              "condition": "simple",
+              "both_reversals": 1.0,
+              "families": 6
+            },
+            {
+              "voice": "active",
+              "role": "patient",
+              "condition": "no_context",
+              "both_reversals": 0.0,
+              "families": 6
+            },
+            {
+              "voice": "active",
+              "role": "patient",
+              "condition": "simple",
+              "both_reversals": 0.5,
+              "families": 6
+            },
+            {
+              "voice": "passive",
+              "role": "agent",
+              "condition": "no_context",
+              "both_reversals": 0.0,
+              "families": 6
+            },
+            {
+              "voice": "passive",
+              "role": "agent",
+              "condition": "simple",
+              "both_reversals": 0.3333333333333333,
+              "families": 6
+            },
+            {
+              "voice": "passive",
+              "role": "patient",
+              "condition": "no_context",
+              "both_reversals": 0.0,
+              "families": 6
+            },
+            {
+              "voice": "passive",
+              "role": "patient",
+              "condition": "simple",
+              "both_reversals": 1.0,
+              "families": 6
+            }
+          ],
+          "rule": "At least 75% correct in BOTH participant reversals in EACH voice/role stratum on simple development clauses"
+        },
+        "baselines": 96,
+        "interventions": 0,
+        "test_inference": false
+      },
+      "audit": {
+        "checks": {
+          "passed": true,
+          "sources": 14,
+          "baselines": 96,
+          "independent_gate": true,
+          "no_context_counterfactuals": true,
+          "test_inference": false
+        },
+        "summary": [
+          {
+            "condition": "no_context",
+            "voice": "active",
+            "role": "agent",
+            "families": [
+              {
+                "family": "coached",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "interviewed",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "questioned",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "taught",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "visited",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "watched",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              }
+            ],
+            "margin": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "accuracy": {
+              "mean": 0.5,
+              "ci95": [
+                0.5,
+                0.5
+              ]
+            },
+            "both_reversals": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "condition": "no_context",
+            "voice": "active",
+            "role": "patient",
+            "families": [
+              {
+                "family": "coached",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "interviewed",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "questioned",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "taught",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "visited",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "watched",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              }
+            ],
+            "margin": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "accuracy": {
+              "mean": 0.5,
+              "ci95": [
+                0.5,
+                0.5
+              ]
+            },
+            "both_reversals": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "condition": "no_context",
+            "voice": "passive",
+            "role": "agent",
+            "families": [
+              {
+                "family": "coached",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "interviewed",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "questioned",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "taught",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "visited",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "watched",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              }
+            ],
+            "margin": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "accuracy": {
+              "mean": 0.5,
+              "ci95": [
+                0.5,
+                0.5
+              ]
+            },
+            "both_reversals": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "condition": "no_context",
+            "voice": "passive",
+            "role": "patient",
+            "families": [
+              {
+                "family": "coached",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "interviewed",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "questioned",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "taught",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "visited",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "watched",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              }
+            ],
+            "margin": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "accuracy": {
+              "mean": 0.5,
+              "ci95": [
+                0.5,
+                0.5
+              ]
+            },
+            "both_reversals": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "condition": "simple",
+            "voice": "active",
+            "role": "agent",
+            "families": [
+              {
+                "family": "coached",
+                "margin": 4.881458831485361,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "interviewed",
+                "margin": 5.335271749878302,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "questioned",
+                "margin": 2.9645722347777337,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "taught",
+                "margin": 2.505552045768127,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "visited",
+                "margin": 4.420240311417729,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "watched",
+                "margin": 3.4592633668798953,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              }
+            ],
+            "margin": {
+              "mean": 3.927726423367858,
+              "ci95": [
+                3.131046604559136,
+                4.718827473504159
+              ]
+            },
+            "accuracy": {
+              "mean": 1.0,
+              "ci95": [
+                1.0,
+                1.0
+              ]
+            },
+            "both_reversals": {
+              "mean": 1.0,
+              "ci95": [
+                1.0,
+                1.0
+              ]
+            }
+          },
+          {
+            "condition": "simple",
+            "voice": "active",
+            "role": "patient",
+            "families": [
+              {
+                "family": "coached",
+                "margin": 1.4419978773221374,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "interviewed",
+                "margin": 1.2412065686658025,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "questioned",
+                "margin": -0.474837358109653,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "taught",
+                "margin": 2.9120838157832623,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "visited",
+                "margin": 0.158891960978508,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "watched",
+                "margin": 0.3340277783572674,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              }
+            ],
+            "margin": {
+              "mean": 0.9355617738328874,
+              "ci95": [
+                0.11164901359006763,
+                1.89625942427665
+              ]
+            },
+            "accuracy": {
+              "mean": 0.75,
+              "ci95": [
+                0.5833333333333334,
+                0.9166666666666666
+              ]
+            },
+            "both_reversals": {
+              "mean": 0.5,
+              "ci95": [
+                0.16666666666666666,
+                0.8333333333333334
+              ]
+            }
+          },
+          {
+            "condition": "simple",
+            "voice": "passive",
+            "role": "agent",
+            "families": [
+              {
+                "family": "coached",
+                "margin": 0.6469685551710427,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "interviewed",
+                "margin": -0.49076026887632906,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "questioned",
+                "margin": 1.562316135270521,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "taught",
+                "margin": 1.1372814609203488,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "visited",
+                "margin": 0.2955179722048342,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "watched",
+                "margin": 0.12335925828665495,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              }
+            ],
+            "margin": {
+              "mean": 0.5457805188295121,
+              "ci95": [
+                0.01377818041170655,
+                1.0990929466982682
+              ]
+            },
+            "accuracy": {
+              "mean": 0.6666666666666666,
+              "ci95": [
+                0.5,
+                0.8333333333333334
+              ]
+            },
+            "both_reversals": {
+              "mean": 0.3333333333333333,
+              "ci95": [
+                0.0,
+                0.6666666666666666
+              ]
+            }
+          },
+          {
+            "condition": "simple",
+            "voice": "passive",
+            "role": "patient",
+            "families": [
+              {
+                "family": "coached",
+                "margin": 3.132829491980374,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "interviewed",
+                "margin": 3.521052682772279,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "questioned",
+                "margin": 3.310812307987362,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "taught",
+                "margin": 1.4693195996806026,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "visited",
+                "margin": 1.0140727097168565,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "watched",
+                "margin": 1.9671128527261317,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              }
+            ],
+            "margin": {
+              "mean": 2.4025332741439342,
+              "ci95": [
+                1.6019133455896128,
+                3.1326549808339528
+              ]
+            },
+            "accuracy": {
+              "mean": 1.0,
+              "ci95": [
+                1.0,
+                1.0
+              ]
+            },
+            "both_reversals": {
+              "mean": 1.0,
+              "ci95": [
+                1.0,
+                1.0
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "size": "12b",
+      "run_id": "scale-12b-20261009-01",
+      "metadata": {
+        "complete": true,
+        "model": "google/gemma-3-12b-pt",
+        "revision": "295efb63d01a7017928f273a94ebb86105c9526f",
+        "dtype": "float32",
+        "tf32": false,
+        "attention": "eager",
+        "seed": 0,
+        "gpu": "NVIDIA A100-SXM4-80GB",
+        "started_at_utc": "2026-10-08T23:33:16Z",
+        "versions": {
+          "torch": "2.10.0",
+          "transformers": "5.9.0",
+          "tokenizers": "0.22.2",
+          "numpy": "2.4.3"
+        },
+        "source_sha256": {
+          "v3/__init__.py": "35574423af3093897d8d1b80bab54edf0f169257d35ded43a2ed16104c825b58",
+          "v3/bridge/__init__.py": "17cea7ffb0866310a12ba7e5f9852a02443d02381d866f907d39dfac844607ad",
+          "v3/bridge/materials.py": "fd9388460a4df98b15aed63c3d686e91beda726e389d97595d9cff9ac8322b20",
+          "v3/direct/__init__.py": "e5648a7671fe0b863c4f04f9c84dd2958e13c97639a3d871cdc411ef37850c52",
+          "v3/direct/experiment.py": "930663d488746dabaecd8f6cfd6bcea588a3f1a4821100ba440d1798eafbe22b",
+          "v3/direct/measure.py": "9b3406a19858d00af3e19dcc7f9772ae0b7aee75bfec0eaad7f7e61a31514ba8",
+          "v3/scale/__init__.py": "83eac1c5f718b7513490d02728f96a9175eee34b66fd6ff8cba66cbeb39965fb",
+          "v3/scale/run.py": "203d3a0fd22f713894bcd7317677c722cea4c216e2165a381905e54beabfe4eb",
+          "v3/scale/measure.py": "e54dbeceed2a13deda5f2a63e48de65032ffb03f28bf90faf35b1e6758319144",
+          "v3/scale/modal_app.py": "8567d0c0edf9e8eb40d8609664dbd5cb8a9c9ed2ad806ba46e2d79d646f14f7e",
+          "v3/scale/PROTOCOL.md": "919a79c00d8b6d15400bcdcc575e26c88c242323a9ebc070838c624357a3147d",
+          "v2/__init__.py": "7914a0ccbff30cfef3cd66e81affc5587fa394570896c0ed95a7478de280f8aa",
+          "v2/experiment.py": "c32985fcaef0e5ecbe536f904cb4101e6810ba109bfa9b3c9bf1737b5c343cf2",
+          "v2/materials.py": "c9af78f9389d77796cc42363a444ec712f21e6fa71017728bee53c6b907cc70f"
+        },
+        "loading_info": {
+          "missing_keys": [],
+          "unexpected_keys": [],
+          "mismatched_keys": [],
+          "error_msgs": []
+        },
+        "layers": 48,
+        "parameter_count": 12187325040,
+        "peak_gpu_bytes": 49153969152,
+        "elapsed_seconds": 63.13833951950073
+      },
+      "result": {
+        "status": "instrument_gate_passed",
+        "gate": {
+          "passed": true,
+          "strata": [
+            {
+              "voice": "active",
+              "role": "agent",
+              "condition": "no_context",
+              "both_reversals": 0.0,
+              "families": 6
+            },
+            {
+              "voice": "active",
+              "role": "agent",
+              "condition": "simple",
+              "both_reversals": 1.0,
+              "families": 6
+            },
+            {
+              "voice": "active",
+              "role": "patient",
+              "condition": "no_context",
+              "both_reversals": 0.0,
+              "families": 6
+            },
+            {
+              "voice": "active",
+              "role": "patient",
+              "condition": "simple",
+              "both_reversals": 1.0,
+              "families": 6
+            },
+            {
+              "voice": "passive",
+              "role": "agent",
+              "condition": "no_context",
+              "both_reversals": 0.0,
+              "families": 6
+            },
+            {
+              "voice": "passive",
+              "role": "agent",
+              "condition": "simple",
+              "both_reversals": 1.0,
+              "families": 6
+            },
+            {
+              "voice": "passive",
+              "role": "patient",
+              "condition": "no_context",
+              "both_reversals": 0.0,
+              "families": 6
+            },
+            {
+              "voice": "passive",
+              "role": "patient",
+              "condition": "simple",
+              "both_reversals": 1.0,
+              "families": 6
+            }
+          ],
+          "rule": "At least 75% correct in BOTH participant reversals in EACH voice/role stratum on simple development clauses"
+        },
+        "baselines": 96,
+        "interventions": 0,
+        "test_inference": false
+      },
+      "audit": {
+        "checks": {
+          "passed": true,
+          "sources": 14,
+          "baselines": 96,
+          "independent_gate": true,
+          "no_context_counterfactuals": true,
+          "test_inference": false
+        },
+        "summary": [
+          {
+            "condition": "no_context",
+            "voice": "active",
+            "role": "agent",
+            "families": [
+              {
+                "family": "coached",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "interviewed",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "questioned",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "taught",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "visited",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "watched",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              }
+            ],
+            "margin": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "accuracy": {
+              "mean": 0.5,
+              "ci95": [
+                0.5,
+                0.5
+              ]
+            },
+            "both_reversals": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "condition": "no_context",
+            "voice": "active",
+            "role": "patient",
+            "families": [
+              {
+                "family": "coached",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "interviewed",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "questioned",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "taught",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "visited",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "watched",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              }
+            ],
+            "margin": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "accuracy": {
+              "mean": 0.5,
+              "ci95": [
+                0.5,
+                0.5
+              ]
+            },
+            "both_reversals": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "condition": "no_context",
+            "voice": "passive",
+            "role": "agent",
+            "families": [
+              {
+                "family": "coached",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "interviewed",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "questioned",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "taught",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "visited",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "watched",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              }
+            ],
+            "margin": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "accuracy": {
+              "mean": 0.5,
+              "ci95": [
+                0.5,
+                0.5
+              ]
+            },
+            "both_reversals": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "condition": "no_context",
+            "voice": "passive",
+            "role": "patient",
+            "families": [
+              {
+                "family": "coached",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "interviewed",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "questioned",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "taught",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "visited",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              },
+              {
+                "family": "watched",
+                "margin": 0.0,
+                "accuracy": 0.5,
+                "both_reversals": 0.0
+              }
+            ],
+            "margin": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "accuracy": {
+              "mean": 0.5,
+              "ci95": [
+                0.5,
+                0.5
+              ]
+            },
+            "both_reversals": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "condition": "simple",
+            "voice": "active",
+            "role": "agent",
+            "families": [
+              {
+                "family": "coached",
+                "margin": 4.877151602413505,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "interviewed",
+                "margin": 5.540536514716223,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "questioned",
+                "margin": 5.367566105443984,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "taught",
+                "margin": 4.358403610065579,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "visited",
+                "margin": 5.192554379813373,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "watched",
+                "margin": 4.920852885115892,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              }
+            ],
+            "margin": {
+              "mean": 5.042844182928093,
+              "ci95": [
+                4.718802699198325,
+                5.32160208420828
+              ]
+            },
+            "accuracy": {
+              "mean": 1.0,
+              "ci95": [
+                1.0,
+                1.0
+              ]
+            },
+            "both_reversals": {
+              "mean": 1.0,
+              "ci95": [
+                1.0,
+                1.0
+              ]
+            }
+          },
+          {
+            "condition": "simple",
+            "voice": "active",
+            "role": "patient",
+            "families": [
+              {
+                "family": "coached",
+                "margin": 2.918999770656228,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "interviewed",
+                "margin": 3.383901617489755,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "questioned",
+                "margin": 2.8943796046078205,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "taught",
+                "margin": 2.97926321066916,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "visited",
+                "margin": 2.2863974440842867,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "watched",
+                "margin": 2.5357224736362696,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              }
+            ],
+            "margin": {
+              "mean": 2.8331106868572533,
+              "ci95": [
+                2.5524231495025256,
+                3.097615051238487
+              ]
+            },
+            "accuracy": {
+              "mean": 1.0,
+              "ci95": [
+                1.0,
+                1.0
+              ]
+            },
+            "both_reversals": {
+              "mean": 1.0,
+              "ci95": [
+                1.0,
+                1.0
+              ]
+            }
+          },
+          {
+            "condition": "simple",
+            "voice": "passive",
+            "role": "agent",
+            "families": [
+              {
+                "family": "coached",
+                "margin": 4.228562829084694,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "interviewed",
+                "margin": 4.6135317157022655,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "questioned",
+                "margin": 4.587614978663623,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "taught",
+                "margin": 3.195492934435606,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "visited",
+                "margin": 4.205246270634234,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "watched",
+                "margin": 3.930375646799803,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              }
+            ],
+            "margin": {
+              "mean": 4.126804062553371,
+              "ci95": [
+                3.7182859499007463,
+                4.472683748075117
+              ]
+            },
+            "accuracy": {
+              "mean": 1.0,
+              "ci95": [
+                1.0,
+                1.0
+              ]
+            },
+            "both_reversals": {
+              "mean": 1.0,
+              "ci95": [
+                1.0,
+                1.0
+              ]
+            }
+          },
+          {
+            "condition": "simple",
+            "voice": "passive",
+            "role": "patient",
+            "families": [
+              {
+                "family": "coached",
+                "margin": 4.08981854096055,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "interviewed",
+                "margin": 4.304524063598365,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "questioned",
+                "margin": 3.764960130676627,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "taught",
+                "margin": 2.9740861412137747,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "visited",
+                "margin": 3.5329740028828382,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              },
+              {
+                "family": "watched",
+                "margin": 3.1587826181203127,
+                "accuracy": 1.0,
+                "both_reversals": 1.0
+              }
+            ],
+            "margin": {
+              "mean": 3.6375242495754114,
+              "ci95": [
+                3.26061194203794,
+                4.014436557112883
+              ]
+            },
+            "accuracy": {
+              "mean": 1.0,
+              "ci95": [
+                1.0,
+                1.0
+              ]
+            },
+            "both_reversals": {
+              "mean": 1.0,
+              "ci95": [
+                1.0,
+                1.0
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "metadata_failure_attempt": {
+    "run_id": "scale-4b-20261009-01",
+    "metadata_complete": false,
+    "raw_observations_identical": true,
+    "raw_sha256": "1b3500ebafa8e9632bd1b1604e855791df34309aa0f0b1e9729bbbe66d22e6b9"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "status": "instrument_gate_failed",
+  "gate": {
+    "passed": false,
+    "strata": [
+      {
+        "voice": "active",
+        "role": "agent",
+        "condition": "no_context",
+        "both_reversals": 0.0,
+        "families": 6
+      },
+      {
+        "voice": "active",
+        "role": "agent",
+        "condition": "simple",
+        "both_reversals": 0.5,
+        "families": 6
+      },
+      {
+        "voice": "active",
+        "role": "patient",
+        "condition": "no_context",
+        "both_reversals": 0.0,
+        "families": 6
+      },
+      {
+        "voice": "active",
+        "role": "patient",
+        "condition": "simple",
+        "both_reversals": 0.5,
+        "families": 6
+      },
+      {
+        "voice": "passive",
+        "role": "agent",
+        "condition": "no_context",
+        "both_reversals": 0.0,
+        "families": 6
+      },
+      {
+        "voice": "passive",
+        "role": "agent",
+        "condition": "simple",
+        "both_reversals": 0.0,
+        "families": 6
+      },
+      {
+        "voice": "passive",
+        "role": "patient",
+        "condition": "no_context",
+        "both_reversals": 0.0,
+        "families": 6
+      },
+      {
+        "voice": "passive",
+        "role": "patient",
+        "condition": "simple",
+        "both_reversals": 0.6666666666666666,
+        "families": 6
+      }
+    ],
+    "rule": "At least 75% correct in BOTH participant reversals in EACH voice/role stratum on simple development clauses"
+  },
+  "baselines": 96,
+  "interventions": 0,
+  "test_inference": false
+}

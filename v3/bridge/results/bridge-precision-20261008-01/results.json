@@ -1,0 +1,233 @@
+{
+  "gate": {
+    "passed": false,
+    "both_orders_correct_by_voice": {
+      "active": 0.3333333333333333,
+      "passive": 0.3333333333333333
+    },
+    "median_answer_mass": 0.8417688057971335,
+    "rule": ">=75% both-order correct per voice on simple development; median A+B probability >=10%"
+  },
+  "behavioral": [
+    {
+      "split": "development",
+      "condition": "no_context",
+      "voice": "active",
+      "metric": "accuracy",
+      "mean": 0.5,
+      "ci95": [
+        0.5,
+        0.5
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "no_context",
+      "voice": "active",
+      "metric": "both_orders",
+      "mean": 0.08333333333333333,
+      "ci95": [
+        0.0,
+        0.16666666666666666
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "no_context",
+      "voice": "active",
+      "metric": "margin",
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "no_context",
+      "voice": "all",
+      "metric": "accuracy",
+      "mean": 0.5,
+      "ci95": [
+        0.5,
+        0.5
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "no_context",
+      "voice": "all",
+      "metric": "both_orders",
+      "mean": 0.08333333333333333,
+      "ci95": [
+        0.0,
+        0.16666666666666666
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "no_context",
+      "voice": "all",
+      "metric": "margin",
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "no_context",
+      "voice": "passive",
+      "metric": "accuracy",
+      "mean": 0.5,
+      "ci95": [
+        0.5,
+        0.5
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "no_context",
+      "voice": "passive",
+      "metric": "both_orders",
+      "mean": 0.08333333333333333,
+      "ci95": [
+        0.0,
+        0.16666666666666666
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "no_context",
+      "voice": "passive",
+      "metric": "margin",
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "simple",
+      "voice": "active",
+      "metric": "accuracy",
+      "mean": 0.4791666666666667,
+      "ci95": [
+        0.4166666666666667,
+        0.5416666666666666
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "simple",
+      "voice": "active",
+      "metric": "both_orders",
+      "mean": 0.3333333333333333,
+      "ci95": [
+        0.25,
+        0.4166666666666667
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "simple",
+      "voice": "active",
+      "metric": "margin",
+      "mean": -0.004620472590128581,
+      "ci95": [
+        -0.00705413023630778,
+        -0.00286710262298584
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "simple",
+      "voice": "all",
+      "metric": "accuracy",
+      "mean": 0.4895833333333333,
+      "ci95": [
+        0.4479166666666667,
+        0.53125
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "simple",
+      "voice": "all",
+      "metric": "both_orders",
+      "mean": 0.3333333333333333,
+      "ci95": [
+        0.25,
+        0.375
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "simple",
+      "voice": "all",
+      "metric": "margin",
+      "mean": -0.0016305843989054363,
+      "ci95": [
+        -0.0024279450376828507,
+        -0.0008744001388549805
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "simple",
+      "voice": "passive",
+      "metric": "accuracy",
+      "mean": 0.5,
+      "ci95": [
+        0.4166666666666667,
+        0.6041666666666666
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "simple",
+      "voice": "passive",
+      "metric": "both_orders",
+      "mean": 0.3333333333333333,
+      "ci95": [
+        0.16666666666666666,
+        0.4583333333333333
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "simple",
+      "voice": "passive",
+      "metric": "margin",
+      "mean": 0.0013593037923177083,
+      "ci95": [
+        -0.0004946390787760416,
+        0.0032586256663004556
+      ],
+      "families": 6
+    }
+  ],
+  "baseline_count": 192,
+  "interventions": 0,
+  "test_inference": false,
+  "note": "Diagnostic only; does not reopen the failed original experiment."
+}

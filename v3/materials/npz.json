@@ -1,0 +1,375 @@
+{
+  "source": {
+    "repository": "https://github.com/hannamw/GP-mechanisms",
+    "commit": "3ea8380a08e6ea601cf65f1b624f74ef29fc765b",
+    "files": {
+      "gp_same_len.csv": "b6a5dd3a9c8550328d55272107e68fcb5d81887382798d978d178b5460537c7b",
+      "gp_orig.csv": "079ec2e5d3456d40fa26c9fd3c8a345fef6b47f3204040c0f4062184a937ff26"
+    },
+    "paper": "https://aclanthology.org/2025.naacl-long.164/",
+    "license": "No explicit repository license found; no new license asserted."
+  },
+  "transformation": "24 NP/Z equal-word-length prefixes; optional/intransitive variants; first three words of original main clause; SHA256-ordered optional-verb split",
+  "items": [
+    {
+      "id": "npz-1",
+      "source_item": 1,
+      "family": "changed",
+      "split": "development",
+      "actor": "suspect",
+      "other_actor": "mayor",
+      "target": "file",
+      "prefixes": {
+        "optional": "Because the suspect changed the file",
+        "intransitive": "Because the suspect lied the file"
+      },
+      "continuation": "deserved further investigation",
+      "original_ambiguous_sentence": "Because the suspect changed the file deserved further investigation during the jury discussions."
+    },
+    {
+      "id": "npz-2",
+      "source_item": 2,
+      "family": "signed",
+      "split": "test",
+      "actor": "politician",
+      "other_actor": "player",
+      "target": "bill",
+      "prefixes": {
+        "optional": "After the politician signed the bill",
+        "intransitive": "After the politician arrived the bill"
+      },
+      "continuation": "received unwelcome attention",
+      "original_ambiguous_sentence": "After the corrupt politician signed the bill received unwelcome attention from southern voters."
+    },
+    {
+      "id": "npz-3",
+      "source_item": 3,
+      "family": "moved",
+      "split": "development",
+      "actor": "woman",
+      "other_actor": "engineer",
+      "target": "mail",
+      "prefixes": {
+        "optional": "After the woman moved the mail",
+        "intransitive": "After the woman departed the mail"
+      },
+      "continuation": "disappeared mysteriously from",
+      "original_ambiguous_sentence": "After the woman moved the mail disappeared mysteriously from the delivery system."
+    },
+    {
+      "id": "npz-4",
+      "source_item": 4,
+      "family": "attacked",
+      "split": "development",
+      "actor": "boy",
+      "other_actor": "girl",
+      "target": "chicken",
+      "prefixes": {
+        "optional": "Although the boy attacked the chicken",
+        "intransitive": "Although the boy died the chicken"
+      },
+      "continuation": "stayed surprisingly happy",
+      "original_ambiguous_sentence": "Although the boy attacked the chicken stayed surprisingly happy as if nothing happened."
+    },
+    {
+      "id": "npz-5",
+      "source_item": 5,
+      "family": "left",
+      "split": "test",
+      "actor": "doctor",
+      "other_actor": "instructor",
+      "target": "operation",
+      "prefixes": {
+        "optional": "After the doctor left the operation",
+        "intransitive": "After the doctor departed the operation"
+      },
+      "continuation": "appeared increasingly likely",
+      "original_ambiguous_sentence": "After the new doctor left the operation appeared increasingly likely to succeed."
+    },
+    {
+      "id": "npz-6",
+      "source_item": 6,
+      "family": "read",
+      "split": "test",
+      "actor": "professor",
+      "other_actor": "governor",
+      "target": "grant",
+      "prefixes": {
+        "optional": "After the professor read the grant",
+        "intransitive": "After the professor came the grant"
+      },
+      "continuation": "gained more attention",
+      "original_ambiguous_sentence": "After the professor read the grant gained more attention due to her excellent description."
+    },
+    {
+      "id": "npz-7",
+      "source_item": 7,
+      "family": "called",
+      "split": "test",
+      "actor": "technician",
+      "other_actor": "patient",
+      "target": "service",
+      "prefixes": {
+        "optional": "After the technician called the service",
+        "intransitive": "After the technician came the service"
+      },
+      "continuation": "stopped working almost",
+      "original_ambiguous_sentence": "After the technician called the service stopped working almost immediately to his surprise."
+    },
+    {
+      "id": "npz-8",
+      "source_item": 8,
+      "family": "stopped",
+      "split": "development",
+      "actor": "mechanic",
+      "other_actor": "operator",
+      "target": "truck",
+      "prefixes": {
+        "optional": "Because the mechanic stopped the truck",
+        "intransitive": "Because the mechanic waited the truck"
+      },
+      "continuation": "needed several more",
+      "original_ambiguous_sentence": "Because the mechanic stopped the truck needed several more hours before it could be fully repaired."
+    },
+    {
+      "id": "npz-9",
+      "source_item": 9,
+      "family": "began",
+      "split": "test",
+      "actor": "guitarist",
+      "other_actor": "dancer",
+      "target": "song",
+      "prefixes": {
+        "optional": "After the guitarist began the song",
+        "intransitive": "After the guitarist arrived the song"
+      },
+      "continuation": "failed dramatically because",
+      "original_ambiguous_sentence": "After the guitarist began the song failed dramatically because he skipped the sound check."
+    },
+    {
+      "id": "npz-10",
+      "source_item": 10,
+      "family": "lost",
+      "split": "test",
+      "actor": "player",
+      "other_actor": "participant",
+      "target": "bonus",
+      "prefixes": {
+        "optional": "Although the player lost the bonus",
+        "intransitive": "Although the player disappeared the bonus"
+      },
+      "continuation": "remained essentially the",
+      "original_ambiguous_sentence": "Although the player lost the bonus remained essentially the same as in the original contract."
+    },
+    {
+      "id": "npz-11",
+      "source_item": 11,
+      "family": "started",
+      "split": "development",
+      "actor": "employee",
+      "other_actor": "chef",
+      "target": "job",
+      "prefixes": {
+        "optional": "Once the employee started the job",
+        "intransitive": "Once the employee arrived the job"
+      },
+      "continuation": "prepared many students",
+      "original_ambiguous_sentence": "Once the recent hire started the job prepared many students for careers in media."
+    },
+    {
+      "id": "npz-12",
+      "source_item": 12,
+      "family": "worked",
+      "split": "development",
+      "actor": "manager",
+      "other_actor": "cook",
+      "target": "training",
+      "prefixes": {
+        "optional": "While the manager worked the training",
+        "intransitive": "While the manager remained the training"
+      },
+      "continuation": "seemed unnecessarily demanding",
+      "original_ambiguous_sentence": "While the assistant manager worked the training seemed unnecessarily demanding to him."
+    },
+    {
+      "id": "npz-13",
+      "source_item": 13,
+      "family": "changed",
+      "split": "development",
+      "actor": "mayor",
+      "other_actor": "suspect",
+      "target": "document",
+      "prefixes": {
+        "optional": "Although the mayor changed the document",
+        "intransitive": "Although the mayor vanished the document"
+      },
+      "continuation": "provided sufficient evidence",
+      "original_ambiguous_sentence": "Although the mayor changed the document provided sufficient evidence for what he had promised."
+    },
+    {
+      "id": "npz-14",
+      "source_item": 14,
+      "family": "signed",
+      "split": "test",
+      "actor": "player",
+      "other_actor": "politician",
+      "target": "contract",
+      "prefixes": {
+        "optional": "After the player signed the contract",
+        "intransitive": "After the player died the contract"
+      },
+      "continuation": "created another controversy",
+      "original_ambiguous_sentence": "After the basketball player signed the contract created another controversy in the NBA."
+    },
+    {
+      "id": "npz-15",
+      "source_item": 15,
+      "family": "moved",
+      "split": "development",
+      "actor": "engineer",
+      "other_actor": "woman",
+      "target": "equipment",
+      "prefixes": {
+        "optional": "After the engineer moved the equipment",
+        "intransitive": "After the engineer died the equipment"
+      },
+      "continuation": "required constant supervision",
+      "original_ambiguous_sentence": "After the engineer moved the equipment required constant supervision from senior technicians."
+    },
+    {
+      "id": "npz-16",
+      "source_item": 16,
+      "family": "attacked",
+      "split": "development",
+      "actor": "girl",
+      "other_actor": "boy",
+      "target": "lamb",
+      "prefixes": {
+        "optional": "When the girl attacked the lamb",
+        "intransitive": "When the girl jumped the lamb"
+      },
+      "continuation": "remained relatively calm",
+      "original_ambiguous_sentence": "When the little girl attacked the lamb remained relatively calm despite the sudden assault."
+    },
+    {
+      "id": "npz-17",
+      "source_item": 17,
+      "family": "left",
+      "split": "test",
+      "actor": "instructor",
+      "other_actor": "doctor",
+      "target": "position",
+      "prefixes": {
+        "optional": "Before the instructor left the position",
+        "intransitive": "Before the instructor departed the position"
+      },
+      "continuation": "demanded immense physical",
+      "original_ambiguous_sentence": "Before the yoga instructor left the position demanded immense physical effort from everyone."
+    },
+    {
+      "id": "npz-18",
+      "source_item": 18,
+      "family": "read",
+      "split": "test",
+      "actor": "governor",
+      "other_actor": "professor",
+      "target": "contract",
+      "prefixes": {
+        "optional": "While the governor read the contract",
+        "intransitive": "While the governor slept the contract"
+      },
+      "continuation": "received sweeping support",
+      "original_ambiguous_sentence": "While the governor read the contract received sweeping support from the audience at the rally."
+    },
+    {
+      "id": "npz-19",
+      "source_item": 19,
+      "family": "called",
+      "split": "test",
+      "actor": "patient",
+      "other_actor": "technician",
+      "target": "treatment",
+      "prefixes": {
+        "optional": "Before the patient called the treatment",
+        "intransitive": "Before the patient slept the treatment"
+      },
+      "continuation": "continued causing uncomfortable",
+      "original_ambiguous_sentence": "Before the patient called the treatment continued causing uncomfortable side effects like nausea."
+    },
+    {
+      "id": "npz-20",
+      "source_item": 20,
+      "family": "stopped",
+      "split": "development",
+      "actor": "operator",
+      "other_actor": "mechanic",
+      "target": "machine",
+      "prefixes": {
+        "optional": "Once the operator stopped the machine",
+        "intransitive": "Once the operator departed the machine"
+      },
+      "continuation": "started working efficiently",
+      "original_ambiguous_sentence": "Once the operator stopped the machine started working efficiently without any supervision."
+    },
+    {
+      "id": "npz-21",
+      "source_item": 21,
+      "family": "began",
+      "split": "test",
+      "actor": "dancer",
+      "other_actor": "guitarist",
+      "target": "ballet",
+      "prefixes": {
+        "optional": "Once the dancer began the ballet",
+        "intransitive": "Once the dancer arrived the ballet"
+      },
+      "continuation": "achieved incredible success",
+      "original_ambiguous_sentence": "Once the dancer began the ballet achieved incredible success for a show with a new performer."
+    },
+    {
+      "id": "npz-22",
+      "source_item": 22,
+      "family": "lost",
+      "split": "test",
+      "actor": "participant",
+      "other_actor": "player",
+      "target": "money",
+      "prefixes": {
+        "optional": "After the participant lost the money",
+        "intransitive": "After the participant died the money"
+      },
+      "continuation": "became unavailable despite",
+      "original_ambiguous_sentence": "After the contestant lost the money became unavailable despite his previous three wins in a row."
+    },
+    {
+      "id": "npz-23",
+      "source_item": 23,
+      "family": "started",
+      "split": "development",
+      "actor": "chef",
+      "other_actor": "employee",
+      "target": "restaurant",
+      "prefixes": {
+        "optional": "Once the chef started the restaurant",
+        "intransitive": "Once the chef arrived the restaurant"
+      },
+      "continuation": "separated mediocre cooks",
+      "original_ambiguous_sentence": "Once the new chef started the restaurant separated mediocre cooks from gifted ones."
+    },
+    {
+      "id": "npz-24",
+      "source_item": 24,
+      "family": "worked",
+      "split": "development",
+      "actor": "cook",
+      "other_actor": "manager",
+      "target": "oven",
+      "prefixes": {
+        "optional": "When the cook worked the oven",
+        "intransitive": "When the cook emerged the oven"
+      },
+      "continuation": "produced smaller cakes",
+      "original_ambiguous_sentence": "When the apprentice baker worked the oven produced smaller cakes because he lacked experience."
+    }
+  ]
+}

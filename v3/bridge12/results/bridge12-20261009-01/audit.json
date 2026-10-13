@@ -1,0 +1,2705 @@
+{
+  "checks": {
+    "passed": true,
+    "source_files": 18,
+    "baselines": 192,
+    "interventions": 576,
+    "gate_chronology": true,
+    "independent_gate": true,
+    "raw_effects_checked": true,
+    "maximum_identity_error": 0.0,
+    "maximum_relative_norm_error": 8.559525273010848e-07
+  },
+  "behavior": {
+    "development": [
+      {
+        "condition": "clean",
+        "voice": "passive",
+        "role": "agent",
+        "families": [
+          {
+            "family": "coached",
+            "margin": 3.7220686888322234,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "interviewed",
+            "margin": 3.759623197838664,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "questioned",
+            "margin": 3.2846807967871428,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "taught",
+            "margin": 1.19725326821208,
+            "accuracy": 0.5,
+            "both_reversals": 0.0
+          },
+          {
+            "family": "visited",
+            "margin": 2.5288856513798237,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "watched",
+            "margin": 2.5323392376303673,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          }
+        ],
+        "margin": {
+          "mean": 2.8374751401133835,
+          "ci95": [
+            2.0681923842057586,
+            3.4696597194609544
+          ]
+        },
+        "accuracy": {
+          "mean": 0.9166666666666666,
+          "ci95": [
+            0.75,
+            1.0
+          ]
+        },
+        "both_reversals": {
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        }
+      },
+      {
+        "condition": "clean",
+        "voice": "passive",
+        "role": "patient",
+        "families": [
+          {
+            "family": "coached",
+            "margin": 3.283103769645095,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "interviewed",
+            "margin": 2.8996617756783962,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "questioned",
+            "margin": 3.2318287547677755,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "taught",
+            "margin": 1.8671019151806831,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "visited",
+            "margin": 0.8747738562524319,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "watched",
+            "margin": 3.3539173286408186,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          }
+        ],
+        "margin": {
+          "mean": 2.5850645666942,
+          "ci95": [
+            1.7790315048769116,
+            3.2375118785227337
+          ]
+        },
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "both_reversals": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "condition": "gap",
+        "voice": "passive",
+        "role": "agent",
+        "families": [
+          {
+            "family": "coached",
+            "margin": 3.277113998308778,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "interviewed",
+            "margin": 4.117083998396993,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "questioned",
+            "margin": 4.312431765720248,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "taught",
+            "margin": 2.2503568697720766,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "visited",
+            "margin": 3.0837746765464544,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "watched",
+            "margin": 3.4383153282105923,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          }
+        ],
+        "margin": {
+          "mean": 3.4131794394925237,
+          "ci95": [
+            2.870415181542436,
+            3.929411550052464
+          ]
+        },
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "both_reversals": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "condition": "gap",
+        "voice": "passive",
+        "role": "patient",
+        "families": [
+          {
+            "family": "coached",
+            "margin": 2.2845814488828182,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "interviewed",
+            "margin": 2.8327391035854816,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "questioned",
+            "margin": 2.1616243310272694,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "taught",
+            "margin": 2.422800626605749,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "visited",
+            "margin": 0.32684603706002235,
+            "accuracy": 0.5,
+            "both_reversals": 0.0
+          },
+          {
+            "family": "watched",
+            "margin": 3.0808136891573668,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          }
+        ],
+        "margin": {
+          "mean": 2.1849008727197847,
+          "ci95": [
+            1.3965610307641332,
+            2.776600854781767
+          ]
+        },
+        "accuracy": {
+          "mean": 0.9166666666666666,
+          "ci95": [
+            0.75,
+            1.0
+          ]
+        },
+        "both_reversals": {
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        }
+      },
+      {
+        "condition": "native",
+        "voice": "passive",
+        "role": "agent",
+        "families": [
+          {
+            "family": "coached",
+            "margin": 2.92496420443058,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "interviewed",
+            "margin": 3.9308261331170797,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "questioned",
+            "margin": 4.237945262342691,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "taught",
+            "margin": 2.4026880636811256,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "visited",
+            "margin": 2.8244030475616455,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "watched",
+            "margin": 3.3071837946772575,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          }
+        ],
+        "margin": {
+          "mean": 3.27133508430173,
+          "ci95": [
+            2.78105503693223,
+            3.7960414603973427
+          ]
+        },
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "both_reversals": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "condition": "native",
+        "voice": "passive",
+        "role": "patient",
+        "families": [
+          {
+            "family": "coached",
+            "margin": 1.6329871267080307,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "interviewed",
+            "margin": 2.0194715447723866,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "questioned",
+            "margin": 1.6427390202879906,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "taught",
+            "margin": 2.285880096256733,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "visited",
+            "margin": -0.145588006824255,
+            "accuracy": 0.5,
+            "both_reversals": 0.0
+          },
+          {
+            "family": "watched",
+            "margin": 3.0679972898215055,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          }
+        ],
+        "margin": {
+          "mean": 1.750581178503732,
+          "ci95": [
+            0.8741530148933331,
+            2.460933018786212
+          ]
+        },
+        "accuracy": {
+          "mean": 0.9166666666666666,
+          "ci95": [
+            0.75,
+            1.0
+          ]
+        },
+        "both_reversals": {
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        }
+      },
+      {
+        "condition": "simple",
+        "voice": "passive",
+        "role": "agent",
+        "families": [
+          {
+            "family": "coached",
+            "margin": 4.228562829084694,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "interviewed",
+            "margin": 4.6135317157022655,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "questioned",
+            "margin": 4.587614978663623,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "taught",
+            "margin": 3.195492934435606,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "visited",
+            "margin": 4.205246270634234,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "watched",
+            "margin": 3.930375646799803,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          }
+        ],
+        "margin": {
+          "mean": 4.126804062553371,
+          "ci95": [
+            3.7182859499007463,
+            4.472683748075117
+          ]
+        },
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "both_reversals": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "condition": "simple",
+        "voice": "passive",
+        "role": "patient",
+        "families": [
+          {
+            "family": "coached",
+            "margin": 4.08981854096055,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "interviewed",
+            "margin": 4.304524063598365,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "questioned",
+            "margin": 3.764960130676627,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "taught",
+            "margin": 2.9740861412137747,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "visited",
+            "margin": 3.5329740028828382,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "watched",
+            "margin": 3.1587826181203127,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          }
+        ],
+        "margin": {
+          "mean": 3.6375242495754114,
+          "ci95": [
+            3.26061194203794,
+            4.014436557112883
+          ]
+        },
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "both_reversals": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      }
+    ],
+    "test": [
+      {
+        "condition": "clean",
+        "voice": "passive",
+        "role": "agent",
+        "families": [
+          {
+            "family": "called",
+            "margin": 1.8739854618906975,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "helped",
+            "margin": 3.166963016614318,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "painted",
+            "margin": -0.6062714513391256,
+            "accuracy": 0.0,
+            "both_reversals": 0.0
+          },
+          {
+            "family": "photographed",
+            "margin": 4.22398940846324,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "searched",
+            "margin": 2.6176346950232983,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "trained",
+            "margin": 2.6386945135891438,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          }
+        ],
+        "margin": {
+          "mean": 2.3191659407069287,
+          "ci95": [
+            1.0056349688442425,
+            3.3919352029139795
+          ]
+        },
+        "accuracy": {
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        },
+        "both_reversals": {
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        }
+      },
+      {
+        "condition": "clean",
+        "voice": "passive",
+        "role": "patient",
+        "families": [
+          {
+            "family": "called",
+            "margin": 1.825247399508953,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "helped",
+            "margin": 2.7254087775945663,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "painted",
+            "margin": 3.513762664049864,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "photographed",
+            "margin": 4.477423120290041,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "searched",
+            "margin": 2.872566720470786,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "trained",
+            "margin": 2.2831603176891804,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          }
+        ],
+        "margin": {
+          "mean": 2.949594833267232,
+          "ci95": [
+            2.3024651554102697,
+            3.6836265105133257
+          ]
+        },
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "both_reversals": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "condition": "gap",
+        "voice": "passive",
+        "role": "agent",
+        "families": [
+          {
+            "family": "called",
+            "margin": 2.762207418680191,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "helped",
+            "margin": 3.1031776070594788,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "painted",
+            "margin": 1.7028844617307186,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "photographed",
+            "margin": 4.611515419557691,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "searched",
+            "margin": 3.499731821939349,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "trained",
+            "margin": 2.073889397084713,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          }
+        ],
+        "margin": {
+          "mean": 2.9589010210086903,
+          "ci95": [
+            2.2364887905617556,
+            3.7518908474594355
+          ]
+        },
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "both_reversals": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "condition": "gap",
+        "voice": "passive",
+        "role": "patient",
+        "families": [
+          {
+            "family": "called",
+            "margin": 1.8447201512753963,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "helped",
+            "margin": 2.199764661490917,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "painted",
+            "margin": 3.777553629130125,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "photographed",
+            "margin": 3.338810510933399,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "searched",
+            "margin": 2.556293470785022,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "trained",
+            "margin": 0.9683914370834827,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          }
+        ],
+        "margin": {
+          "mean": 2.447588976783057,
+          "ci95": [
+            1.670958749949932,
+            3.1787475033973656
+          ]
+        },
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "both_reversals": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "condition": "native",
+        "voice": "passive",
+        "role": "agent",
+        "families": [
+          {
+            "family": "called",
+            "margin": 3.0780243799090385,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "helped",
+            "margin": 3.0968606136739254,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "painted",
+            "margin": 2.6481682807207108,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "photographed",
+            "margin": 4.424442362040281,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "searched",
+            "margin": 3.7706949589774013,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "trained",
+            "margin": 2.2978057116270065,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          }
+        ],
+        "margin": {
+          "mean": 3.2193327178247273,
+          "ci95": [
+            2.677805496379733,
+            3.798175156582147
+          ]
+        },
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "both_reversals": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "condition": "native",
+        "voice": "passive",
+        "role": "patient",
+        "families": [
+          {
+            "family": "called",
+            "margin": 1.0163809433579445,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "helped",
+            "margin": 1.7327554933726788,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "painted",
+            "margin": 3.6194931231439114,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "photographed",
+            "margin": 3.0294619537889957,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "searched",
+            "margin": 2.4242305532097816,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "trained",
+            "margin": -0.003747977316379547,
+            "accuracy": 0.5,
+            "both_reversals": 0.0
+          }
+        ],
+        "margin": {
+          "mean": 1.9697623482594888,
+          "ci95": [
+            0.9401685129851103,
+            2.9091493667413793
+          ]
+        },
+        "accuracy": {
+          "mean": 0.9166666666666666,
+          "ci95": [
+            0.75,
+            1.0
+          ]
+        },
+        "both_reversals": {
+          "mean": 0.8333333333333334,
+          "ci95": [
+            0.5,
+            1.0
+          ]
+        }
+      },
+      {
+        "condition": "simple",
+        "voice": "passive",
+        "role": "agent",
+        "families": [
+          {
+            "family": "called",
+            "margin": 3.580665187910199,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "helped",
+            "margin": 4.196972239762545,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "painted",
+            "margin": 4.384318126365542,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "photographed",
+            "margin": 4.726964416913688,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "searched",
+            "margin": 4.607175410259515,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "trained",
+            "margin": 4.0366743626073,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          }
+        ],
+        "margin": {
+          "mean": 4.255461623969798,
+          "ci95": [
+            3.938103930093348,
+            4.541595003412415
+          ]
+        },
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "both_reversals": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "condition": "simple",
+        "voice": "passive",
+        "role": "patient",
+        "families": [
+          {
+            "family": "called",
+            "margin": 3.4575425665825605,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "helped",
+            "margin": 3.681010908447206,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "painted",
+            "margin": 3.6716230157762766,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "photographed",
+            "margin": 4.2336908569559455,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "searched",
+            "margin": 3.1446585888043046,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          },
+          {
+            "family": "trained",
+            "margin": 3.4519197270274162,
+            "accuracy": 1.0,
+            "both_reversals": 1.0
+          }
+        ],
+        "margin": {
+          "mean": 3.606740943932285,
+          "ci95": [
+            3.3724607274246714,
+            3.8828614354133606
+          ]
+        },
+        "accuracy": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "both_reversals": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      }
+    ]
+  },
+  "effects": [
+    {
+      "split": "development",
+      "direction": "average",
+      "kind": "cross",
+      "metric": "next_effect",
+      "family_values": {
+        "coached": 10.102410471066833,
+        "interviewed": 12.226882988587022,
+        "questioned": 11.695820394903421,
+        "taught": 4.403594076633453,
+        "visited": 7.056238636374474,
+        "watched": 7.252311214804649
+      },
+      "mean": 8.789542963728309,
+      "ci95": [
+        6.53585874599715,
+        10.955198507755995
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "average",
+      "kind": "cross",
+      "metric": "qa_effect",
+      "family_values": {
+        "coached": 0.046992244897410274,
+        "interviewed": -0.002373526571318507,
+        "questioned": 0.006758768577128649,
+        "taught": -0.2610530466772616,
+        "visited": 0.13483127253130078,
+        "watched": -0.04649845859967172
+      },
+      "mean": -0.02022379097373535,
+      "ci95": [
+        -0.1293177641928196,
+        0.06710234622005373
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "average",
+      "kind": "cross_minus_lexical",
+      "metric": "next_effect",
+      "family_values": {
+        "coached": 13.159182900562882,
+        "interviewed": 10.324717741459608,
+        "questioned": 12.10820710286498,
+        "taught": 4.448248654603958,
+        "visited": 8.217449367046356,
+        "watched": 8.788953617215157
+      },
+      "mean": 9.50779323062549,
+      "ci95": [
+        7.130522510657708,
+        11.634910113178194
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "average",
+      "kind": "cross_minus_lexical",
+      "metric": "qa_effect",
+      "family_values": {
+        "coached": -0.37075773358810693,
+        "interviewed": -0.08998959080781788,
+        "questioned": -0.05847214674577117,
+        "taught": -0.2628910429775715,
+        "visited": 0.1576180262491107,
+        "watched": -0.0654884479008615
+      },
+      "mean": -0.11499682262850304,
+      "ci95": [
+        -0.24985413973142082,
+        0.013164356661339601
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "average",
+      "kind": "cross_minus_random",
+      "metric": "next_effect",
+      "family_values": {
+        "coached": 7.678135108823578,
+        "interviewed": 10.753587146600086,
+        "questioned": 8.242990661412477,
+        "taught": 5.181807120641073,
+        "visited": 7.043308645486832,
+        "watched": 6.545083398620287
+      },
+      "mean": 7.574152013597389,
+      "ci95": [
+        6.278930752592471,
+        9.015648903014755
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "average",
+      "kind": "cross_minus_random",
+      "metric": "qa_effect",
+      "family_values": {
+        "coached": -0.15510935491571798,
+        "interviewed": -0.44911678084948436,
+        "questioned": -0.08117042287873699,
+        "taught": -0.23422634353240335,
+        "visited": 0.059736551018431894,
+        "watched": -0.19983087774987024
+      },
+      "mean": -0.17661953815129683,
+      "ci95": [
+        -0.3046970868211551,
+        -0.05600299851761915
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "average",
+      "kind": "identity",
+      "metric": "next_effect",
+      "family_values": {
+        "coached": 0.0,
+        "interviewed": 0.0,
+        "questioned": 0.0,
+        "taught": 0.0,
+        "visited": 0.0,
+        "watched": 0.0
+      },
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "average",
+      "kind": "identity",
+      "metric": "qa_effect",
+      "family_values": {
+        "coached": 0.0,
+        "interviewed": 0.0,
+        "questioned": 0.0,
+        "taught": 0.0,
+        "visited": 0.0,
+        "watched": 0.0
+      },
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "average",
+      "kind": "lexical",
+      "metric": "next_effect",
+      "family_values": {
+        "coached": -3.05677242949605,
+        "interviewed": 1.9021652471274137,
+        "questioned": -0.4123867079615593,
+        "taught": -0.04465457797050476,
+        "visited": -1.1612107306718826,
+        "watched": -1.5366424024105072
+      },
+      "mean": -0.7182502668971816,
+      "ci95": [
+        -1.9143558669214447,
+        0.542996675396959
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "average",
+      "kind": "lexical",
+      "metric": "qa_effect",
+      "family_values": {
+        "coached": 0.4177499784855172,
+        "interviewed": 0.08761606423649937,
+        "questioned": 0.06523091532289982,
+        "taught": 0.0018379963003098965,
+        "visited": -0.022786753717809916,
+        "watched": 0.01898998930118978
+      },
+      "mean": 0.09477303165476769,
+      "ci95": [
+        0.006309867797729869,
+        0.22980766304923841
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "average",
+      "kind": "random",
+      "metric": "next_effect",
+      "family_values": {
+        "coached": 2.4242753622432547,
+        "interviewed": 1.4732958419869344,
+        "questioned": 3.452829733490944,
+        "taught": -0.7782130440076193,
+        "visited": 0.012929990887641907,
+        "watched": 0.7072278161843618
+      },
+      "mean": 1.2153909501309197,
+      "ci95": [
+        0.10822177945067078,
+        2.378165065931777
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "average",
+      "kind": "random",
+      "metric": "qa_effect",
+      "family_values": {
+        "coached": 0.20210159981312836,
+        "interviewed": 0.44674325427816586,
+        "questioned": 0.08792919145586564,
+        "taught": -0.026826703144858244,
+        "visited": 0.07509472151286889,
+        "watched": 0.15333241915019852
+      },
+      "mean": 0.15639574717756152,
+      "ci95": [
+        0.04957997888171415,
+        0.28626770988598266
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "clean_to_gap",
+      "kind": "cross",
+      "metric": "next_effect",
+      "family_values": {
+        "coached": 10.15660310536623,
+        "interviewed": 12.407705392688513,
+        "questioned": 11.846592858433723,
+        "taught": 4.4062358140945435,
+        "visited": 7.045899212360382,
+        "watched": 7.366061300039291
+      },
+      "mean": 8.871516280497113,
+      "ci95": [
+        6.579543468852838,
+        11.095116737609109
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "clean_to_gap",
+      "kind": "cross",
+      "metric": "qa_effect",
+      "family_values": {
+        "coached": 0.029820889234542847,
+        "interviewed": -0.039069355465471745,
+        "questioned": -0.0032937591895461082,
+        "taught": -0.2934408150613308,
+        "visited": 0.11778519582003355,
+        "watched": -0.06706481147557497
+      },
+      "mean": -0.0425437760228912,
+      "ci95": [
+        -0.15434097378747538,
+        0.046617209600905575
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "clean_to_gap",
+      "kind": "cross_minus_lexical",
+      "metric": "next_effect",
+      "family_values": {
+        "coached": 18.466204807162285,
+        "interviewed": 11.31460028886795,
+        "questioned": 13.12848562002182,
+        "taught": 4.431190550327301,
+        "visited": 11.170237630605698,
+        "watched": 10.297624260187149
+      },
+      "mean": 11.468057192862034,
+      "ci95": [
+        8.00571363667647,
+        14.818221218883991
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "clean_to_gap",
+      "kind": "cross_minus_lexical",
+      "metric": "qa_effect",
+      "family_values": {
+        "coached": 0.596718487329781,
+        "interviewed": 0.20676565496250987,
+        "questioned": 0.3595587620511651,
+        "taught": -0.217405597679317,
+        "visited": 0.23348046839237213,
+        "watched": -0.04042699607089162
+      },
+      "mean": 0.18978179649760327,
+      "ci95": [
+        -0.02105322868252794,
+        0.3921334370194624
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "clean_to_gap",
+      "kind": "cross_minus_random",
+      "metric": "next_effect",
+      "family_values": {
+        "coached": 4.768581668535869,
+        "interviewed": 8.901468850672245,
+        "questioned": 8.270819182197252,
+        "taught": 4.209741075833639,
+        "visited": 6.21050837635994,
+        "watched": 7.006525307893753
+      },
+      "mean": 6.56127407691545,
+      "ci95": [
+        5.195613195498784,
+        7.899621845761103
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "clean_to_gap",
+      "kind": "cross_minus_random",
+      "metric": "qa_effect",
+      "family_values": {
+        "coached": 0.8217241199066245,
+        "interviewed": 0.5168583419484396,
+        "questioned": 0.8759781769476833,
+        "taught": 0.06168453209102154,
+        "visited": 0.7726368182338774,
+        "watched": -0.45832593133673083
+      },
+      "mean": 0.43175934296515256,
+      "ci95": [
+        0.013257209496158662,
+        0.7816777515432073
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "clean_to_gap",
+      "kind": "identity",
+      "metric": "next_effect",
+      "family_values": {
+        "coached": 0.0,
+        "interviewed": 0.0,
+        "questioned": 0.0,
+        "taught": 0.0,
+        "visited": 0.0,
+        "watched": 0.0
+      },
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "clean_to_gap",
+      "kind": "identity",
+      "metric": "qa_effect",
+      "family_values": {
+        "coached": 0.0,
+        "interviewed": 0.0,
+        "questioned": 0.0,
+        "taught": 0.0,
+        "visited": 0.0,
+        "watched": 0.0
+      },
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "clean_to_gap",
+      "kind": "lexical",
+      "metric": "next_effect",
+      "family_values": {
+        "coached": -8.309601701796055,
+        "interviewed": 1.0931051038205624,
+        "questioned": -1.2818927615880966,
+        "taught": -0.02495473623275757,
+        "visited": -4.1243384182453156,
+        "watched": -2.9315629601478577
+      },
+      "mean": -2.59654091236492,
+      "ci95": [
+        -5.148600229993463,
+        -0.34619249776005745
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "clean_to_gap",
+      "kind": "lexical",
+      "metric": "qa_effect",
+      "family_values": {
+        "coached": -0.5668975980952382,
+        "interviewed": -0.24583501042798162,
+        "questioned": -0.3628525212407112,
+        "taught": -0.0760352173820138,
+        "visited": -0.11569527257233858,
+        "watched": -0.02663781540468335
+      },
+      "mean": -0.23232557252049446,
+      "ci95": [
+        -0.3896746720808248,
+        -0.0958305986384711
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "clean_to_gap",
+      "kind": "random",
+      "metric": "next_effect",
+      "family_values": {
+        "coached": 5.388021436830361,
+        "interviewed": 3.506236542016268,
+        "questioned": 3.5757736762364702,
+        "taught": 0.19649473826090497,
+        "visited": 0.8353908360004426,
+        "watched": 0.35953599214553833
+      },
+      "mean": 2.3102422035816645,
+      "ci95": [
+        0.8817745974908274,
+        3.907094877834121
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "clean_to_gap",
+      "kind": "random",
+      "metric": "qa_effect",
+      "family_values": {
+        "coached": -0.7919032306720815,
+        "interviewed": -0.5559276974139113,
+        "questioned": -0.8792719361372294,
+        "taught": -0.35512534715235233,
+        "visited": -0.6548516224138439,
+        "watched": 0.39126111986115586
+      },
+      "mean": -0.4743031189880438,
+      "ci95": [
+        -0.7569772190666603,
+        -0.10275693685333759
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "gap_to_clean",
+      "kind": "cross",
+      "metric": "next_effect",
+      "family_values": {
+        "coached": 10.048217836767435,
+        "interviewed": 12.04606058448553,
+        "questioned": 11.54504793137312,
+        "taught": 4.400952339172363,
+        "visited": 7.066578060388565,
+        "watched": 7.138561129570007
+      },
+      "mean": 8.707569646959504,
+      "ci95": [
+        6.492174023141463,
+        10.81166810852786
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "gap_to_clean",
+      "kind": "cross",
+      "metric": "qa_effect",
+      "family_values": {
+        "coached": 0.0641636005602777,
+        "interviewed": 0.03432230232283473,
+        "questioned": 0.016811296343803406,
+        "taught": -0.2286652782931924,
+        "visited": 0.15187734924256802,
+        "watched": -0.025932105723768473
+      },
+      "mean": 0.002096194075420499,
+      "ci95": [
+        -0.10224033962003887,
+        0.08511247315133612
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "gap_to_clean",
+      "kind": "cross_minus_lexical",
+      "metric": "next_effect",
+      "family_values": {
+        "coached": 7.85216099396348,
+        "interviewed": 9.334835194051266,
+        "questioned": 11.087928585708141,
+        "taught": 4.465306758880615,
+        "visited": 5.264661103487015,
+        "watched": 7.280282974243164
+      },
+      "mean": 7.5475292683889466,
+      "ci95": [
+        5.765396615490317,
+        9.374861118368182
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "gap_to_clean",
+      "kind": "cross_minus_lexical",
+      "metric": "qa_effect",
+      "family_values": {
+        "coached": -1.338233954505995,
+        "interviewed": -0.3867448365781456,
+        "questioned": -0.47650305554270744,
+        "taught": -0.308376488275826,
+        "visited": 0.08175558410584927,
+        "watched": -0.09054989973083138
+      },
+      "mean": -0.41977544175460935,
+      "ci95": [
+        -0.8143428105686326,
+        -0.11119814189927031
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "gap_to_clean",
+      "kind": "cross_minus_random",
+      "metric": "next_effect",
+      "family_values": {
+        "coached": 10.587688549111288,
+        "interviewed": 12.605705442527931,
+        "questioned": 8.215162140627703,
+        "taught": 6.153873165448507,
+        "visited": 7.876108914613725,
+        "watched": 6.083641489346822
+      },
+      "mean": 8.58702995027933,
+      "ci95": [
+        6.784460619505911,
+        10.509686336956092
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "gap_to_clean",
+      "kind": "cross_minus_random",
+      "metric": "qa_effect",
+      "family_values": {
+        "coached": -1.1319428297380605,
+        "interviewed": -1.4150919036474083,
+        "questioned": -1.0383190227051573,
+        "taught": -0.5301372191558283,
+        "visited": -0.6531637161970136,
+        "watched": 0.05866417583699035
+      },
+      "mean": -0.7849984192677463,
+      "ci95": [
+        -1.146529335451002,
+        -0.3770462891035195
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "gap_to_clean",
+      "kind": "identity",
+      "metric": "next_effect",
+      "family_values": {
+        "coached": 0.0,
+        "interviewed": 0.0,
+        "questioned": 0.0,
+        "taught": 0.0,
+        "visited": 0.0,
+        "watched": 0.0
+      },
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "gap_to_clean",
+      "kind": "identity",
+      "metric": "qa_effect",
+      "family_values": {
+        "coached": 0.0,
+        "interviewed": 0.0,
+        "questioned": 0.0,
+        "taught": 0.0,
+        "visited": 0.0,
+        "watched": 0.0
+      },
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "gap_to_clean",
+      "kind": "lexical",
+      "metric": "next_effect",
+      "family_values": {
+        "coached": 2.196056842803955,
+        "interviewed": 2.711225390434265,
+        "questioned": 0.457119345664978,
+        "taught": -0.06435441970825195,
+        "visited": 1.8019169569015503,
+        "watched": -0.14172184467315674
+      },
+      "mean": 1.1600403785705566,
+      "ci95": [
+        0.29491939147313434,
+        2.033227565884579
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "gap_to_clean",
+      "kind": "lexical",
+      "metric": "qa_effect",
+      "family_values": {
+        "coached": 1.4023975550662726,
+        "interviewed": 0.42106713890098035,
+        "questioned": 0.49331435188651085,
+        "taught": 0.07971120998263359,
+        "visited": 0.07012176513671875,
+        "watched": 0.06461779400706291
+      },
+      "mean": 0.42187163583002985,
+      "ci95": [
+        0.12837624452852955,
+        0.8532414513562495
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "gap_to_clean",
+      "kind": "random",
+      "metric": "next_effect",
+      "family_values": {
+        "coached": -0.5394707123438518,
+        "interviewed": -0.559644858042399,
+        "questioned": 3.3298857907454167,
+        "taught": -1.7529208262761435,
+        "visited": -0.8095308542251588,
+        "watched": 1.0549196402231853
+      },
+      "mean": 0.12053969668017478,
+      "ci95": [
+        -1.037336488564809,
+        1.6125668833653128
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "direction": "gap_to_clean",
+      "kind": "random",
+      "metric": "qa_effect",
+      "family_values": {
+        "coached": 1.1961064302983382,
+        "interviewed": 1.449414205970243,
+        "questioned": 1.0551303190489607,
+        "taught": 0.30147194086263585,
+        "visited": 0.8050410654395816,
+        "watched": -0.08459628156075893
+      },
+      "mean": 0.7870946133431668,
+      "ci95": [
+        0.34147176531971307,
+        1.1918687761709508
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "average",
+      "kind": "cross",
+      "metric": "next_effect",
+      "family_values": {
+        "called": 8.432420298457146,
+        "helped": 9.737010508775711,
+        "painted": 2.710317552089691,
+        "photographed": 11.926958959549665,
+        "searched": 4.872352957725525,
+        "trained": 10.734406556934118
+      },
+      "mean": 8.068911138921976,
+      "ci95": [
+        5.338363602757454,
+        10.582026973366737
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "average",
+      "kind": "cross",
+      "metric": "qa_effect",
+      "family_values": {
+        "called": -0.040851456113159657,
+        "helped": -0.02429740596562624,
+        "painted": -0.15057474840432405,
+        "photographed": -0.18452964909374714,
+        "searched": -0.05192548222839832,
+        "trained": 0.010580993723124266
+      },
+      "mean": -0.07359962468035519,
+      "ci95": [
+        -0.13230093067201473,
+        -0.020948297809809446
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "average",
+      "kind": "cross_minus_lexical",
+      "metric": "next_effect",
+      "family_values": {
+        "called": 9.730286125093699,
+        "helped": 8.668030701577663,
+        "painted": 2.7519131302833557,
+        "photographed": 8.953899681568146,
+        "searched": 6.461904302239418,
+        "trained": 11.144532434642315
+      },
+      "mean": 7.951761062567432,
+      "ci95": [
+        5.566971583291888,
+        9.895261250436306
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "average",
+      "kind": "cross_minus_lexical",
+      "metric": "qa_effect",
+      "family_values": {
+        "called": -0.33306525740772486,
+        "helped": -0.16168672707863152,
+        "painted": -0.12729678070172668,
+        "photographed": -0.3252147543244064,
+        "searched": -0.19050482334569097,
+        "trained": 0.07116878835950047
+      },
+      "mean": -0.17776659241644666,
+      "ci95": [
+        -0.27812526231476414,
+        -0.06678198283771053
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "average",
+      "kind": "cross_minus_random",
+      "metric": "next_effect",
+      "family_values": {
+        "called": 7.535413059095542,
+        "helped": 8.750763674577076,
+        "painted": 2.6938692728678384,
+        "photographed": 11.296693844099838,
+        "searched": 5.306757072607676,
+        "trained": 9.683351434767246
+      },
+      "mean": 7.54447472633587,
+      "ci95": [
+        5.1371557683580455,
+        9.707711215234465
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "average",
+      "kind": "cross_minus_random",
+      "metric": "qa_effect",
+      "family_values": {
+        "called": -0.10831713334967719,
+        "helped": -0.31532307023492945,
+        "painted": -0.126216072589159,
+        "photographed": -0.3495244557658832,
+        "searched": -0.2668297270235295,
+        "trained": -0.25486408484478806
+      },
+      "mean": -0.23684575730132773,
+      "ci95": [
+        -0.30618281769824945,
+        -0.165126703957665
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "average",
+      "kind": "identity",
+      "metric": "next_effect",
+      "family_values": {
+        "called": 0.0,
+        "helped": 0.0,
+        "painted": 0.0,
+        "photographed": 0.0,
+        "searched": 0.0,
+        "trained": 0.0
+      },
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "average",
+      "kind": "identity",
+      "metric": "qa_effect",
+      "family_values": {
+        "called": 0.0,
+        "helped": 0.0,
+        "painted": 0.0,
+        "photographed": 0.0,
+        "searched": 0.0,
+        "trained": 0.0
+      },
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "average",
+      "kind": "lexical",
+      "metric": "next_effect",
+      "family_values": {
+        "called": -1.2978658266365528,
+        "helped": 1.0689798071980476,
+        "painted": -0.04159557819366455,
+        "photographed": 2.9730592779815197,
+        "searched": -1.5895513445138931,
+        "trained": -0.41012587770819664
+      },
+      "mean": 0.11715007635454337,
+      "ci95": [
+        -1.0249518360942602,
+        1.4414493727187316
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "average",
+      "kind": "lexical",
+      "metric": "qa_effect",
+      "family_values": {
+        "called": 0.2922138012945652,
+        "helped": 0.13738932111300528,
+        "painted": -0.02327796770259738,
+        "photographed": 0.14068510523065925,
+        "searched": 0.13857934111729264,
+        "trained": -0.0605877946363762
+      },
+      "mean": 0.10416696773609146,
+      "ci95": [
+        0.012172179121989757,
+        0.19029441254679114
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "average",
+      "kind": "random",
+      "metric": "next_effect",
+      "family_values": {
+        "called": 0.8970072393616041,
+        "helped": 0.9862468341986338,
+        "painted": 0.01644827922185262,
+        "photographed": 0.6302651154498259,
+        "searched": -0.4344041148821513,
+        "trained": 1.051055122166872
+      },
+      "mean": 0.5244364125861062,
+      "ci95": [
+        0.043609019575847514,
+        0.9336460445904069
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "average",
+      "kind": "random",
+      "metric": "qa_effect",
+      "family_values": {
+        "called": 0.06746567723651753,
+        "helped": 0.2910256642693032,
+        "painted": -0.024358675815165057,
+        "photographed": 0.16499480667213606,
+        "searched": 0.21490424479513115,
+        "trained": 0.26544507856791244
+      },
+      "mean": 0.16324613262097257,
+      "ci95": [
+        0.06985412644118916,
+        0.24523880453004201
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "clean_to_gap",
+      "kind": "cross",
+      "metric": "next_effect",
+      "family_values": {
+        "called": 8.470048792660236,
+        "helped": 9.847037479281425,
+        "painted": 2.7020004987716675,
+        "photographed": 12.132325135171413,
+        "searched": 4.806679606437683,
+        "trained": 10.800495095551014
+      },
+      "mean": 8.12643110131224,
+      "ci95": [
+        5.326242965956529,
+        10.697121122231087
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "clean_to_gap",
+      "kind": "cross",
+      "metric": "qa_effect",
+      "family_values": {
+        "called": -0.09768515266478062,
+        "helped": -0.07953906245529652,
+        "painted": -0.14328453410416842,
+        "photographed": -0.18202456459403038,
+        "searched": -0.1028169421479106,
+        "trained": 0.0025833062827587128
+      },
+      "mean": -0.1004611582805713,
+      "ci95": [
+        -0.1447999143662552,
+        -0.05212647172932824
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "clean_to_gap",
+      "kind": "cross_minus_lexical",
+      "metric": "next_effect",
+      "family_values": {
+        "called": 9.073292776942253,
+        "helped": 9.665197402238846,
+        "painted": 2.853910446166992,
+        "photographed": 8.835452795028687,
+        "searched": 6.6743267476558685,
+        "trained": 15.044638991355896
+      },
+      "mean": 8.691136526564756,
+      "ci95": [
+        5.761075481772423,
+        11.75778898348411
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "clean_to_gap",
+      "kind": "cross_minus_lexical",
+      "metric": "qa_effect",
+      "family_values": {
+        "called": -0.2759512644261122,
+        "helped": -0.5027259048074484,
+        "painted": -0.145916149020195,
+        "photographed": -0.39702087780460715,
+        "searched": -0.46050737984478474,
+        "trained": 0.26142257545143366
+      },
+      "mean": -0.253449833408619,
+      "ci95": [
+        -0.43323978525586426,
+        -0.027442613383755088
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "clean_to_gap",
+      "kind": "cross_minus_random",
+      "metric": "next_effect",
+      "family_values": {
+        "called": 7.999854666491349,
+        "helped": 7.367663010954857,
+        "painted": 2.691038767496745,
+        "photographed": 11.167380993564922,
+        "searched": 4.987654606501261,
+        "trained": 8.297604391972225
+      },
+      "mean": 7.085199406163561,
+      "ci95": [
+        4.869301084842946,
+        9.154946684009497
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "clean_to_gap",
+      "kind": "cross_minus_random",
+      "metric": "qa_effect",
+      "family_values": {
+        "called": 0.12313078374912334,
+        "helped": -0.007775938759247314,
+        "painted": -0.3275529751554131,
+        "photographed": 0.6539009165329237,
+        "searched": 0.08899112697690748,
+        "trained": 0.7996135506158075
+      },
+      "mean": 0.22171791066001692,
+      "ci95": [
+        -0.07642265285054833,
+        0.5304837208241225
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "clean_to_gap",
+      "kind": "identity",
+      "metric": "next_effect",
+      "family_values": {
+        "called": 0.0,
+        "helped": 0.0,
+        "painted": 0.0,
+        "photographed": 0.0,
+        "searched": 0.0,
+        "trained": 0.0
+      },
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "clean_to_gap",
+      "kind": "identity",
+      "metric": "qa_effect",
+      "family_values": {
+        "called": 0.0,
+        "helped": 0.0,
+        "painted": 0.0,
+        "photographed": 0.0,
+        "searched": 0.0,
+        "trained": 0.0
+      },
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "clean_to_gap",
+      "kind": "lexical",
+      "metric": "next_effect",
+      "family_values": {
+        "called": -0.6032439842820168,
+        "helped": 0.18184007704257965,
+        "painted": -0.1519099473953247,
+        "photographed": 3.296872340142727,
+        "searched": -1.8676471412181854,
+        "trained": -4.244143895804882
+      },
+      "mean": -0.5647054252525171,
+      "ci95": [
+        -2.3727611977917453,
+        1.3421500014762084
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "clean_to_gap",
+      "kind": "lexical",
+      "metric": "qa_effect",
+      "family_values": {
+        "called": 0.17826611176133156,
+        "helped": 0.42318684235215187,
+        "painted": 0.0026316149160265923,
+        "photographed": 0.21499631321057677,
+        "searched": 0.35769043769687414,
+        "trained": -0.25883926916867495
+      },
+      "mean": 0.15298867512804767,
+      "ci95": [
+        -0.03965494052196542,
+        0.3258361641783267
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "clean_to_gap",
+      "kind": "random",
+      "metric": "next_effect",
+      "family_values": {
+        "called": 0.4701941261688869,
+        "helped": 2.4793744683265686,
+        "painted": 0.010961731274922691,
+        "photographed": 0.9649441416064897,
+        "searched": -0.1809750000635783,
+        "trained": 2.5028907035787897
+      },
+      "mean": 1.04123169514868,
+      "ci95": [
+        0.20099804715977768,
+        1.903864141139719
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "clean_to_gap",
+      "kind": "random",
+      "metric": "qa_effect",
+      "family_values": {
+        "called": -0.22081593641390396,
+        "helped": -0.0717631236960492,
+        "painted": 0.18426844105124474,
+        "photographed": -0.8359254811269541,
+        "searched": -0.19180806912481807,
+        "trained": -0.7970302443330486
+      },
+      "mean": -0.3221790689405882,
+      "ci95": [
+        -0.6147371376605911,
+        -0.03126889513805516
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "gap_to_clean",
+      "kind": "cross",
+      "metric": "next_effect",
+      "family_values": {
+        "called": 8.394791804254055,
+        "helped": 9.626983538269997,
+        "painted": 2.718634605407715,
+        "photographed": 11.721592783927917,
+        "searched": 4.938026309013367,
+        "trained": 10.668318018317223
+      },
+      "mean": 8.011391176531712,
+      "ci95": [
+        5.350484239558379,
+        10.466932824502388
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "gap_to_clean",
+      "kind": "cross",
+      "metric": "qa_effect",
+      "family_values": {
+        "called": 0.015982240438461304,
+        "helped": 0.030944250524044037,
+        "painted": -0.1578649627044797,
+        "photographed": -0.1870347335934639,
+        "searched": -0.0010340223088860512,
+        "trained": 0.01857868116348982
+      },
+      "mean": -0.04673809108013908,
+      "ci95": [
+        -0.1173368242258827,
+        0.01899901358410716
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "gap_to_clean",
+      "kind": "cross_minus_lexical",
+      "metric": "next_effect",
+      "family_values": {
+        "called": 10.387279473245144,
+        "helped": 7.670864000916481,
+        "painted": 2.6499158143997192,
+        "photographed": 9.072346568107605,
+        "searched": 6.2494818568229675,
+        "trained": 7.244425877928734
+      },
+      "mean": 7.212385598570108,
+      "ci95": [
+        5.156629773012052,
+        9.025755140930414
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "gap_to_clean",
+      "kind": "cross_minus_lexical",
+      "metric": "qa_effect",
+      "family_values": {
+        "called": -0.39017925038933754,
+        "helped": 0.17935245065018535,
+        "painted": -0.10867741238325834,
+        "photographed": -0.2534086308442056,
+        "searched": 0.0794977331534028,
+        "trained": -0.11908499873243272
+      },
+      "mean": -0.10208335142427434,
+      "ci95": [
+        -0.25116292911116034,
+        0.04832299274858087
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "gap_to_clean",
+      "kind": "cross_minus_random",
+      "metric": "next_effect",
+      "family_values": {
+        "called": 7.070971451699734,
+        "helped": 10.133864338199297,
+        "painted": 2.696699778238932,
+        "photographed": 11.426006694634754,
+        "searched": 5.625859538714091,
+        "trained": 11.06909847756227
+      },
+      "mean": 8.003750046508179,
+      "ci95": [
+        5.3688228366275625,
+        10.36584102238218
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "gap_to_clean",
+      "kind": "cross_minus_random",
+      "metric": "qa_effect",
+      "family_values": {
+        "called": -0.3397650504484777,
+        "helped": -0.6228702017106116,
+        "painted": 0.07512082997709515,
+        "photographed": -1.35294982806469,
+        "searched": -0.6226505810239664,
+        "trained": -1.3093417203053836
+      },
+      "mean": -0.6954094252626724,
+      "ci95": [
+        -1.0950173132457877,
+        -0.295764933831783
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "gap_to_clean",
+      "kind": "identity",
+      "metric": "next_effect",
+      "family_values": {
+        "called": 0.0,
+        "helped": 0.0,
+        "painted": 0.0,
+        "photographed": 0.0,
+        "searched": 0.0,
+        "trained": 0.0
+      },
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "gap_to_clean",
+      "kind": "identity",
+      "metric": "qa_effect",
+      "family_values": {
+        "called": 0.0,
+        "helped": 0.0,
+        "painted": 0.0,
+        "photographed": 0.0,
+        "searched": 0.0,
+        "trained": 0.0
+      },
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "gap_to_clean",
+      "kind": "lexical",
+      "metric": "next_effect",
+      "family_values": {
+        "called": -1.9924876689910889,
+        "helped": 1.9561195373535156,
+        "painted": 0.0687187910079956,
+        "photographed": 2.6492462158203125,
+        "searched": -1.3114555478096008,
+        "trained": 3.4238921403884888
+      },
+      "mean": 0.7990055779616038,
+      "ci95": [
+        -0.8484545441965261,
+        2.361852506796519
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "gap_to_clean",
+      "kind": "lexical",
+      "metric": "qa_effect",
+      "family_values": {
+        "called": 0.40616149082779884,
+        "helped": -0.1484082001261413,
+        "painted": -0.04918755032122135,
+        "photographed": 0.06637389725074172,
+        "searched": -0.08053175546228886,
+        "trained": 0.13766367989592254
+      },
+      "mean": 0.05534526034413526,
+      "ci95": [
+        -0.07344892737455666,
+        0.21235230825065324
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "gap_to_clean",
+      "kind": "random",
+      "metric": "next_effect",
+      "family_values": {
+        "called": 1.3238203525543213,
+        "helped": -0.5068807999293009,
+        "painted": 0.021934827168782554,
+        "photographed": 0.295586089293162,
+        "searched": -0.6878332297007242,
+        "trained": -0.400780459245046
+      },
+      "mean": 0.007641130023532468,
+      "ci95": [
+        -0.46630597776836824,
+        0.5927223000261518
+      ],
+      "families": 6
+    },
+    {
+      "split": "test",
+      "direction": "gap_to_clean",
+      "kind": "random",
+      "metric": "qa_effect",
+      "family_values": {
+        "called": 0.355747290886939,
+        "helped": 0.6538144522346556,
+        "painted": -0.23298579268157485,
+        "photographed": 1.1659150944712262,
+        "searched": 0.6216165587150804,
+        "trained": 1.3279204014688735
+      },
+      "mean": 0.6486713341825333,
+      "ci95": [
+        0.23306688048178356,
+        1.0407684846108576
+      ],
+      "families": 6
+    }
+  ],
+  "exploratory_role_effects": [
+    {
+      "role": "agent",
+      "kind": "cross",
+      "family_values": {
+        "called": -0.32947856560349464,
+        "helped": -0.4571594372391701,
+        "painted": -0.3570768889039755,
+        "photographed": -0.8123117531649768,
+        "searched": -0.5786230452358723,
+        "trained": -0.2411636533215642
+      },
+      "mean": -0.46263555724484223,
+      "ci95": [
+        -0.6222233115016325,
+        -0.32592012733221054
+      ],
+      "families": 6
+    },
+    {
+      "role": "agent",
+      "kind": "cross_minus_lexical",
+      "family_values": {
+        "called": -0.836808992549777,
+        "helped": 0.3032655189745128,
+        "painted": -0.37214131746441126,
+        "photographed": -0.996706968639046,
+        "searched": -0.9422213276848197,
+        "trained": 1.6425615933258086
+      },
+      "mean": -0.20034191567295542,
+      "ci95": [
+        -0.8478011504436532,
+        0.6436836688080803
+      ],
+      "families": 6
+    },
+    {
+      "role": "agent",
+      "kind": "cross_minus_random",
+      "family_values": {
+        "called": 0.3161340231696763,
+        "helped": -0.07678705562526966,
+        "painted": -0.3171159339447816,
+        "photographed": -0.7068736449194453,
+        "searched": -0.5238671325302373,
+        "trained": -0.09295166966815804
+      },
+      "mean": -0.23357690225303593,
+      "ci95": [
+        -0.49953888416186815,
+        0.03977193294041259
+      ],
+      "families": 6
+    },
+    {
+      "role": "agent",
+      "kind": "identity",
+      "family_values": {
+        "called": 0.0,
+        "helped": 0.0,
+        "painted": 0.0,
+        "photographed": 0.0,
+        "searched": 0.0,
+        "trained": 0.0
+      },
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "role": "agent",
+      "kind": "lexical",
+      "family_values": {
+        "called": 0.5073304269462824,
+        "helped": -0.7604249562136829,
+        "painted": 0.015064428560435772,
+        "photographed": 0.18439521547406912,
+        "searched": 0.36359828244894743,
+        "trained": -1.8837252466473728
+      },
+      "mean": -0.26229364157188684,
+      "ci95": [
+        -1.0054896641910698,
+        0.3192864034014444
+      ],
+      "families": 6
+    },
+    {
+      "role": "agent",
+      "kind": "random",
+      "family_values": {
+        "called": -0.6456125887731707,
+        "helped": -0.3803723816139004,
+        "painted": -0.039960954959193884,
+        "photographed": -0.10543810824553157,
+        "searched": -0.05475591270563496,
+        "trained": -0.14821198365340615
+      },
+      "mean": -0.2290586549918063,
+      "ci95": [
+        -0.4200296740487423,
+        -0.07631313082917275
+      ],
+      "families": 6
+    },
+    {
+      "role": "patient",
+      "kind": "cross",
+      "family_values": {
+        "called": 0.24777565337717533,
+        "helped": 0.4085646253079176,
+        "painted": 0.05592739209532738,
+        "photographed": 0.44325245497748256,
+        "searched": 0.4747720807790756,
+        "trained": 0.26232564076781273
+      },
+      "mean": 0.31543630788413185,
+      "ci95": [
+        0.18928098546651503,
+        0.4211795299779624
+      ],
+      "families": 6
+    },
+    {
+      "role": "patient",
+      "kind": "cross_minus_lexical",
+      "family_values": {
+        "called": 0.17067847773432732,
+        "helped": -0.6266389731317759,
+        "painted": 0.11754775606095791,
+        "photographed": 0.3462774599902332,
+        "searched": 0.5612116809934378,
+        "trained": -1.5002240166068077
+      },
+      "mean": -0.1551912691599379,
+      "ci95": [
+        -0.7772476344835013,
+        0.34167896568154293
+      ],
+      "families": 6
+    },
+    {
+      "role": "patient",
+      "kind": "cross_minus_random",
+      "family_values": {
+        "called": -0.5327682898690305,
+        "helped": -0.5538590848445892,
+        "painted": 0.0646837887664636,
+        "photographed": 0.007824733387678862,
+        "searched": -0.009792321516821634,
+        "trained": -0.4167765000214181
+      },
+      "mean": -0.2401146123496195,
+      "ci95": [
+        -0.4491352348898849,
+        -0.04692529620499245
+      ],
+      "families": 6
+    },
+    {
+      "role": "patient",
+      "kind": "identity",
+      "family_values": {
+        "called": 0.0,
+        "helped": 0.0,
+        "painted": 0.0,
+        "photographed": 0.0,
+        "searched": 0.0,
+        "trained": 0.0
+      },
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "role": "patient",
+      "kind": "lexical",
+      "family_values": {
+        "called": 0.07709717564284801,
+        "helped": 1.0352035984396935,
+        "painted": -0.06162036396563053,
+        "photographed": 0.09697499498724937,
+        "searched": -0.08643960021436214,
+        "trained": 1.7625496573746204
+      },
+      "mean": 0.47062757704406977,
+      "ci95": [
+        -0.01702832306424777,
+        1.082820790198942
+      ],
+      "families": 6
+    },
+    {
+      "role": "patient",
+      "kind": "random",
+      "family_values": {
+        "called": 0.7805439432462058,
+        "helped": 0.9624237101525068,
+        "painted": -0.00875639667113623,
+        "photographed": 0.4354277215898037,
+        "searched": 0.48456440229589726,
+        "trained": 0.6791021407892308
+      },
+      "mean": 0.5555509202337513,
+      "ci95": [
+        0.29456046885914283,
+        0.7883399690553133
+      ],
+      "families": 6
+    }
+  ],
+  "cross_test_observations": 48,
+  "cross_test_choice_flips": 0
+}

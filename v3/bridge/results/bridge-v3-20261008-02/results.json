@@ -1,0 +1,716 @@
+{
+  "status": "instrument_gate_failed",
+  "gate": {
+    "passed": false,
+    "both_orders_correct_by_voice": {
+      "active": 0.08333333333333333,
+      "passive": 0.0
+    },
+    "median_answer_mass": 0.8451724329339599,
+    "rule": ">=75% both-order correct per voice on simple development; median A+B probability >=10%"
+  },
+  "materials": [
+    {
+      "id": "watched",
+      "family": "watched",
+      "split": "development",
+      "verb": "watched",
+      "actor": "guard",
+      "lexical_actor": "officer",
+      "participants": [
+        "poet",
+        "chef"
+      ],
+      "event": "greeted"
+    },
+    {
+      "id": "helped",
+      "family": "helped",
+      "split": "test",
+      "verb": "helped",
+      "actor": "nurse",
+      "lexical_actor": "doctor",
+      "participants": [
+        "dancer",
+        "painter"
+      ],
+      "event": "thanked"
+    },
+    {
+      "id": "coached",
+      "family": "coached",
+      "split": "development",
+      "verb": "coached",
+      "actor": "trainer",
+      "lexical_actor": "mentor",
+      "participants": [
+        "swimmer",
+        "runner"
+      ],
+      "event": "praised"
+    },
+    {
+      "id": "called",
+      "family": "called",
+      "split": "test",
+      "verb": "called",
+      "actor": "clerk",
+      "lexical_actor": "secretary",
+      "participants": [
+        "farmer",
+        "baker"
+      ],
+      "event": "followed"
+    },
+    {
+      "id": "photographed",
+      "family": "photographed",
+      "split": "test",
+      "verb": "photographed",
+      "actor": "reporter",
+      "lexical_actor": "editor",
+      "participants": [
+        "actor",
+        "singer"
+      ],
+      "event": "helped"
+    },
+    {
+      "id": "visited",
+      "family": "visited",
+      "split": "development",
+      "verb": "visited",
+      "actor": "tourist",
+      "lexical_actor": "traveler",
+      "participants": [
+        "carpenter",
+        "plumber"
+      ],
+      "event": "thanked"
+    },
+    {
+      "id": "interviewed",
+      "family": "interviewed",
+      "split": "development",
+      "verb": "interviewed",
+      "actor": "journalist",
+      "lexical_actor": "host",
+      "participants": [
+        "pilot",
+        "sailor"
+      ],
+      "event": "praised"
+    },
+    {
+      "id": "painted",
+      "family": "painted",
+      "split": "test",
+      "verb": "painted",
+      "actor": "artist",
+      "lexical_actor": "illustrator",
+      "participants": [
+        "musician",
+        "writer"
+      ],
+      "event": "greeted"
+    },
+    {
+      "id": "trained",
+      "family": "trained",
+      "split": "test",
+      "verb": "trained",
+      "actor": "coach",
+      "lexical_actor": "instructor",
+      "participants": [
+        "boxer",
+        "skater"
+      ],
+      "event": "followed"
+    },
+    {
+      "id": "taught",
+      "family": "taught",
+      "split": "development",
+      "verb": "taught",
+      "actor": "professor",
+      "lexical_actor": "lecturer",
+      "participants": [
+        "waiter",
+        "tailor"
+      ],
+      "event": "helped"
+    },
+    {
+      "id": "questioned",
+      "family": "questioned",
+      "split": "development",
+      "verb": "questioned",
+      "actor": "detective",
+      "lexical_actor": "investigator",
+      "participants": [
+        "driver",
+        "gardener"
+      ],
+      "event": "visited"
+    },
+    {
+      "id": "searched",
+      "family": "searched",
+      "split": "test",
+      "verb": "searched",
+      "actor": "inspector",
+      "lexical_actor": "agent",
+      "participants": [
+        "merchant",
+        "barber"
+      ],
+      "event": "thanked"
+    }
+  ],
+  "baseline_count": 480,
+  "intervention_count": 0,
+  "behavioral": [
+    {
+      "split": "development",
+      "condition": "clean",
+      "voice": "active",
+      "metric": "accuracy",
+      "mean": 0.3333333333333333,
+      "ci95": [
+        0.22916666666666666,
+        0.4166666666666667
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "clean",
+      "voice": "active",
+      "metric": "both_orders",
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "clean",
+      "voice": "active",
+      "metric": "margin",
+      "mean": 0.005208335816860199,
+      "ci95": [
+        -0.005208330849806468,
+        0.013020835816860199
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "clean",
+      "voice": "all",
+      "metric": "accuracy",
+      "mean": 0.28125,
+      "ci95": [
+        0.21875,
+        0.34375
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "clean",
+      "voice": "all",
+      "metric": "both_orders",
+      "mean": 0.020833333333333332,
+      "ci95": [
+        0.0,
+        0.0625
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "clean",
+      "voice": "all",
+      "metric": "margin",
+      "mean": 1.241763432820638e-09,
+      "ci95": [
+        -0.003906248758236567,
+        0.00390625
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "clean",
+      "voice": "passive",
+      "metric": "accuracy",
+      "mean": 0.22916666666666666,
+      "ci95": [
+        0.14583333333333334,
+        0.3125
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "clean",
+      "voice": "passive",
+      "metric": "both_orders",
+      "mean": 0.041666666666666664,
+      "ci95": [
+        0.0,
+        0.125
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "clean",
+      "voice": "passive",
+      "metric": "margin",
+      "mean": -0.005208333333333333,
+      "ci95": [
+        -0.013020833333333334,
+        0.005208333333333333
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "gap",
+      "voice": "active",
+      "metric": "accuracy",
+      "mean": 0.3541666666666667,
+      "ci95": [
+        0.2708333333333333,
+        0.4375
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "gap",
+      "voice": "active",
+      "metric": "both_orders",
+      "mean": 0.041666666666666664,
+      "ci95": [
+        0.0,
+        0.125
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "gap",
+      "voice": "active",
+      "metric": "margin",
+      "mean": 0.013020833333333334,
+      "ci95": [
+        -0.0078125,
+        0.036458333333333336
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "gap",
+      "voice": "all",
+      "metric": "accuracy",
+      "mean": 0.3333333333333333,
+      "ci95": [
+        0.2916666666666667,
+        0.3854166666666667
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "gap",
+      "voice": "all",
+      "metric": "both_orders",
+      "mean": 0.08333333333333333,
+      "ci95": [
+        0.020833333333333332,
+        0.16666666666666666
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "gap",
+      "voice": "all",
+      "metric": "margin",
+      "mean": 0.009114583333333334,
+      "ci95": [
+        -0.0026041666666666665,
+        0.0234375
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "gap",
+      "voice": "passive",
+      "metric": "accuracy",
+      "mean": 0.3125,
+      "ci95": [
+        0.2708333333333333,
+        0.3541666666666667
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "gap",
+      "voice": "passive",
+      "metric": "both_orders",
+      "mean": 0.125,
+      "ci95": [
+        0.041666666666666664,
+        0.20833333333333334
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "gap",
+      "voice": "passive",
+      "metric": "margin",
+      "mean": 0.005208333333333333,
+      "ci95": [
+        -0.005208333333333333,
+        0.018229166666666668
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "native",
+      "voice": "active",
+      "metric": "accuracy",
+      "mean": 0.2916666666666667,
+      "ci95": [
+        0.1875,
+        0.3958333333333333
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "native",
+      "voice": "active",
+      "metric": "both_orders",
+      "mean": 0.041666666666666664,
+      "ci95": [
+        0.0,
+        0.125
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "native",
+      "voice": "active",
+      "metric": "margin",
+      "mean": 0.0078125,
+      "ci95": [
+        -0.010416669150193533,
+        0.028645833333333332
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "native",
+      "voice": "all",
+      "metric": "accuracy",
+      "mean": 0.28125,
+      "ci95": [
+        0.20833333333333334,
+        0.3645833333333333
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "native",
+      "voice": "all",
+      "metric": "both_orders",
+      "mean": 0.020833333333333332,
+      "ci95": [
+        0.0,
+        0.0625
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "native",
+      "voice": "all",
+      "metric": "margin",
+      "mean": 0.0,
+      "ci95": [
+        -0.011718750620881716,
+        0.014322916666666666
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "native",
+      "voice": "passive",
+      "metric": "accuracy",
+      "mean": 0.2708333333333333,
+      "ci95": [
+        0.16666666666666666,
+        0.375
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "native",
+      "voice": "passive",
+      "metric": "both_orders",
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "native",
+      "voice": "passive",
+      "metric": "margin",
+      "mean": -0.0078125,
+      "ci95": [
+        -0.0234375,
+        0.0078125
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "no_context",
+      "voice": "active",
+      "metric": "accuracy",
+      "mean": 0.25,
+      "ci95": [
+        0.16666666666666666,
+        0.3333333333333333
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "no_context",
+      "voice": "active",
+      "metric": "both_orders",
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "no_context",
+      "voice": "active",
+      "metric": "margin",
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "no_context",
+      "voice": "all",
+      "metric": "accuracy",
+      "mean": 0.25,
+      "ci95": [
+        0.16666666666666666,
+        0.3333333333333333
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "no_context",
+      "voice": "all",
+      "metric": "both_orders",
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "no_context",
+      "voice": "all",
+      "metric": "margin",
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "no_context",
+      "voice": "passive",
+      "metric": "accuracy",
+      "mean": 0.25,
+      "ci95": [
+        0.16666666666666666,
+        0.3333333333333333
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "no_context",
+      "voice": "passive",
+      "metric": "both_orders",
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "no_context",
+      "voice": "passive",
+      "metric": "margin",
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "simple",
+      "voice": "active",
+      "metric": "accuracy",
+      "mean": 0.25,
+      "ci95": [
+        0.16666666666666666,
+        0.3333333333333333
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "simple",
+      "voice": "active",
+      "metric": "both_orders",
+      "mean": 0.08333333333333333,
+      "ci95": [
+        0.0,
+        0.16666666666666666
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "simple",
+      "voice": "active",
+      "metric": "margin",
+      "mean": -0.0052083345750967664,
+      "ci95": [
+        -0.013020837058623632,
+        0.005208333333333333
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "simple",
+      "voice": "all",
+      "metric": "accuracy",
+      "mean": 0.25,
+      "ci95": [
+        0.20833333333333334,
+        0.2916666666666667
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "simple",
+      "voice": "all",
+      "metric": "both_orders",
+      "mean": 0.041666666666666664,
+      "ci95": [
+        0.0,
+        0.08333333333333333
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "simple",
+      "voice": "all",
+      "metric": "margin",
+      "mean": -0.00520833395421505,
+      "ci95": [
+        -0.01692708395421505,
+        0.00390625
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "simple",
+      "voice": "passive",
+      "metric": "accuracy",
+      "mean": 0.25,
+      "ci95": [
+        0.1875,
+        0.3125
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "simple",
+      "voice": "passive",
+      "metric": "both_orders",
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "families": 6
+    },
+    {
+      "split": "development",
+      "condition": "simple",
+      "voice": "passive",
+      "metric": "margin",
+      "mean": -0.005208333333333333,
+      "ci95": [
+        -0.0234375,
+        0.010416666666666666
+      ],
+      "families": 6
+    }
+  ],
+  "patches": [],
+  "maximum_identity_error": null
+}

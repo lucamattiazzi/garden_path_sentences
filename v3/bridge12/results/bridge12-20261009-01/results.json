@@ -1,0 +1,15 @@
+{
+  "status": "completed_bridge",
+  "gate": {
+    "passed": true,
+    "both_reversal_rates": {
+      "clean/agent": 0.8333333333333334,
+      "clean/patient": 1.0,
+      "simple/agent": 1.0,
+      "simple/patient": 1.0
+    }
+  },
+  "baselines": 192,
+  "interventions": 576,
+  "maximum_identity_error": 0.0
+}

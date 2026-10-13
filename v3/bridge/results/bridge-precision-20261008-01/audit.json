@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "gate": {
+    "passed": false,
+    "both_orders_correct_by_voice": {
+      "active": 0.3333333333333333,
+      "passive": 0.3333333333333333
+    },
+    "median_answer_mass": 0.8417688057971335,
+    "rule": ">=75% both-order correct per voice on simple development; median A+B probability >=10%"
+  },
+  "simple_ties": 0,
+  "elapsed_seconds": 14.299787998199463,
+  "development_only": true,
+  "baselines": 192,
+  "source_files": 15
+}

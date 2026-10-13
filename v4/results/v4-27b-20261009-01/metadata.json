@@ -1,0 +1,50 @@
+{
+  "complete": true,
+  "model": "google/gemma-3-27b-pt",
+  "revision": "9fe3c4ebc93fbadb14913801536d022054ef11cc",
+  "dtype": "float32",
+  "tf32": false,
+  "attention": "eager",
+  "seed": 0,
+  "gpu": "NVIDIA H200",
+  "started_at_utc": "2026-10-09T00:46:30Z",
+  "versions": {
+    "torch": "2.10.0",
+    "transformers": "5.9.0",
+    "tokenizers": "0.22.2",
+    "numpy": "2.4.3"
+  },
+  "source_sha256": {
+    "v3/__init__.py": "35574423af3093897d8d1b80bab54edf0f169257d35ded43a2ed16104c825b58",
+    "v3/bridge/__init__.py": "17cea7ffb0866310a12ba7e5f9852a02443d02381d866f907d39dfac844607ad",
+    "v3/bridge/materials.py": "fd9388460a4df98b15aed63c3d686e91beda726e389d97595d9cff9ac8322b20",
+    "v3/direct/__init__.py": "e5648a7671fe0b863c4f04f9c84dd2958e13c97639a3d871cdc411ef37850c52",
+    "v3/direct/experiment.py": "930663d488746dabaecd8f6cfd6bcea588a3f1a4821100ba440d1798eafbe22b",
+    "v3/direct/measure.py": "9b3406a19858d00af3e19dcc7f9772ae0b7aee75bfec0eaad7f7e61a31514ba8",
+    "v3/scale/__init__.py": "83eac1c5f718b7513490d02728f96a9175eee34b66fd6ff8cba66cbeb39965fb",
+    "v3/scale/run.py": "203d3a0fd22f713894bcd7317677c722cea4c216e2165a381905e54beabfe4eb",
+    "v3/bridge12/__init__.py": "0c0b79bc6dc2864ff2986cd67c616d45c394dd36ff1cd80e301b11ac6859273e",
+    "v4/__init__.py": "78495b6977b342de29d91ff908f07a5adec3eaff9f9f92a8b38ee4dc591136c9",
+    "v4/run.py": "81e6b37001764d143f0a4dc3f5d852f1a60dd001adba719572e9358d31afc7ba",
+    "v4/modal_app.py": "783c5c983e10835745ab21c99740a2f0a7470d1b9894d2cc4acba42c0705dd52",
+    "v4/PROTOCOL.md": "2c8b6698b5212f37b7cc1df50b38e8f41f9208c071a6d60d89bbaafc59c5dff1",
+    "v4/materials.py": "5c8d6f578caecea1e823c317e39faa5537d8da9ab5da4ddc5a914976ae6e2164",
+    "v4/experiment.py": "49b794205e0aab4edf87604ff5dbc6acaa41865ab708133cef87fd66bfdf62e6",
+    "v4/measure.py": "1f6efd88060252be4a626f5dd628f4963e7deee082336081a4f023dc7ec8a348",
+    "v2/__init__.py": "7914a0ccbff30cfef3cd66e81affc5587fa394570896c0ed95a7478de280f8aa",
+    "v2/experiment.py": "c32985fcaef0e5ecbe536f904cb4101e6810ba109bfa9b3c9bf1737b5c343cf2",
+    "v2/materials.py": "c9af78f9389d77796cc42363a444ec712f21e6fa71017728bee53c6b907cc70f",
+    "v2/garden_followup.py": "36a25ee13063b816beed7b5e929b5f095aaea928740822bffbd3f362eec0cffa"
+  },
+  "loading_info": {
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "mismatched_keys": [],
+    "error_msgs": []
+  },
+  "layers": 62,
+  "parameter_count": 27432406640,
+  "fixed_layer": 41,
+  "peak_gpu_bytes": 110234789888,
+  "elapsed_seconds": 120.01986074447632
+}

@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "started_at": "2026-10-13T11:08:47.531709+00:00",
+  "models": {
+    "pt": [
+      "google/gemma-3-12b-pt",
+      "295efb63d01a7017928f273a94ebb86105c9526f"
+    ],
+    "it": [
+      "google/gemma-3-12b-it",
+      "96b6f1eccf38110c56df3a15bffe176da04bfd80"
+    ]
+  },
+  "dtype": "float32",
+  "attention": "eager",
+  "tf32": false,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "source_sha256": {
+    "PROTOCOL.md": "02622782d60057feb612a7548ada600206305ed81bb9acfbe3d49da3ff333699",
+    "__init__.py": "9182300e54b792b18a9686be886dd8f9850f15da8d9ab44269c0bca45865c826",
+    "probe.py": "0d30098dadc3767966add6cb74bfc5e4902b6764908ac6d9b774ddc562ebeb66",
+    "modal_app.py": "24f7e912232634043770064e8d5b366a3c7449df6d3b9ad690f24f22800b7a72"
+  },
+  "versions": {
+    "torch": "2.10.0",
+    "transformers": "5.9.0",
+    "tokenizers": "0.22.2"
+  },
+  "finished_at": "2026-10-13T11:10:41.805138+00:00"
+}

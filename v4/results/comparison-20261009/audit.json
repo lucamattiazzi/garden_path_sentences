@@ -1,0 +1,383 @@
+{
+  "runs": [
+    {
+      "run": "v4-12b-20261009-02",
+      "metadata": {
+        "complete": true,
+        "model": "google/gemma-3-12b-pt",
+        "revision": "295efb63d01a7017928f273a94ebb86105c9526f",
+        "dtype": "float32",
+        "tf32": false,
+        "attention": "eager",
+        "seed": 0,
+        "gpu": "NVIDIA A100-SXM4-80GB",
+        "started_at_utc": "2026-10-09T00:44:53Z",
+        "versions": {
+          "torch": "2.10.0",
+          "transformers": "5.9.0",
+          "tokenizers": "0.22.2",
+          "numpy": "2.4.3"
+        },
+        "source_sha256": {
+          "v3/__init__.py": "35574423af3093897d8d1b80bab54edf0f169257d35ded43a2ed16104c825b58",
+          "v3/bridge/__init__.py": "17cea7ffb0866310a12ba7e5f9852a02443d02381d866f907d39dfac844607ad",
+          "v3/bridge/materials.py": "fd9388460a4df98b15aed63c3d686e91beda726e389d97595d9cff9ac8322b20",
+          "v3/direct/__init__.py": "e5648a7671fe0b863c4f04f9c84dd2958e13c97639a3d871cdc411ef37850c52",
+          "v3/direct/experiment.py": "930663d488746dabaecd8f6cfd6bcea588a3f1a4821100ba440d1798eafbe22b",
+          "v3/direct/measure.py": "9b3406a19858d00af3e19dcc7f9772ae0b7aee75bfec0eaad7f7e61a31514ba8",
+          "v3/scale/__init__.py": "83eac1c5f718b7513490d02728f96a9175eee34b66fd6ff8cba66cbeb39965fb",
+          "v3/scale/run.py": "203d3a0fd22f713894bcd7317677c722cea4c216e2165a381905e54beabfe4eb",
+          "v3/bridge12/__init__.py": "0c0b79bc6dc2864ff2986cd67c616d45c394dd36ff1cd80e301b11ac6859273e",
+          "v4/__init__.py": "78495b6977b342de29d91ff908f07a5adec3eaff9f9f92a8b38ee4dc591136c9",
+          "v4/run.py": "81e6b37001764d143f0a4dc3f5d852f1a60dd001adba719572e9358d31afc7ba",
+          "v4/modal_app.py": "783c5c983e10835745ab21c99740a2f0a7470d1b9894d2cc4acba42c0705dd52",
+          "v4/PROTOCOL.md": "2c8b6698b5212f37b7cc1df50b38e8f41f9208c071a6d60d89bbaafc59c5dff1",
+          "v4/materials.py": "5c8d6f578caecea1e823c317e39faa5537d8da9ab5da4ddc5a914976ae6e2164",
+          "v4/experiment.py": "49b794205e0aab4edf87604ff5dbc6acaa41865ab708133cef87fd66bfdf62e6",
+          "v4/measure.py": "1f6efd88060252be4a626f5dd628f4963e7deee082336081a4f023dc7ec8a348",
+          "v2/__init__.py": "7914a0ccbff30cfef3cd66e81affc5587fa394570896c0ed95a7478de280f8aa",
+          "v2/experiment.py": "c32985fcaef0e5ecbe536f904cb4101e6810ba109bfa9b3c9bf1737b5c343cf2",
+          "v2/materials.py": "c9af78f9389d77796cc42363a444ec712f21e6fa71017728bee53c6b907cc70f",
+          "v2/garden_followup.py": "36a25ee13063b816beed7b5e929b5f095aaea928740822bffbd3f362eec0cffa"
+        },
+        "loading_info": {
+          "missing_keys": [],
+          "unexpected_keys": [],
+          "mismatched_keys": [],
+          "error_msgs": []
+        },
+        "layers": 48,
+        "parameter_count": 12187325040,
+        "fixed_layer": 32,
+        "peak_gpu_bytes": 49183481856,
+        "elapsed_seconds": 60.90764093399048
+      },
+      "results": {
+        "status": "instrument_gate_failed",
+        "gate": {
+          "passed": false,
+          "both_reversal_rates": {
+            "active/agent": 1.0,
+            "active/patient": 1.0,
+            "object_relative/agent": 1.0,
+            "object_relative/patient": 1.0,
+            "passive/agent": 1.0,
+            "passive/patient": 1.0,
+            "passive_relative/agent": 0.0,
+            "passive_relative/patient": 0.8333333333333334
+          }
+        },
+        "baselines": 96,
+        "interventions": 0,
+        "maximum_identity_error": null
+      },
+      "effects": [],
+      "accuracy": {
+        "development/clean/active/agent": 1.0,
+        "development/clean/active/patient": 1.0,
+        "development/clean/passive/agent": 1.0,
+        "development/clean/passive/patient": 1.0,
+        "development/clean/object_relative/agent": 1.0,
+        "development/clean/object_relative/patient": 1.0,
+        "development/clean/passive_relative/agent": 0.0,
+        "development/clean/passive_relative/patient": 0.9166666666666666
+      },
+      "checks": {
+        "passed": true,
+        "raw_score_sums": true,
+        "independent_gate": true,
+        "source_hashes": true,
+        "gate_chronology": true,
+        "baselines": 96,
+        "interventions": 0,
+        "maximum_identity_error": null,
+        "maximum_relative_norm_error": null
+      },
+      "cross_choice_flips": 0,
+      "cross_observations": 0
+    },
+    {
+      "run": "v4-27b-20261009-01",
+      "metadata": {
+        "complete": true,
+        "model": "google/gemma-3-27b-pt",
+        "revision": "9fe3c4ebc93fbadb14913801536d022054ef11cc",
+        "dtype": "float32",
+        "tf32": false,
+        "attention": "eager",
+        "seed": 0,
+        "gpu": "NVIDIA H200",
+        "started_at_utc": "2026-10-09T00:46:30Z",
+        "versions": {
+          "torch": "2.10.0",
+          "transformers": "5.9.0",
+          "tokenizers": "0.22.2",
+          "numpy": "2.4.3"
+        },
+        "source_sha256": {
+          "v3/__init__.py": "35574423af3093897d8d1b80bab54edf0f169257d35ded43a2ed16104c825b58",
+          "v3/bridge/__init__.py": "17cea7ffb0866310a12ba7e5f9852a02443d02381d866f907d39dfac844607ad",
+          "v3/bridge/materials.py": "fd9388460a4df98b15aed63c3d686e91beda726e389d97595d9cff9ac8322b20",
+          "v3/direct/__init__.py": "e5648a7671fe0b863c4f04f9c84dd2958e13c97639a3d871cdc411ef37850c52",
+          "v3/direct/experiment.py": "930663d488746dabaecd8f6cfd6bcea588a3f1a4821100ba440d1798eafbe22b",
+          "v3/direct/measure.py": "9b3406a19858d00af3e19dcc7f9772ae0b7aee75bfec0eaad7f7e61a31514ba8",
+          "v3/scale/__init__.py": "83eac1c5f718b7513490d02728f96a9175eee34b66fd6ff8cba66cbeb39965fb",
+          "v3/scale/run.py": "203d3a0fd22f713894bcd7317677c722cea4c216e2165a381905e54beabfe4eb",
+          "v3/bridge12/__init__.py": "0c0b79bc6dc2864ff2986cd67c616d45c394dd36ff1cd80e301b11ac6859273e",
+          "v4/__init__.py": "78495b6977b342de29d91ff908f07a5adec3eaff9f9f92a8b38ee4dc591136c9",
+          "v4/run.py": "81e6b37001764d143f0a4dc3f5d852f1a60dd001adba719572e9358d31afc7ba",
+          "v4/modal_app.py": "783c5c983e10835745ab21c99740a2f0a7470d1b9894d2cc4acba42c0705dd52",
+          "v4/PROTOCOL.md": "2c8b6698b5212f37b7cc1df50b38e8f41f9208c071a6d60d89bbaafc59c5dff1",
+          "v4/materials.py": "5c8d6f578caecea1e823c317e39faa5537d8da9ab5da4ddc5a914976ae6e2164",
+          "v4/experiment.py": "49b794205e0aab4edf87604ff5dbc6acaa41865ab708133cef87fd66bfdf62e6",
+          "v4/measure.py": "1f6efd88060252be4a626f5dd628f4963e7deee082336081a4f023dc7ec8a348",
+          "v2/__init__.py": "7914a0ccbff30cfef3cd66e81affc5587fa394570896c0ed95a7478de280f8aa",
+          "v2/experiment.py": "c32985fcaef0e5ecbe536f904cb4101e6810ba109bfa9b3c9bf1737b5c343cf2",
+          "v2/materials.py": "c9af78f9389d77796cc42363a444ec712f21e6fa71017728bee53c6b907cc70f",
+          "v2/garden_followup.py": "36a25ee13063b816beed7b5e929b5f095aaea928740822bffbd3f362eec0cffa"
+        },
+        "loading_info": {
+          "missing_keys": [],
+          "unexpected_keys": [],
+          "mismatched_keys": [],
+          "error_msgs": []
+        },
+        "layers": 62,
+        "parameter_count": 27432406640,
+        "fixed_layer": 41,
+        "peak_gpu_bytes": 110234789888,
+        "elapsed_seconds": 120.01986074447632
+      },
+      "results": {
+        "status": "instrument_gate_failed",
+        "gate": {
+          "passed": false,
+          "both_reversal_rates": {
+            "active/agent": 1.0,
+            "active/patient": 1.0,
+            "object_relative/agent": 1.0,
+            "object_relative/patient": 1.0,
+            "passive/agent": 0.8333333333333334,
+            "passive/patient": 1.0,
+            "passive_relative/agent": 0.0,
+            "passive_relative/patient": 1.0
+          }
+        },
+        "baselines": 96,
+        "interventions": 0,
+        "maximum_identity_error": null
+      },
+      "effects": [],
+      "accuracy": {
+        "development/clean/active/agent": 1.0,
+        "development/clean/active/patient": 1.0,
+        "development/clean/passive/agent": 0.9166666666666666,
+        "development/clean/passive/patient": 1.0,
+        "development/clean/object_relative/agent": 1.0,
+        "development/clean/object_relative/patient": 1.0,
+        "development/clean/passive_relative/agent": 0.25,
+        "development/clean/passive_relative/patient": 1.0
+      },
+      "checks": {
+        "passed": true,
+        "raw_score_sums": true,
+        "independent_gate": true,
+        "source_hashes": true,
+        "gate_chronology": true,
+        "baselines": 96,
+        "interventions": 0,
+        "maximum_identity_error": null,
+        "maximum_relative_norm_error": null
+      },
+      "cross_choice_flips": 0,
+      "cross_observations": 0
+    }
+  ],
+  "legacy": {
+    "source": "v3/bridge12/results/bridge12-20261009-01",
+    "observations_sha256": "1b956016c34938e8df5e3090eef1f2f1e89d963cf42f8170b8cc84e0444ab601",
+    "post_hoc": true,
+    "effects": [
+      {
+        "kind": "cross",
+        "component": "common_first",
+        "family_values": {
+          "called": 0.288627109490335,
+          "helped": 0.43286203127354383,
+          "painted": 0.20650214049965143,
+          "photographed": 0.6277821040712297,
+          "searched": 0.526697563007474,
+          "trained": 0.25174464704468846
+        },
+        "mean": 0.38903593256448704,
+        "ci95": [
+          0.27160377862552804,
+          0.5147304392109314
+        ],
+        "families": 6
+      },
+      {
+        "kind": "cross",
+        "component": "question_difference",
+        "family_values": {
+          "called": 0.040851456113159657,
+          "helped": 0.02429740596562624,
+          "painted": 0.15057474840432405,
+          "photographed": 0.18452964909374714,
+          "searched": 0.05192548222839832,
+          "trained": -0.010580993723124266
+        },
+        "mean": 0.07359962468035519,
+        "ci95": [
+          0.020948297809809446,
+          0.13230093067201457
+        ],
+        "families": 6
+      },
+      {
+        "kind": "lexical",
+        "component": "common_first",
+        "family_values": {
+          "called": -0.21511662565171719,
+          "helped": 0.8978142773266882,
+          "painted": -0.03834239626303315,
+          "photographed": -0.04371011024340987,
+          "searched": -0.2250189413316548,
+          "trained": 1.8231374520109966
+        },
+        "mean": 0.3664606093079783,
+        "ci95": [
+          -0.15949265441546837,
+          1.0466344021454763
+        ],
+        "families": 6
+      },
+      {
+        "kind": "lexical",
+        "component": "question_difference",
+        "family_values": {
+          "called": -0.2922138012945652,
+          "helped": -0.13738932111300528,
+          "painted": 0.02327796770259738,
+          "photographed": -0.14068510523065925,
+          "searched": -0.13857934111729264,
+          "trained": 0.0605877946363762
+        },
+        "mean": -0.10416696773609146,
+        "ci95": [
+          -0.19029441254679114,
+          -0.012172179121989757
+        ],
+        "families": 6
+      },
+      {
+        "kind": "random",
+        "component": "common_first",
+        "family_values": {
+          "called": 0.7130782660096883,
+          "helped": 0.6713980458832036,
+          "painted": 0.015602279144028827,
+          "photographed": 0.27043291491766763,
+          "searched": 0.2696601575007661,
+          "trained": 0.4136570622213185
+        },
+        "mean": 0.3923047876127788,
+        "ci95": [
+          0.20910247507142932,
+          0.5824538035085425
+        ],
+        "families": 6
+      },
+      {
+        "kind": "random",
+        "component": "question_difference",
+        "family_values": {
+          "called": -0.06746567723651753,
+          "helped": -0.2910256642693032,
+          "painted": 0.024358675815165057,
+          "photographed": -0.16499480667213606,
+          "searched": -0.21490424479513115,
+          "trained": -0.26544507856791233
+        },
+        "mean": -0.16324613262097254,
+        "ci95": [
+          -0.245238804530042,
+          -0.06985412644118914
+        ],
+        "families": 6
+      },
+      {
+        "kind": "cross_minus_lexical",
+        "component": "common_first",
+        "family_values": {
+          "called": 0.5037437351420522,
+          "helped": -0.46495224605314434,
+          "painted": 0.24484453676268458,
+          "photographed": 0.6714922143146396,
+          "searched": 0.7517165043391287,
+          "trained": -1.5713928049663082
+        },
+        "mean": 0.022575323256508757,
+        "ci95": [
+          -0.6970949366417093,
+          0.5857969031979641
+        ],
+        "families": 6
+      },
+      {
+        "kind": "cross_minus_lexical",
+        "component": "question_difference",
+        "family_values": {
+          "called": 0.33306525740772486,
+          "helped": 0.16168672707863152,
+          "painted": 0.12729678070172668,
+          "photographed": 0.3252147543244064,
+          "searched": 0.19050482334569097,
+          "trained": -0.07116878835950047
+        },
+        "mean": 0.17776659241644666,
+        "ci95": [
+          0.06678198283771053,
+          0.27812526231476414
+        ],
+        "families": 6
+      },
+      {
+        "kind": "cross_minus_random",
+        "component": "common_first",
+        "family_values": {
+          "called": -0.4244511565193534,
+          "helped": -0.23853601460965979,
+          "painted": 0.1908998613556226,
+          "photographed": 0.35734918915356206,
+          "searched": 0.25703740550670784,
+          "trained": -0.16191241517663002
+        },
+        "mean": -0.0032688550482917835,
+        "ci95": [
+          -0.23437973975928295,
+          0.21532247916588354
+        ],
+        "families": 6
+      },
+      {
+        "kind": "cross_minus_random",
+        "component": "question_difference",
+        "family_values": {
+          "called": 0.10831713334967707,
+          "helped": 0.31532307023492945,
+          "painted": 0.126216072589159,
+          "photographed": 0.3495244557658832,
+          "searched": 0.2668297270235295,
+          "trained": 0.25486408484478806
+        },
+        "mean": 0.2368457573013277,
+        "ci95": [
+          0.16512670395766496,
+          0.30618281769824945
+        ],
+        "families": 6
+      }
+    ]
+  }
+}

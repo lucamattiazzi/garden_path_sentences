@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark"><meta name="description" content="Garden-path sentences nei modelli linguistici: esperimenti, interventi causali e limiti delle prove. Report italiano a tre livelli.">
+<title>Scheda v3-1b · grokked.it research</title><link rel="stylesheet" href="../../styles.css">
+<script defer data-domain="research.grokked.it" src="https://check.grokked.it/js/script.js"></script>
+</head><body><a class="skip" href="#report">Vai al contenuto</a>
+<header><a href="https://research.grokked.it/">research.grokked.it</a><span> / </span><a href="https://research.grokked.it/mech-interp/">mech-interp</a><span class="date">Aggiornato il 13 ottobre 2026</span></header>
+<nav aria-label="Livelli di lettura"><a href="../../index.html">Report completo</a><a href="../../report.md">Scarica il testo</a><a href="../../data/evidence.json">Dati dei grafici</a></nav>
+<main id="report"><blockquote>
+<p>Scheda del run del 8 ottobre 2026, conservata come resoconto sperimentale. Il <a href="../../index.html">report GPS aggiornato</a> distingue effetti predittivi, risposte finali e rianalisi, e include le verifiche successive. Questi risultati non identificano da soli un meccanismo di reinterpretazione.</p>
+</blockquote>
+<h1 id="v3-preferenze-sintattiche-un-token-alla-volta">V3 — Preferenze sintattiche, un token alla volta</h1>
+<p>Run <code>npz-v3-20261008-01</code> · Gemma 3 1B pretrained · layer 17 fissato prima del run · 133.7 secondi nella funzione GPU su NVIDIA A10.</p>
+<p><strong>Stato: esperimento completato.</strong> 24 materiali pubblicati, 12 famiglie di verbi, 12 frasi di sviluppo e 12 di test. Le frasi sono due per famiglia: il test ha sei unità di ricampionamento, non dodici famiglie indipendenti. I risultati sono esplorativi.</p>
+<h2 id="perche-questa-versione">Perché questa versione</h2>
+<p>V2 confrontava continuazioni di lunghezze diverse. Qui il confronto principale è tra la parola <code>was</code> e una virgola, ciascuna verificata come singolo token. Salviamo le due log-probabilità, la loro differenza e gli effetti delle patch separatamente. Nessun punteggio di stringhe lunghe entra nella misura principale.</p>
+<p>I materiali provengono da <a href="https://aclanthology.org/2025.naacl-long.164/">Hanna e Mueller (2025)</a> e dal <a href="https://github.com/hannamw/GP-mechanisms">repository degli autori</a>. Le varianti e le combinazioni usate qui sono adattamenti: non abbiamo raccolto giudizi umani sul nostro test.</p>
+<h2 id="risultato-principale-sul-test">Risultato principale sul test</h2>
+<p>Il segnale supera entrambi i controlli anche nel contrasto con posizioni allineate. Questo sostiene un effetto sulle preferenze di continuazione oltre questo particolare controllo posizionale.</p>
+<div class="table" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>Misura: interazione opzionale − intransitivo</th>
+<th>Media [IC95%], nats</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Patch, posizioni allineate</td>
+<td>6.599 [4.065, 8.734]</td>
+</tr>
+<tr>
+<td>Vantaggio sul controllo lessicale</td>
+<td>6.223 [3.706, 8.148]</td>
+</tr>
+<tr>
+<td>Vantaggio sulle direzioni casuali</td>
+<td>6.564 [3.957, 8.786]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Una differenza positiva indica che la patch sposta <code>was</code> rispetto alla virgola più nel contesto con verbo opzionalmente transitivo che nel controllo intransitivo. Le due direzioni della patch sono allineate nel segno prima della media. Gli intervalli ricampionano intere famiglie, 10.000 volte, e non coprono l’incertezza delle scelte linguistiche o tutti i confronti del progetto.</p>
+<h3 id="sviluppo-e-test-riportati-separatamente">Sviluppo e test, riportati separatamente</h3>
+<div class="table" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>Split</th>
+<th>Patch allineata</th>
+<th>Vantaggio lessicale</th>
+<th>Vantaggio casuale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>development</td>
+<td>4.911 [3.206, 6.518]</td>
+<td>4.940 [3.206, 6.617]</td>
+<td>4.757 [2.650, 6.623]</td>
+</tr>
+<tr>
+<td>test</td>
+<td>6.599 [4.065, 8.734]</td>
+<td>6.223 [3.706, 8.148]</td>
+<td>6.564 [3.957, 8.786]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="che-cosa-controlliamo-sulle-posizioni">Che cosa controlliamo sulle posizioni</h2>
+<p>In “gap” i token sono identici al prefisso senza virgola, ma i position ID dal secondo gruppo nominale in poi aumentano di uno. Corrispondono così ai position ID degli stessi token nella frase con virgola. Non viene inserito un token nascosto: è una perturbazione artificiale della codifica posizionale.</p>
+<p>Questo controllo non riproduce il contributo del token virgola all’attenzione e non isola perfettamente la sintassi dalla punteggiatura. Esclude soltanto una spiegazione basata interamente su questo specifico spostamento dei position ID, se il segnale resta presente.</p>
+<div class="table" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>Contrasto</th>
+<th>Interazione di base</th>
+<th>Patch</th>
+<th>Controllo lessicale</th>
+<th>Controllo casuale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Virgola / originale</td>
+<td>6.479 [3.583, 9.042]</td>
+<td>6.437 [3.531, 9.008]</td>
+<td>0.339 [-0.089, 0.734]</td>
+<td>0.374 [0.245, 0.519]</td>
+</tr>
+<tr>
+<td>Virgola / posizioni allineate</td>
+<td>6.719 [4.214, 8.844]</td>
+<td>6.599 [4.065, 8.734]</td>
+<td>0.376 [-0.141, 0.849]</td>
+<td>0.035 [-0.224, 0.335]</td>
+</tr>
+<tr>
+<td>Solo posizioni</td>
+<td>-0.240 [-1.016, 0.510]</td>
+<td>-0.141 [-0.898, 0.648]</td>
+<td>-0.016 [-0.073, 0.044]</td>
+<td>0.106 [0.062, 0.174]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Le tre interazioni di base si scompongono algebricamente: virgola/originale = virgola/allineato + solo posizioni. Le patch agiscono in un sistema non lineare e non devono soddisfare la stessa somma.</p>
+<h2 id="quale-token-cambia">Quale token cambia?</h2>
+<div class="table" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>Componente, posizioni allineate</th>
+<th>Media [IC95%], nats</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Effetto su log P(was)</td>
+<td>4.291 [2.529, 5.911]</td>
+</tr>
+<tr>
+<td>Effetto su log P(virgola)</td>
+<td>-2.308 [-3.250, -1.291]</td>
+</tr>
+<tr>
+<td>Differenza was − virgola</td>
+<td>6.599 [4.065, 8.734]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Il contributo della virgola va sottratto: la tabella riporta il suo segno originale. L’interazione misura una differenza tra classi di verbo, non un cambiamento assoluto identico in ogni frase.</p>
+<h2 id="prima-della-patch-was-o-virgola">Prima della patch: was o virgola?</h2>
+<div class="table" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>Classe del verbo</th>
+<th>Condizione</th>
+<th>Margine medio, nats</th>
+<th>Frasi con P(was) &gt; P(virgola)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>optional</td>
+<td>native</td>
+<td>-5.729</td>
+<td>0/12</td>
+</tr>
+<tr>
+<td>optional</td>
+<td>gap</td>
+<td>-4.958</td>
+<td>1/12</td>
+</tr>
+<tr>
+<td>optional</td>
+<td>comma</td>
+<td>+3.229</td>
+<td>12/12</td>
+</tr>
+<tr>
+<td>intransitive</td>
+<td>native</td>
+<td>+1.161</td>
+<td>10/12</td>
+</tr>
+<tr>
+<td>intransitive</td>
+<td>gap</td>
+<td>+2.172</td>
+<td>10/12</td>
+</tr>
+<tr>
+<td>intransitive</td>
+<td>comma</td>
+<td>+3.641</td>
+<td>12/12</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Un margine negativo rende la virgola più probabile di <code>was</code>. Questo non dimostra un parse sbagliato: le due possibilità non esauriscono le continuazioni né le interpretazioni sintattiche.</p>
+<h2 id="dove-cade-leffetto-nella-continuazione-effettiva">Dove cade l’effetto nella continuazione effettiva?</h2>
+<p>La seconda misura usa le prime tre parole della proposizione principale originale. Si interviene sempre sul nome prima della disambiguazione e si salvano i punteggi di ogni token. Questa analisi secondaria riguarda parole effettive come “received unwelcome attention”, non necessariamente <code>was</code>. Non è la dimostrazione di un passaggio da interpretazione errata a corretta.</p>
+<div class="table" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>Posizione</th>
+<th>Patch, nats [IC95%]</th>
+<th>Vantaggio lessicale</th>
+<th>Vantaggio casuale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parola 1</td>
+<td>3.815 [1.974, 5.605]</td>
+<td>3.106 [1.581, 4.446]</td>
+<td>4.009 [2.186, 5.790]</td>
+</tr>
+<tr>
+<td>Parola 2</td>
+<td>0.027 [-0.024, 0.098]</td>
+<td>0.093 [0.022, 0.169]</td>
+<td>0.068 [0.012, 0.139]</td>
+</tr>
+<tr>
+<td>Parola 3</td>
+<td>-0.018 [-0.057, 0.021]</td>
+<td>-0.008 [-0.033, 0.011]</td>
+<td>-0.021 [-0.063, 0.020]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="stabilita-tra-famiglie-e-tra-direzioni">Stabilità tra famiglie e tra direzioni</h2>
+<div class="table" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>Famiglia di test</th>
+<th>Patch</th>
+<th>Lessicale</th>
+<th>Casuale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>began</td>
+<td>+8.156</td>
+<td>+0.953</td>
+<td>+0.651</td>
+</tr>
+<tr>
+<td>called</td>
+<td>+4.938</td>
+<td>-0.562</td>
+<td>-0.161</td>
+</tr>
+<tr>
+<td>left</td>
+<td>+1.266</td>
+<td>+0.766</td>
+<td>+0.380</td>
+</tr>
+<tr>
+<td>lost</td>
+<td>+9.734</td>
+<td>+1.078</td>
+<td>-0.172</td>
+</tr>
+<tr>
+<td>read</td>
+<td>+6.219</td>
+<td>-0.359</td>
+<td>-0.359</td>
+</tr>
+<tr>
+<td>signed</td>
+<td>+9.281</td>
+<td>+0.383</td>
+<td>-0.130</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>Direzione, posizioni allineate</th>
+<th>Interazione patch, nats [IC95%]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>forward</td>
+<td>6.776 [4.240, 8.948]</td>
+</tr>
+<tr>
+<td>reverse</td>
+<td>6.422 [3.911, 8.542]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="verifiche-e-limiti">Verifiche e limiti</h2>
+<ul>
+<li>Identità: errore massimo 0 nats.</li>
+<li>Scarto relativo delle norme dopo arrotondamento BF16: mediana 0.035%, massimo 6.958%.</li>
+<li>Nel contrasto a posizioni allineate lo scarto massimo è 2.491%; le norme non sono esattamente identiche.</li>
+<li>Verificati 3.456 effetti grezzi, 288 baseline, le aggregazioni per famiglia e gli hash dello snapshot.</li>
+<li>Nessuna selezione di layer sui dati V3 e nessuna esclusione di frasi in base ai risultati.</li>
+<li>Layer e checkpoint sono fissi; il confronto non verifica una legge di scala.</li>
+<li>I verbi di controllo e alcuni nomi ricorrono tra split; sono disgiunte le famiglie del verbo opzionale.</li>
+<li>Le nuove frasi sono pubbliche e potrebbero essere state viste in addestramento.</li>
+<li>La virgola è un indizio sintattico ma anche un token con proprie regolarità; patchare l’intero residuo non identifica una feature di sintassi.</li>
+<li>Non abbiamo addestrato nuove sonde dei ruoli né dimostrato rianalisi online.</li>
+</ul>
+<h2 id="prossima-decisione">Prossima decisione</h2>
+<p>Prima di cercare feature SAE o scalare a modelli grandi, verificare il significato linguistico del contrasto su nuovi materiali e collegarlo a un compito comportamentale sui ruoli. La generalizzazione delle sonde di V2 resta un problema separato. Dopo questa ispezione, i dati V3 non sono più una conferma intatta per un protocollo modificato.</p>
+<h2 id="riproduzione">Riproduzione</h2>
+<p>Checkpoint <code>fcf18a2a879aab110ca39f8bffbccd5d49d8eb29</code>. Protocollo e sorgenti originali sono in <code>source.json</code>; misure grezze in <code>observations.jsonl</code>, riepiloghi in <code>results.json</code> e audit in <code>audit.json</code>.</p>
+<pre><code class="language-bash">uv run --no-project --with numpy --with matplotlib --with markdown python v3/analyze.py v3/results/npz-v3-20261008-01
+</code></pre>
+<p><a class="figure" href="report.svg" aria-label="Apri il grafico a tutta pagina"><img alt="Grafico del run v3-1b" src="report.svg" /></a></p></main>
+<footer><p>Report GPS · Luca Mattiazzi · <a href="https://grokked.it/">grokked.it</a></p>
+<p><a href="../../data/manifest.json">Manifest dei file pubblicati</a> · <a href="../../report.md">Versione Markdown</a> · <a href="../../data/evidence.json">Evidenze aggregate</a></p></footer></body></html>

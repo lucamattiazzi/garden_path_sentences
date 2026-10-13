@@ -1,0 +1,11 @@
+{
+  "published": true,
+  "release": "20261012T105630Z-gps",
+  "url": "https://research.grokked.it/mech-interp/garden-path-sentences/",
+  "manifest_sha256": "dccb60f2ff4c6b02d8a11978005db0c15653da002a0ebcf4e7a96fb3db32d7ab",
+  "index_sha256": "87b8ace0096d1ada40e95745ea263270640dda284e388704598bead3dfb481c8",
+  "backup": null,
+  "previous": "no previous report",
+  "shared_configuration_unchanged": true,
+  "containers_unchanged": true
+}

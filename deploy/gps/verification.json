@@ -1,0 +1,151 @@
+{
+  "deployment": {
+    "published": true,
+    "release": "20261012T105630Z-gps",
+    "url": "https://research.grokked.it/mech-interp/garden-path-sentences/",
+    "manifest_sha256": "dccb60f2ff4c6b02d8a11978005db0c15653da002a0ebcf4e7a96fb3db32d7ab",
+    "index_sha256": "87b8ace0096d1ada40e95745ea263270640dda284e388704598bead3dfb481c8",
+    "backup": null,
+    "previous": "no previous report",
+    "shared_configuration_unchanged": true,
+    "containers_unchanged": true
+  },
+  "public": {
+    "verified_at": "2026-10-12T10:56:55.830952+00:00",
+    "url": "https://research.grokked.it/mech-interp/garden-path-sentences/",
+    "transport": "HTTPS using normal DNS on deployment workstation; no --resolve override",
+    "manifest_sha256": "dccb60f2ff4c6b02d8a11978005db0c15653da002a0ebcf4e7a96fb3db32d7ab",
+    "public_files_matched": [
+      "data/evidence.json",
+      "data/manifest.json",
+      "data/protocol-bridge12.txt",
+      "data/protocol-v2.txt",
+      "data/protocol-v3.txt",
+      "data/protocol-v4.txt",
+      "esperimenti/v3-12b/index.html",
+      "esperimenti/v3-12b/report-roles.svg",
+      "esperimenti/v3-12b/report.md",
+      "esperimenti/v3-12b/report.svg",
+      "esperimenti/v3-1b/index.html",
+      "esperimenti/v3-1b/report.md",
+      "esperimenti/v3-1b/report.svg",
+      "figures/figure-bridge-controls.svg",
+      "figures/figure-bridge-endpoints.svg",
+      "figures/figure-bridge-roles.svg",
+      "figures/figure-v3-interaction.svg",
+      "figures/figure-v3-trajectory.svg",
+      "figures/figure-v4-gate.svg",
+      "index.html",
+      "report.md",
+      "styles.css"
+    ],
+    "indexes_verified": true
+  },
+  "browser": {
+    "date": "2026-10-12T10:56:57.291Z",
+    "base": "https://research.grokked.it/mech-interp/garden-path-sentences/",
+    "engine": "Headless Google Chrome via Playwright",
+    "checks": [
+      {
+        "file": "index.html",
+        "width": 1440,
+        "theme": "light",
+        "overflow": false,
+        "images": true,
+        "imageCount": 6,
+        "levels": 3,
+        "pending": false
+      },
+      {
+        "file": "index.html",
+        "width": 390,
+        "theme": "light",
+        "overflow": false,
+        "images": true,
+        "imageCount": 6,
+        "levels": 3,
+        "pending": false
+      },
+      {
+        "file": "index.html",
+        "width": 390,
+        "theme": "dark",
+        "overflow": false,
+        "images": true,
+        "imageCount": 6,
+        "levels": 3,
+        "pending": false
+      },
+      {
+        "file": "esperimenti/v3-1b/",
+        "width": 1440,
+        "theme": "light",
+        "overflow": false,
+        "images": true,
+        "imageCount": 1,
+        "levels": 0,
+        "pending": false
+      },
+      {
+        "file": "esperimenti/v3-1b/",
+        "width": 390,
+        "theme": "light",
+        "overflow": false,
+        "images": true,
+        "imageCount": 1,
+        "levels": 0,
+        "pending": false
+      },
+      {
+        "file": "esperimenti/v3-1b/",
+        "width": 390,
+        "theme": "dark",
+        "overflow": false,
+        "images": true,
+        "imageCount": 1,
+        "levels": 0,
+        "pending": false
+      },
+      {
+        "file": "esperimenti/v3-12b/",
+        "width": 1440,
+        "theme": "light",
+        "overflow": false,
+        "images": true,
+        "imageCount": 2,
+        "levels": 0,
+        "pending": false
+      },
+      {
+        "file": "esperimenti/v3-12b/",
+        "width": 390,
+        "theme": "light",
+        "overflow": false,
+        "images": true,
+        "imageCount": 2,
+        "levels": 0,
+        "pending": false
+      },
+      {
+        "file": "esperimenti/v3-12b/",
+        "width": 390,
+        "theme": "dark",
+        "overflow": false,
+        "images": true,
+        "imageCount": 2,
+        "levels": 0,
+        "pending": false
+      }
+    ],
+    "errors": []
+  },
+  "targeted_tests": {
+    "public_bundle": 4,
+    "publication_manifest": 2,
+    "passed": true
+  },
+  "source_hashes_verified": 19,
+  "shared_configuration_and_other_reports_unchanged": true,
+  "new_model_inference": false,
+  "report_words": 6920
+}

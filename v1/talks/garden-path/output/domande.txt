@@ -1,0 +1,79 @@
+DOMANDE PLAUSIBILI — RISPOSTE DA PROVARE AD ALTA VOCE
+
+1. Quindi il modello capisce oppure no?
+Ho misurato differenze predittive e l’effetto di interventi interni. Questi dati non bastano a decidere se avvenga una revisione sintattica. Sto preparando un compito sui ruoli nella frase, che a sua volta dovrà distinguere comprensione finale e revisione incrementale.
+
+2. Un transformer non può semplicemente rileggere il contesto?
+Può usare attention sulle posizioni precedenti. La maschera causale impedisce ai token futuri di cambiare gli stati delle posizioni passate. Può quindi rappresentare una nuova lettura nelle posizioni successive. “Non può tornare indietro” sarebbe una semplificazione eccessiva.
+
+3. Perché non gli chiedi direttamente che cosa significa la frase?
+È una buona misura complementare del comportamento finale. Ma la risposta può dipendere dal prompt, da euristiche e da un’elaborazione aggiuntiva al momento della domanda. Non dimostra da sola il processo avvenuto mentre il modello leggeva il testo.
+
+4. La surprisal è la stessa cosa dell’entropia?
+No. La surprisal riguarda la probabilità del token effettivamente osservato. L’entropia è la surprisal media attesa sull’intera distribuzione. Un modello sicurissimo della parola sbagliata può avere bassa entropia e alta surprisal sulla parola osservata.
+
+5. Perché usi nats e non bit?
+Il codice usa logaritmi naturali. Cambiare base cambia solo l’unità: per passare ai bit divido per ln(2). Va mantenuta la stessa convenzione nei confronti.
+
+6. Che cosa vuol dire esattamente 58% di recupero?
+È la quota del gap medio di surprisal chiusa dal patch su quella misura e su quelle venti coppie. Non significa 58% delle frasi comprese. È un rapporto fra differenze medie, può essere negativo o superare il cento per cento.
+
+7. I modelli grandi tengono aperte più interpretazioni?
+Era una mia prima ipotesi. I picchi di patching a profondità diverse sono compatibili con varie spiegazioni e non identificano il momento della decisione sintattica. Servono misure delle letture alternative e interventi selettivi. Non lo presenterei come risultato dimostrato.
+
+8. Se non trovi una testa decisiva, hai dimostrato che il meccanismo è distribuito?
+No. La distribuzione è una possibilità, insieme a ridondanza, compensazione, selezione dei candidati e limiti della metrica. L’esperimento non distingue queste spiegazioni. Inoltre l’audit trova teste fuori dalla reference casuale, senza stabilire per questo un circuito sintattico.
+
+9. Il patching è davvero una prova causale?
+È un intervento causale sul calcolo del modello: sostituendo quello stato cambia quella previsione. La cautela riguarda l’interpretazione del contenuto trasferito. Copiare l’intero stato non isola la sintassi dalle altre informazioni che contiene.
+
+10. Perché il recupero del 100% non è un risultato fortissimo?
+Se copio l’ultimo stato da cui dipende la previsione di un singolo token, nello stesso modello riproduco il readout del donatore per costruzione. È un controllo utile, ma non localizza un meccanismo specifico di revisione. Per target multi-token l’identità non si estende automaticamente.
+
+11. Aggiungere people non cambia troppe cose?
+Sì: cambia la sintassi ma anche lunghezza, contesto lessicale e posizioni. È uno dei limiti principali dei confronti storici. I nuovi controlli devono separare meglio le spiegazioni e usare donatori comparabili, senza assumere che una coppia apparentemente minima isoli una sola variabile.
+
+12. Come sai che non hanno memorizzato The old man the boat?
+Non lo so. Ho aggiunto dieci esempi, ma chiamarli novel non certifica che siano assenti dai dati di training. Il confronto piccolo e variabile non esclude la memorizzazione. Servono più famiglie e generalizzazione controllata, mantenendo comunque cautela sulla provenienza dei dati.
+
+13. Perché modelli base e non instruction-tuned?
+Volevo misurare direttamente la previsione della continuazione e intervenire su modelli accessibili. L’instruction tuning aggiunge un’altra variabile e cambia il modo di impostare le domande. Un confronto base/instruct sarebbe un esperimento successivo, non un risultato di questi log.
+
+14. Cambiare il tokenizer rende impossibile confrontare i modelli?
+Posso confrontare la probabilità della stessa parola sommando i contributi dei suoi subtoken, se i confini sono allineati correttamente. Restano differenze di tokenizzazione e addestramento, quindi non attribuisco tutto alla scala. Nei confronti statistici appaio gli stessi item.
+
+15. Qual è il limite statistico maggiore?
+Pochi esempi indipendenti, grande variabilità fra item e selezione di layer e teste sugli stessi dati. Il bootstrap aiuta a descrivere la sensibilità, ma non ripara questi problemi. Nel seguito tengo separate famiglie di esplorazione e validazione e aggrego al livello della famiglia.
+
+16. Se una testa supera quelle casuali, è significativa?
+Essere fuori dal range campionato è un’osservazione descrittiva. La reference è finita, e prima ho selezionato layer e teste. Non equivale a una significatività corretta per tutta la ricerca, né dimostra specificità sintattica.
+
+17. Perché non usare sparse autoencoder o probing?
+Un probe può indicare informazione decodificabile, senza dimostrare che il modello la usi. Gli sparse autoencoder sono uno strumento interessante per cercare feature più mirate: Hanna e Mueller li usano proprio in questo contesto. Prima voglio un esito comportamentale che renda interpretabile un eventuale intervento su quelle feature.
+
+18. Hai validato le frasi con esseri umani?
+Non c’è ancora una validazione linguistica indipendente del nuovo pilot. Il protocollo la richiede prima di interpretare risultati confermativi: grammaticalità, lettura intesa, disambiguatore, plausibilità e domande. Il fatto che il JSON passi i controlli non valida il materiale linguistico.
+
+19. Il nuovo pilot è già stato eseguito?
+Nei risultati locali disponibili al 1 ottobre 2026 ci sono l’audit storico e i materiali preparati, non output del pilot su checkpoint reali. Non presento i test del runner come evidenza del comportamento dei modelli.
+
+20. Quale sarebbe un risultato che ti convincerebbe di più?
+Un effetto comportamentale replicato su nuove famiglie, con controlli normali e invertiti solidi, seguito da interventi selettivi che cambiano l’interpretazione corretta in modo robusto all’ordine delle risposte. Per parlare di revisione voglio anche collegare causalmente l’informazione prima dell’indizio a quella usata dopo, escludendo semplici scorciatoie.
+
+21. Quanto hardware serve? Qual è stato il costo?
+Nel racconto originale gli esperimenti locali sono attribuiti a un MacBook M1 Max con 64 GB, con il 27B eseguito su Modal. Non ho una misura verificata del costo totale da citare qui. Per replicare bisogna controllare checkpoint, dtype, memoria e implementazione esatti. Eviterei promesse di costo o durata basate soltanto sulla taglia nominale.
+
+22. Hai scoperto qualcosa di nuovo rispetto alla letteratura?
+Lo presento come un’indagine esplorativa e un percorso per imparare gli strumenti, non come una dimostrazione di priorità. Il lavoro di Hanna e Mueller è direttamente pertinente e va citato. Il contributo pratico del progetto è avere esperimenti, log e un audit che rende espliciti i limiti delle prime interpretazioni.
+
+23. Come mai il talk è più prudente del post sul sito?
+Ho rivisto le inferenze alla luce dell’audit e di un protocollo più discriminante. I valori misurati restano consultabili, ma alcuni non identificano il processo che avevo inizialmente associato loro. È una correzione dell’interpretazione, non una nuova esecuzione dei modelli.
+
+24. Questo dice qualcosa su coscienza o ragionamento umano?
+L’esperimento riguarda previsioni e interventi in specifici modelli, su specifiche frasi. Non identifica coscienza né un meccanismo umano. La somiglianza del fenomeno linguistico motiva la domanda, non autorizza un’equivalenza fra processi.
+
+FONTI PER RISPOSTE E APPROFONDIMENTI
+research/PROTOCOL.md; research/results/legacy-audit.md; LW.md; model_finder/surprisal.py; qwen4b/scripts/_extra.py.
+Hanna e Mueller: https://aclanthology.org/2025.naacl-long.164/
+Zhang e Nanda: https://arxiv.org/abs/2309.16042
+Post e hardware dichiarato: https://grokked.it/posts/garden_path_sentences/

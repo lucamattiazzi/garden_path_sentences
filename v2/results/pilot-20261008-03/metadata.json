@@ -1,0 +1,26 @@
+{
+  "model": "google/gemma-3-1b-pt",
+  "revision": "fcf18a2a879aab110ca39f8bffbccd5d49d8eb29",
+  "seed": 0,
+  "dtype": "bfloat16",
+  "attention": "eager",
+  "layer_index": "zero-based, post-block",
+  "versions": {
+    "torch": "2.10.0",
+    "transformers": "5.9.0",
+    "numpy": "2.4.3",
+    "huggingface_hub": "1.33.0"
+  },
+  "python": "3.11.12",
+  "gpu": "NVIDIA A10",
+  "started_at_utc": "2026-10-08T10:45:16Z",
+  "source_sha256": {
+    "experiment.py": "c32985fcaef0e5ecbe536f904cb4101e6810ba109bfa9b3c9bf1737b5c343cf2",
+    "materials.py": "c9af78f9389d77796cc42363a444ec712f21e6fa71017728bee53c6b907cc70f",
+    "modal_app.py": "5ec9737ddd70261eae66dfeeb57761552d8c4db9afbe9824cb3121f700c54763",
+    "__init__.py": "7914a0ccbff30cfef3cd66e81affc5587fa394570896c0ed95a7478de280f8aa"
+  },
+  "materials_sha256": "e0388990bbb55d68d2e9842666cd05243585db959ff3ba8ccfc970e256b8e6ae",
+  "elapsed_seconds": 90.67948389053345,
+  "complete": true
+}

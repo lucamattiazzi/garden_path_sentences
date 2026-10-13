@@ -1,0 +1,43 @@
+{
+  "complete": true,
+  "model": "google/gemma-3-4b-pt",
+  "revision": "cc012e0a6d0787b4adcc0fa2c4da74402494554d",
+  "dtype": "float32",
+  "tf32": false,
+  "attention": "eager",
+  "seed": 0,
+  "gpu": "NVIDIA A10",
+  "started_at_utc": "2026-10-08T23:31:20Z",
+  "versions": {
+    "torch": "2.10.0",
+    "transformers": "5.9.0",
+    "tokenizers": "0.22.2",
+    "numpy": "2.4.3"
+  },
+  "source_sha256": {
+    "v3/__init__.py": "35574423af3093897d8d1b80bab54edf0f169257d35ded43a2ed16104c825b58",
+    "v3/bridge/__init__.py": "17cea7ffb0866310a12ba7e5f9852a02443d02381d866f907d39dfac844607ad",
+    "v3/bridge/materials.py": "fd9388460a4df98b15aed63c3d686e91beda726e389d97595d9cff9ac8322b20",
+    "v3/direct/__init__.py": "e5648a7671fe0b863c4f04f9c84dd2958e13c97639a3d871cdc411ef37850c52",
+    "v3/direct/experiment.py": "930663d488746dabaecd8f6cfd6bcea588a3f1a4821100ba440d1798eafbe22b",
+    "v3/direct/measure.py": "9b3406a19858d00af3e19dcc7f9772ae0b7aee75bfec0eaad7f7e61a31514ba8",
+    "v3/scale/__init__.py": "83eac1c5f718b7513490d02728f96a9175eee34b66fd6ff8cba66cbeb39965fb",
+    "v3/scale/run.py": "203d3a0fd22f713894bcd7317677c722cea4c216e2165a381905e54beabfe4eb",
+    "v3/scale/measure.py": "e54dbeceed2a13deda5f2a63e48de65032ffb03f28bf90faf35b1e6758319144",
+    "v3/scale/modal_app.py": "8567d0c0edf9e8eb40d8609664dbd5cb8a9c9ed2ad806ba46e2d79d646f14f7e",
+    "v3/scale/PROTOCOL.md": "919a79c00d8b6d15400bcdcc575e26c88c242323a9ebc070838c624357a3147d",
+    "v2/__init__.py": "7914a0ccbff30cfef3cd66e81affc5587fa394570896c0ed95a7478de280f8aa",
+    "v2/experiment.py": "c32985fcaef0e5ecbe536f904cb4101e6810ba109bfa9b3c9bf1737b5c343cf2",
+    "v2/materials.py": "c9af78f9389d77796cc42363a444ec712f21e6fa71017728bee53c6b907cc70f"
+  },
+  "loading_info": {
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "mismatched_keys": [],
+    "error_msgs": []
+  },
+  "layers": 34,
+  "parameter_count": 4300079472,
+  "peak_gpu_bytes": 17454438400,
+  "elapsed_seconds": 29.92709755897522
+}

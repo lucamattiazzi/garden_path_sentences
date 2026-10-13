@@ -1,0 +1,158 @@
+[
+  {
+    "id": "watched",
+    "family": "watched",
+    "split": "development",
+    "verb": "watched",
+    "actor": "guard",
+    "lexical_actor": "officer",
+    "participants": [
+      "poet",
+      "chef"
+    ],
+    "event": "greeted"
+  },
+  {
+    "id": "helped",
+    "family": "helped",
+    "split": "test",
+    "verb": "helped",
+    "actor": "nurse",
+    "lexical_actor": "doctor",
+    "participants": [
+      "dancer",
+      "painter"
+    ],
+    "event": "thanked"
+  },
+  {
+    "id": "coached",
+    "family": "coached",
+    "split": "development",
+    "verb": "coached",
+    "actor": "trainer",
+    "lexical_actor": "mentor",
+    "participants": [
+      "swimmer",
+      "runner"
+    ],
+    "event": "praised"
+  },
+  {
+    "id": "called",
+    "family": "called",
+    "split": "test",
+    "verb": "called",
+    "actor": "clerk",
+    "lexical_actor": "secretary",
+    "participants": [
+      "farmer",
+      "baker"
+    ],
+    "event": "followed"
+  },
+  {
+    "id": "photographed",
+    "family": "photographed",
+    "split": "test",
+    "verb": "photographed",
+    "actor": "reporter",
+    "lexical_actor": "editor",
+    "participants": [
+      "actor",
+      "singer"
+    ],
+    "event": "helped"
+  },
+  {
+    "id": "visited",
+    "family": "visited",
+    "split": "development",
+    "verb": "visited",
+    "actor": "tourist",
+    "lexical_actor": "traveler",
+    "participants": [
+      "carpenter",
+      "plumber"
+    ],
+    "event": "thanked"
+  },
+  {
+    "id": "interviewed",
+    "family": "interviewed",
+    "split": "development",
+    "verb": "interviewed",
+    "actor": "journalist",
+    "lexical_actor": "host",
+    "participants": [
+      "pilot",
+      "sailor"
+    ],
+    "event": "praised"
+  },
+  {
+    "id": "painted",
+    "family": "painted",
+    "split": "test",
+    "verb": "painted",
+    "actor": "artist",
+    "lexical_actor": "illustrator",
+    "participants": [
+      "musician",
+      "writer"
+    ],
+    "event": "greeted"
+  },
+  {
+    "id": "trained",
+    "family": "trained",
+    "split": "test",
+    "verb": "trained",
+    "actor": "coach",
+    "lexical_actor": "instructor",
+    "participants": [
+      "boxer",
+      "skater"
+    ],
+    "event": "followed"
+  },
+  {
+    "id": "taught",
+    "family": "taught",
+    "split": "development",
+    "verb": "taught",
+    "actor": "professor",
+    "lexical_actor": "lecturer",
+    "participants": [
+      "waiter",
+      "tailor"
+    ],
+    "event": "helped"
+  },
+  {
+    "id": "questioned",
+    "family": "questioned",
+    "split": "development",
+    "verb": "questioned",
+    "actor": "detective",
+    "lexical_actor": "investigator",
+    "participants": [
+      "driver",
+      "gardener"
+    ],
+    "event": "visited"
+  },
+  {
+    "id": "searched",
+    "family": "searched",
+    "split": "test",
+    "verb": "searched",
+    "actor": "inspector",
+    "lexical_actor": "agent",
+    "participants": [
+      "merchant",
+      "barber"
+    ],
+    "event": "thanked"
+  }
+]

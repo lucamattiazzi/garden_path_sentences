@@ -1,0 +1,8 @@
+{
+  "complete": true,
+  "cases": 6,
+  "source_hashes": true,
+  "word_token_sums": true,
+  "responses_not_truncated": true,
+  "new_inference": true
+}

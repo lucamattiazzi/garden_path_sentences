@@ -1,0 +1,88 @@
+GARDEN-PATH SENTENCES — CANOVACCIO E SCALETTA
+
+20 minuti di esposizione, Q&A escluso.
+
+01. 00:00–00:40 — Garden-path sentences
+Una curiosità linguistica come ingresso nella mechanistic interpretability.
+Passaggio: Cominciamo leggendo una frase.
+
+02. 00:40–02:10 — The old man the boat.
+Lascia leggere. Poi spiega: the old = gli anziani, man = governano.
+Passaggio: Vorrei capire che cosa cambia dentro il modello quando arriva questo indizio.
+
+03. 02:10–03:30 — Il contesto resta accessibile
+Attention legge il passato. I token futuri non riscrivono gli stati delle posizioni precedenti.
+Passaggio: Per cercare questo cambiamento serve prima una misura osservabile.
+
+04. 03:30–05:00 — Surprisal
+S = −ln P. Esempio didattico: 0,1 dà 2,30 nats; 0,01 dà 4,61.
+Passaggio: A questo punto costruisco il confronto fra frase ambigua e controllo.
+
+05. 05:00–06:20 — Un confronto controllato
+GPS / normale. Il secondo the e boat misurano aspetti diversi della previsione.
+Passaggio: Ho ripetuto questo schema su più frasi e più modelli.
+
+06. 06:20–07:40 — L’esperimento
+50 coppie / 5 costruzioni. Patching: 20 NV. Qwen e Gemma base.
+Passaggio: Il primo risultato riguarda le probabilità, prima ancora di toccare il modello.
+
+07. 07:40–09:00 — La previsione cambia
+Grafico Gemma 4B, differenza media alla parola critica. Medie positive, non ogni frase.
+Passaggio: Ora provo a intervenire sulle parti del modello che potrebbero produrre l’effetto.
+
+08. 09:00–10:20 — Ablation
+Rimuovi un contributo e rimisura. Nessun circuito specifico stabilito.
+Passaggio: Un secondo intervento consiste nel trasferire uno stato da un’altra esecuzione.
+
+09. 10:20–12:00 — Activation patching
+Normale come donor, GPS come target. Copia lo stato di man dopo un layer.
+Passaggio: Guardiamo quanto gap recupera questo trasferimento.
+
+10. 12:00–13:40 — Il recupero del gap
+58%, 51%, 45%, 59%. Picchi descrittivi del patch su man, 20 coppie.
+Passaggio: Questa tabella invita a una storia interessante. Bisogna capire se i dati la identificano davvero.
+
+11. 13:40–15:00 — Quanto possiamo concludere?
+Profondità del picco ≠ momento della decisione. Stato completo ≠ sola sintassi.
+Passaggio: C’è anche un caso in cui un recupero perfetto ci insegna meno del previsto.
+
+12. 15:00–16:30 — Il controllo del 100%
+Ultimo stato prima di boat: copiare il readout può riprodurre la previsione per costruzione.
+Passaggio: La prossima misura dovrebbe chiedere qualcosa sulle interpretazioni della frase.
+
+13. 16:30–18:30 — Chi ha fatto cosa?
+Pilot NP/S–NP/Z: ruoli, inversioni, ordini A/B, famiglie separate. Preparato, da validare ed eseguire.
+Passaggio: È questo il punto a cui è arrivato il progetto.
+
+14. 18:30–20:00 — La misura decide la domanda
+Previsione misurata. Influenza causale osservata. Rianalisi ancora da identificare.
+Passaggio: Domande.
+
+MODULI PER ESTENDERE FINO A CIRCA 30 MINUTI DI ESPOSIZIONE
+
+A. Dopo la slide 2, +2 minuti: fai leggere “While the man hunted the deer ran into the woods.” Chiedi al pubblico che ruolo avesse assegnato inizialmente a the deer. Mostra la differenza introdotta dalla virgola dopo hunted. Aspetta le risposte e spiega che il cervo è soggetto di ran nella lettura finale. È una dimostrazione informale, non una raccolta di dati. Se non c’è interazione, questo modulo durerà meno.
+
+B. Dopo la slide 6, +2 minuti: usa la slide backup 15. Confronta NP/S e NP/Z con la relativa ridotta. Spiega oggetto contro proposizione, oggetto contro nessun oggetto, e perché cambiare costruzione cambia anche i confondenti. Non leggere cinque esempi in rapida sequenza: fermati su due.
+
+C. Dopo la slide 10, +2 minuti: esempio didattico del recupero. S_GPS=6, S_normale=4, S_patch=5: (6−5)/(6−4)=50%. Chiedi che cosa significherebbe S_patch=3: 150%, previsione più favorevole del normale, non “comprensione al 150%”. Se S_patch=7, il recupero è −50%. Sono numeri illustrativi, non risultati del progetto.
+
+D. Dopo la slide 11, +2 minuti: usa la slide backup 16. Commenta media, intervallo e leave-one-out. Distingui variabilità fra item da variabilità fra run. Spiega perché scegliere un item da eliminare dopo aver visto il risultato falserebbe la domanda. In un seguito serve un criterio linguistico stabilito prima.
+
+E. Dopo la slide 13, +2 minuti: proponi un modello fittizio che risponde sempre A. Con due ordini bilanciati ottiene il 50% sulle presentazioni ma lo 0% di robustezza all’ordine. Poi proponi una scorciatoia diversa, basata sulla posizione dei nomi: invertire i nomi non la elimina necessariamente. Chiedi quale controllo aggiungere. Chiudi distinguendo QA finale e lettura incrementale.
+
+Questi moduli comprendono esempi e pause guidate: la durata è una stima da verificare nelle prove, non dieci minuti aggiuntivi di testo da leggere.
+
+PROVE E RECUPERO DEL TEMPO
+
+Prima prova: leggi il copione integralmente e segna i tempi reali a fine slide. Non accelerare per rispettare il cronometro.
+Seconda prova: usa soltanto il canovaccio. Memorizza l’apertura, la distinzione previsione/comprensione e la chiusura.
+Terza prova: simula tre domande fra quelle allegate, rispondendo entro 30–45 secondi ciascuna.
+
+Checkpoint: slide 4 finita a 05:00; slide 8 a 10:20; slide 11 a 15:00; conclusione a 20:00.
+Se sei in ritardo di un minuto, riduci i dettagli sui cinque template e leggi solo due righe della tabella del patching.
+Se sei in ritardo di due o tre minuti, compatta il controllo del 100% in una frase e descrivi un solo controllo del pilot. Conserva sempre la distinzione fra risultato misurato e interpretazione.
+Se hai tempo in più, usa un modulo di estensione, senza improvvisare nuove conclusioni.
+
+Le slide 15–16 sono backup dopo la chiusura. Durante la versione da 20 minuti fermati alla 14. La slide 2 mostra soltanto la frase: lascia leggere il pubblico prima di spiegarla oralmente.
+
+Il talk funziona interamente offline. La demo è la frase letta insieme al pubblico. Evita una nuova inferenza live, che non è necessaria per raccontare i log storici.

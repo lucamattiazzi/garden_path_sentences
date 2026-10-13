@@ -1,0 +1,117 @@
+Installed 29 packages in 52ms
+✓ Initialized. View run at 
+https://modal.com/apps/lucamattiazzi/main/ap-AgTkz89Rxnu6E1FoPCLwl8
+✓ Created objects.
+├── ✓ Uploaded 
+│   /Users/lucamattiazzi/Developer/mech-interp/garden_path_sentences/gps_title/m
+│   odal_app.py
+├── ✓ Uploaded 
+│   /Users/lucamattiazzi/Developer/mech-interp/garden_path_sentences/gps_title/P
+│   ROTOCOL.md
+├── ✓ Uploaded 
+│   /Users/lucamattiazzi/Developer/mech-interp/garden_path_sentences/gps_title/m
+│   odal_app.py
+├── ✓ Uploaded 
+│   /Users/lucamattiazzi/Developer/mech-interp/garden_path_sentences/gps_title/p
+│   robe.py
+├── ✓ Uploaded 
+│   /Users/lucamattiazzi/Developer/mech-interp/garden_path_sentences/gps_title/_
+│   _init__.py
+├── ✓ Created Function execute.
+└── ✓ Created Function collect.
+
+[1AFetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]
+[1AFetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 616.46it/s]
+
+[1ALoading weights:   0%|          | 0/1065 [00:00<?, ?it/s]
+[1ALoading weights:   0%|          | 1/1065 [00:01<26:04,  1.47s/it]
+[1ALoading weights:   9%|▉         | 96/1065 [00:01<00:12, 80.11it/s]
+[1ALoading weights:  12%|█▏        | 130/1065 [00:02<00:17, 52.27it/s]
+[1ALoading weights:  18%|█▊        | 195/1065 [00:02<00:09, 91.89it/s]
+[1ALoading weights:  21%|██▏       | 228/1065 [00:03<00:09, 84.11it/s]
+[1ALoading weights:  24%|██▎       | 252/1065 [00:03<00:09, 82.09it/s]
+[1ALoading weights:  25%|██▌       | 270/1065 [00:03<00:09, 86.08it/s]
+[1ALoading weights:  27%|██▋       | 286/1065 [00:03<00:08, 89.47it/s]
+[1ALoading weights:  28%|██▊       | 301/1065 [00:04<00:08, 89.70it/s]
+[1ALoading weights:  29%|██▉       | 314/1065 [00:04<00:08, 89.70it/s]
+[1ALoading weights:  31%|███       | 326/1065 [00:04<00:08, 87.62it/s]
+[1ALoading weights:  32%|███▏      | 337/1065 [00:04<00:08, 88.59it/s]
+[1ALoading weights:  33%|███▎      | 348/1065 [00:04<00:08, 88.56it/s]
+[1ALoading weights:  34%|███▎      | 358/1065 [00:04<00:08, 81.48it/s]
+[1ALoading weights:  35%|███▍      | 368/1065 [00:04<00:08, 80.51it/s]
+[1ALoading weights:  36%|███▌      | 381/1065 [00:05<00:09, 74.86it/s]
+[1ALoading weights:  37%|███▋      | 394/1065 [00:05<00:08, 79.51it/s]
+[1ALoading weights:  38%|███▊      | 407/1065 [00:05<00:07, 89.16it/s]
+[1ALoading weights:  39%|███▉      | 419/1065 [00:05<00:07, 88.08it/s]
+[1ALoading weights:  41%|████      | 433/1065 [00:05<00:08, 76.47it/s]
+[1ALoading weights:  42%|████▏     | 446/1065 [00:05<00:07, 78.00it/s]
+[1ALoading weights:  43%|████▎     | 460/1065 [00:06<00:06, 88.55it/s]
+[1ALoading weights:  44%|████▍     | 472/1065 [00:06<00:07, 80.97it/s]
+[1ALoading weights:  46%|████▌     | 486/1065 [00:06<00:06, 83.77it/s]
+[1ALoading weights:  47%|████▋     | 498/1065 [00:06<00:06, 82.50it/s]
+[1ALoading weights:  48%|████▊     | 511/1065 [00:06<00:06, 82.91it/s]
+[1ALoading weights:  49%|████▉     | 524/1065 [00:06<00:05, 90.83it/s]
+[1ALoading weights:  50%|█████     | 536/1065 [00:06<00:06, 82.42it/s]
+[1ALoading weights:  52%|█████▏    | 550/1065 [00:07<00:06, 84.33it/s]
+[1ALoading weights:  53%|█████▎    | 563/1065 [00:07<00:05, 84.40it/s]
+[1ALoading weights:  54%|█████▍    | 576/1065 [00:07<00:05, 85.47it/s]
+[1ALoading weights:  55%|█████▌    | 589/1065 [00:07<00:05, 80.85it/s]
+[1ALoading weights:  57%|█████▋    | 603/1065 [00:07<00:05, 83.88it/s]
+[1ALoading weights:  58%|█████▊    | 615/1065 [00:07<00:04, 91.33it/s]
+[1ALoading weights:  63%|██████▎   | 669/1065 [00:07<00:02, 193.32it/s]
+[1ALoading weights:  72%|███████▏  | 765/1065 [00:08<00:00, 373.31it/s]
+[1ALoading weights:  82%|████████▏ | 875/1065 [00:08<00:00, 559.20it/s]
+[1ALoading weights:  92%|█████████▏| 981/1065 [00:08<00:00, 686.46it/s]
+[1ALoading weights: 100%|██████████| 1065/1065 [00:08<00:00, 127.18it/s]
+
+[1AFetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]
+[1AFetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 550.13it/s]
+
+[1ALoading weights:   0%|          | 0/1065 [00:00<?, ?it/s]
+[1ALoading weights:   0%|          | 1/1065 [00:01<19:27,  1.10s/it]
+[1ALoading weights:   6%|▌         | 66/1065 [00:01<00:13, 75.69it/s]
+[1ALoading weights:  10%|▉         | 105/1065 [00:01<00:10, 87.73it/s]
+[1ALoading weights:  12%|█▏        | 131/1065 [00:02<00:17, 51.91it/s]
+[1ALoading weights:  17%|█▋        | 185/1065 [00:02<00:09, 88.97it/s]
+[1ALoading weights:  20%|█▉        | 212/1065 [00:03<00:10, 84.53it/s]
+[1ALoading weights:  22%|██▏       | 232/1065 [00:03<00:09, 85.51it/s]
+[1ALoading weights:  23%|██▎       | 249/1065 [00:03<00:09, 88.48it/s]
+[1ALoading weights:  25%|██▍       | 264/1065 [00:03<00:10, 72.93it/s]
+[1ALoading weights:  26%|██▌       | 277/1065 [00:03<00:10, 78.74it/s]
+[1ALoading weights:  27%|██▋       | 290/1065 [00:04<00:10, 72.83it/s]
+[1ALoading weights:  28%|██▊       | 303/1065 [00:04<00:10, 72.74it/s]
+[1ALoading weights:  30%|██▉       | 316/1065 [00:04<00:10, 73.02it/s]
+[1ALoading weights:  31%|███       | 329/1065 [00:04<00:08, 81.79it/s]
+[1ALoading weights:  32%|███▏      | 343/1065 [00:04<00:08, 82.09it/s]
+[1ALoading weights:  33%|███▎      | 355/1065 [00:04<00:08, 83.87it/s]
+[1ALoading weights:  35%|███▍      | 368/1065 [00:05<00:08, 81.22it/s]
+[1ALoading weights:  36%|███▌      | 381/1065 [00:05<00:09, 75.88it/s]
+[1ALoading weights:  37%|███▋      | 394/1065 [00:05<00:08, 76.15it/s]
+[1ALoading weights:  38%|███▊      | 407/1065 [00:05<00:08, 78.88it/s]
+[1ALoading weights:  39%|███▉      | 420/1065 [00:05<00:07, 85.09it/s]
+[1ALoading weights:  41%|████      | 433/1065 [00:05<00:08, 75.02it/s]
+[1ALoading weights:  42%|████▏     | 446/1065 [00:06<00:07, 83.42it/s]
+[1ALoading weights:  43%|████▎     | 455/1065 [00:06<00:07, 81.71it/s]
+[1ALoading weights:  44%|████▍     | 468/1065 [00:06<00:06, 89.94it/s]
+[1ALoading weights:  45%|████▍     | 478/1065 [00:06<00:06, 84.98it/s]
+[1ALoading weights:  46%|████▌     | 487/1065 [00:06<00:08, 71.67it/s]
+[1ALoading weights:  47%|████▋     | 498/1065 [00:06<00:07, 71.11it/s]
+[1ALoading weights:  48%|████▊     | 511/1065 [00:06<00:07, 74.70it/s]
+[1ALoading weights:  49%|████▉     | 523/1065 [00:07<00:06, 78.39it/s]
+[1ALoading weights:  50%|█████     | 537/1065 [00:07<00:07, 72.32it/s]
+[1ALoading weights:  52%|█████▏    | 550/1065 [00:07<00:07, 71.74it/s]
+[1ALoading weights:  53%|█████▎    | 563/1065 [00:07<00:07, 71.63it/s]
+[1ALoading weights:  54%|█████▍    | 575/1065 [00:07<00:06, 80.91it/s]
+[1ALoading weights:  55%|█████▌    | 589/1065 [00:07<00:06, 69.75it/s]
+[1ALoading weights:  57%|█████▋    | 603/1065 [00:08<00:06, 74.75it/s]
+[1ALoading weights:  58%|█████▊    | 615/1065 [00:08<00:05, 81.67it/s]
+[1ALoading weights:  64%|██████▍   | 683/1065 [00:08<00:01, 205.31it/s]
+[1ALoading weights:  74%|███████▍  | 787/1065 [00:08<00:00, 394.94it/s]
+[1ALoading weights:  83%|████████▎ | 885/1065 [00:08<00:00, 538.62it/s]
+[1ALoading weights:  92%|█████████▏| 975/1065 [00:08<00:00, 623.10it/s]
+[1ALoading weights: 100%|██████████| 1065/1065 [00:08<00:00, 121.79it/s]
+Saved /Users/lucamattiazzi/Developer/mech-interp/garden_path_sentences/gps_title/results/title-20261013-01
+Stopping app - local entrypoint completed.
+[modal-client] 2026-10-13T13:10:54+0200 Timed out waiting for final app logs.
+✓ App completed. View run at 
+https://modal.com/apps/lucamattiazzi/main/ap-AgTkz89Rxnu6E1FoPCLwl8

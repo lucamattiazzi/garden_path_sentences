@@ -1,0 +1,1346 @@
+[
+  {
+    "family": "watched",
+    "split": "development",
+    "reversal": 0,
+    "voice": "active",
+    "role": "agent",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The poet greeted the chef.\nQuestion: Who greeted someone?\nAnswer: the",
+    "candidates": [
+      " poet.",
+      " chef."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "watched",
+    "split": "development",
+    "reversal": 0,
+    "voice": "active",
+    "role": "agent",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who greeted someone?\nAnswer: the",
+    "candidates": [
+      " poet.",
+      " chef."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "watched",
+    "split": "development",
+    "reversal": 0,
+    "voice": "active",
+    "role": "patient",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The poet greeted the chef.\nQuestion: Who was greeted?\nAnswer: the",
+    "candidates": [
+      " poet.",
+      " chef."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "watched",
+    "split": "development",
+    "reversal": 0,
+    "voice": "active",
+    "role": "patient",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who was greeted?\nAnswer: the",
+    "candidates": [
+      " poet.",
+      " chef."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "watched",
+    "split": "development",
+    "reversal": 0,
+    "voice": "passive",
+    "role": "agent",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The poet was greeted by the chef.\nQuestion: Who greeted someone?\nAnswer: the",
+    "candidates": [
+      " poet.",
+      " chef."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "watched",
+    "split": "development",
+    "reversal": 0,
+    "voice": "passive",
+    "role": "agent",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who greeted someone?\nAnswer: the",
+    "candidates": [
+      " poet.",
+      " chef."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "watched",
+    "split": "development",
+    "reversal": 0,
+    "voice": "passive",
+    "role": "patient",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The poet was greeted by the chef.\nQuestion: Who was greeted?\nAnswer: the",
+    "candidates": [
+      " poet.",
+      " chef."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "watched",
+    "split": "development",
+    "reversal": 0,
+    "voice": "passive",
+    "role": "patient",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who was greeted?\nAnswer: the",
+    "candidates": [
+      " poet.",
+      " chef."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "watched",
+    "split": "development",
+    "reversal": 1,
+    "voice": "active",
+    "role": "agent",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The chef greeted the poet.\nQuestion: Who greeted someone?\nAnswer: the",
+    "candidates": [
+      " poet.",
+      " chef."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "watched",
+    "split": "development",
+    "reversal": 1,
+    "voice": "active",
+    "role": "agent",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who greeted someone?\nAnswer: the",
+    "candidates": [
+      " poet.",
+      " chef."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "watched",
+    "split": "development",
+    "reversal": 1,
+    "voice": "active",
+    "role": "patient",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The chef greeted the poet.\nQuestion: Who was greeted?\nAnswer: the",
+    "candidates": [
+      " poet.",
+      " chef."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "watched",
+    "split": "development",
+    "reversal": 1,
+    "voice": "active",
+    "role": "patient",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who was greeted?\nAnswer: the",
+    "candidates": [
+      " poet.",
+      " chef."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "watched",
+    "split": "development",
+    "reversal": 1,
+    "voice": "passive",
+    "role": "agent",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The chef was greeted by the poet.\nQuestion: Who greeted someone?\nAnswer: the",
+    "candidates": [
+      " poet.",
+      " chef."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "watched",
+    "split": "development",
+    "reversal": 1,
+    "voice": "passive",
+    "role": "agent",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who greeted someone?\nAnswer: the",
+    "candidates": [
+      " poet.",
+      " chef."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "watched",
+    "split": "development",
+    "reversal": 1,
+    "voice": "passive",
+    "role": "patient",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The chef was greeted by the poet.\nQuestion: Who was greeted?\nAnswer: the",
+    "candidates": [
+      " poet.",
+      " chef."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "watched",
+    "split": "development",
+    "reversal": 1,
+    "voice": "passive",
+    "role": "patient",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who was greeted?\nAnswer: the",
+    "candidates": [
+      " poet.",
+      " chef."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "coached",
+    "split": "development",
+    "reversal": 0,
+    "voice": "active",
+    "role": "agent",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The swimmer praised the runner.\nQuestion: Who praised someone?\nAnswer: the",
+    "candidates": [
+      " swimmer.",
+      " runner."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "coached",
+    "split": "development",
+    "reversal": 0,
+    "voice": "active",
+    "role": "agent",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who praised someone?\nAnswer: the",
+    "candidates": [
+      " swimmer.",
+      " runner."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "coached",
+    "split": "development",
+    "reversal": 0,
+    "voice": "active",
+    "role": "patient",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The swimmer praised the runner.\nQuestion: Who was praised?\nAnswer: the",
+    "candidates": [
+      " swimmer.",
+      " runner."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "coached",
+    "split": "development",
+    "reversal": 0,
+    "voice": "active",
+    "role": "patient",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who was praised?\nAnswer: the",
+    "candidates": [
+      " swimmer.",
+      " runner."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "coached",
+    "split": "development",
+    "reversal": 0,
+    "voice": "passive",
+    "role": "agent",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The swimmer was praised by the runner.\nQuestion: Who praised someone?\nAnswer: the",
+    "candidates": [
+      " swimmer.",
+      " runner."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "coached",
+    "split": "development",
+    "reversal": 0,
+    "voice": "passive",
+    "role": "agent",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who praised someone?\nAnswer: the",
+    "candidates": [
+      " swimmer.",
+      " runner."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "coached",
+    "split": "development",
+    "reversal": 0,
+    "voice": "passive",
+    "role": "patient",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The swimmer was praised by the runner.\nQuestion: Who was praised?\nAnswer: the",
+    "candidates": [
+      " swimmer.",
+      " runner."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "coached",
+    "split": "development",
+    "reversal": 0,
+    "voice": "passive",
+    "role": "patient",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who was praised?\nAnswer: the",
+    "candidates": [
+      " swimmer.",
+      " runner."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "coached",
+    "split": "development",
+    "reversal": 1,
+    "voice": "active",
+    "role": "agent",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The runner praised the swimmer.\nQuestion: Who praised someone?\nAnswer: the",
+    "candidates": [
+      " swimmer.",
+      " runner."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "coached",
+    "split": "development",
+    "reversal": 1,
+    "voice": "active",
+    "role": "agent",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who praised someone?\nAnswer: the",
+    "candidates": [
+      " swimmer.",
+      " runner."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "coached",
+    "split": "development",
+    "reversal": 1,
+    "voice": "active",
+    "role": "patient",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The runner praised the swimmer.\nQuestion: Who was praised?\nAnswer: the",
+    "candidates": [
+      " swimmer.",
+      " runner."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "coached",
+    "split": "development",
+    "reversal": 1,
+    "voice": "active",
+    "role": "patient",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who was praised?\nAnswer: the",
+    "candidates": [
+      " swimmer.",
+      " runner."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "coached",
+    "split": "development",
+    "reversal": 1,
+    "voice": "passive",
+    "role": "agent",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The runner was praised by the swimmer.\nQuestion: Who praised someone?\nAnswer: the",
+    "candidates": [
+      " swimmer.",
+      " runner."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "coached",
+    "split": "development",
+    "reversal": 1,
+    "voice": "passive",
+    "role": "agent",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who praised someone?\nAnswer: the",
+    "candidates": [
+      " swimmer.",
+      " runner."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "coached",
+    "split": "development",
+    "reversal": 1,
+    "voice": "passive",
+    "role": "patient",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The runner was praised by the swimmer.\nQuestion: Who was praised?\nAnswer: the",
+    "candidates": [
+      " swimmer.",
+      " runner."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "coached",
+    "split": "development",
+    "reversal": 1,
+    "voice": "passive",
+    "role": "patient",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who was praised?\nAnswer: the",
+    "candidates": [
+      " swimmer.",
+      " runner."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "visited",
+    "split": "development",
+    "reversal": 0,
+    "voice": "active",
+    "role": "agent",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The carpenter thanked the plumber.\nQuestion: Who thanked someone?\nAnswer: the",
+    "candidates": [
+      " carpenter.",
+      " plumber."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "visited",
+    "split": "development",
+    "reversal": 0,
+    "voice": "active",
+    "role": "agent",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who thanked someone?\nAnswer: the",
+    "candidates": [
+      " carpenter.",
+      " plumber."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "visited",
+    "split": "development",
+    "reversal": 0,
+    "voice": "active",
+    "role": "patient",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The carpenter thanked the plumber.\nQuestion: Who was thanked?\nAnswer: the",
+    "candidates": [
+      " carpenter.",
+      " plumber."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "visited",
+    "split": "development",
+    "reversal": 0,
+    "voice": "active",
+    "role": "patient",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who was thanked?\nAnswer: the",
+    "candidates": [
+      " carpenter.",
+      " plumber."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "visited",
+    "split": "development",
+    "reversal": 0,
+    "voice": "passive",
+    "role": "agent",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The carpenter was thanked by the plumber.\nQuestion: Who thanked someone?\nAnswer: the",
+    "candidates": [
+      " carpenter.",
+      " plumber."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "visited",
+    "split": "development",
+    "reversal": 0,
+    "voice": "passive",
+    "role": "agent",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who thanked someone?\nAnswer: the",
+    "candidates": [
+      " carpenter.",
+      " plumber."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "visited",
+    "split": "development",
+    "reversal": 0,
+    "voice": "passive",
+    "role": "patient",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The carpenter was thanked by the plumber.\nQuestion: Who was thanked?\nAnswer: the",
+    "candidates": [
+      " carpenter.",
+      " plumber."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "visited",
+    "split": "development",
+    "reversal": 0,
+    "voice": "passive",
+    "role": "patient",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who was thanked?\nAnswer: the",
+    "candidates": [
+      " carpenter.",
+      " plumber."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "visited",
+    "split": "development",
+    "reversal": 1,
+    "voice": "active",
+    "role": "agent",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The plumber thanked the carpenter.\nQuestion: Who thanked someone?\nAnswer: the",
+    "candidates": [
+      " carpenter.",
+      " plumber."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "visited",
+    "split": "development",
+    "reversal": 1,
+    "voice": "active",
+    "role": "agent",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who thanked someone?\nAnswer: the",
+    "candidates": [
+      " carpenter.",
+      " plumber."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "visited",
+    "split": "development",
+    "reversal": 1,
+    "voice": "active",
+    "role": "patient",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The plumber thanked the carpenter.\nQuestion: Who was thanked?\nAnswer: the",
+    "candidates": [
+      " carpenter.",
+      " plumber."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "visited",
+    "split": "development",
+    "reversal": 1,
+    "voice": "active",
+    "role": "patient",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who was thanked?\nAnswer: the",
+    "candidates": [
+      " carpenter.",
+      " plumber."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "visited",
+    "split": "development",
+    "reversal": 1,
+    "voice": "passive",
+    "role": "agent",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The plumber was thanked by the carpenter.\nQuestion: Who thanked someone?\nAnswer: the",
+    "candidates": [
+      " carpenter.",
+      " plumber."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "visited",
+    "split": "development",
+    "reversal": 1,
+    "voice": "passive",
+    "role": "agent",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who thanked someone?\nAnswer: the",
+    "candidates": [
+      " carpenter.",
+      " plumber."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "visited",
+    "split": "development",
+    "reversal": 1,
+    "voice": "passive",
+    "role": "patient",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The plumber was thanked by the carpenter.\nQuestion: Who was thanked?\nAnswer: the",
+    "candidates": [
+      " carpenter.",
+      " plumber."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "visited",
+    "split": "development",
+    "reversal": 1,
+    "voice": "passive",
+    "role": "patient",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who was thanked?\nAnswer: the",
+    "candidates": [
+      " carpenter.",
+      " plumber."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "interviewed",
+    "split": "development",
+    "reversal": 0,
+    "voice": "active",
+    "role": "agent",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The pilot praised the sailor.\nQuestion: Who praised someone?\nAnswer: the",
+    "candidates": [
+      " pilot.",
+      " sailor."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "interviewed",
+    "split": "development",
+    "reversal": 0,
+    "voice": "active",
+    "role": "agent",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who praised someone?\nAnswer: the",
+    "candidates": [
+      " pilot.",
+      " sailor."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "interviewed",
+    "split": "development",
+    "reversal": 0,
+    "voice": "active",
+    "role": "patient",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The pilot praised the sailor.\nQuestion: Who was praised?\nAnswer: the",
+    "candidates": [
+      " pilot.",
+      " sailor."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "interviewed",
+    "split": "development",
+    "reversal": 0,
+    "voice": "active",
+    "role": "patient",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who was praised?\nAnswer: the",
+    "candidates": [
+      " pilot.",
+      " sailor."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "interviewed",
+    "split": "development",
+    "reversal": 0,
+    "voice": "passive",
+    "role": "agent",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The pilot was praised by the sailor.\nQuestion: Who praised someone?\nAnswer: the",
+    "candidates": [
+      " pilot.",
+      " sailor."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "interviewed",
+    "split": "development",
+    "reversal": 0,
+    "voice": "passive",
+    "role": "agent",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who praised someone?\nAnswer: the",
+    "candidates": [
+      " pilot.",
+      " sailor."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "interviewed",
+    "split": "development",
+    "reversal": 0,
+    "voice": "passive",
+    "role": "patient",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The pilot was praised by the sailor.\nQuestion: Who was praised?\nAnswer: the",
+    "candidates": [
+      " pilot.",
+      " sailor."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "interviewed",
+    "split": "development",
+    "reversal": 0,
+    "voice": "passive",
+    "role": "patient",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who was praised?\nAnswer: the",
+    "candidates": [
+      " pilot.",
+      " sailor."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "interviewed",
+    "split": "development",
+    "reversal": 1,
+    "voice": "active",
+    "role": "agent",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The sailor praised the pilot.\nQuestion: Who praised someone?\nAnswer: the",
+    "candidates": [
+      " pilot.",
+      " sailor."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "interviewed",
+    "split": "development",
+    "reversal": 1,
+    "voice": "active",
+    "role": "agent",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who praised someone?\nAnswer: the",
+    "candidates": [
+      " pilot.",
+      " sailor."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "interviewed",
+    "split": "development",
+    "reversal": 1,
+    "voice": "active",
+    "role": "patient",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The sailor praised the pilot.\nQuestion: Who was praised?\nAnswer: the",
+    "candidates": [
+      " pilot.",
+      " sailor."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "interviewed",
+    "split": "development",
+    "reversal": 1,
+    "voice": "active",
+    "role": "patient",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who was praised?\nAnswer: the",
+    "candidates": [
+      " pilot.",
+      " sailor."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "interviewed",
+    "split": "development",
+    "reversal": 1,
+    "voice": "passive",
+    "role": "agent",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The sailor was praised by the pilot.\nQuestion: Who praised someone?\nAnswer: the",
+    "candidates": [
+      " pilot.",
+      " sailor."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "interviewed",
+    "split": "development",
+    "reversal": 1,
+    "voice": "passive",
+    "role": "agent",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who praised someone?\nAnswer: the",
+    "candidates": [
+      " pilot.",
+      " sailor."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "interviewed",
+    "split": "development",
+    "reversal": 1,
+    "voice": "passive",
+    "role": "patient",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The sailor was praised by the pilot.\nQuestion: Who was praised?\nAnswer: the",
+    "candidates": [
+      " pilot.",
+      " sailor."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "interviewed",
+    "split": "development",
+    "reversal": 1,
+    "voice": "passive",
+    "role": "patient",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who was praised?\nAnswer: the",
+    "candidates": [
+      " pilot.",
+      " sailor."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "taught",
+    "split": "development",
+    "reversal": 0,
+    "voice": "active",
+    "role": "agent",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The waiter helped the tailor.\nQuestion: Who helped someone?\nAnswer: the",
+    "candidates": [
+      " waiter.",
+      " tailor."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "taught",
+    "split": "development",
+    "reversal": 0,
+    "voice": "active",
+    "role": "agent",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who helped someone?\nAnswer: the",
+    "candidates": [
+      " waiter.",
+      " tailor."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "taught",
+    "split": "development",
+    "reversal": 0,
+    "voice": "active",
+    "role": "patient",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The waiter helped the tailor.\nQuestion: Who was helped?\nAnswer: the",
+    "candidates": [
+      " waiter.",
+      " tailor."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "taught",
+    "split": "development",
+    "reversal": 0,
+    "voice": "active",
+    "role": "patient",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who was helped?\nAnswer: the",
+    "candidates": [
+      " waiter.",
+      " tailor."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "taught",
+    "split": "development",
+    "reversal": 0,
+    "voice": "passive",
+    "role": "agent",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The waiter was helped by the tailor.\nQuestion: Who helped someone?\nAnswer: the",
+    "candidates": [
+      " waiter.",
+      " tailor."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "taught",
+    "split": "development",
+    "reversal": 0,
+    "voice": "passive",
+    "role": "agent",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who helped someone?\nAnswer: the",
+    "candidates": [
+      " waiter.",
+      " tailor."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "taught",
+    "split": "development",
+    "reversal": 0,
+    "voice": "passive",
+    "role": "patient",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The waiter was helped by the tailor.\nQuestion: Who was helped?\nAnswer: the",
+    "candidates": [
+      " waiter.",
+      " tailor."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "taught",
+    "split": "development",
+    "reversal": 0,
+    "voice": "passive",
+    "role": "patient",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who was helped?\nAnswer: the",
+    "candidates": [
+      " waiter.",
+      " tailor."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "taught",
+    "split": "development",
+    "reversal": 1,
+    "voice": "active",
+    "role": "agent",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The tailor helped the waiter.\nQuestion: Who helped someone?\nAnswer: the",
+    "candidates": [
+      " waiter.",
+      " tailor."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "taught",
+    "split": "development",
+    "reversal": 1,
+    "voice": "active",
+    "role": "agent",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who helped someone?\nAnswer: the",
+    "candidates": [
+      " waiter.",
+      " tailor."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "taught",
+    "split": "development",
+    "reversal": 1,
+    "voice": "active",
+    "role": "patient",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The tailor helped the waiter.\nQuestion: Who was helped?\nAnswer: the",
+    "candidates": [
+      " waiter.",
+      " tailor."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "taught",
+    "split": "development",
+    "reversal": 1,
+    "voice": "active",
+    "role": "patient",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who was helped?\nAnswer: the",
+    "candidates": [
+      " waiter.",
+      " tailor."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "taught",
+    "split": "development",
+    "reversal": 1,
+    "voice": "passive",
+    "role": "agent",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The tailor was helped by the waiter.\nQuestion: Who helped someone?\nAnswer: the",
+    "candidates": [
+      " waiter.",
+      " tailor."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "taught",
+    "split": "development",
+    "reversal": 1,
+    "voice": "passive",
+    "role": "agent",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who helped someone?\nAnswer: the",
+    "candidates": [
+      " waiter.",
+      " tailor."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "taught",
+    "split": "development",
+    "reversal": 1,
+    "voice": "passive",
+    "role": "patient",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The tailor was helped by the waiter.\nQuestion: Who was helped?\nAnswer: the",
+    "candidates": [
+      " waiter.",
+      " tailor."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "taught",
+    "split": "development",
+    "reversal": 1,
+    "voice": "passive",
+    "role": "patient",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who was helped?\nAnswer: the",
+    "candidates": [
+      " waiter.",
+      " tailor."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "questioned",
+    "split": "development",
+    "reversal": 0,
+    "voice": "active",
+    "role": "agent",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The driver visited the gardener.\nQuestion: Who visited someone?\nAnswer: the",
+    "candidates": [
+      " driver.",
+      " gardener."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "questioned",
+    "split": "development",
+    "reversal": 0,
+    "voice": "active",
+    "role": "agent",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who visited someone?\nAnswer: the",
+    "candidates": [
+      " driver.",
+      " gardener."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "questioned",
+    "split": "development",
+    "reversal": 0,
+    "voice": "active",
+    "role": "patient",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The driver visited the gardener.\nQuestion: Who was visited?\nAnswer: the",
+    "candidates": [
+      " driver.",
+      " gardener."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "questioned",
+    "split": "development",
+    "reversal": 0,
+    "voice": "active",
+    "role": "patient",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who was visited?\nAnswer: the",
+    "candidates": [
+      " driver.",
+      " gardener."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "questioned",
+    "split": "development",
+    "reversal": 0,
+    "voice": "passive",
+    "role": "agent",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The driver was visited by the gardener.\nQuestion: Who visited someone?\nAnswer: the",
+    "candidates": [
+      " driver.",
+      " gardener."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "questioned",
+    "split": "development",
+    "reversal": 0,
+    "voice": "passive",
+    "role": "agent",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who visited someone?\nAnswer: the",
+    "candidates": [
+      " driver.",
+      " gardener."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "questioned",
+    "split": "development",
+    "reversal": 0,
+    "voice": "passive",
+    "role": "patient",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The driver was visited by the gardener.\nQuestion: Who was visited?\nAnswer: the",
+    "candidates": [
+      " driver.",
+      " gardener."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "questioned",
+    "split": "development",
+    "reversal": 0,
+    "voice": "passive",
+    "role": "patient",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who was visited?\nAnswer: the",
+    "candidates": [
+      " driver.",
+      " gardener."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "questioned",
+    "split": "development",
+    "reversal": 1,
+    "voice": "active",
+    "role": "agent",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The gardener visited the driver.\nQuestion: Who visited someone?\nAnswer: the",
+    "candidates": [
+      " driver.",
+      " gardener."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "questioned",
+    "split": "development",
+    "reversal": 1,
+    "voice": "active",
+    "role": "agent",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who visited someone?\nAnswer: the",
+    "candidates": [
+      " driver.",
+      " gardener."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "questioned",
+    "split": "development",
+    "reversal": 1,
+    "voice": "active",
+    "role": "patient",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The gardener visited the driver.\nQuestion: Who was visited?\nAnswer: the",
+    "candidates": [
+      " driver.",
+      " gardener."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "questioned",
+    "split": "development",
+    "reversal": 1,
+    "voice": "active",
+    "role": "patient",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who was visited?\nAnswer: the",
+    "candidates": [
+      " driver.",
+      " gardener."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "questioned",
+    "split": "development",
+    "reversal": 1,
+    "voice": "passive",
+    "role": "agent",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The gardener was visited by the driver.\nQuestion: Who visited someone?\nAnswer: the",
+    "candidates": [
+      " driver.",
+      " gardener."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "questioned",
+    "split": "development",
+    "reversal": 1,
+    "voice": "passive",
+    "role": "agent",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who visited someone?\nAnswer: the",
+    "candidates": [
+      " driver.",
+      " gardener."
+    ],
+    "gold_index": 0
+  },
+  {
+    "family": "questioned",
+    "split": "development",
+    "reversal": 1,
+    "voice": "passive",
+    "role": "patient",
+    "condition": "simple",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: The gardener was visited by the driver.\nQuestion: Who was visited?\nAnswer: the",
+    "candidates": [
+      " driver.",
+      " gardener."
+    ],
+    "gold_index": 1
+  },
+  {
+    "family": "questioned",
+    "split": "development",
+    "reversal": 1,
+    "voice": "passive",
+    "role": "patient",
+    "condition": "no_context",
+    "prompt": "Sentence: The student admired the scientist.\nQuestion: Who admired someone?\nAnswer: the student.\n\nSentence: The student admired the scientist.\nQuestion: Who was admired?\nAnswer: the scientist.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who rescued someone?\nAnswer: the firefighter.\n\nSentence: The child was rescued by the firefighter.\nQuestion: Who was rescued?\nAnswer: the child.\n\nSentence: [not provided]\nQuestion: Who was visited?\nAnswer: the",
+    "candidates": [
+      " driver.",
+      " gardener."
+    ],
+    "gold_index": 1
+  }
+]

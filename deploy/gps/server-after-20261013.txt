@@ -1,0 +1,35 @@
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vda1        77G   30G   47G  39% /
+TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE
+Images          17        17        19.45GB   19.45GB (100%)
+Containers      17        17        7.864MB   0B (0%)
+Local Volumes   4         4         657.9MB   0B (0%)
+Build Cache     0         0         0B        0B
+659a02949e7ea85f70548213c1b531314039e44ac8409c8be1149a1b4261704c  /home/deploy/apps/caddy/Caddyfile
+e426ccd9512194f71e8a59bf49dac1ac02f0d7e50bef341bed1805dc7193195f  /home/deploy/apps/caddy-compose.yml
+ee881a5ed27b9e09d3427a2be5ed90b0aef4fbd87ae57b1b3955df00b0c3d199  /home/deploy/apps/migration-images.yml
+d403fd195c54a9a2e229e2c3493b08c7f60e1e1cf95cde7de1a4c4f1aac1d426 sha256:a4180db0805b3725ddf936d2e6290553745c7339c003565da717ee612fd8a888
+41bf0c46a6ee5a34b51797ac9aa431cc028dff2ebd96ad2399fea27103a300d7  /home/deploy/apps/research/mech-interp/crittografie/data/protocol-context.txt
+55fd6860c6d1a1fd7bc5fc9648a50c705da2c8bf151c4f429490c3a8a9d7fc3c  /home/deploy/apps/research/mech-interp/crittografie/data/manifest.json
+7586195db9e4524e6b4b9f37f9e7e74496f1143c6c22e5ebfbc2af14a952a1b1  /home/deploy/apps/research/mech-interp/crittografie/data/definition-lora.json
+12d5d8c26e2557fd1e4d255ae478de508b7eaaea3462b3a4f2673086d9fd3b98  /home/deploy/apps/research/mech-interp/crittografie/data/protocol-definition-lora.txt
+f09739728504df4fc7fed84b3c84fa34eed2dc80e770294efe72e9d5a123c163  /home/deploy/apps/research/mech-interp/crittografie/data/protocol-rank.txt
+c36d008b2b95dc29cdf13775520e0fa73d3041792eb845c08ff3cdfb40108e32  /home/deploy/apps/research/mech-interp/crittografie/data/summary.json
+f22f2b8e466b3144f519df31f251c08c376049a03f668fe9e46a1aabf2781a7a  /home/deploy/apps/research/mech-interp/crittografie/assets/k50.svg
+d7d56e0556556a04c26005505235b99483f977db5b9d35537839d58226d89c48  /home/deploy/apps/research/mech-interp/crittografie/controlli-italiano/confronto.svg
+d7fb0b4e4c2fef4f4d698199a8c7c4d9ef15dc5f95b427a1629c312a90453f55  /home/deploy/apps/research/mech-interp/crittografie/controlli-italiano/manifest.json
+9ba9d9799402a29bdbae6945bc4c9ebb1e28ddb034ea9651ac881e4b594c04e1  /home/deploy/apps/research/mech-interp/crittografie/controlli-italiano/index.html
+c292460e7f3e12737746bd933ef02728df6785d389466375c50b00a5fe1c8f76  /home/deploy/apps/research/mech-interp/crittografie/controlli-italiano/metrics.json
+54138d09637052e5386a5b87640c082e54b9cb76580bb54e0106e8b70cbbd402  /home/deploy/apps/research/mech-interp/crittografie/index.html
+2b91730d5a2563cdab292a37888bcebae20875ef944fc3f5c75dfc37c0b69b62  /home/deploy/apps/research/mech-interp/crittografie/specificita/manifest.json
+417662bbc117fe37c7b29ef03c30f9bb46817eb2806f3bf70f493d50910e2d0f  /home/deploy/apps/research/mech-interp/crittografie/specificita/index.html
+149188ec810cacf9fe9ef62805ecefa9ce72990f66f7cf18f6172a8791c0ee00  /home/deploy/apps/research/mech-interp/crittografie/specificita/specificity.svg
+abd6ceffc5aa5a86981ba96343c4e4896a358b469f1edcb9a2d3c0d1214e9a68  /home/deploy/apps/research/mech-interp/crittografie/specificita/metrics.json
+ce4d72b7250fff97c8e7cddcc14291dd0469adca059b09a1436e28fd514f0084  /home/deploy/apps/research/mech-interp/crittografie/puns/manifest.json
+2bcb0f1397ebd44f2bc1bb22c7a76af4e33e922455b3be655594dd928f3bd1a4  /home/deploy/apps/research/mech-interp/crittografie/puns/index.html
+23b7153b3a1494e5b4f4bcf332f37d25f53d8246ec7dc15ae52c915670e72bb6  /home/deploy/apps/research/mech-interp/crittografie/puns/metrics.json
+ab55dc6d29410d311d5fc6af8cd4179486a09e5ba5b8b3bcde4999108d996917  /home/deploy/apps/research/mech-interp/crittografie/ablazioni/manifest.json
+80572aeb568203d70636c23c10786d201ccd075427378223c2bb7c17aebdd10d  /home/deploy/apps/research/mech-interp/crittografie/ablazioni/index.html
+5a07843a97c4d3453e4ac73c8e4ba5e05172afe9d91bbb12cfe9bd9ebbf141ba  /home/deploy/apps/research/mech-interp/crittografie/ablazioni/scaling.svg
+6f1758daf031421763c4f5dba5322291b208ca9fa683276b4037fdfc804188eb  /home/deploy/apps/research/mech-interp/crittografie/ablazioni/layer-effects.svg
+97b5d56dd15204bbd905ddc37655941ad54e3b6b6c0009e45d7ab403fc328e28  /home/deploy/apps/research/mech-interp/crittografie/ablazioni/metrics.json

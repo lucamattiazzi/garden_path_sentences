@@ -1,0 +1,37 @@
+{
+  "track": "garden",
+  "model": "google/gemma-3-1b-pt",
+  "revision": "fcf18a2a879aab110ca39f8bffbccd5d49d8eb29",
+  "seed": 0,
+  "dtype": "bfloat16",
+  "attention": "eager",
+  "layer_index": "zero-based, post-block",
+  "gpu": "NVIDIA A10G",
+  "python": "3.11.12",
+  "started_at_utc": "2026-10-08T11:21:29Z",
+  "source_sha256": {
+    "__init__.py": "7914a0ccbff30cfef3cd66e81affc5587fa394570896c0ed95a7478de280f8aa",
+    "materials.py": "c9af78f9389d77796cc42363a444ec712f21e6fa71017728bee53c6b907cc70f",
+    "experiment.py": "c32985fcaef0e5ecbe536f904cb4101e6810ba109bfa9b3c9bf1737b5c343cf2",
+    "followup_run.py": "8455c59e8ae9d8307491ab4e811ff063ad4dfaa1eaa0dfe96a71dd9de1a02841",
+    "followup_modal.py": "e45dfd9408553c3e9729b3f82826279b567e7f3ea07acc8d04065bef3ca14c76",
+    "roles_followup.py": "857abfc8af07814f9f49e8693f82ce1935db032901b9ed8bd3d1490ee1487614",
+    "garden_followup.py": "36a25ee13063b816beed7b5e929b5f095aaea928740822bffbd3f362eec0cffa",
+    "ud_validation.py": "8463940064fd158dc10d018fd528b5f411cc82da19de23001df275a2166dc551",
+    "ROLES_PROTOCOL.md": "da5944c33cab84f505c9cbda699d676e4b6c656e92a6d71344089b401b0030e7",
+    "GARDEN_PROTOCOL.md": "ed5edbac1e105ce4cc25ce91b4adb8ec1148835e0d54f2c5a4f796ea875b35eb",
+    "materials/ud-ewt-license.txt": "b3d1b0f4c6ae151f7eb78738f46ebd5ee140f8a7f76501ba26af123140d35ae7",
+    "materials/ud-ewt-provenance.md": "b36d1084bb78c1a536fa7ed9faa98e36d4403f26bc8e39fed49f83552f946b61",
+    "materials/ud-ewt-source-readme.md": "c2dc7edaf5937d18cb3ff142410fde7460e32faa69b2bd0a041abc3f957da281",
+    "materials/ud-validation.json": "3bedf66aa0893efec268daf9787147ccaca9af56568d416f1bbd27e6904662a3"
+  },
+  "complete": true,
+  "versions": {
+    "torch": "2.10.0",
+    "transformers": "5.9.0",
+    "numpy": "2.4.3",
+    "huggingface_hub": "1.33.0",
+    "tokenizers": "0.22.2"
+  },
+  "elapsed_seconds": 96.1141242980957
+}

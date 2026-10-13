@@ -1,0 +1,63 @@
+{
+  "project": "garden_path_sentences",
+  "context": {
+    "objective": "Investigate syntactic-role representations and garden-path processing in language models, distinguishing role understanding from answer-order shortcuts through V5 validation.",
+    "success_criteria": "- Obtain two independent human reviews of the same candidate-material version.\n- Pass the V5 development gate across participant inversions, direct questions, and active/passive paraphrases.\n- Run held-out confirmation only after development passes; compare pretrained and instruction-tuned models.",
+    "notes": "- V4 agent-question failures persist in simpler relatives; complete-event paraphrases fail the calibrated gate.\n- The post-hoc audit finds inconsistent roles across output voices despite accurate passive paraphrases.\n- V5 inference has not run; software simulations are not model evidence.",
+    "files": [
+      "README.md"
+    ],
+    "directions": {}
+  },
+  "runs": [],
+  "documents": {
+    "README.md": "# Garden-Path Sentences \u2014 Mechanistic Interpretability\n\nResearch on garden-path processing and syntactic-role representations in language models.\n\n**[Report dettagliato in italiano, a tre livelli](reports/2026-10-09/REPORT_IT.html)**\n([Markdown](reports/2026-10-09/REPORT_IT.md)) \u2014 V1\u2013V4 e ultimo controllo completato.\nIl controllo con verbo esplicito non supera il gate. Il report conserva lo\nsnapshot della chiusura V4; la successiva analisi esplorativa e i materiali V5\nsono separati.\n\n**[Presentazione, scaletta e copione aggiornati](talks/garden-path-v4/output/index.html)**\n\u2014 talk italiano da 20 minuti, con due appendici per arrivare a 30.\n\n**[V5 \u2014 audit della coerenza e nuovi materiali](v5/README.md)** \u2014 nuova analisi\ndei readout V4 completata; revisione umana e inferenza V5 ancora da eseguire.\n\n- **[V1 \u2014 historical experiments](v1/README.md):** model sweeps, Qwen/Gemma\n  pipelines, saved logs, numerical audit, original report, LessWrong draft and talk.\n- **[V2 \u2014 controlled follow-ups](v2/README.md):** Gemma 3 interventions and\n  independent syntactic-role probes, with development/test splits and controls.\n- **[V2 HTML overview](v2/html/index.html):** explanations, figures and limitations;\n  opens offline in a browser.\n- **[V3 \u2014 one-token follow-up](v3/README.md):** published NP/Z materials, positional\n  controls and per-token interventions at a fixed layer.\n- **[V3 results and figures](v3/results/npz-v3-20261008-01/report.html):** completed\n  Gemma 3 1B pilot, with an offline HTML report.\n\n- **[V3 behavioral bridge](v3/bridge/README.md):** role-question instrument failed\n  its development gate, including a separate FP32 diagnostic; causal test unrun.\n\n- **[V3 direct participant answers](v3/direct/README.md):** development-only FP32\n  validation; direct answers still fail, particularly passive-agent questions.\n\n- **[V3 larger-model validation](v3/scale/README.md):** 4B fails the frozen\n  competence gate; 12B passes all development questions with unchanged prompts.\n- **[V3 causal bridge on 12B](v3/bridge12/README.md):** completed held-out experiment;\n  strong predictive effects and role-dependent confidence shifts, without answer flips.\n\n- **[V4 \u2014 first mention and queried-event roles](v4/README.md):** fresh families,\n  four constructions; both 12B and 27B fail the passive-relative agent gate.\n- **[V4 report and graphs](v4/results/comparison-20261009/report.html):** completed\n  development comparison and exploratory V3 bias decomposition; V4 confirmation unrun.\n\n- **[V4 simpler-relative validation](v4/validation/README.md):** 240 development\n  observations; the agent-question failure persists without garden-path context.\n\n- **[V4 complete-event paraphrases](v4/paraphrase/README.md):** 252 development\n  observations; success depends on output voice and fails the calibrated gate.\n\n## Working directories\n\nRun V1 commands from `v1/`:\n\n```bash\ncd v1\nuv sync\n```\n\nV1's Python project and lockfile live there. A `.env` in the repository root\nremains discoverable by its scripts. Git settings and the existing local\nenvironment remain at the repository root; `uv sync` in `v1/` creates that\nversion's own environment.\n\nRun the commands documented in `v2/README.md` and `v2/FOLLOWUP.md` from the\nrepository root. V2's saved results and HTML reports are independent of V1.\nV3 commands likewise run from the repository root; it reuses selected V2\nmeasurement helpers without modifying V1 or V2.\n",
+    "v5/README.md": "# V5 \u2014 coerenza delle risposte e nuova validazione\n\n**Completato:** audit post-hoc su V4; 40 famiglie candidate, 320 frasi,\ndue moduli di revisione, specifiche per 720 valutazioni per split e modello,\nrunner Modal con revisioni PT/IT fissate e gate verificati tramite simulazioni.\n**Non completato:** revisione umana, verifica GPU del nuovo runner e dello scoring IT,\ninferenza e conferma V5. Nessun risultato di nuovo modello viene dichiarato.\n\n## Nuova analisi sui dati esistenti\n\n[Report HTML](results/voice-consistency-20261009/report.html) \u00b7\n[Report Markdown](results/voice-consistency-20261009/REPORT_IT.md) \u00b7\n[Conteggi e coppie verificabili](results/voice-consistency-20261009/audit.json).\n\nNelle 12 relative passive isolate, prima e dopo il verbo esplicito, le parafrasi\nattive e passive iniziano sempre dal soggetto dell'evento embedded. Mantenere\nquell'ordine dell'output attribuisce per\u00f2 l'azione a partecipanti opposti nelle\ndue voci: coerenza semantica grezza **0/12**, pur con accuratezza passiva 12/12.\n\u00c8 una descrizione post-hoc, compatibile con una scorciatoia di formulazione;\nnon identifica un meccanismo o prova l'assenza di informazione sintattica.\n\n## Materiali da valutare\n\n- [Modulo del primo lettore](materials/reviewer-1.html).\n- [Modulo del secondo lettore](materials/reviewer-2.html).\n- [Protocollo e criteri](PROTOCOL.md).\n\nI moduli funzionano offline, includono esportazione/importazione JSON per\ninterrompere e riprendere il lavoro e non mostrano il gold. I due lettori devono\nlavorare senza confrontarsi o chiedere risposte a un assistente AI. I moduli non\nsono stati inviati a nessuno. Non contengono giudizi gi\u00e0 compilati.\n\nLe 40 famiglie sono **candidate generate dall'assistente**, non materiali\nconvalidati da esseri umani. I test che simulano recensioni positive verificano\nsoltanto il software e non vengono esportati come giudizi reali.\n\n## Comandi dalla radice del repository\n\nCon l'ambiente Python del progetto attivo:\n\n```bash\npython -m unittest v5.test_materials v5.test_prompts v5.test_voice_audit v5.test_experiment\npython -m v5.materials\npython -m v5.prompts\npython -m v5.voice_audit\npython -m v5.materials --reviews /percorso/lettore-1.json /percorso/lettore-2.json\n```\n\nL'audit importa il validatore V4 e richiede NumPy. Materiali, prompt e gate umano\nusano la libreria standard. `materials/manifest.json` identifica il contenuto\ncandidato; `materials/frozen-files.json` registra gli hash delle specifiche\nsalvate. Un hash non sostituisce la preregistrazione o la validazione umana.\n\nVerifiche locali: 20 test mirati passati; lint limitato a V5. L'avvio di Chrome\nheadless per i moduli \u00e8 stato impedito dall'ambiente (SIGABRT/EPERM): nessuna\nverifica browser end-to-end o di layout dei moduli viene dichiarata. Il sorgente\ndella verifica tentata \u00e8 in `.build/check-ui.mjs`. La presentazione V1\u2013V4 \u00e8 stata\ninvece renderizzata con Artifact Tool e verificata separatamente.\n\n## Esecuzione successiva alle revisioni\n\nIl comando seguente \u00e8 pronto per la verifica runtime, **non \u00e8 stato eseguito**.\nRichiede i due JSON reali esportati dai lettori; il gate viene verificato sia\nlocalmente sia prima del caricamento dei pesi. Nessun flag consente di saltarlo.\n\n```bash\nmodal run v5/modal_app.py --run-id v5-pt-01 --variant pt --review-one /percorso/lettore-1.json --review-two /percorso/lettore-2.json\nmodal run v5/modal_app.py --run-id v5-it-01 --variant it --review-one /percorso/lettore-1.json --review-two /percorso/lettore-2.json\n```\n\nUsa un run ID nuovo per ogni tentativo. A100 80 GB, massimo un container per\nfunzione, retry disattivati e timeout 40 minuti. Cache HF esistente, volume\nrisultati separato `gps-v5-results`, secret esistente `huggingface`. L'accesso\nai pesi IT non \u00e8 ancora verificato. In caso di errore il volume conserva quanto\n\u00e8 stato scritto; prima di riprovare occorre diagnosticare il run fallito.\nLe simulazioni software dei test non sono risultati dei modelli.\n"
+  },
+  "conversation": {
+    "source": "/Users/lucamattiazzi/.codex/sessions/2026/09/11/rollout-2026-09-11T15-27-45-01a090a7-1a04-7b61-a2fc-e30d986e3fdf.jsonl",
+    "message_count": 6,
+    "truncated": true
+  },
+  "summary": {
+    "objective": "Investigate syntactic-role representations and garden-path processing in language models, distinguishing role understanding from answer-order shortcuts through V5 validation.",
+    "success_criteria": "- Obtain two independent human reviews of the same candidate-material version.\n- Pass the V5 development gate across participant inversions, direct questions, and active/passive paraphrases.\n- Run held-out confirmation only after development passes; compare pretrained and instruction-tuned models.",
+    "notes": "- V4 agent-question failures persist in simpler relatives; complete-event paraphrases fail the calibrated gate.\n- The post-hoc audit finds inconsistent roles across output voices despite accurate passive paraphrases.\n- V5 inference has not run; software simulations are not model evidence.",
+    "steps": "- Completed: V1\u2013V4 investigations and updated presentation; V4 confirmation remains unrun.\n- Completed: post-hoc V4 voice-consistency audit.\n- Completed: V5 candidate materials, review forms, fixed prompts/model revisions, and gated Modal runner.\n- Pending: human reviews and browser verification of review forms.\n- Planned: GPU runtime/scoring validation, development inference, then gated confirmation.",
+    "implementation": "- Candidate materials use proper names and comma-marked relatives, with separate development and confirmation splits.\n- Offline review forms hide gold answers and support JSON export/import.\n- Modal runner enforces human-review and development gates before proceeding; PT/IT revisions are fixed.\n- Targeted local checks passed; GPU runtime, IT weight access/scoring, and review-form browser behavior remain unverified.",
+    "hypotheses": "- Speculation: preserving participant order across answer voices may reflect a formulation shortcut.\n- The audit does not establish a mechanism or prove absence of syntactic information.\n- Open question: whether pretrained versus instruction-tuned models differ in cross-voice role consistency.",
+    "decisions": "- Add cross-voice semantic consistency to V5 evaluation.\n- Treat V5 as an internal comparison, not an identical V4 replication.\n- Require independent human validation before model measurements.\n- Keep exploratory V5 analysis separate from the closed V4 report.",
+    "next_step": "Obtain the two independent human reviews, validate their exported JSON against the frozen materials, then verify the runner and IT scoring on GPU before V5 inference.",
+    "sources": [
+      "README.md",
+      "v5/README.md",
+      "/Users/lucamattiazzi/.codex/sessions/2026/09/11/rollout-2026-09-11T15-27-45-01a090a7-1a04-7b61-a2fc-e30d986e3fdf.jsonl"
+    ],
+    "metrics": [
+      {
+        "metric": "Raw semantic consistency (correct pairs out of 12)",
+        "stage": "latest: V5 post-hoc V4 audit",
+        "protocol": "Active/passive paraphrase comparison on isolated passive relatives, before and after an explicit verb",
+        "source": "v5/README.md",
+        "quote": "coerenza semantica grezza **0/12**, pur con accuratezza passiva 12/12.",
+        "value": 0
+      },
+      {
+        "metric": "Passive paraphrase accuracy (correct answers out of 12)",
+        "stage": "latest: V5 post-hoc V4 audit",
+        "protocol": "Active/passive paraphrase comparison on isolated passive relatives, before and after an explicit verb",
+        "source": "v5/README.md",
+        "quote": "coerenza semantica grezza **0/12**, pur con accuratezza passiva 12/12.",
+        "value": 12
+      }
+    ]
+  },
+  "summary_updated_at": "2026-10-10T05:44:22+00:00",
+  "updated_at": "2026-10-10T05:44:22+00:00",
+  "fingerprint": "2069bb7a3da8062cccfd7863e7424182324939a9eb98a48fd5d917023092506a",
+  "worker": {
+    "provider": "codex",
+    "status": "ready",
+    "error": null
+  }
+}

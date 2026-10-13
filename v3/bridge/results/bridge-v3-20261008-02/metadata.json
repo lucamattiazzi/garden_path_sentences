@@ -1,0 +1,34 @@
+{
+  "model": "google/gemma-3-1b-pt",
+  "revision": "fcf18a2a879aab110ca39f8bffbccd5d49d8eb29",
+  "dtype": "bfloat16",
+  "attention": "eager",
+  "seed": 0,
+  "fixed_layer": 17,
+  "complete": true,
+  "python": "3.11.12",
+  "started_at_utc": "2026-10-08T21:09:18Z",
+  "gpu": "NVIDIA A10",
+  "versions": {
+    "torch": "2.10.0",
+    "transformers": "5.9.0",
+    "numpy": "2.4.3",
+    "tokenizers": "0.22.2",
+    "huggingface_hub": "1.33.0"
+  },
+  "source_sha256": {
+    "v3/__init__.py": "35574423af3093897d8d1b80bab54edf0f169257d35ded43a2ed16104c825b58",
+    "v3/bridge/__init__.py": "17cea7ffb0866310a12ba7e5f9852a02443d02381d866f907d39dfac844607ad",
+    "v3/bridge/materials.py": "fd9388460a4df98b15aed63c3d686e91beda726e389d97595d9cff9ac8322b20",
+    "v3/bridge/measure.py": "117f3e5a63206d14813791a549796a4ae4a26311d1a00964b31cc293df4802a4",
+    "v3/bridge/experiment.py": "a45133ff781248a2e6ee4667a47d8152e565114dcb9f651877c79e6cd9c229a8",
+    "v3/bridge/run.py": "32a8cd004df58baaf8ef9a9d986625bc284d15bb6d2b2185f57d49b98e31bf57",
+    "v3/bridge/modal_app.py": "8e96c07aa56e13ed0be7e63b5f700b209b7de3e1454b008f2f74278983fbbfe1",
+    "v3/bridge/PROTOCOL.md": "4632591b4a659027787d21e6296b34a6eda5b608fbc96c350dc86c7857da078f",
+    "v2/__init__.py": "7914a0ccbff30cfef3cd66e81affc5587fa394570896c0ed95a7478de280f8aa",
+    "v2/experiment.py": "c32985fcaef0e5ecbe536f904cb4101e6810ba109bfa9b3c9bf1737b5c343cf2",
+    "v2/materials.py": "c9af78f9389d77796cc42363a444ec712f21e6fa71017728bee53c6b907cc70f",
+    "v2/garden_followup.py": "36a25ee13063b816beed7b5e929b5f095aaea928740822bffbd3f362eec0cffa"
+  },
+  "elapsed_seconds": 22.240619897842407
+}

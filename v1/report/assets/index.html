@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Garden-Path Sentences in Gemma 3 — Results Report</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
+<script src="data.js"></script>
+</head>
+<body>
+
+<nav id="toc">
+  <strong>Sections</strong>
+  <a href="#overview">Overview</a>
+  <a href="#s01">01 · Baseline effect</a>
+  <a href="#s02">02 · Layer sweep (Δ)</a>
+  <a href="#s03">03 · Head sweeps</a>
+  <a href="#s04">04 · Heads → continuation prediction</a>
+  <a href="#s05">05 · Layer sweep (vc)</a>
+  <a href="#s06">06 · Head sweeps (vc)</a>
+  <a href="#s0708">07/08 · Lexical floor</a>
+  <a href="#s09">09 · Canonical vs novel</a>
+  <a href="#s10">10 · Attention patterns</a>
+  <a href="#s11">11 · Activation patching</a>
+  <a href="#s12">12 · Zero vs mean ablation</a>
+  <a href="#s13">13 · Null distribution</a>
+  <a href="#s14">14 · Null (continuation prediction)</a>
+</nav>
+
+<main>
+
+<header>
+  <h1>Garden-Path Sentences in Gemma 3</h1>
+  <p class="subtitle">Mechanistic-interpretability pipeline (steps 01–14) run on the Gemma 3
+  base-model family: 1B, 4B, 12B and 27B. All models are pre-trained checkpoints
+  (<code>-pt</code>), evaluated in the same harness used for the Qwen3 investigation.</p>
+</header>
+
+<section id="overview">
+  <h2>Overview</h2>
+  <p>A <em>garden-path sentence</em> (GPS), such as <em>“The old man the boat”</em>,
+  has a temporarily ambiguous structure. This exploratory pipeline measures predictive
+  differences and their sensitivity to interventions. Neither metric alone identifies a
+  committed parse, comprehension, or syntactic reanalysis.</p>
+  <ul>
+    <li><strong>Δ-surprisal</strong>: S(critical | GPS prefix) − S(critical | normal prefix).</li>
+    <li><strong>vc_delta</strong>: S(continuation | GPS + critical) − S(continuation | normal + critical).
+    Continuation results cover NV items only, not all five syntactic templates.</li>
+  </ul>
+  <p>These are historical logs, not reruns with the reviewed code. See
+  <a href="legacy-audit.md">the reproducible numerical audit</a> for provenance checks and item sensitivity.</p>
+  <div id="model-table"></div>
+  <div id="missing-banner"></div>
+</section>
+
+<section id="s01">
+  <h2>01 · Baseline garden-path effect</h2>
+  <p>Mean Δ-surprisal at the designated critical word across 50 GPS/normal pairs:
+  <strong>RR</strong>, <strong>NV</strong>, <strong>NP_S</strong>, <strong>NP_Z</strong> and
+  <strong>COORD</strong>. A positive value indicates lower probability in the GPS condition;
+  it does not establish that the model committed to an incorrect parse. The hand-authored
+  materials include early disambiguation and lexical/semantic confounds; they have not been
+  independently validated as uniformly eliciting garden paths.</p>
+  <div class="plot" id="plot-s01-template"></div>
+  <p>The per-pair distribution below shows the effect is heterogeneous: some pairs produce large
+  spikes, others none (or even negative deltas, where the “normal” paraphrase happens to be the
+  more awkward string).</p>
+  <div class="plot" id="plot-s01-pairs"></div>
+</section>
+
+<section id="s02">
+  <h2>02 · Layer sweep — where does the surprise signal live?</h2>
+  <p>All attention heads in each layer are zero-ablated in turn; the MLP remains active.
+  The stored convention is <strong>effect_drop = Δ under ablation − baseline Δ</strong>:
+  negative values indicate a reduction of the effect. Control inflation measures the change
+  on eight unambiguous probes. Small control inflation is a limited check against general
+  damage, not sufficient evidence of GPS specificity. X-axis: layer / n_layers.</p>
+  <div class="plot" id="plot-s02"></div>
+</section>
+
+<section id="s03">
+  <h2>03 · Head sweeps within candidate layers</h2>
+  <p>Individual heads are ablated within layers selected by step 02. Negative
+  <strong>effect_drop</strong> means the measured Δ decreased. These exploratory candidates
+  require independent validation; weak individual effects do not exclude redundant,
+  distributed or MLP-mediated mechanisms.</p>
+  <div id="plots-s03"></div>
+</section>
+
+<section id="s04">
+  <h2>04 · Do the surprise heads matter for continuation prediction?</h2>
+  <p>Candidate heads from steps 02–03 are ablated individually and together while
+  measuring <strong>vc_delta</strong>, the GPS-minus-normal continuation cost. A larger gap
+  indicates a differential predictive effect. Either outcome leaves open the role of syntax,
+  lexical expectations and redundancy. The first bar is the unablated baseline.</p>
+  <div class="plot" id="plot-s04"></div>
+</section>
+
+<section id="s05">
+  <h2>05 · Layer sweep on the continuation prediction metric</h2>
+  <p>Per-layer ablation scored by <strong>vc_delta inflation</strong>: the change in
+  the GPS-minus-normal continuation cost. Dashed control traces are available in the legend.
+  This localises influences on the predictive proxy, not a reanalysis process itself.</p>
+  <div class="plot" id="plot-s05"></div>
+</section>
+
+<section id="s06">
+  <h2>06 · Head sweeps on the continuation prediction metric</h2>
+  <p>Individual heads in layers selected by step 05 are ablated while measuring
+  <strong>vc_gps inflation</strong>. Compare GPS, normal and control effects together.
+  The dashed step-14 threshold is a descriptive max-of-K random-head reference. It accounts
+  for choosing a maximum over K draws but not the preceding data-dependent layer selection.
+  Whole-layer and single-head effects need not be additive; this alone does not identify
+  cooperative computation or exclude a circuit.</p>
+  <div id="plots-s06"></div>
+</section>
+
+<section id="s0708">
+  <h2>07/08 · Lexical floor — canonical vs novel NV pairs</h2>
+  <p>Continuation surprisal after the full GPS prefix, a stripped local prefix,
+  and a neutral anchor. Historical labels “canonical” and “novel” denote the original and
+  additional sets of ten NV items; absence from training data has not been verified for
+  either set. Bootstrap intervals describe full − stripped across items. This diagnostic
+  cannot distinguish memorisation from parsing, regardless of whether the interval spans zero.</p>
+  <div class="plot" id="plot-s0708"></div>
+</section>
+
+<section id="s09">
+  <h2>09 · Continuation cost with confidence intervals</h2>
+  <p>Mean <strong>vc_delta</strong> with percentile-bootstrap 95% intervals over ten
+  items per set. Positive values indicate a continuation prediction gap, not necessarily
+  incomplete reanalysis. Item effects are heterogeneous. Scale comparisons require paired
+  differences on the same items; overlapping intervals alone are not a test of a difference.</p>
+  <div class="plot" id="plot-s09"></div>
+</section>
+
+<section id="s10">
+  <h2>10 · Attention patterns — does anything look back at the ambiguous word?</h2>
+  <p>The heatmaps show attention from the disambiguator to the ambiguous word,
+  GPS minus normal. The tables rank heads by absolute mean difference, but the saved Spearman
+  correlation uses <strong>per-pair GPS attention</strong> (not GPS-minus-normal attention)
+  against vc_delta. Correlations are exploratory, uncorrected for multiple comparisons and
+  do not establish a causal retrospective parsing operation.</p>
+  <div id="plots-s10"></div>
+</section>
+
+<section id="s11">
+  <h2>11 · Activation patching (NORMAL → GPS)</h2>
+  <p>NORMAL residual states are copied into GPS at the ambiguous word, disambiguator,
+  or both. <strong>recovery = (mean s_gps − mean s_patched) / (mean s_gps − mean s_normal)</strong>.
+  This transfers all information in the residual, including semantics and lexical predictions.
+  At the last layer, copying the state before a single-token target reproduces its source
+  prediction by construction. Earlier ambiguous-word states have not seen the disambiguator.
+  Intermediate effects establish influence on the proxy, not syntax-specific reanalysis;
+  ratios above one indicate overshoot and become unstable for small baseline gaps.</p>
+  <div class="plot" id="plot-s11"></div>
+  <p class="note" id="note-s11"></p>
+</section>
+
+<section id="s12">
+  <h2>12 · Zero vs mean ablation</h2>
+  <p>Selected surprise heads/head sets and continuation-sensitive layers are compared
+  under zero and pooled-mean ablation. Mean replacement also changes the conditional activation
+  distribution; it does not preserve variance or contextual dependencies. Agreement is a
+  robustness observation, while disagreement indicates intervention sensitivity. Neither
+  outcome alone decides whether an effect is an artifact. This step does not automatically
+  replicate the individual continuation heads selected in step 06.</p>
+  <div class="plot" id="plot-s12-effect"></div>
+  <div class="plot" id="plot-s12-vc"></div>
+</section>
+
+<section id="s13">
+  <h2>13 · Empirical null distribution</h2>
+  <p>Random single-head ablations provide a descriptive reference for the
+  <strong>NV-only</strong> effect, whereas the step-03 headline averages all templates.
+  These distributions include real head effects and are not a null hypothesis of no effect.
+  Historical Qwen14B logs contain a counterexample to the earlier “no head exceeded the null”
+  claim: L10.H25 changes NV Δ by −0.134 nats, versus a sampled absolute maximum of 0.088
+  across 60 random heads. This comparison alone is not selection-corrected evidence of a circuit.</p>
+  <div id="plots-s13"></div>
+</section>
+
+<section id="s14">
+  <h2>14 · Empirical null for the continuation prediction metric</h2>
+  <p>Random heads are evaluated on the original ten NV items. The dotted threshold
+  is the bootstrap p95 of the maximum over K draws from this empirical reference, where K
+  counts the heads swept in step 06. This is not a confirmatory significance threshold:
+  it omits prior layer selection, reuses the exploration items, and cannot estimate effects
+  beyond the sampled tail. Not exceeding it does not establish absence of a mechanism.</p>
+  <div id="plots-s14"></div>
+</section>
+
+<footer>
+  <p>Generated by <code>report/build_report.py</code> from <code>gemma3_*/logs/*.json</code>.
+  Methodological limitations and the next pilot are documented in <code>research/PROTOCOL.md</code>.
+  Related work: <a href="https://aclanthology.org/2025.naacl-long.164/">Hanna &amp; Mueller (2025)</a>
+  and <a href="https://arxiv.org/abs/2309.16042">Zhang &amp; Nanda (2024)</a>.</p>
+</footer>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

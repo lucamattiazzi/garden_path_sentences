@@ -1,0 +1,655 @@
+{
+  "version": 1,
+  "status": "pilot_unvalidated",
+  "source": "Hand-authored for this repository; not claimed to be absent from pretraining.",
+  "items": [
+    {
+      "id": "np_s_knew_1",
+      "family": "NP_S:knew",
+      "template": "NP_S",
+      "split": "exploration",
+      "actors": [
+        "the doctor",
+        "the nurse"
+      ],
+      "gps": "The doctor knew the nurse had arrived at the clinic.",
+      "normal": "The doctor knew that the nurse had arrived at the clinic.",
+      "role_reversed": "The nurse knew that the doctor had arrived at the clinic.",
+      "gps_prefix": "The doctor knew the nurse",
+      "normal_prefix": "The doctor knew that the nurse",
+      "critical_word": "had",
+      "spillover": "arrived at the clinic",
+      "questions": [
+        {
+          "text": "Who knew about the arrival?",
+          "actor": 0
+        },
+        {
+          "text": "Who had arrived at the clinic, in the situation described?",
+          "actor": 1
+        }
+      ]
+    },
+    {
+      "id": "np_s_knew_2",
+      "family": "NP_S:knew",
+      "template": "NP_S",
+      "split": "exploration",
+      "actors": [
+        "the dentist",
+        "the surgeon"
+      ],
+      "gps": "The dentist knew the surgeon had arrived at the clinic.",
+      "normal": "The dentist knew that the surgeon had arrived at the clinic.",
+      "role_reversed": "The surgeon knew that the dentist had arrived at the clinic.",
+      "gps_prefix": "The dentist knew the surgeon",
+      "normal_prefix": "The dentist knew that the surgeon",
+      "critical_word": "had",
+      "spillover": "arrived at the clinic",
+      "questions": [
+        {
+          "text": "Who knew about the arrival?",
+          "actor": 0
+        },
+        {
+          "text": "Who had arrived at the clinic, in the situation described?",
+          "actor": 1
+        }
+      ]
+    },
+    {
+      "id": "np_s_heard_1",
+      "family": "NP_S:heard",
+      "template": "NP_S",
+      "split": "exploration",
+      "actors": [
+        "the teacher",
+        "the librarian"
+      ],
+      "gps": "The teacher heard the librarian had resigned from the committee.",
+      "normal": "The teacher heard that the librarian had resigned from the committee.",
+      "role_reversed": "The librarian heard that the teacher had resigned from the committee.",
+      "gps_prefix": "The teacher heard the librarian",
+      "normal_prefix": "The teacher heard that the librarian",
+      "critical_word": "had",
+      "spillover": "resigned from the committee",
+      "questions": [
+        {
+          "text": "Who heard about the resignation?",
+          "actor": 0
+        },
+        {
+          "text": "Who had resigned from the committee, in the situation described?",
+          "actor": 1
+        }
+      ]
+    },
+    {
+      "id": "np_s_heard_2",
+      "family": "NP_S:heard",
+      "template": "NP_S",
+      "split": "exploration",
+      "actors": [
+        "the manager",
+        "the accountant"
+      ],
+      "gps": "The manager heard the accountant had resigned from the committee.",
+      "normal": "The manager heard that the accountant had resigned from the committee.",
+      "role_reversed": "The accountant heard that the manager had resigned from the committee.",
+      "gps_prefix": "The manager heard the accountant",
+      "normal_prefix": "The manager heard that the accountant",
+      "critical_word": "had",
+      "spillover": "resigned from the committee",
+      "questions": [
+        {
+          "text": "Who heard about the resignation?",
+          "actor": 0
+        },
+        {
+          "text": "Who had resigned from the committee, in the situation described?",
+          "actor": 1
+        }
+      ]
+    },
+    {
+      "id": "np_s_believed_1",
+      "family": "NP_S:believed",
+      "template": "NP_S",
+      "split": "exploration",
+      "actors": [
+        "the guard",
+        "the porter"
+      ],
+      "gps": "The guard believed the porter had left the station.",
+      "normal": "The guard believed that the porter had left the station.",
+      "role_reversed": "The porter believed that the guard had left the station.",
+      "gps_prefix": "The guard believed the porter",
+      "normal_prefix": "The guard believed that the porter",
+      "critical_word": "had",
+      "spillover": "left the station",
+      "questions": [
+        {
+          "text": "Who believed someone had left the station?",
+          "actor": 0
+        },
+        {
+          "text": "Who had left the station, in the situation described?",
+          "actor": 1
+        }
+      ]
+    },
+    {
+      "id": "np_s_believed_2",
+      "family": "NP_S:believed",
+      "template": "NP_S",
+      "split": "exploration",
+      "actors": [
+        "the driver",
+        "the conductor"
+      ],
+      "gps": "The driver believed the conductor had left the station.",
+      "normal": "The driver believed that the conductor had left the station.",
+      "role_reversed": "The conductor believed that the driver had left the station.",
+      "gps_prefix": "The driver believed the conductor",
+      "normal_prefix": "The driver believed that the conductor",
+      "critical_word": "had",
+      "spillover": "left the station",
+      "questions": [
+        {
+          "text": "Who believed someone had left the station?",
+          "actor": 0
+        },
+        {
+          "text": "Who had left the station, in the situation described?",
+          "actor": 1
+        }
+      ]
+    },
+    {
+      "id": "np_s_remembered_1",
+      "family": "NP_S:remembered",
+      "template": "NP_S",
+      "split": "exploration",
+      "actors": [
+        "the painter",
+        "the carpenter"
+      ],
+      "gps": "The painter remembered the carpenter had fallen near the entrance.",
+      "normal": "The painter remembered that the carpenter had fallen near the entrance.",
+      "role_reversed": "The carpenter remembered that the painter had fallen near the entrance.",
+      "gps_prefix": "The painter remembered the carpenter",
+      "normal_prefix": "The painter remembered that the carpenter",
+      "critical_word": "had",
+      "spillover": "fallen near the entrance",
+      "questions": [
+        {
+          "text": "Who remembered the fall?",
+          "actor": 0
+        },
+        {
+          "text": "Who had fallen near the entrance, in the situation described?",
+          "actor": 1
+        }
+      ]
+    },
+    {
+      "id": "np_s_remembered_2",
+      "family": "NP_S:remembered",
+      "template": "NP_S",
+      "split": "exploration",
+      "actors": [
+        "the plumber",
+        "the electrician"
+      ],
+      "gps": "The plumber remembered the electrician had fallen near the entrance.",
+      "normal": "The plumber remembered that the electrician had fallen near the entrance.",
+      "role_reversed": "The electrician remembered that the plumber had fallen near the entrance.",
+      "gps_prefix": "The plumber remembered the electrician",
+      "normal_prefix": "The plumber remembered that the electrician",
+      "critical_word": "had",
+      "spillover": "fallen near the entrance",
+      "questions": [
+        {
+          "text": "Who remembered the fall?",
+          "actor": 0
+        },
+        {
+          "text": "Who had fallen near the entrance, in the situation described?",
+          "actor": 1
+        }
+      ]
+    },
+    {
+      "id": "np_s_suspected_1",
+      "family": "NP_S:suspected",
+      "template": "NP_S",
+      "split": "validation",
+      "actors": [
+        "the detective",
+        "the officer"
+      ],
+      "gps": "The detective suspected the officer had escaped from the building.",
+      "normal": "The detective suspected that the officer had escaped from the building.",
+      "role_reversed": "The officer suspected that the detective had escaped from the building.",
+      "gps_prefix": "The detective suspected the officer",
+      "normal_prefix": "The detective suspected that the officer",
+      "critical_word": "had",
+      "spillover": "escaped from the building",
+      "questions": [
+        {
+          "text": "Who suspected an escape?",
+          "actor": 0
+        },
+        {
+          "text": "Who had escaped from the building, in the situation described?",
+          "actor": 1
+        }
+      ]
+    },
+    {
+      "id": "np_s_suspected_2",
+      "family": "NP_S:suspected",
+      "template": "NP_S",
+      "split": "validation",
+      "actors": [
+        "the sentry",
+        "the prisoner"
+      ],
+      "gps": "The sentry suspected the prisoner had escaped from the building.",
+      "normal": "The sentry suspected that the prisoner had escaped from the building.",
+      "role_reversed": "The prisoner suspected that the sentry had escaped from the building.",
+      "gps_prefix": "The sentry suspected the prisoner",
+      "normal_prefix": "The sentry suspected that the prisoner",
+      "critical_word": "had",
+      "spillover": "escaped from the building",
+      "questions": [
+        {
+          "text": "Who suspected an escape?",
+          "actor": 0
+        },
+        {
+          "text": "Who had escaped from the building, in the situation described?",
+          "actor": 1
+        }
+      ]
+    },
+    {
+      "id": "np_s_assumed_1",
+      "family": "NP_S:assumed",
+      "template": "NP_S",
+      "split": "validation",
+      "actors": [
+        "the pilot",
+        "the navigator"
+      ],
+      "gps": "The pilot assumed the navigator had recovered after the accident.",
+      "normal": "The pilot assumed that the navigator had recovered after the accident.",
+      "role_reversed": "The navigator assumed that the pilot had recovered after the accident.",
+      "gps_prefix": "The pilot assumed the navigator",
+      "normal_prefix": "The pilot assumed that the navigator",
+      "critical_word": "had",
+      "spillover": "recovered after the accident",
+      "questions": [
+        {
+          "text": "Who assumed someone had recovered?",
+          "actor": 0
+        },
+        {
+          "text": "Who had recovered after the accident, in the situation described?",
+          "actor": 1
+        }
+      ]
+    },
+    {
+      "id": "np_s_assumed_2",
+      "family": "NP_S:assumed",
+      "template": "NP_S",
+      "split": "validation",
+      "actors": [
+        "the captain",
+        "the engineer"
+      ],
+      "gps": "The captain assumed the engineer had recovered after the accident.",
+      "normal": "The captain assumed that the engineer had recovered after the accident.",
+      "role_reversed": "The engineer assumed that the captain had recovered after the accident.",
+      "gps_prefix": "The captain assumed the engineer",
+      "normal_prefix": "The captain assumed that the engineer",
+      "critical_word": "had",
+      "spillover": "recovered after the accident",
+      "questions": [
+        {
+          "text": "Who assumed someone had recovered?",
+          "actor": 0
+        },
+        {
+          "text": "Who had recovered after the accident, in the situation described?",
+          "actor": 1
+        }
+      ]
+    },
+    {
+      "id": "np_z_watched_1",
+      "family": "NP_Z:watched",
+      "template": "NP_Z",
+      "split": "exploration",
+      "actors": [
+        "the inspector",
+        "the mechanic"
+      ],
+      "gps": "While the inspector watched the mechanic stumbled near the doorway.",
+      "normal": "While the inspector watched, the mechanic stumbled near the doorway.",
+      "role_reversed": "While the mechanic watched, the inspector stumbled near the doorway.",
+      "gps_prefix": "While the inspector watched the mechanic",
+      "normal_prefix": "While the inspector watched, the mechanic",
+      "critical_word": "stumbled",
+      "spillover": "near the doorway",
+      "questions": [
+        {
+          "text": "Who was watching?",
+          "actor": 0
+        },
+        {
+          "text": "Who stumbled near the doorway, in the situation described?",
+          "actor": 1
+        }
+      ]
+    },
+    {
+      "id": "np_z_watched_2",
+      "family": "NP_Z:watched",
+      "template": "NP_Z",
+      "split": "exploration",
+      "actors": [
+        "the actor",
+        "the director"
+      ],
+      "gps": "While the actor watched the director stumbled near the doorway.",
+      "normal": "While the actor watched, the director stumbled near the doorway.",
+      "role_reversed": "While the director watched, the actor stumbled near the doorway.",
+      "gps_prefix": "While the actor watched the director",
+      "normal_prefix": "While the actor watched, the director",
+      "critical_word": "stumbled",
+      "spillover": "near the doorway",
+      "questions": [
+        {
+          "text": "Who was watching?",
+          "actor": 0
+        },
+        {
+          "text": "Who stumbled near the doorway, in the situation described?",
+          "actor": 1
+        }
+      ]
+    },
+    {
+      "id": "np_z_washed_1",
+      "family": "NP_Z:washed",
+      "template": "NP_Z",
+      "split": "exploration",
+      "actors": [
+        "the boxer",
+        "the wrestler"
+      ],
+      "gps": "While the boxer washed the wrestler slipped on the wet floor.",
+      "normal": "While the boxer washed, the wrestler slipped on the wet floor.",
+      "role_reversed": "While the wrestler washed, the boxer slipped on the wet floor.",
+      "gps_prefix": "While the boxer washed the wrestler",
+      "normal_prefix": "While the boxer washed, the wrestler",
+      "critical_word": "slipped",
+      "spillover": "on the wet floor",
+      "questions": [
+        {
+          "text": "Who was washing?",
+          "actor": 0
+        },
+        {
+          "text": "Who slipped on the wet floor, in the situation described?",
+          "actor": 1
+        }
+      ]
+    },
+    {
+      "id": "np_z_washed_2",
+      "family": "NP_Z:washed",
+      "template": "NP_Z",
+      "split": "exploration",
+      "actors": [
+        "the dancer",
+        "the gymnast"
+      ],
+      "gps": "While the dancer washed the gymnast slipped on the wet floor.",
+      "normal": "While the dancer washed, the gymnast slipped on the wet floor.",
+      "role_reversed": "While the gymnast washed, the dancer slipped on the wet floor.",
+      "gps_prefix": "While the dancer washed the gymnast",
+      "normal_prefix": "While the dancer washed, the gymnast",
+      "critical_word": "slipped",
+      "spillover": "on the wet floor",
+      "questions": [
+        {
+          "text": "Who was washing?",
+          "actor": 0
+        },
+        {
+          "text": "Who slipped on the wet floor, in the situation described?",
+          "actor": 1
+        }
+      ]
+    },
+    {
+      "id": "np_z_hunted_1",
+      "family": "NP_Z:hunted",
+      "template": "NP_Z",
+      "split": "exploration",
+      "actors": [
+        "the scout",
+        "the ranger"
+      ],
+      "gps": "While the scout hunted the ranger hid behind the old wall.",
+      "normal": "While the scout hunted, the ranger hid behind the old wall.",
+      "role_reversed": "While the ranger hunted, the scout hid behind the old wall.",
+      "gps_prefix": "While the scout hunted the ranger",
+      "normal_prefix": "While the scout hunted, the ranger",
+      "critical_word": "hid",
+      "spillover": "behind the old wall",
+      "questions": [
+        {
+          "text": "Who was hunting?",
+          "actor": 0
+        },
+        {
+          "text": "Who hid behind the old wall, in the situation described?",
+          "actor": 1
+        }
+      ]
+    },
+    {
+      "id": "np_z_hunted_2",
+      "family": "NP_Z:hunted",
+      "template": "NP_Z",
+      "split": "exploration",
+      "actors": [
+        "the soldier",
+        "the spy"
+      ],
+      "gps": "While the soldier hunted the spy hid behind the old wall.",
+      "normal": "While the soldier hunted, the spy hid behind the old wall.",
+      "role_reversed": "While the spy hunted, the soldier hid behind the old wall.",
+      "gps_prefix": "While the soldier hunted the spy",
+      "normal_prefix": "While the soldier hunted, the spy",
+      "critical_word": "hid",
+      "spillover": "behind the old wall",
+      "questions": [
+        {
+          "text": "Who was hunting?",
+          "actor": 0
+        },
+        {
+          "text": "Who hid behind the old wall, in the situation described?",
+          "actor": 1
+        }
+      ]
+    },
+    {
+      "id": "np_z_visited_1",
+      "family": "NP_Z:visited",
+      "template": "NP_Z",
+      "split": "exploration",
+      "actors": [
+        "the lawyer",
+        "the artist"
+      ],
+      "gps": "While the lawyer visited the artist waited beside the window.",
+      "normal": "While the lawyer visited, the artist waited beside the window.",
+      "role_reversed": "While the artist visited, the lawyer waited beside the window.",
+      "gps_prefix": "While the lawyer visited the artist",
+      "normal_prefix": "While the lawyer visited, the artist",
+      "critical_word": "waited",
+      "spillover": "beside the window",
+      "questions": [
+        {
+          "text": "Who was visiting?",
+          "actor": 0
+        },
+        {
+          "text": "Who waited beside the window, in the situation described?",
+          "actor": 1
+        }
+      ]
+    },
+    {
+      "id": "np_z_visited_2",
+      "family": "NP_Z:visited",
+      "template": "NP_Z",
+      "split": "exploration",
+      "actors": [
+        "the baker",
+        "the tailor"
+      ],
+      "gps": "While the baker visited the tailor waited beside the window.",
+      "normal": "While the baker visited, the tailor waited beside the window.",
+      "role_reversed": "While the tailor visited, the baker waited beside the window.",
+      "gps_prefix": "While the baker visited the tailor",
+      "normal_prefix": "While the baker visited, the tailor",
+      "critical_word": "waited",
+      "spillover": "beside the window",
+      "questions": [
+        {
+          "text": "Who was visiting?",
+          "actor": 0
+        },
+        {
+          "text": "Who waited beside the window, in the situation described?",
+          "actor": 1
+        }
+      ]
+    },
+    {
+      "id": "np_z_called_1",
+      "family": "NP_Z:called",
+      "template": "NP_Z",
+      "split": "validation",
+      "actors": [
+        "the reporter",
+        "the editor"
+      ],
+      "gps": "While the reporter called the editor laughed at the funny story.",
+      "normal": "While the reporter called, the editor laughed at the funny story.",
+      "role_reversed": "While the editor called, the reporter laughed at the funny story.",
+      "gps_prefix": "While the reporter called the editor",
+      "normal_prefix": "While the reporter called, the editor",
+      "critical_word": "laughed",
+      "spillover": "at the funny story",
+      "questions": [
+        {
+          "text": "Who was calling?",
+          "actor": 0
+        },
+        {
+          "text": "Who laughed at the funny story, in the situation described?",
+          "actor": 1
+        }
+      ]
+    },
+    {
+      "id": "np_z_called_2",
+      "family": "NP_Z:called",
+      "template": "NP_Z",
+      "split": "validation",
+      "actors": [
+        "the musician",
+        "the singer"
+      ],
+      "gps": "While the musician called the singer laughed at the funny story.",
+      "normal": "While the musician called, the singer laughed at the funny story.",
+      "role_reversed": "While the singer called, the musician laughed at the funny story.",
+      "gps_prefix": "While the musician called the singer",
+      "normal_prefix": "While the musician called, the singer",
+      "critical_word": "laughed",
+      "spillover": "at the funny story",
+      "questions": [
+        {
+          "text": "Who was calling?",
+          "actor": 0
+        },
+        {
+          "text": "Who laughed at the funny story, in the situation described?",
+          "actor": 1
+        }
+      ]
+    },
+    {
+      "id": "np_z_trained_1",
+      "family": "NP_Z:trained",
+      "template": "NP_Z",
+      "split": "validation",
+      "actors": [
+        "the coach",
+        "the swimmer"
+      ],
+      "gps": "While the coach trained the swimmer rested beside the swimming pool.",
+      "normal": "While the coach trained, the swimmer rested beside the swimming pool.",
+      "role_reversed": "While the swimmer trained, the coach rested beside the swimming pool.",
+      "gps_prefix": "While the coach trained the swimmer",
+      "normal_prefix": "While the coach trained, the swimmer",
+      "critical_word": "rested",
+      "spillover": "beside the swimming pool",
+      "questions": [
+        {
+          "text": "Who was training?",
+          "actor": 0
+        },
+        {
+          "text": "Who rested beside the swimming pool, in the situation described?",
+          "actor": 1
+        }
+      ]
+    },
+    {
+      "id": "np_z_trained_2",
+      "family": "NP_Z:trained",
+      "template": "NP_Z",
+      "split": "validation",
+      "actors": [
+        "the mentor",
+        "the trainee"
+      ],
+      "gps": "While the mentor trained the trainee rested beside the swimming pool.",
+      "normal": "While the mentor trained, the trainee rested beside the swimming pool.",
+      "role_reversed": "While the trainee trained, the mentor rested beside the swimming pool.",
+      "gps_prefix": "While the mentor trained the trainee",
+      "normal_prefix": "While the mentor trained, the trainee",
+      "critical_word": "rested",
+      "spillover": "beside the swimming pool",
+      "questions": [
+        {
+          "text": "Who was training?",
+          "actor": 0
+        },
+        {
+          "text": "Who rested beside the swimming pool, in the situation described?",
+          "actor": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2014 @@
+{
+  "date": "2026-10-13",
+  "metadata": {
+    "complete": true,
+    "started_at": "2026-10-13T11:08:47.531709+00:00",
+    "models": {
+      "pt": [
+        "google/gemma-3-12b-pt",
+        "295efb63d01a7017928f273a94ebb86105c9526f"
+      ],
+      "it": [
+        "google/gemma-3-12b-it",
+        "96b6f1eccf38110c56df3a15bffe176da04bfd80"
+      ]
+    },
+    "dtype": "float32",
+    "attention": "eager",
+    "tf32": false,
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "source_sha256": {
+      "PROTOCOL.md": "02622782d60057feb612a7548ada600206305ed81bb9acfbe3d49da3ff333699",
+      "__init__.py": "9182300e54b792b18a9686be886dd8f9850f15da8d9ab44269c0bca45865c826",
+      "probe.py": "0d30098dadc3767966add6cb74bfc5e4902b6764908ac6d9b774ddc562ebeb66",
+      "modal_app.py": "24f7e912232634043770064e8d5b366a3c7449df6d3b9ad690f24f22800b7a72"
+    },
+    "versions": {
+      "torch": "2.10.0",
+      "transformers": "5.9.0",
+      "tokenizers": "0.22.2"
+    },
+    "finished_at": "2026-10-13T11:10:41.805138+00:00"
+  },
+  "design": "Exploratory fixed examples; no circuit intervention; not a generalization test",
+  "surprisal": {
+    "old": {
+      "text": "The old man the boat.",
+      "token_ids": [
+        2,
+        818,
+        2255,
+        880,
+        506,
+        9909,
+        236761
+      ],
+      "pieces": [
+        "<bos>",
+        "The",
+        "▁old",
+        "▁man",
+        "▁the",
+        "▁boat",
+        "."
+      ],
+      "offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          11,
+          15
+        ],
+        [
+          15,
+          20
+        ],
+        [
+          20,
+          21
+        ]
+      ],
+      "token_logps": [
+        null,
+        -2.8803012371063232,
+        -7.63253927230835,
+        -2.169431686401367,
+        -9.132272720336914,
+        -7.111588478088379,
+        -4.013967990875244
+      ],
+      "words": [
+        {
+          "word": "The",
+          "start": 0,
+          "end": 3,
+          "token_indices": [
+            1
+          ],
+          "surprisal_nats": 2.8803012371063232,
+          "top5_before_word": [
+            {
+              "token_id": 184,
+              "piece": "<h1>",
+              "log_probability": -2.264876127243042
+            },
+            {
+              "token_id": 198,
+              "piece": "<strong>",
+              "log_probability": -2.6336448192596436
+            },
+            {
+              "token_id": 185,
+              "piece": "<h2>",
+              "log_probability": -2.7741496562957764
+            },
+            {
+              "token_id": 255999,
+              "piece": "<start_of_image>",
+              "log_probability": -2.7873103618621826
+            },
+            {
+              "token_id": 818,
+              "piece": "The",
+              "log_probability": -2.8803012371063232
+            }
+          ]
+        },
+        {
+          "word": "old",
+          "start": 4,
+          "end": 7,
+          "token_indices": [
+            2
+          ],
+          "surprisal_nats": 7.63253927230835,
+          "top5_before_word": [
+            {
+              "token_id": 236743,
+              "piece": " ",
+              "log_probability": -1.4936919212341309
+            },
+            {
+              "token_id": 1171,
+              "piece": " first",
+              "log_probability": -2.8799281120300293
+            },
+            {
+              "token_id": 861,
+              "piece": " new",
+              "log_probability": -3.38069486618042
+            },
+            {
+              "token_id": 2269,
+              "piece": " following",
+              "log_probability": -3.621274471282959
+            },
+            {
+              "token_id": 4025,
+              "piece": " National",
+              "log_probability": -3.921323299407959
+            }
+          ]
+        },
+        {
+          "word": "man",
+          "start": 8,
+          "end": 11,
+          "token_indices": [
+            3
+          ],
+          "surprisal_nats": 2.169431686401367,
+          "top5_before_word": [
+            {
+              "token_id": 169192,
+              "piece": " adage",
+              "log_probability": -1.6901206970214844
+            },
+            {
+              "token_id": 6420,
+              "piece": " saying",
+              "log_probability": -1.7682456970214844
+            },
+            {
+              "token_id": 880,
+              "piece": " man",
+              "log_probability": -2.169431686401367
+            },
+            {
+              "token_id": 236772,
+              "piece": "-",
+              "log_probability": -3.1175880432128906
+            },
+            {
+              "token_id": 5148,
+              "piece": " town",
+              "log_probability": -3.347240447998047
+            }
+          ]
+        },
+        {
+          "word": "the",
+          "start": 12,
+          "end": 15,
+          "token_indices": [
+            4
+          ],
+          "surprisal_nats": 9.132272720336914,
+          "top5_before_word": [
+            {
+              "token_id": 691,
+              "piece": " was",
+              "log_probability": -2.1116831302642822
+            },
+            {
+              "token_id": 563,
+              "piece": " is",
+              "log_probability": -2.7974836826324463
+            },
+            {
+              "token_id": 236789,
+              "piece": "'",
+              "log_probability": -2.816908121109009
+            },
+            {
+              "token_id": 1176,
+              "piece": " said",
+              "log_probability": -2.9313433170318604
+            },
+            {
+              "token_id": 236764,
+              "piece": ",",
+              "log_probability": -3.159345865249634
+            }
+          ]
+        },
+        {
+          "word": "boat.",
+          "start": 16,
+          "end": 21,
+          "token_indices": [
+            5,
+            6
+          ],
+          "surprisal_nats": 11.125556468963623,
+          "top5_before_word": [
+            {
+              "token_id": 2255,
+              "piece": " old",
+              "log_probability": -1.7636955976486206
+            },
+            {
+              "token_id": 880,
+              "piece": " man",
+              "log_probability": -3.196652412414551
+            },
+            {
+              "token_id": 1032,
+              "piece": " other",
+              "log_probability": -3.316718101501465
+            },
+            {
+              "token_id": 3184,
+              "piece": " young",
+              "log_probability": -3.625760078430176
+            },
+            {
+              "token_id": 6938,
+              "piece": " boy",
+              "log_probability": -3.6717424392700195
+            }
+          ]
+        }
+      ]
+    },
+    "old_clean": {
+      "text": "The old people man the boat.",
+      "token_ids": [
+        2,
+        818,
+        2255,
+        1331,
+        880,
+        506,
+        9909,
+        236761
+      ],
+      "pieces": [
+        "<bos>",
+        "The",
+        "▁old",
+        "▁people",
+        "▁man",
+        "▁the",
+        "▁boat",
+        "."
+      ],
+      "offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          7,
+          14
+        ],
+        [
+          14,
+          18
+        ],
+        [
+          18,
+          22
+        ],
+        [
+          22,
+          27
+        ],
+        [
+          27,
+          28
+        ]
+      ],
+      "token_logps": [
+        null,
+        -2.880303382873535,
+        -7.632541656494141,
+        -5.939414024353027,
+        -11.985252380371094,
+        -4.157516956329346,
+        -5.050052642822266,
+        -2.378941059112549
+      ],
+      "words": [
+        {
+          "word": "The",
+          "start": 0,
+          "end": 3,
+          "token_indices": [
+            1
+          ],
+          "surprisal_nats": 2.880303382873535,
+          "top5_before_word": [
+            {
+              "token_id": 184,
+              "piece": "<h1>",
+              "log_probability": -2.2648744583129883
+            },
+            {
+              "token_id": 198,
+              "piece": "<strong>",
+              "log_probability": -2.63364315032959
+            },
+            {
+              "token_id": 185,
+              "piece": "<h2>",
+              "log_probability": -2.7741498947143555
+            },
+            {
+              "token_id": 255999,
+              "piece": "<start_of_image>",
+              "log_probability": -2.7873106002807617
+            },
+            {
+              "token_id": 818,
+              "piece": "The",
+              "log_probability": -2.880303382873535
+            }
+          ]
+        },
+        {
+          "word": "old",
+          "start": 4,
+          "end": 7,
+          "token_indices": [
+            2
+          ],
+          "surprisal_nats": 7.632541656494141,
+          "top5_before_word": [
+            {
+              "token_id": 236743,
+              "piece": " ",
+              "log_probability": -1.4936902523040771
+            },
+            {
+              "token_id": 1171,
+              "piece": " first",
+              "log_probability": -2.8799264430999756
+            },
+            {
+              "token_id": 861,
+              "piece": " new",
+              "log_probability": -3.3806893825531006
+            },
+            {
+              "token_id": 2269,
+              "piece": " following",
+              "log_probability": -3.6212708950042725
+            },
+            {
+              "token_id": 4025,
+              "piece": " National",
+              "log_probability": -3.921325445175171
+            }
+          ]
+        },
+        {
+          "word": "people",
+          "start": 8,
+          "end": 14,
+          "token_indices": [
+            3
+          ],
+          "surprisal_nats": 5.939414024353027,
+          "top5_before_word": [
+            {
+              "token_id": 169192,
+              "piece": " adage",
+              "log_probability": -1.6901215314865112
+            },
+            {
+              "token_id": 6420,
+              "piece": " saying",
+              "log_probability": -1.7682465314865112
+            },
+            {
+              "token_id": 880,
+              "piece": " man",
+              "log_probability": -2.169426918029785
+            },
+            {
+              "token_id": 236772,
+              "piece": "-",
+              "log_probability": -3.117588996887207
+            },
+            {
+              "token_id": 5148,
+              "piece": " town",
+              "log_probability": -3.347245216369629
+            }
+          ]
+        },
+        {
+          "word": "man",
+          "start": 15,
+          "end": 18,
+          "token_indices": [
+            4
+          ],
+          "surprisal_nats": 11.985252380371094,
+          "top5_before_word": [
+            {
+              "token_id": 236789,
+              "piece": "'",
+              "log_probability": -2.3360655307769775
+            },
+            {
+              "token_id": 1879,
+              "piece": " say",
+              "log_probability": -2.562706232070923
+            },
+            {
+              "token_id": 529,
+              "piece": " of",
+              "log_probability": -2.6223032474517822
+            },
+            {
+              "token_id": 659,
+              "piece": " are",
+              "log_probability": -2.6274607181549072
+            },
+            {
+              "token_id": 528,
+              "piece": " in",
+              "log_probability": -2.7393782138824463
+            }
+          ]
+        },
+        {
+          "word": "the",
+          "start": 19,
+          "end": 22,
+          "token_indices": [
+            5
+          ],
+          "surprisal_nats": 4.157516956329346,
+          "top5_before_word": [
+            {
+              "token_id": 255999,
+              "piece": "<start_of_image>",
+              "log_probability": -1.9027942419052124
+            },
+            {
+              "token_id": 236764,
+              "piece": ",",
+              "log_probability": -2.4915757179260254
+            },
+            {
+              "token_id": 532,
+              "piece": " and",
+              "log_probability": -2.504795551300049
+            },
+            {
+              "token_id": 563,
+              "piece": " is",
+              "log_probability": -2.96732759475708
+            },
+            {
+              "token_id": 691,
+              "piece": " was",
+              "log_probability": -3.2992520332336426
+            }
+          ]
+        },
+        {
+          "word": "boat.",
+          "start": 23,
+          "end": 28,
+          "token_indices": [
+            6,
+            7
+          ],
+          "surprisal_nats": 7.4289937019348145,
+          "top5_before_word": [
+            {
+              "token_id": 120924,
+              "piece": " barric",
+              "log_probability": -2.4632699489593506
+            },
+            {
+              "token_id": 7845,
+              "piece": " fort",
+              "log_probability": -2.9439027309417725
+            },
+            {
+              "token_id": 23319,
+              "piece": " phones",
+              "log_probability": -3.2593019008636475
+            },
+            {
+              "token_id": 33361,
+              "piece": " gates",
+              "log_probability": -3.4122254848480225
+            },
+            {
+              "token_id": 3645,
+              "piece": " front",
+              "log_probability": -3.6466729640960693
+            }
+          ]
+        }
+      ]
+    },
+    "title_exact": {
+      "text": "diffusion of language models human migrations",
+      "token_ids": [
+        2,
+        86087,
+        529,
+        5192,
+        4681,
+        3246,
+        43342
+      ],
+      "pieces": [
+        "<bos>",
+        "diffusion",
+        "▁of",
+        "▁language",
+        "▁models",
+        "▁human",
+        "▁migrations"
+      ],
+      "offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          12,
+          21
+        ],
+        [
+          21,
+          28
+        ],
+        [
+          28,
+          34
+        ],
+        [
+          34,
+          45
+        ]
+      ],
+      "token_logps": [
+        null,
+        -20.9232177734375,
+        -3.047786235809326,
+        -8.68766975402832,
+        -9.651104927062988,
+        -13.765240669250488,
+        -11.883201599121094
+      ],
+      "words": [
+        {
+          "word": "diffusion",
+          "start": 0,
+          "end": 9,
+          "token_indices": [
+            1
+          ],
+          "surprisal_nats": 20.9232177734375,
+          "top5_before_word": [
+            {
+              "token_id": 184,
+              "piece": "<h1>",
+              "log_probability": -2.264876127243042
+            },
+            {
+              "token_id": 198,
+              "piece": "<strong>",
+              "log_probability": -2.6336448192596436
+            },
+            {
+              "token_id": 185,
+              "piece": "<h2>",
+              "log_probability": -2.7741496562957764
+            },
+            {
+              "token_id": 255999,
+              "piece": "<start_of_image>",
+              "log_probability": -2.7873103618621826
+            },
+            {
+              "token_id": 818,
+              "piece": "The",
+              "log_probability": -2.8803012371063232
+            }
+          ]
+        },
+        {
+          "word": "of",
+          "start": 10,
+          "end": 12,
+          "token_indices": [
+            2
+          ],
+          "surprisal_nats": 3.047786235809326,
+          "top5_before_word": [
+            {
+              "token_id": 236779,
+              "piece": "_",
+              "log_probability": -1.7297626733779907
+            },
+            {
+              "token_id": 236786,
+              "piece": "/",
+              "log_probability": -2.0392069816589355
+            },
+            {
+              "token_id": 236761,
+              "piece": ".",
+              "log_probability": -2.1369338035583496
+            },
+            {
+              "token_id": 107,
+              "piece": "\n",
+              "log_probability": -2.621760845184326
+            },
+            {
+              "token_id": 236772,
+              "piece": "-",
+              "log_probability": -2.750037670135498
+            }
+          ]
+        },
+        {
+          "word": "language",
+          "start": 13,
+          "end": 21,
+          "token_indices": [
+            3
+          ],
+          "surprisal_nats": 8.68766975402832,
+          "top5_before_word": [
+            {
+              "token_id": 13862,
+              "piece": " innovation",
+              "log_probability": -2.102541208267212
+            },
+            {
+              "token_id": 506,
+              "piece": " the",
+              "log_probability": -2.4540655612945557
+            },
+            {
+              "token_id": 496,
+              "piece": " a",
+              "log_probability": -2.718641519546509
+            },
+            {
+              "token_id": 1813,
+              "piece": " water",
+              "log_probability": -2.795820474624634
+            },
+            {
+              "token_id": 6549,
+              "piece": " ideas",
+              "log_probability": -3.065857172012329
+            }
+          ]
+        },
+        {
+          "word": "models",
+          "start": 22,
+          "end": 28,
+          "token_indices": [
+            4
+          ],
+          "surprisal_nats": 9.651104927062988,
+          "top5_before_word": [
+            {
+              "token_id": 255999,
+              "piece": "<start_of_image>",
+              "log_probability": -0.43663451075553894
+            },
+            {
+              "token_id": 108,
+              "piece": "\n\n",
+              "log_probability": -2.947277545928955
+            },
+            {
+              "token_id": 532,
+              "piece": " and",
+              "log_probability": -3.3928990364074707
+            },
+            {
+              "token_id": 236764,
+              "piece": ",",
+              "log_probability": -3.54691743850708
+            },
+            {
+              "token_id": 528,
+              "piece": " in",
+              "log_probability": -4.014353275299072
+            }
+          ]
+        },
+        {
+          "word": "human",
+          "start": 29,
+          "end": 34,
+          "token_indices": [
+            5
+          ],
+          "surprisal_nats": 13.765240669250488,
+          "top5_before_word": [
+            {
+              "token_id": 255999,
+              "piece": "<start_of_image>",
+              "log_probability": -0.37807387113571167
+            },
+            {
+              "token_id": 236761,
+              "piece": ".",
+              "log_probability": -3.610663652420044
+            },
+            {
+              "token_id": 108,
+              "piece": "\n\n",
+              "log_probability": -3.634242296218872
+            },
+            {
+              "token_id": 528,
+              "piece": " in",
+              "log_probability": -3.7762348651885986
+            },
+            {
+              "token_id": 236764,
+              "piece": ",",
+              "log_probability": -3.8869316577911377
+            }
+          ]
+        },
+        {
+          "word": "migrations",
+          "start": 35,
+          "end": 45,
+          "token_indices": [
+            6
+          ],
+          "surprisal_nats": 11.883201599121094,
+          "top5_before_word": [
+            {
+              "token_id": 255999,
+              "piece": "<start_of_image>",
+              "log_probability": -0.3978751003742218
+            },
+            {
+              "token_id": 5192,
+              "piece": " language",
+              "log_probability": -2.9307806491851807
+            },
+            {
+              "token_id": 236772,
+              "piece": "-",
+              "log_probability": -3.5094149112701416
+            },
+            {
+              "token_id": 15579,
+              "piece": " languages",
+              "log_probability": -4.264122486114502
+            },
+            {
+              "token_id": 532,
+              "piece": " and",
+              "log_probability": -4.608826160430908
+            }
+          ]
+        }
+      ]
+    },
+    "title_article": {
+      "text": "The diffusion of language models human migrations.",
+      "token_ids": [
+        2,
+        818,
+        16970,
+        529,
+        5192,
+        4681,
+        3246,
+        43342,
+        236761
+      ],
+      "pieces": [
+        "<bos>",
+        "The",
+        "▁diffusion",
+        "▁of",
+        "▁language",
+        "▁models",
+        "▁human",
+        "▁migrations",
+        "."
+      ],
+      "offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          13
+        ],
+        [
+          13,
+          16
+        ],
+        [
+          16,
+          25
+        ],
+        [
+          25,
+          32
+        ],
+        [
+          32,
+          38
+        ],
+        [
+          38,
+          49
+        ],
+        [
+          49,
+          50
+        ]
+      ],
+      "token_logps": [
+        null,
+        -2.8803019523620605,
+        -15.967303276062012,
+        -0.7846853137016296,
+        -8.4423246383667,
+        -4.601113319396973,
+        -14.219734191894531,
+        -13.712818145751953,
+        -2.7679977416992188
+      ],
+      "words": [
+        {
+          "word": "The",
+          "start": 0,
+          "end": 3,
+          "token_indices": [
+            1
+          ],
+          "surprisal_nats": 2.8803019523620605,
+          "top5_before_word": [
+            {
+              "token_id": 184,
+              "piece": "<h1>",
+              "log_probability": -2.2648730278015137
+            },
+            {
+              "token_id": 198,
+              "piece": "<strong>",
+              "log_probability": -2.633643627166748
+            },
+            {
+              "token_id": 185,
+              "piece": "<h2>",
+              "log_probability": -2.774148464202881
+            },
+            {
+              "token_id": 255999,
+              "piece": "<start_of_image>",
+              "log_probability": -2.78731107711792
+            },
+            {
+              "token_id": 818,
+              "piece": "The",
+              "log_probability": -2.8803019523620605
+            }
+          ]
+        },
+        {
+          "word": "diffusion",
+          "start": 4,
+          "end": 13,
+          "token_indices": [
+            2
+          ],
+          "surprisal_nats": 15.967303276062012,
+          "top5_before_word": [
+            {
+              "token_id": 236743,
+              "piece": " ",
+              "log_probability": -1.4936859607696533
+            },
+            {
+              "token_id": 1171,
+              "piece": " first",
+              "log_probability": -2.8799240589141846
+            },
+            {
+              "token_id": 861,
+              "piece": " new",
+              "log_probability": -3.3806889057159424
+            },
+            {
+              "token_id": 2269,
+              "piece": " following",
+              "log_probability": -3.6212761402130127
+            },
+            {
+              "token_id": 4025,
+              "piece": " National",
+              "log_probability": -3.9213249683380127
+            }
+          ]
+        },
+        {
+          "word": "of",
+          "start": 14,
+          "end": 16,
+          "token_indices": [
+            3
+          ],
+          "surprisal_nats": 0.7846853137016296,
+          "top5_before_word": [
+            {
+              "token_id": 529,
+              "piece": " of",
+              "log_probability": -0.7846853137016296
+            },
+            {
+              "token_id": 13954,
+              "piece": " coefficient",
+              "log_probability": -2.425396203994751
+            },
+            {
+              "token_id": 236772,
+              "piece": "-",
+              "log_probability": -2.9907877445220947
+            },
+            {
+              "token_id": 15841,
+              "piece": " coefficients",
+              "log_probability": -3.277292490005493
+            },
+            {
+              "token_id": 532,
+              "piece": " and",
+              "log_probability": -3.321983575820923
+            }
+          ]
+        },
+        {
+          "word": "language",
+          "start": 17,
+          "end": 25,
+          "token_indices": [
+            4
+          ],
+          "surprisal_nats": 8.4423246383667,
+          "top5_before_word": [
+            {
+              "token_id": 506,
+              "piece": " the",
+              "log_probability": -2.318871259689331
+            },
+            {
+              "token_id": 13862,
+              "piece": " innovation",
+              "log_probability": -2.5535590648651123
+            },
+            {
+              "token_id": 496,
+              "piece": " a",
+              "log_probability": -2.65071177482605
+            },
+            {
+              "token_id": 36253,
+              "piece": " innovations",
+              "log_probability": -3.051729917526245
+            },
+            {
+              "token_id": 1813,
+              "piece": " water",
+              "log_probability": -3.3080546855926514
+            }
+          ]
+        },
+        {
+          "word": "models",
+          "start": 26,
+          "end": 32,
+          "token_indices": [
+            5
+          ],
+          "surprisal_nats": 4.601113319396973,
+          "top5_before_word": [
+            {
+              "token_id": 563,
+              "piece": " is",
+              "log_probability": -1.7150450944900513
+            },
+            {
+              "token_id": 528,
+              "piece": " in",
+              "log_probability": -2.1717710494995117
+            },
+            {
+              "token_id": 532,
+              "piece": " and",
+              "log_probability": -2.2191781997680664
+            },
+            {
+              "token_id": 236764,
+              "piece": ",",
+              "log_probability": -3.053208351135254
+            },
+            {
+              "token_id": 815,
+              "piece": " has",
+              "log_probability": -3.2639589309692383
+            }
+          ]
+        },
+        {
+          "word": "human",
+          "start": 33,
+          "end": 38,
+          "token_indices": [
+            6
+          ],
+          "surprisal_nats": 14.219734191894531,
+          "top5_before_word": [
+            {
+              "token_id": 568,
+              "piece": " (",
+              "log_probability": -1.801227331161499
+            },
+            {
+              "token_id": 815,
+              "piece": " has",
+              "log_probability": -1.9412190914154053
+            },
+            {
+              "token_id": 528,
+              "piece": " in",
+              "log_probability": -2.3705899715423584
+            },
+            {
+              "token_id": 1131,
+              "piece": " into",
+              "log_probability": -2.7474992275238037
+            },
+            {
+              "token_id": 563,
+              "piece": " is",
+              "log_probability": -2.7533910274505615
+            }
+          ]
+        },
+        {
+          "word": "migrations.",
+          "start": 39,
+          "end": 50,
+          "token_indices": [
+            7,
+            8
+          ],
+          "surprisal_nats": 16.480815887451172,
+          "top5_before_word": [
+            {
+              "token_id": 5411,
+              "piece": "izes",
+              "log_probability": -1.086222529411316
+            },
+            {
+              "token_id": 236772,
+              "piece": "-",
+              "log_probability": -1.5989350080490112
+            },
+            {
+              "token_id": 1662,
+              "piece": "ized",
+              "log_probability": -2.2956018447875977
+            },
+            {
+              "token_id": 4266,
+              "piece": "izing",
+              "log_probability": -3.542269706726074
+            },
+            {
+              "token_id": 5192,
+              "piece": " language",
+              "log_probability": -3.5559263229370117
+            }
+          ]
+        }
+      ]
+    },
+    "title_verb_cue": {
+      "text": "The diffusion of language actually models human migrations.",
+      "token_ids": [
+        2,
+        818,
+        16970,
+        529,
+        5192,
+        3643,
+        4681,
+        3246,
+        43342,
+        236761
+      ],
+      "pieces": [
+        "<bos>",
+        "The",
+        "▁diffusion",
+        "▁of",
+        "▁language",
+        "▁actually",
+        "▁models",
+        "▁human",
+        "▁migrations",
+        "."
+      ],
+      "offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          13
+        ],
+        [
+          13,
+          16
+        ],
+        [
+          16,
+          25
+        ],
+        [
+          25,
+          34
+        ],
+        [
+          34,
+          41
+        ],
+        [
+          41,
+          47
+        ],
+        [
+          47,
+          58
+        ],
+        [
+          58,
+          59
+        ]
+      ],
+      "token_logps": [
+        null,
+        -2.8803021907806396,
+        -15.967304229736328,
+        -0.7846851348876953,
+        -8.442322731018066,
+        -12.891890525817871,
+        -8.95921516418457,
+        -4.831875324249268,
+        -4.077188491821289,
+        -1.5321661233901978
+      ],
+      "words": [
+        {
+          "word": "The",
+          "start": 0,
+          "end": 3,
+          "token_indices": [
+            1
+          ],
+          "surprisal_nats": 2.8803021907806396,
+          "top5_before_word": [
+            {
+              "token_id": 184,
+              "piece": "<h1>",
+              "log_probability": -2.2648751735687256
+            },
+            {
+              "token_id": 198,
+              "piece": "<strong>",
+              "log_probability": -2.6336419582366943
+            },
+            {
+              "token_id": 185,
+              "piece": "<h2>",
+              "log_probability": -2.77414870262146
+            },
+            {
+              "token_id": 255999,
+              "piece": "<start_of_image>",
+              "log_probability": -2.787309408187866
+            },
+            {
+              "token_id": 818,
+              "piece": "The",
+              "log_probability": -2.8803021907806396
+            }
+          ]
+        },
+        {
+          "word": "diffusion",
+          "start": 4,
+          "end": 13,
+          "token_indices": [
+            2
+          ],
+          "surprisal_nats": 15.967304229736328,
+          "top5_before_word": [
+            {
+              "token_id": 236743,
+              "piece": " ",
+              "log_probability": -1.4936845302581787
+            },
+            {
+              "token_id": 1171,
+              "piece": " first",
+              "log_probability": -2.8799264430999756
+            },
+            {
+              "token_id": 861,
+              "piece": " new",
+              "log_probability": -3.3806912899017334
+            },
+            {
+              "token_id": 2269,
+              "piece": " following",
+              "log_probability": -3.621267080307007
+            },
+            {
+              "token_id": 4025,
+              "piece": " National",
+              "log_probability": -3.921323537826538
+            }
+          ]
+        },
+        {
+          "word": "of",
+          "start": 14,
+          "end": 16,
+          "token_indices": [
+            3
+          ],
+          "surprisal_nats": 0.7846851348876953,
+          "top5_before_word": [
+            {
+              "token_id": 529,
+              "piece": " of",
+              "log_probability": -0.7846851348876953
+            },
+            {
+              "token_id": 13954,
+              "piece": " coefficient",
+              "log_probability": -2.4253997802734375
+            },
+            {
+              "token_id": 236772,
+              "piece": "-",
+              "log_probability": -2.9907970428466797
+            },
+            {
+              "token_id": 15841,
+              "piece": " coefficients",
+              "log_probability": -3.2772865295410156
+            },
+            {
+              "token_id": 532,
+              "piece": " and",
+              "log_probability": -3.321979522705078
+            }
+          ]
+        },
+        {
+          "word": "language",
+          "start": 17,
+          "end": 25,
+          "token_indices": [
+            4
+          ],
+          "surprisal_nats": 8.442322731018066,
+          "top5_before_word": [
+            {
+              "token_id": 506,
+              "piece": " the",
+              "log_probability": -2.3188743591308594
+            },
+            {
+              "token_id": 13862,
+              "piece": " innovation",
+              "log_probability": -2.5535621643066406
+            },
+            {
+              "token_id": 496,
+              "piece": " a",
+              "log_probability": -2.6507091522216797
+            },
+            {
+              "token_id": 36253,
+              "piece": " innovations",
+              "log_probability": -3.0517234802246094
+            },
+            {
+              "token_id": 1813,
+              "piece": " water",
+              "log_probability": -3.30804443359375
+            }
+          ]
+        },
+        {
+          "word": "actually",
+          "start": 26,
+          "end": 34,
+          "token_indices": [
+            5
+          ],
+          "surprisal_nats": 12.891890525817871,
+          "top5_before_word": [
+            {
+              "token_id": 563,
+              "piece": " is",
+              "log_probability": -1.7150429487228394
+            },
+            {
+              "token_id": 528,
+              "piece": " in",
+              "log_probability": -2.1717634201049805
+            },
+            {
+              "token_id": 532,
+              "piece": " and",
+              "log_probability": -2.219180107116699
+            },
+            {
+              "token_id": 236764,
+              "piece": ",",
+              "log_probability": -3.053208351135254
+            },
+            {
+              "token_id": 815,
+              "piece": " has",
+              "log_probability": -3.2639589309692383
+            }
+          ]
+        },
+        {
+          "word": "models",
+          "start": 35,
+          "end": 41,
+          "token_indices": [
+            6
+          ],
+          "surprisal_nats": 8.95921516418457,
+          "top5_before_word": [
+            {
+              "token_id": 815,
+              "piece": " has",
+              "log_probability": -2.49275541305542
+            },
+            {
+              "token_id": 563,
+              "piece": " is",
+              "log_probability": -2.9703879356384277
+            },
+            {
+              "token_id": 9796,
+              "piece": " depends",
+              "log_probability": -3.005370616912842
+            },
+            {
+              "token_id": 17230,
+              "piece": " refers",
+              "log_probability": -3.582824230194092
+            },
+            {
+              "token_id": 10263,
+              "piece": " occurs",
+              "log_probability": -3.58974027633667
+            }
+          ]
+        },
+        {
+          "word": "human",
+          "start": 42,
+          "end": 47,
+          "token_indices": [
+            7
+          ],
+          "surprisal_nats": 4.831875324249268,
+          "top5_before_word": [
+            {
+              "token_id": 506,
+              "piece": " the",
+              "log_probability": -0.8869747519493103
+            },
+            {
+              "token_id": 496,
+              "piece": " a",
+              "log_probability": -2.6375279426574707
+            },
+            {
+              "token_id": 1217,
+              "piece": " how",
+              "log_probability": -2.966799259185791
+            },
+            {
+              "token_id": 4850,
+              "piece": " itself",
+              "log_probability": -3.167685031890869
+            },
+            {
+              "token_id": 16970,
+              "piece": " diffusion",
+              "log_probability": -3.3548436164855957
+            }
+          ]
+        },
+        {
+          "word": "migrations.",
+          "start": 48,
+          "end": 59,
+          "token_indices": [
+            8,
+            9
+          ],
+          "surprisal_nats": 5.609354615211487,
+          "top5_before_word": [
+            {
+              "token_id": 16064,
+              "piece": " migration",
+              "log_probability": -1.5738332271575928
+            },
+            {
+              "token_id": 6868,
+              "piece": " behavior",
+              "log_probability": -2.3022096157073975
+            },
+            {
+              "token_id": 9553,
+              "piece": " interaction",
+              "log_probability": -3.011583089828491
+            },
+            {
+              "token_id": 7283,
+              "piece": " communication",
+              "log_probability": -3.085437536239624
+            },
+            {
+              "token_id": 5192,
+              "piece": " language",
+              "log_probability": -3.1566121578216553
+            }
+          ]
+        }
+      ]
+    },
+    "title_noun_cue": {
+      "text": "The diffusion of language models affects human migrations.",
+      "token_ids": [
+        2,
+        818,
+        16970,
+        529,
+        5192,
+        4681,
+        19375,
+        3246,
+        43342,
+        236761
+      ],
+      "pieces": [
+        "<bos>",
+        "The",
+        "▁diffusion",
+        "▁of",
+        "▁language",
+        "▁models",
+        "▁affects",
+        "▁human",
+        "▁migrations",
+        "."
+      ],
+      "offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          13
+        ],
+        [
+          13,
+          16
+        ],
+        [
+          16,
+          25
+        ],
+        [
+          25,
+          32
+        ],
+        [
+          32,
+          40
+        ],
+        [
+          40,
+          46
+        ],
+        [
+          46,
+          57
+        ],
+        [
+          57,
+          58
+        ]
+      ],
+      "token_logps": [
+        null,
+        -2.8803021907806396,
+        -15.967304229736328,
+        -0.7846851348876953,
+        -8.442322731018066,
+        -4.601113319396973,
+        -9.659128189086914,
+        -4.872921466827393,
+        -12.798383712768555,
+        -1.9670286178588867
+      ],
+      "words": [
+        {
+          "word": "The",
+          "start": 0,
+          "end": 3,
+          "token_indices": [
+            1
+          ],
+          "surprisal_nats": 2.8803021907806396,
+          "top5_before_word": [
+            {
+              "token_id": 184,
+              "piece": "<h1>",
+              "log_probability": -2.2648751735687256
+            },
+            {
+              "token_id": 198,
+              "piece": "<strong>",
+              "log_probability": -2.6336419582366943
+            },
+            {
+              "token_id": 185,
+              "piece": "<h2>",
+              "log_probability": -2.77414870262146
+            },
+            {
+              "token_id": 255999,
+              "piece": "<start_of_image>",
+              "log_probability": -2.787309408187866
+            },
+            {
+              "token_id": 818,
+              "piece": "The",
+              "log_probability": -2.8803021907806396
+            }
+          ]
+        },
+        {
+          "word": "diffusion",
+          "start": 4,
+          "end": 13,
+          "token_indices": [
+            2
+          ],
+          "surprisal_nats": 15.967304229736328,
+          "top5_before_word": [
+            {
+              "token_id": 236743,
+              "piece": " ",
+              "log_probability": -1.4936845302581787
+            },
+            {
+              "token_id": 1171,
+              "piece": " first",
+              "log_probability": -2.8799264430999756
+            },
+            {
+              "token_id": 861,
+              "piece": " new",
+              "log_probability": -3.3806912899017334
+            },
+            {
+              "token_id": 2269,
+              "piece": " following",
+              "log_probability": -3.621267080307007
+            },
+            {
+              "token_id": 4025,
+              "piece": " National",
+              "log_probability": -3.921323537826538
+            }
+          ]
+        },
+        {
+          "word": "of",
+          "start": 14,
+          "end": 16,
+          "token_indices": [
+            3
+          ],
+          "surprisal_nats": 0.7846851348876953,
+          "top5_before_word": [
+            {
+              "token_id": 529,
+              "piece": " of",
+              "log_probability": -0.7846851348876953
+            },
+            {
+              "token_id": 13954,
+              "piece": " coefficient",
+              "log_probability": -2.4253997802734375
+            },
+            {
+              "token_id": 236772,
+              "piece": "-",
+              "log_probability": -2.9907970428466797
+            },
+            {
+              "token_id": 15841,
+              "piece": " coefficients",
+              "log_probability": -3.2772865295410156
+            },
+            {
+              "token_id": 532,
+              "piece": " and",
+              "log_probability": -3.321979522705078
+            }
+          ]
+        },
+        {
+          "word": "language",
+          "start": 17,
+          "end": 25,
+          "token_indices": [
+            4
+          ],
+          "surprisal_nats": 8.442322731018066,
+          "top5_before_word": [
+            {
+              "token_id": 506,
+              "piece": " the",
+              "log_probability": -2.3188743591308594
+            },
+            {
+              "token_id": 13862,
+              "piece": " innovation",
+              "log_probability": -2.5535621643066406
+            },
+            {
+              "token_id": 496,
+              "piece": " a",
+              "log_probability": -2.6507091522216797
+            },
+            {
+              "token_id": 36253,
+              "piece": " innovations",
+              "log_probability": -3.0517234802246094
+            },
+            {
+              "token_id": 1813,
+              "piece": " water",
+              "log_probability": -3.30804443359375
+            }
+          ]
+        },
+        {
+          "word": "models",
+          "start": 26,
+          "end": 32,
+          "token_indices": [
+            5
+          ],
+          "surprisal_nats": 4.601113319396973,
+          "top5_before_word": [
+            {
+              "token_id": 563,
+              "piece": " is",
+              "log_probability": -1.7150429487228394
+            },
+            {
+              "token_id": 528,
+              "piece": " in",
+              "log_probability": -2.1717634201049805
+            },
+            {
+              "token_id": 532,
+              "piece": " and",
+              "log_probability": -2.219180107116699
+            },
+            {
+              "token_id": 236764,
+              "piece": ",",
+              "log_probability": -3.053208351135254
+            },
+            {
+              "token_id": 815,
+              "piece": " has",
+              "log_probability": -3.2639589309692383
+            }
+          ]
+        },
+        {
+          "word": "affects",
+          "start": 33,
+          "end": 40,
+          "token_indices": [
+            6
+          ],
+          "surprisal_nats": 9.659128189086914,
+          "top5_before_word": [
+            {
+              "token_id": 568,
+              "piece": " (",
+              "log_probability": -1.8012218475341797
+            },
+            {
+              "token_id": 815,
+              "piece": " has",
+              "log_probability": -1.9412250518798828
+            },
+            {
+              "token_id": 528,
+              "piece": " in",
+              "log_probability": -2.3705883026123047
+            },
+            {
+              "token_id": 1131,
+              "piece": " into",
+              "log_probability": -2.7475013732910156
+            },
+            {
+              "token_id": 563,
+              "piece": " is",
+              "log_probability": -2.7533931732177734
+            }
+          ]
+        },
+        {
+          "word": "human",
+          "start": 41,
+          "end": 46,
+          "token_indices": [
+            7
+          ],
+          "surprisal_nats": 4.872921466827393,
+          "top5_before_word": [
+            {
+              "token_id": 506,
+              "piece": " the",
+              "log_probability": -1.435387134552002
+            },
+            {
+              "token_id": 1217,
+              "piece": " how",
+              "log_probability": -2.704193592071533
+            },
+            {
+              "token_id": 784,
+              "piece": " all",
+              "log_probability": -2.733002185821533
+            },
+            {
+              "token_id": 1551,
+              "piece": " many",
+              "log_probability": -2.9022297859191895
+            },
+            {
+              "token_id": 711,
+              "piece": " not",
+              "log_probability": -2.930725574493408
+            }
+          ]
+        },
+        {
+          "word": "migrations.",
+          "start": 47,
+          "end": 58,
+          "token_indices": [
+            8,
+            9
+          ],
+          "surprisal_nats": 14.765412330627441,
+          "top5_before_word": [
+            {
+              "token_id": 6868,
+              "piece": " behavior",
+              "log_probability": -2.4514269828796387
+            },
+            {
+              "token_id": 5192,
+              "piece": " language",
+              "log_probability": -2.5193991661071777
+            },
+            {
+              "token_id": 87394,
+              "piece": " cognition",
+              "log_probability": -2.671769618988037
+            },
+            {
+              "token_id": 236772,
+              "piece": "-",
+              "log_probability": -2.7863287925720215
+            },
+            {
+              "token_id": 7283,
+              "piece": " communication",
+              "log_probability": -2.812333583831787
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "interpretations": {
+    "old": {
+      "text": "The old man the boat.",
+      "prompt": "<bos><start_of_turn>user\nRead this English sentence. Paraphrase it in one sentence, then quote its grammatical subject and its main verb. If it is incomplete or ungrammatical, explain why.\n\nThe old man the boat.<end_of_turn>\n<start_of_turn>model\n",
+      "response": "Here's the breakdown of the sentence \"The old man the boat\":\n\n**Paraphrase:** The elderly gentleman is operating the boat.\n\n**Grammatical Subject:** The old man\n\n**Main Verb:** the boat\n\n**Explanation of Incompleteness/Ungrammaticality:**\n\nThis sentence is grammatically incomplete. It's missing a verb that connects \"the old man\" to the action of operating the boat. \"The boat\" is functioning as a direct object, but it's not a verb itself. A complete sentence would need a verb like \"sailed,\" \"captained,\" \"rowed,\" or \"operated.\"\n\n\n\nEssentially, it's a fragment because it lacks a proper verb to express a complete thought.",
+      "max_new_tokens": 256,
+      "generated_tokens": 152
+    },
+    "old_clean": {
+      "text": "The old people man the boat.",
+      "prompt": "<bos><start_of_turn>user\nRead this English sentence. Paraphrase it in one sentence, then quote its grammatical subject and its main verb. If it is incomplete or ungrammatical, explain why.\n\nThe old people man the boat.<end_of_turn>\n<start_of_turn>model\n",
+      "response": "Here's the breakdown of the sentence:\n\n**Paraphrase:** The elderly man is operating the boat.\n\n**Grammatical Subject:** \"The old people man\" (This is a compound subject, meaning it has multiple nouns acting as one.)\n\n**Main Verb:** \"man\" (functioning as a verb meaning \"to operate\" or \"to handle\")\n\n**Explanation of Potential Issues:**\n\nThe original sentence is slightly awkward and potentially confusing. While grammatically *possible*, it's not ideal. Here's why:\n\n*   **\"Old people man\" is unusual:** Typically, \"old people\" functions as a noun phrase describing a group. Using it directly before a verb like \"man\" creates an unusual construction. It *could* be interpreted as meaning \"the people who are old,\" but it's not the clearest way to express that idea.\n*   **Better phrasing:** A more natural phrasing would be \"The old man mans the boat\" or \"The elderly man mans the boat.\"\n\n\n\nThe sentence isn't *ungrammatical* in the strictest sense, but it's stylistically weak and open to misinterpretation.",
+      "max_new_tokens": 256,
+      "generated_tokens": 239
+    },
+    "title_exact": {
+      "text": "diffusion of language models human migrations",
+      "prompt": "<bos><start_of_turn>user\nRead this English sentence. Paraphrase it in one sentence, then quote its grammatical subject and its main verb. If it is incomplete or ungrammatical, explain why.\n\ndiffusion of language models human migrations<end_of_turn>\n<start_of_turn>model\n",
+      "response": "Okay, let's break down this phrase.\n\n**Paraphrase (One Sentence):** The spread of language models is likely linked to patterns of human migration.\n\n**Grammatical Subject:** \"diffusion\"\n\n**Main Verb:** There is no main verb in this phrase.\n\n**Explanation of Incompleteness/Ungrammaticality:**\n\nThis is **not a complete sentence**. It's a noun phrase, a collection of nouns and a noun-derived word (\"diffusion\"). It lacks a verb, and therefore doesn't express a complete thought. It's more like a topic or a heading.\n\n*   **\"Diffusion\"** functions as the subject, referring to the spreading or dissemination of something.\n*   **\"of language models\"** is a prepositional phrase modifying \"diffusion,\" specifying *what* is diffusing.\n*   **\"human migrations\"** is another noun phrase, likely intended to suggest a relationship or connection to the diffusion.\n\n\n\nTo make it a sentence, you'd need to add a verb, for example: \"The diffusion of language models *correlates with* human migrations.\"",
+      "max_new_tokens": 256,
+      "generated_tokens": 234
+    },
+    "title_article": {
+      "text": "The diffusion of language models human migrations.",
+      "prompt": "<bos><start_of_turn>user\nRead this English sentence. Paraphrase it in one sentence, then quote its grammatical subject and its main verb. If it is incomplete or ungrammatical, explain why.\n\nThe diffusion of language models human migrations.<end_of_turn>\n<start_of_turn>model\n",
+      "response": "Here's the breakdown of the sentence:\n\n**Paraphrase:** The spread of language models is linked to human migrations.\n\n**Grammatical Subject:** \"The diffusion\"\n\n**Main Verb:** \"models\" (This is acting as a passive verb, implying \"language models are diffused\")\n\n**Explanation of Incompleteness/Ungrammaticality:**\n\nThe original sentence is incomplete and ungrammatical. Here's why:\n\n*   **Missing Verb:** It lacks a proper verb to connect the subject (\"The diffusion\") to the rest of the phrase. \"Models\" is a noun, not a verb.\n*   **Unclear Relationship:** The phrase \"human migrations\" is tacked on at the end without a clear grammatical relationship to the subject. It's unclear whether it's meant to be an object, a modifier, or something else.\n\n\n\nTo make it grammatically correct, you need a verb that expresses the relationship between the diffusion and human migrations. That's why the paraphrase adds \"is linked to.\"",
+      "max_new_tokens": 256,
+      "generated_tokens": 213
+    },
+    "title_verb_cue": {
+      "text": "The diffusion of language actually models human migrations.",
+      "prompt": "<bos><start_of_turn>user\nRead this English sentence. Paraphrase it in one sentence, then quote its grammatical subject and its main verb. If it is incomplete or ungrammatical, explain why.\n\nThe diffusion of language actually models human migrations.<end_of_turn>\n<start_of_turn>model\n",
+      "response": "Here's the breakdown of the sentence:\n\n**Paraphrase:** The way languages spread reflects and can be used to understand how people have moved throughout history.\n\n**Grammatical Subject:** The diffusion\n\n**Main Verb:** models\n\n\n\nThe sentence is complete and grammatically sound. It uses a noun phrase (\"the diffusion of language\") as its subject and a transitive verb (\"models\") to express the relationship between language spread and human migrations.",
+      "max_new_tokens": 256,
+      "generated_tokens": 90
+    },
+    "title_noun_cue": {
+      "text": "The diffusion of language models affects human migrations.",
+      "prompt": "<bos><start_of_turn>user\nRead this English sentence. Paraphrase it in one sentence, then quote its grammatical subject and its main verb. If it is incomplete or ungrammatical, explain why.\n\nThe diffusion of language models affects human migrations.<end_of_turn>\n<start_of_turn>model\n",
+      "response": "Here's the breakdown of the sentence:\n\n**Paraphrase:** The spread of language models is influencing where people move.\n\n**Grammatical Subject:** \"diffusion\"\n\n**Main Verb:** \"affects\"\n\n**Analysis:** The sentence is complete and grammatically correct. It follows a standard subject-verb-object structure. \"Diffusion\" is a noun acting as the subject, \"affects\" is the verb, and \"human migrations\" is the object.",
+      "max_new_tokens": 256,
+      "generated_tokens": 97
+    }
+  },
+  "legacy_old_man": [
+    {
+      "model": "Gemma 3 1B",
+      "id": 16,
+      "template": "NV",
+      "critical_word": "the",
+      "surprisal_gps": 8.590984344482422,
+      "surprisal_normal": 5.991621971130371,
+      "delta": 2.599362373352051,
+      "source": "v1/gemma3_1b/logs/01_baseline.json",
+      "sha256": "963acc3aa14ce33769d399be20a7bc10c0b123f7ad232f381e638a82774056d2"
+    },
+    {
+      "model": "Gemma 3 4B",
+      "id": 16,
+      "template": "NV",
+      "critical_word": "the",
+      "surprisal_gps": 8.90493106842041,
+      "surprisal_normal": 4.174991130828857,
+      "delta": 4.729939937591553,
+      "source": "v1/gemma3_4b/logs/01_baseline.json",
+      "sha256": "b0b81df793bc052e648a7736fc1866762db9e78a06f8a37fec62bbb5d9c736ca"
+    },
+    {
+      "model": "Gemma 3 12B",
+      "id": 16,
+      "template": "NV",
+      "critical_word": "the",
+      "surprisal_gps": 9.142337799072266,
+      "surprisal_normal": 4.223199367523193,
+      "delta": 4.919138431549072,
+      "source": "v1/gemma3_12b/logs/01_baseline.json",
+      "sha256": "04509c7e3b0c5b17ad997b9b84423fa5dbbfcbf5d54f1b820bc845da65d68750"
+    },
+    {
+      "model": "Gemma 3 27B",
+      "id": 16,
+      "template": "NV",
+      "critical_word": "the",
+      "surprisal_gps": 10.5729341506958,
+      "surprisal_normal": 4.130695819854736,
+      "delta": 6.4422383308410645,
+      "source": "v1/gemma3_27b/logs/01_baseline.json",
+      "sha256": "6c8b3f01355fef75fd3a1b92e17b03f2a876f71b967059f250e8c26a5d6c8180"
+    }
+  ],
+  "limitations": [
+    "Exploratory fixed cases, not independent linguistic families.",
+    "PT surprisal and IT interpretation are different checkpoints and tasks.",
+    "Final punctuation belongs to the last plotted word.",
+    "Raw pretrained logits include special tokens. The exact lowercase title predicts start_of_image most strongly after models.",
+    "IT fails even the old/man examples; its prompted parse is not a validated comprehension endpoint.",
+    "No activation patching, circuit discovery or test of necessity/sufficiency performed."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "source_files": 12,
+  "baselines": 480,
+  "interventions": 0,
+  "independent_aggregation": true,
+  "gate_chronology": true,
+  "maximum_identity_error": null,
+  "maximum_relative_norm_error": null,
+  "precision_diagnostic_audited": true
+}

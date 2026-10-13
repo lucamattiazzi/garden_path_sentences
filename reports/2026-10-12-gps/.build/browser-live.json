@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-13T11:20:48.673Z",
+  "base": "https://research.grokked.it/mech-interp/garden-path-sentences/",
+  "engine": "Headless Google Chrome via Playwright",
+  "checks": [
+    {
+      "file": "index.html",
+      "width": 1440,
+      "theme": "light",
+      "overflow": false,
+      "images": true,
+      "imageCount": 8,
+      "levels": 3,
+      "pending": false
+    },
+    {
+      "file": "index.html",
+      "width": 390,
+      "theme": "light",
+      "overflow": false,
+      "images": true,
+      "imageCount": 8,
+      "levels": 3,
+      "pending": false
+    },
+    {
+      "file": "index.html",
+      "width": 390,
+      "theme": "dark",
+      "overflow": false,
+      "images": true,
+      "imageCount": 8,
+      "levels": 3,
+      "pending": false
+    },
+    {
+      "file": "esperimenti/v3-1b/",
+      "width": 1440,
+      "theme": "light",
+      "overflow": false,
+      "images": true,
+      "imageCount": 1,
+      "levels": 0,
+      "pending": false
+    },
+    {
+      "file": "esperimenti/v3-1b/",
+      "width": 390,
+      "theme": "light",
+      "overflow": false,
+      "images": true,
+      "imageCount": 1,
+      "levels": 0,
+      "pending": false
+    },
+    {
+      "file": "esperimenti/v3-1b/",
+      "width": 390,
+      "theme": "dark",
+      "overflow": false,
+      "images": true,
+      "imageCount": 1,
+      "levels": 0,
+      "pending": false
+    },
+    {
+      "file": "esperimenti/v3-12b/",
+      "width": 1440,
+      "theme": "light",
+      "overflow": false,
+      "images": true,
+      "imageCount": 2,
+      "levels": 0,
+      "pending": false
+    },
+    {
+      "file": "esperimenti/v3-12b/",
+      "width": 390,
+      "theme": "light",
+      "overflow": false,
+      "images": true,
+      "imageCount": 2,
+      "levels": 0,
+      "pending": false
+    },
+    {
+      "file": "esperimenti/v3-12b/",
+      "width": 390,
+      "theme": "dark",
+      "overflow": false,
+      "images": true,
+      "imageCount": 2,
+      "levels": 0,
+      "pending": false
+    }
+  ],
+  "errors": []
+}

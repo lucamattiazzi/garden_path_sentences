@@ -1,0 +1,19 @@
+{
+  "status": "instrument_gate_failed",
+  "gate": {
+    "passed": false,
+    "both_reversal_rates": {
+      "active/agent": 1.0,
+      "active/patient": 1.0,
+      "object_relative/agent": 1.0,
+      "object_relative/patient": 1.0,
+      "passive/agent": 1.0,
+      "passive/patient": 1.0,
+      "passive_relative/agent": 0.0,
+      "passive_relative/patient": 0.8333333333333334
+    }
+  },
+  "baselines": 96,
+  "interventions": 0,
+  "maximum_identity_error": null
+}

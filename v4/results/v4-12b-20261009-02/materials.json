@@ -1,0 +1,158 @@
+[
+  {
+    "id": "assisted",
+    "family": "assisted",
+    "split": "confirmation",
+    "verb": "watched",
+    "actor": "guard",
+    "lexical_actor": "officer",
+    "participants": [
+      "surgeon",
+      "dentist"
+    ],
+    "event": "assisted"
+  },
+  {
+    "id": "telephoned",
+    "family": "telephoned",
+    "split": "development",
+    "verb": "helped",
+    "actor": "nurse",
+    "lexical_actor": "doctor",
+    "participants": [
+      "librarian",
+      "archivist"
+    ],
+    "event": "telephoned"
+  },
+  {
+    "id": "escorted",
+    "family": "escorted",
+    "split": "development",
+    "verb": "coached",
+    "actor": "trainer",
+    "lexical_actor": "mentor",
+    "participants": [
+      "violinist",
+      "pianist"
+    ],
+    "event": "escorted"
+  },
+  {
+    "id": "invited",
+    "family": "invited",
+    "split": "confirmation",
+    "verb": "called",
+    "actor": "clerk",
+    "lexical_actor": "secretary",
+    "participants": [
+      "engineer",
+      "architect"
+    ],
+    "event": "invited"
+  },
+  {
+    "id": "hired",
+    "family": "hired",
+    "split": "development",
+    "verb": "photographed",
+    "actor": "reporter",
+    "lexical_actor": "editor",
+    "participants": [
+      "chemist",
+      "physicist"
+    ],
+    "event": "hired"
+  },
+  {
+    "id": "congratulated",
+    "family": "congratulated",
+    "split": "confirmation",
+    "verb": "visited",
+    "actor": "tourist",
+    "lexical_actor": "traveler",
+    "participants": [
+      "judge",
+      "lawyer"
+    ],
+    "event": "congratulated"
+  },
+  {
+    "id": "comforted",
+    "family": "comforted",
+    "split": "confirmation",
+    "verb": "interviewed",
+    "actor": "journalist",
+    "lexical_actor": "host",
+    "participants": [
+      "comedian",
+      "magician"
+    ],
+    "event": "comforted"
+  },
+  {
+    "id": "criticized",
+    "family": "criticized",
+    "split": "development",
+    "verb": "painted",
+    "actor": "artist",
+    "lexical_actor": "illustrator",
+    "participants": [
+      "cashier",
+      "florist"
+    ],
+    "event": "criticized"
+  },
+  {
+    "id": "welcomed",
+    "family": "welcomed",
+    "split": "development",
+    "verb": "trained",
+    "actor": "coach",
+    "lexical_actor": "instructor",
+    "participants": [
+      "mechanic",
+      "electrician"
+    ],
+    "event": "welcomed"
+  },
+  {
+    "id": "recognized",
+    "family": "recognized",
+    "split": "development",
+    "verb": "taught",
+    "actor": "professor",
+    "lexical_actor": "lecturer",
+    "participants": [
+      "astronaut",
+      "astronomer"
+    ],
+    "event": "recognized"
+  },
+  {
+    "id": "introduced",
+    "family": "introduced",
+    "split": "confirmation",
+    "verb": "questioned",
+    "actor": "detective",
+    "lexical_actor": "investigator",
+    "participants": [
+      "soprano",
+      "drummer"
+    ],
+    "event": "introduced"
+  },
+  {
+    "id": "encouraged",
+    "family": "encouraged",
+    "split": "confirmation",
+    "verb": "searched",
+    "actor": "inspector",
+    "lexical_actor": "agent",
+    "participants": [
+      "bishop",
+      "chaplain"
+    ],
+    "event": "encouraged"
+  }
+]

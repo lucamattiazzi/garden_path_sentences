@@ -1,0 +1,123 @@
+GARDEN-PATH SENTENCES — RIPASSO TECNICO
+
+1. La domanda scientifica
+
+Una garden-path sentence è temporaneamente ambigua: una lettura inizialmente plausibile diventa incompatibile con il seguito. “The old man the boat” sfrutta man come nome o verbo e the old come espressione collettiva. Il secondo the ostacola la lettura iniziale “il vecchio”. La lettura finale è “gli anziani governano la barca”. Un esempio può però risultare facile a chi lo conosce già. Il dataset storico non include una validazione indipendente dell’effetto sui lettori umani.
+
+Tre livelli di domanda vanno tenuti distinti:
+• Previsione: la costruzione cambia la probabilità del seguito?
+• Interpretazione finale: il modello distingue correttamente chi fa cosa?
+• Meccanismo di revisione: una rappresentazione di lettura iniziale viene modificata o riutilizzata in modo causale dopo un indizio?
+I risultati storici riguardano soprattutto il primo livello e l’influenza di interventi interni su quelle probabilità. Il pilot tenta di avvicinarsi al secondo. Il terzo richiede ulteriori esperimenti.
+
+2. Il transformer causale
+
+Un token è un’unità del tokenizer, non necessariamente una parola. L’embedding iniziale è un vettore appreso; il significato contestuale emerge dalle trasformazioni successive. Per ogni layer e posizione esiste uno stato nel residual stream. In una descrizione semplificata di un blocco sequenziale:
+  r' = r + Attention(Norm(r))
+  r_successivo = r' + MLP(Norm(r'))
+La formula è uno schema didattico, non la descrizione esatta di ogni dettaglio di Gemma e Qwen. Normalizzazioni, scaling e organizzazione dei blocchi vanno letti nell’implementazione del modello.
+
+In una testa standard, query e key determinano pesi di attention tramite softmax di QKᵀ/√d con maschera causale. I pesi combinano i value. La proiezione di output trasforma il risultato nello spazio del residual stream. Una grande attention verso una parola non prova da sola che quella parola determini una certa risposta: contano anche i value, la proiezione e il resto del calcolo. La MLP agisce separatamente a ciascuna posizione, su uno stato già contestualizzato.
+
+Il modello può consultare posizioni precedenti. Una posizione non può dipendere da token futuri. Anche quando il prefill calcola molte posizioni in parallelo, la maschera conserva questo vincolo. La KV cache è un’ottimizzazione della generazione, non la ragione fondamentale della causalità. Un’interpretazione aggiornata può essere rappresentata a una posizione successiva senza riscrivere gli stati precedenti.
+
+3. Logit, probabilità, surprisal
+
+La proiezione finale sul vocabolario produce logits. La log-softmax li converte in log-probabilità. Per una parola composta dai token t₁…tₖ:
+  S(parola | prefisso) = −Σⱼ ln P(tⱼ | prefisso, t₁…tⱼ₋₁)
+Il codice usa il logaritmo naturale: nats. In bit si dividerebbe per ln(2). La somma corrisponde al logaritmo negativo della probabilità congiunta della sequenza di token. Il modello non riceve una richiesta di descrivere la propria sorpresa.
+
+I logits alla posizione i−1 predicono il token i: sbagliare questo allineamento cambia la misura. Il codice individua gli span di caratteri della parola e li associa ai token. Il fallback richiede che la tokenizzazione del prefisso sia preservata nel testo esteso. Un token che attraversa caratteri non assegnabili alla parola rende il calcolo ambiguo. Inference in eval/no_grad evita dropout e costruzione del grafo dei gradienti. La log-softmax viene calcolata dopo conversione dei logits a float32.
+
+Surprisal alta indica bassa probabilità della parola osservata, non alta entropia dell’intera distribuzione: il modello potrebbe essere molto sicuro di un’altra parola. Non indica direttamente difficoltà umana, tempo di calcolo o comprensione. Il forward pass sul testo intero è compatibile con lo scoring incrementale grazie alla maschera causale.
+
+4. Dataset e due misure storiche
+
+Le 50 coppie sono distribuite in RR (relative ridotte), NV (nome/verbo), NP/S (oggetto nominale o proposizione), NP/Z (oggetto o nessun oggetto nella subordinata), COORD (coordinazione di sintagmi o proposizioni). NV comprende 10 coppie storiche; altre 10 sono in novel_pairs.py. “Canonical” e “novel” sono nomi degli insiemi: non certificano esposizione o assenza dai dati di training.
+
+Per la parola critica:
+  Δ_critico = media[S_critico(GPS) − S_critico(normale)]
+Per la continuazione NV:
+  Δ_cont = media[S_cont(GPS) − S_cont(normale)]
+Nel codice e nei log compare anche il nome vc_delta. La parola critica è il secondo the nell’esempio, la continuazione è boat. Non chiamare Δ_cont accuratezza di comprensione. Alcuni item storici non hanno il primo disambiguatore validato: la designazione nel dataset non lo garantisce.
+
+Tutti i sei modelli principali hanno medie positive in ciascuna delle cinque costruzioni nei log baseline. È un fatto descrittivo su questi materiali. Non significa tutti gli item positivi, effetto identico fra modelli o evidenza di equivalenza fra taglie. Il triage Qwen32B ha una storia distinta e non fa parte del confronto principale a sei modelli.
+
+5. Ablation: che cosa viene rimosso
+
+Gli interventi sulle teste azzerano il contributo delle teste selezionate prima della proiezione di output dell’attention, anziché semplicemente cancellare una riga della matrice dei pesi di attention. Uno sweep di layer può togliere l’output dell’attention del layer: non va confuso con la rimozione dell’intero blocco transformer e della sua MLP. Controllare lo scope dello script quando si cita un risultato specifico.
+
+Un effetto causale su un output dice che quell’intervento influenza quell’output. Non assegna da solo una funzione esclusiva alla componente. Un effetto piccolo può derivare da ridondanza, interazioni, compensazione, selezione di candidati inadatta o metrica poco discriminante. La somma degli effetti delle teste isolate non deve uguagliare l’effetto dell’ablazione congiunta: il seguito del modello è non lineare.
+
+La zero ablation può produrre attivazioni atipiche. La mean ablation sostituisce con una media empirica, ma non garantisce uno stato naturale per quel contesto. Se i due interventi divergono, abbiamo sensibilità al metodo; non una dimostrazione automatica che uno dei due sia un artefatto.
+
+Nei log effect_drop significa Δ_ablato − Δ_baseline: una riduzione ha segno negativo. La reference di teste casuali è una distribuzione empirica di effetti di altri interventi, non una distribuzione di “assenza di causalità”. Lo screening di layer e teste sugli stessi dati introduce selezione multipla. Il max-of-K ricampionato dai candidati casuali non corregge l’intera procedura e non può stimare code oltre quelle osservate.
+
+6. Patching: implementazione e formula
+
+Un forward hook cattura il tensore in uscita da ciascun decoder layer sul donatore normale. Un altro hook sostituisce, nel target GPS, il vettore alla posizione allineata della parola. Il patch principale riportato nel talk è v_amb, la parola ambigua. Altri scope sono critical e both. Per ogni layer si esegue un intervento separato; non si copiano contemporaneamente tutti i layer. I pesi restano fissi, non è fine-tuning.
+
+  R_L = [media(S_GPS) − media(S_patched,L)] / [media(S_GPS) − media(S_normale)]
+
+È un rapporto di differenze medie, non la media dei rapporti dei singoli item. R=0: nessun cambiamento medio; R=1: raggiunta la previsione media del normale. R negativo: peggioramento su questa misura. R>1: previsione più favorevole della baseline normale. Non è limitato matematicamente a [0,1]. Un denominatore piccolo rende il rapporto instabile.
+
+Valori dai file 11_patching.json, scope recovery_v_amb, 20 coppie per modello:
+  Gemma 1B:  26 layer, picco L2,  0,575860 ≈ 58%
+  Gemma 4B:  34 layer, picco L2,  0,505145 ≈ 51%
+  Gemma 12B: 48 layer, picco L24, 0,451984 ≈ 45%
+  Gemma 27B: 62 layer, picco L28, 0,585705 ≈ 59%
+  Qwen3 4B: 36 layer, picco L4,  0,626565 ≈ 63%
+  Qwen3 14B:40 layer, picco L18, 0,630320 ≈ 63%
+L’indicizzazione parte da zero: L2 è il terzo layer. Nel talk il confronto principale usa Gemma per avere quattro taglie della stessa famiglia, senza pretendere un isolamento causale dell’effetto della scala.
+
+Copiare lo stato completo trasferisce insieme molte informazioni e differenze di contesto. Lo stato di man precede il disambiguatore: può trasmettere una preferenza iniziale, non certifica un’operazione di riparazione successiva. Il massimo selezionato sulla curva non è una stima indipendente del layer in cui il modello “decide”.
+
+7. Perché il 100% può essere tautologico
+
+Per un target di un solo token, il readout dipende dallo stato finale della posizione precedente. Se copio esattamente quello stato dal donatore nello stesso modello, applico la stessa normalizzazione e la stessa proiezione finale e riproduco i logits del donatore. Un recupero completo in questa condizione è un controllo del trasferimento del readout, non prova di una rappresentazione sintattica specifica. Per una parola con più token non si può estendere automaticamente questa identità all’intera surprisal della parola.
+
+8. Audit, incertezza e riproducibilità
+
+L’audit ricalcola statistiche da 98 file JSON salvati: non riesegue i checkpoint. Usa bootstrap per item con 10.000 campioni e seed 0 e controlli leave-one-out. Nel set NV canonical di Gemma 27B, n=10, Δ_cont medio=1,477 nats, IC 95%=[−0,156; 3,811]. Senza l’item #23 la media è 0,437. L’item non va escluso a posteriori perché scomodo: il dato segnala fragilità e bisogno di più famiglie indipendenti.
+
+L’audit trova valori non finiti e baseline discordanti nello step 02 di Qwen4B. Non attribuire la causa senza provenienza sufficiente. I log storici non documentano checkpoint e runtime abbastanza da garantire equivalenza di una futura replica. Un intervallo che contiene zero non prova equivalenza. Un intervallo bootstrap a campione piccolo dipende fortemente dagli item osservati e non risolve problemi di validità linguistica.
+
+9. Pilot comportamentale
+
+24 item, 12 famiglie lessicali, due coppie di attori per famiglia. Esplorazione: 16 item / 8 famiglie. Validazione: 8 item / 4 famiglie. Costruzioni NP/S e NP/Z. Ogni item ha GPS, normale, normale con ruoli invertiti e diagnostica senza contesto. Le due domande riguardano i soggetti dei due eventi, e ciascuna compare con entrambi gli ordini delle opzioni.
+
+Il margine è m=log P(etichetta corretta)−log P(etichetta errata). Il runner usa prompt testuali fissi per modelli base, senza generazione o chat template. A e B devono essere singoli token in condizioni di tokenizzazione coerenti. Il margine medio sui due ordini è una misura continua; la robustezza all’ordine richiede margine strettamente positivo in entrambi. Le parità sono fallimenti. Il costo paired è m_GPS−m_normale: negativo significa peggiore discriminazione nel GPS. Il segno è opposto all’intuizione del costo di surprisal storico.
+
+Le ripetizioni si aggregano per famiglia prima del bootstrap appaiato fra condizioni. Un pilot con poche famiglie dà incertezza grossolana. Il protocollo propone come soglia operativa almeno l’80% di accuratezza robusta all’ordine separatamente sui controlli normali e invertiti per ciascun template. Non è una soglia statistica né un risultato già ottenuto.
+
+Stato locale al 1 ottobre 2026: materiali e runner presenti; nella cartella research/results sono presenti solo i risultati dell’audit storico. Non sono disponibili risultati del nuovo pilot su checkpoint reali. Prima servono giudizi umani indipendenti su grammatica, plausibilità, interpretazione e punto di disambiguazione. Anche dopo quei controlli restano euristiche posizionali e la possibilità che la domanda finale provochi una ricomputazione.
+
+10. Un seguito informativo
+
+Validare prima un compito che distingua davvero le letture. Scegliere prompt, soglie e componenti sulle famiglie di esplorazione e congelare le decisioni prima di valutare famiglie nuove. Misurare insieme predizione incrementale e interpretazione finale, senza identificarle. Intervenire in entrambe le direzioni con donatori comparabili, separando posizioni precedenti e successive all’indizio. Confrontare output attention, MLP e gruppi mirati, includendo controlli irrilevanti per la sintassi. La domanda forte è se l’esito dopo l’indizio dipenda causalmente dall’informazione di lettura presente prima dell’indizio.
+
+11. Mappa del repository
+
+model_finder/sentences.py — 50 coppie storiche e costruzioni.
+model_finder/novel_pairs.py — 10 ulteriori NV.
+model_finder/surprisal.py — caricamento modello, span dei token, scoring.
+model_finder/arch.py — accesso alle architetture.
+qwen4b/scripts/_ablation.py — interventi condivisi.
+qwen4b/scripts/_extra.py — patching e diagnostiche condivise.
+gemma3_*/logs/01_baseline.json — risultato mostrato nel grafico.
+gemma3_*/logs/11_patching.json — tabella del patching.
+research/results/legacy-audit.md — controlli sui risultati storici.
+research/PROTOCOL.md — disegno aggiornato, limiti e criteri del pilot.
+research/behavioral.py — runner del pilot.
+
+12. Letture collegate
+
+Hanna e Mueller, NAACL 2025, “Incremental Sentence Processing Mechanisms in Autoregressive Transformer Language Models”. Studiano caratteristiche legate alle letture alternative tramite sparse autoencoder e il loro riuso nelle domande di comprensione. È lavoro pertinente, non una replica eseguita da questo progetto.
+https://aclanthology.org/2025.naacl-long.164/
+
+Zhang e Nanda, ICLR 2024, “Towards Best Practices of Activation Patching in Language Models: Metrics and Methods”. Riferimento sul ruolo di metrica e metodo nell’interpretazione del patching.
+https://arxiv.org/abs/2309.16042
+
+Post originale, utile per il percorso e lo stile, con interpretazioni più forti poi riviste nel protocollo locale:
+https://grokked.it/posts/garden_path_sentences/
+Codice e log: https://github.com/lucamattiazzi/garden_path_sentences
